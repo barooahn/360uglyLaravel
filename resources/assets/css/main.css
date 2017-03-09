@@ -4,14 +4,15 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 body {
     background-color: white;
-    margin-top: 70px;
     font-family: 'Open Sans', sans-serif;
     color: #313131;
+    padding-top: 70px;
 }
 
 html {
     font-size: 14px;
 }
+
 
 @include media-breakpoint-up(sm) {
     html {
@@ -35,6 +36,15 @@ h1 {
     color: #e25333;
     text-align: center;
     text-transform: uppercase;
+}
+
+a{
+    color: #e25333;
+}
+
+a:hover{
+    color: #555;
+    text-decoration: none;
 }
 
 .btn {
@@ -78,6 +88,74 @@ header h1, header h4 {
     margin-bottom: 0;
 }
 
+/*nav*/
+
+/*navbar {
+    position: fixed;
+}*/
+
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+  padding-bottom: 3px;
+  display: inline;
+}
+.navbar-brand span{
+    color: #e25333;
+}
+
+ul #login-dp  {
+    min-width: 350px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+
+ul #login-dp .help-block{
+    font-size:12px    
+}
+ul #login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+ul #login-dp .social-buttons{
+    margin:12px 0    
+}
+ul #login-dp .social-buttons a{
+    width: 49%;
+}
+ul #login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    ul #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    ul #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+/*end of nav*/
 
 /*down arrow*/
 
@@ -384,6 +462,10 @@ header h1, header h4 {
 
 /*contact*/
 
+.contact .form-control{
+    color: #999 !important;
+}
+
 .contact h3 {
     text-align: center;
 }
@@ -396,20 +478,75 @@ header h1, header h4 {
   color: #555;
 }
 
+/*fancy radio buttons*/
+
+.contact label.btn span {
+  font-size: 1.5em ;
+}
+
+.contact label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #999;    display: inline;
+}
+.contact label input[type="radio"] ~ i.fa.fa-dot-circle-o{
+    display: none;
+}
+.contact label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+}
+.contact label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{
+    color: #e25333;    display: inline;
+}
+.contact label:hover input[type="radio"] ~ i.fa {
+color: #e25333;
+}
+
+.contact div[data-toggle="buttons"] label.active{
+    color: #e25333;
+}
+
+.contact div[data-toggle="buttons"] label {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 2em;
+text-align: left;
+white-space: nowrap;
+vertical-align: top;
+cursor: pointer;
+background-color: none;
+border: 0px solid 
+#999;
+border-radius: 3px;
+color: #999;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.contact div[data-toggle="buttons"] label:hover {
+color: #e25333;
+}
+
+.contact div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+
+
+/*end of fancy radio buttons*/
+
 /*bottom menu*/
 
 footer {
     text-align: center;
 }
 
-footer li a{
-    color: #e25333;
-}
 
-footer li a:hover{
-    color: #555;
-    text-decoration: none;
-}
 
 @media screen and (max-width: 988px) {
     footer li a{

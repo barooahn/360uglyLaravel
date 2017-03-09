@@ -21,12 +21,14 @@ elixir((mix) => {
 	    	'main.css'
 	    	])
     	.scripts([
-    		'jquery-1.11.2.min.js',
+    		'jquery-3.1.1.min.js',
     		'bootstrap.min.js', 
     		'rotate.min.js', 
     		'rollover.js', 
     		'icons.js',
-    		'header.js' 
+    		'header.js',
+            'jquery.scrollto.js',
+            'smooth-scroll.js' 
     		])
     	.copy(
     		'resources/assets/images', 'public/images')
