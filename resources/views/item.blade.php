@@ -8,7 +8,6 @@
     <h3>
         Where shall we collect your product{{ $noItems > 0 ? 's' : '' }} from?
     </h3>
- {{$noItems}}
 
     <form action="{{ url('/item') }}" class="form" id="order" method="post" role="form">
         {{ csrf_field() }}

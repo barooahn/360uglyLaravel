@@ -19,4 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::post('/enquiry', 'EnquiryController@store');
-Route::post('/delivery', 'EnquiryController@delivery');
+Route::post('/collection', 'EnquiryController@collection');
+Route::post('/item', 'EnquiryController@collection');

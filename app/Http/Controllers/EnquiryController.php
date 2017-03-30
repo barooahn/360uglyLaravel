@@ -38,7 +38,7 @@ class EnquiryController extends Controller
         $noItems = $request->get('items');
 
         if($type == 'order'){
-            return view('order')->with('noItems');    
+            return view('order')->with('noItems', $noItems);    
         }else {
             return view('enquiry');
         }
@@ -90,8 +90,8 @@ class EnquiryController extends Controller
         //
     }
 
-    public function delivery()
+    public function collection()
     {
-        return view('delivery');
+        return view('collection');
     }
 }
