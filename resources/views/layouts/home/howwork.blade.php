@@ -5,6 +5,11 @@
                 <h5>
                     Six Simple Steps
                 </h5>
+                   <p>
+                    <span>
+                        Click/hover over images for details on each step
+                    </span>
+                </p>
                 <div class="icons-how-work">
                     <div class="container">
                         <div class="row">
@@ -84,10 +89,11 @@
                         <!--end of row-->
                     </div>
                     <!--end of container-->
+                    <div class="pricing-button">
+                        <a class="btn btn-primary btn-lg" href="{{ url('order') }}">
+                            Order Now
+                        </a>
+                    </div>
                 </div>
-                <p>
-                    <span>
-                        Click/hover over images for details on each step
-                    </span>
-                </p>
+             
             </div>

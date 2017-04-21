@@ -15,11 +15,12 @@ class CreateEnquiriesTable extends Migration
     {
         Schema::create('enquiries', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name', 100);
+            $table->string('name');
             $table->string('email');
             $table->string('phone')->nullable();
-            $table->tinyInteger('products')->nullable();
-            $table->text('message')->nullable();          
+            $table->tinyInteger('item')->nullable(); 
+            $table->longText('message')->nullable();  
+            $table->tinyInteger('order')->default(0);         
             $table->timestamps();
             $table->softDeletes();
         });

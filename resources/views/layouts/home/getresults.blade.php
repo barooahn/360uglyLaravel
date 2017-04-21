@@ -23,6 +23,11 @@
                         <a class="btn btn-primary btn-lg" href="#">
                             Find Out How
                         </a>
+                        <div class="pricing-button">
+                            <a class="btn btn-primary btn-lg" href="{{ url('order') }}">
+                                Order Now
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

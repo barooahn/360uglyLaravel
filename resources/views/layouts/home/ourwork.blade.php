@@ -57,6 +57,11 @@
                         <button class="btn btn-primary btn-lg">
                             More details
                         </button>
+
+                        <button class="btn btn-primary btn-lg" href="{{ url('order') }}">
+                            Order Now
+                        </button>                    
+
                     </div>
                 </div>
                 <!--end of container-->

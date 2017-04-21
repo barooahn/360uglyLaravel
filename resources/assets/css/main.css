@@ -104,6 +104,9 @@ header h1, header h4 {
     color: #e25333;
 }
 
+.nav-active {
+    background-color: #e25333;
+}
 ul #login-dp  {
     min-width: 350px;
     padding: 14px 14px 0;
@@ -194,7 +197,7 @@ ul #login-dp .form-group {
 
 .uglyman {
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 40%;
 }
 
 .full-height {
@@ -202,7 +205,7 @@ ul #login-dp .form-group {
 }
 
 .how-work, .our-work, .pricing, .contact, .results, .uglyman {
-    padding-top: 70px;
+    padding-top: 55px;
 }
 
 
@@ -378,12 +381,12 @@ ul #login-dp .form-group {
 
 .how-work h5 {
     text-align: center;
-    padding-bottom: 40px;
+
 }
 
 .how-work p {
-    padding-top: 40px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .icons {
@@ -461,6 +464,10 @@ ul #login-dp .form-group {
 
 
 /*contact*/
+
+.contact {
+    padding-top: 80px;
+}
 
 .contact .form-control{
     color: #999 !important;

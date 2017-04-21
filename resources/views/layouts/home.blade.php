@@ -64,7 +64,35 @@
                             <img class="img-responsive" alt="Brand" src="/images/favicon/ms-icon-310x310.png">
                         </a>
                     </div>
-                   
+                    <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                        <!-- Left Side Of Navbar -->
+                        <ul class="nav navbar-nav links">
+                            <li>
+                                <a href="#ourwork">
+                                    Our Work
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#results">
+                                    Get Results
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#howwork">
+                                    How It Works
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#pricing">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
                         <ul class="nav navbar-nav navbar-right">
                             @if (Auth::guest())
                             <!-- Authentication Links -->
@@ -185,7 +213,7 @@
             @yield('content')
         </div>
         <!-- Scripts -->
-        <script src="/js/form.js">
+        <script src="/js/all.js">
         </script>
     </body>
 </html>

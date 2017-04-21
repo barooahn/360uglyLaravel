@@ -26,8 +26,8 @@
                                         </li>
                                     </ul>
                                     <div class="pricing-button">
-                                        <a class="btn btn-primary btn-lg" href="#contact">
-                                            Start Now
+                                        <a class="btn btn-primary btn-lg" href="{{ url('order') }}">
+                                            Order Now
                                         </a>
                                     </div>
                                 </hr>
@@ -63,8 +63,8 @@
                                         </li>
                                     </ul>
                                     <div class="pricing-button">
-                                        <a class="btn btn-primary btn-lg" href="#contact">
-                                            Start Now
+                                        <a class="btn btn-primary btn-lg" href="{{ url('order') }}">
+                                            Order Now
                                         </a>
                                     </div>
                                 </hr>
@@ -100,8 +100,8 @@
                                         </li>
                                     </ul>
                                     <div class="pricing-button">
-                                        <a class="btn btn-primary btn-lg" href="#contact">
-                                            Start Now
+                                        <a class="btn btn-primary btn-lg" href="{{ url('order') }}">
+                                            Order Now
                                         </a>
                                     </div>
                                 </hr>

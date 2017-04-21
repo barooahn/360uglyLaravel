@@ -1,25 +1,25 @@
-@extends('layouts.app')
+@extends('layouts.home')
 
 @section('content')
     <div class="container-fluid">
             <section id="home">
-            </section>
              @include('layouts.home.splash')
-            <section id="our-work">
             </section>
-            @include('layouts.home.our-work')
+            <section id="ourwork">
+            @include('layouts.home.ourwork')
+            </section>
             <section id="results">
+            @include('layouts.home.getresults')
             </section>
-            @include('layouts.home.get-results')
-            <section id="how-work">
+            <section id="howwork">
+            @include('layouts.home.howwork')
             </section>
-            @include('layouts.home.how-work')
             <section id="pricing">
-            </section>
             @include('layouts.home.pricing')
-            <section id="contact">
             </section>
-            @include('layouts.home.contact')
+            <section id="contact">
+            @include('layouts.home.enquiry')
+            </section>
         <!--end of main container-->
         <!-- Footer -->
         <footer>

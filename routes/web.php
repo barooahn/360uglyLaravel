@@ -18,6 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::post('/enquiry', 'EnquiryController@store');
-Route::post('/collection', 'EnquiryController@collection');
-Route::post('/item', 'EnquiryController@collection');
+Route::get('/order', 'OrderController@index')->middleware('auth');
+Route::post('/enquiry', 'EnquiryController@store')->middleware('auth');
+Route::post('/address', 'AddressController@address')->middleware('auth');
+Route::post('/item', 'EnquiryController@item')->middleware('auth');

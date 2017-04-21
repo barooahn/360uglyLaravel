@@ -18,7 +18,7 @@ $(document).ready(function(){
      * This part causes smooth scrolling using scrollto.js
      * We target all a tags inside the nav, and apply the scrollto.js to it.
      */
-    $("nav a, footer a").click(function(evn){
+    $("nav .links a, footer a, .fa-arrow-down").click(function(evn){
         evn.preventDefault();
         $('html,body').scrollTo(this.hash, this.hash); 
     });
@@ -28,7 +28,10 @@ $(document).ready(function(){
      * We use the scroll functionality again, some array creation and 
      * manipulation, class adding and class removing, and conditional testing
      */
-    var aChildren = $("nav li").children(); // find the a children of the list items
+    var aChildren = $("nav .links li").children(); // find the a children of the list items
+    for (child in aChildren) {
+        console.log("child " + child);
+    };
     var aArray = []; // create the empty aArray
     for (var i=0; i < aChildren.length; i++) {    
         var aChild = aChildren[i];

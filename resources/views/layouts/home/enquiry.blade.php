@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <h1>
-                        Order / Enquiry
+                        Enquiry
                     </h1>
                     <h3>
                         <span>
@@ -18,38 +18,32 @@
             <form action="{{ url('/enquiry') }}" class="form" id="order" method="post" role="form">
                     {{ csrf_field() }}
 
-                <div class="form-group row">
-                    <div class="col-md-3 col-md-offset-5">        
-                        <div class="btn-group" data-toggle="buttons">
-                            <label class="btn active">
-                              <input type="radio" name='type' value="order" checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span> Order</span>
-                            </label>
-                            <label class="btn">
-                              <input type="radio" name='type' value="enquiry"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> Enquiry</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
                 <div class="form-group row form-padding">
                     <div class="col-md-3 ">
-                        
-                        <input required class="form-control myform2" id="name1" name="name" placeholder="Your name  *" type="text"/>
-                        
+                        @if (Auth::user())
+                        <input class="form-control myform2" id="name1" value = "{{ Auth::user()->name }}" name="name" placeholder="Your name  *" type="text"/>
+                        @else
+                        <input class="form-control myform2" id="name1" name="name" placeholder="Your name  *" type="text"/>
+                        @endif
                     </div>
                     <div class="col-md-3">
                         <span class="email1 error_message">
                         </span>
-                        <input required class="form-control myform2" id="email1" name="email" placeholder="Your email  *" type="email"/>
+                         @if (Auth::user())
+                        <input class="form-control myform2" id="email1" value = "{{ Auth::user()->email }}" name="email" placeholder="Your email  *" type="email"/>
+                        @else
+                        <input class="form-control myform2" id="email1" name="email" placeholder="Your email  *" type="email"/>
+                        @endif
                     </div>
                     <div class="col-md-3">
                         <span class="telephone1 error_message">
                         </span>
-                        <input class="form-control myform2" id="telephone1" name="telephone" placeholder="Your telphone number" type="text"/>
+                        <input class="form-control myform2" id="phone1" name="phone" placeholder="Your telphone number" type="text"/>
                     </div>
                     <div class="col-md-3">
                         <span class="name1 error_message">
                         </span>
-                        <select class="form-control" id="items" name="items" type="text">
+                        <select class="form-control" id="items" name="item" type="text">
                             <option disabled selected hidden value="">
                                 Number of products
                             </option>
@@ -85,6 +79,12 @@
                 </div>
                 <div class="form-group">
                 <button class="btn btn-primary" type="submit" value="submit">SEND</button>
+                </div>
+
+                <div class="pricing-button">
+                    <a class="btn btn-primary btn-lg" href="{{ url('order') }}">
+                        Order Now
+                    </a>
                 </div>
             </form>
         </div>

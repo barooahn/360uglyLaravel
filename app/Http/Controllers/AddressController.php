@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Enquiry;
-use Illuminate\Support\Facades\Auth;
 
-class EnquiryController extends Controller
+class AddressController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -36,28 +34,7 @@ class EnquiryController extends Controller
      */
     public function store(Request $request)
     {
-        $type = $request->get('type');
-
-        $enquiry = new Enquiry($request->all());
-        if($type == 'order'){
-            $enquiry-> order = 1;
-        } else {
-            $enquiry-> order = 0;
-        }
-        $enquiry -> save();
-
-        if($type == 'order'){
-        //     if(Auth::user()){
-        //         return view('address')->with('item', $enquiry->item);
-        //     }else {
-        //         return view('auth.loginRegister')
-        //             ->with('name', $enquiry->name)
-        //             ->with('email', $enquiry->email);
-        //     }
-            return view('address')->with('item', $enquiry->item);
-        }else {
-            return view('enquiry');
-        }
+        //
     }
 
     /**
@@ -103,15 +80,5 @@ class EnquiryController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function address()
-    {
-        return view('address');
-    }
-
-    public function item()
-    {
-        return view('item');
     }
 }

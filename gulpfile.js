@@ -29,10 +29,14 @@ elixir((mix) => {
     		'header.js',
             'jquery.scrollto.js',
             'smooth-scroll.js' 
-    		])
+    		], 'public/js/all.js')
+        .scripts([
+            'jquery-3.1.1.min.js',
+            'bootstrap.min.js', 
+            'icons.js',
+            ], 'public/js/form.js')
     	.copy(
     		'resources/assets/images', 'public/images')
     	.copy(
-    		'resources/assets/fonts', 'public/fonts');
-       
+    		'resources/assets/fonts', 'public/fonts');     
 });
