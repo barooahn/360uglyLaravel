@@ -21,18 +21,18 @@
                 <div class="form-group row form-padding">
                     <div class="col-md-3 ">
                         @if (Auth::user())
-                        <input class="form-control myform2" id="name1" value = "{{ Auth::user()->name }}" name="name" placeholder="Your name  *" type="text"/>
+                        <input class="form-control myform2" id="name1" value = "{{ Auth::user()->name }}" name="name" placeholder="Your name  *" type="text" required/>
                         @else
-                        <input class="form-control myform2" id="name1" name="name" placeholder="Your name  *" type="text"/>
+                        <input class="form-control myform2" id="name1" name="name" placeholder="Your name  *" type="text" required/>
                         @endif
                     </div>
                     <div class="col-md-3">
                         <span class="email1 error_message">
                         </span>
                          @if (Auth::user())
-                        <input class="form-control myform2" id="email1" value = "{{ Auth::user()->email }}" name="email" placeholder="Your email  *" type="email"/>
+                        <input class="form-control myform2" id="email1" value = "{{ Auth::user()->email }}" name="email" placeholder="Your email  *" type="email" required/>
                         @else
-                        <input class="form-control myform2" id="email1" name="email" placeholder="Your email  *" type="email"/>
+                        <input class="form-control myform2" id="email1" name="email" placeholder="Your email  *" type="email" required/>
                         @endif
                     </div>
                     <div class="col-md-3">

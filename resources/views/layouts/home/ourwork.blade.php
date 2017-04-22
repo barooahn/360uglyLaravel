@@ -51,16 +51,24 @@
                         </div>
                     </div>
                     <div class="info">
+                    <div class="row">
+                        <div class="col-md-6">
+                           
                         <h5>
                             We can provide different sizes and options for the animation.
                         </h5>
                         <button class="btn btn-primary btn-lg">
                             More details
                         </button>
-
-                        <button class="btn btn-primary btn-lg" href="{{ url('order') }}">
-                            Order Now
-                        </button>                    
+                        </div>
+                        <div class="col-md-6">
+                        <div class="pricing-button">
+                            <a class="btn btn-primary btn-lg" href="{{ url('order') }}">
+                                Order Now
+                            </a>
+                        </div>                
+                        </div>
+                        </div>    
 
                     </div>
                 </div>

@@ -29,9 +29,6 @@ $(document).ready(function(){
      * manipulation, class adding and class removing, and conditional testing
      */
     var aChildren = $("nav .links li").children(); // find the a children of the list items
-    for (child in aChildren) {
-        console.log("child " + child);
-    };
     var aArray = []; // create the empty aArray
     for (var i=0; i < aChildren.length; i++) {    
         var aChild = aChildren[i];
@@ -40,7 +37,8 @@ $(document).ready(function(){
     } // this for loop fills the aArray with attribute href values
 
     $(window).scroll(function(){
-        var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+        var windowPos = $(window).scrollTop()+ 12; // get the offset of the window from the top of page
+        console.log("windowPos " + windowPos);
         var windowHeight = $(window).height(); // get the height of the window
         var docHeight = $(document).height();
 
@@ -56,7 +54,7 @@ $(document).ready(function(){
         }
 
         if(windowPos + windowHeight == docHeight) {
-            if (!$("nav li:last-child a").hasClass("nav-active")) {
+            if (!$("nav .links li:last-child a").hasClass("nav-active")) {
                 var navActiveCurrent = $(".nav-active").attr("href");
                 $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
                 $("nav li:last-child a").addClass("nav-active");

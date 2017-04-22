@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Address;
+use Illuminate\Support\Facades\Auth;
 
 class AddressController extends Controller
 {
@@ -23,7 +25,7 @@ class AddressController extends Controller
      */
     public function create()
     {
-        //
+        return view('/address.create')->with('item', session('item'));
     }
 
     /**
@@ -34,7 +36,10 @@ class AddressController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $address = new Address($request->all());
+        $address -> user_id = Auth::user()->id;
+        $address -> save();
+        return redirect('item')->with('item', session('item'));
     }
 
     /**

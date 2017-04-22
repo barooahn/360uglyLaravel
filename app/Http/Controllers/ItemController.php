@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AddressesController extends Controller
+class ItemController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class AddressesController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
@@ -23,7 +23,7 @@ class AddressesController extends Controller
      */
     public function create()
     {
-        //
+        return view('/item.create')->with('item', session('item'));
     }
 
     /**

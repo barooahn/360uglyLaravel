@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Session;
 use App\Order;
+use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 {
@@ -15,8 +15,7 @@ class OrderController extends Controller
      */
     public function index()
     {
-        Session::put('order', '1'); 
-        return view('order');
+        //
     }
 
     /**
@@ -26,7 +25,7 @@ class OrderController extends Controller
      */
     public function create()
     {
-        //
+        return view('order.create');
     }
 
     /**
@@ -37,7 +36,17 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = Auth::user();
+        if($user->name != $request->name  || $user->email != $request->email ){
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->save();
+        }
+        $order = new Order($request->all());
+        $order -> user_id = Auth::user()->id;
+        $order -> save();
+        return redirect('address');
+        //return view('/address.create')->with('item', $order->item);
     }
 
     /**
@@ -48,7 +57,7 @@ class OrderController extends Controller
      */
     public function show($id)
     {
-        //
+        //$order = Order::find($id);
     }
 
     /**

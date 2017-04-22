@@ -17,8 +17,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
-Route::get('/order', 'OrderController@index')->middleware('auth');
+Route::get('/home', 'HomeController@index')->middleware('auth');
 Route::post('/enquiry', 'EnquiryController@store')->middleware('auth');
-Route::post('/address', 'AddressController@address')->middleware('auth');
-Route::post('/item', 'EnquiryController@item')->middleware('auth');
+Route::get('/order', 'OrderController@create')->middleware('auth');
+Route::post('/order', 'OrderController@store')->middleware('auth');
+Route::get('/address', 'AddressController@create')->middleware('auth');
+Route::post('/address', 'AddressController@store')->middleware('auth');
+Route::get('/item', 'ItemController@create')->middleware('auth');
+Route::post('/item', 'ItemController@show')->middleware('auth');

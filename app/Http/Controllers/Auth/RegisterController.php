@@ -37,7 +37,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->redirectTo = url()->previous();
+        $this->redirectTo = url()->previous('/home');
         $this->middleware('guest');
     }
 

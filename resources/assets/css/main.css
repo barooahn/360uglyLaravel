@@ -38,6 +38,10 @@ h1 {
     text-transform: uppercase;
 }
 
+.center {
+    text-align: center;
+}
+
 a{
     color: #e25333;
 }
@@ -105,7 +109,8 @@ header h1, header h4 {
 }
 
 .nav-active {
-    background-color: #e25333;
+    background-color: #e25333 !important;
+    color:white !important;
 }
 ul #login-dp  {
     min-width: 350px;

@@ -12,7 +12,7 @@ class Order extends Model
      * @var array
      */
     protected $fillable = [
-        'item', 'paid', 'phone', 'message'
+        'paid', 'phone', 'message'
     ];
 
      /**
@@ -21,11 +21,6 @@ class Order extends Model
     public function item()
     {
         return $this->hasMany('App\Item');
-    }
-
-    public function enquiry()
-    {
-        return $this->belongsTo('App\Enquiry');
     }
 
     public function user()

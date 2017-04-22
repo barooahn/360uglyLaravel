@@ -36,28 +36,9 @@ class EnquiryController extends Controller
      */
     public function store(Request $request)
     {
-        $type = $request->get('type');
-
         $enquiry = new Enquiry($request->all());
-        if($type == 'order'){
-            $enquiry-> order = 1;
-        } else {
-            $enquiry-> order = 0;
-        }
         $enquiry -> save();
-
-        if($type == 'order'){
-        //     if(Auth::user()){
-        //         return view('address')->with('item', $enquiry->item);
-        //     }else {
-        //         return view('auth.loginRegister')
-        //             ->with('name', $enquiry->name)
-        //             ->with('email', $enquiry->email);
-        //     }
-            return view('address')->with('item', $enquiry->item);
-        }else {
-            return view('enquiry');
-        }
+        return view('/enquiry');
     }
 
     /**
