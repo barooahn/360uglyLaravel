@@ -5,9 +5,20 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Order;
 use Illuminate\Support\Facades\Auth;
+use Session;
 
 class OrderController extends Controller
 {
+     /**
+     * Instantiate a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -25,7 +36,7 @@ class OrderController extends Controller
      */
     public function create()
     {
-        return view('order.create');
+        return view('orders.create');
     }
 
     /**
@@ -45,7 +56,8 @@ class OrderController extends Controller
         $order = new Order($request->all());
         $order -> user_id = Auth::user()->id;
         $order -> save();
-        return redirect('address');
+        Session::put('order_id', $order->id);
+        return redirect('addresses/create');
         //return view('/address.create')->with('item', $order->item);
     }
 

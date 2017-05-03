@@ -18,7 +18,7 @@ class Order extends Model
      /**
      * Get the items for the order.
      */
-    public function item()
+    public function items()
     {
         return $this->hasMany('App\Item');
     }

@@ -14,14 +14,29 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/options', function () {
+    return view('options');
+});
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->middleware('auth');
 Route::post('/enquiry', 'EnquiryController@store')->middleware('auth');
-Route::get('/order', 'OrderController@create')->middleware('auth');
-Route::post('/order', 'OrderController@store')->middleware('auth');
-Route::get('/address', 'AddressController@create')->middleware('auth');
-Route::post('/address', 'AddressController@store')->middleware('auth');
-Route::get('/item', 'ItemController@create')->middleware('auth');
-Route::post('/item', 'ItemController@show')->middleware('auth');
+// Route::get('/order', 'OrderController@create')->middleware('auth');
+// Route::post('/order', 'OrderController@store')->middleware('auth');
+//Route::get('/address', 'AddressController@create')->middleware('auth');
+// Route::post('/address', 'AddressController@store')->middleware('auth');
+// Route::get('/item', 'ItemController@create')->middleware('auth');
+// Route::post('/item', 'ItemController@store')->middleware('auth');
+// Route::get('item/{id}/delete', ['as' => 'item.delete', 'uses' => 'ItemController@destroy'])->middleware('auth');
+Route::get('/confirm', 'ConfirmController@confirm')->middleware('auth');
+
+
+Route::resource('downloads', 'DownloadController');
+Route::resource('orders', 'OrderController');
+Route::resource('addresses', 'AddressController');
+Route::resource('items', 'ItemController');
+
+
+

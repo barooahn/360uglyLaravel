@@ -33,6 +33,19 @@ elixir((mix) => {
         .scripts([
             'jquery-3.1.1.min.js',
             'bootstrap.min.js', 
+            'rotate.min.js',  
+            'icons.js',
+            ], 'public/js/general.js')
+        .scripts([
+            'jquery-3.1.1.min.js',
+            'bootstrap.min.js', 
+            'rotate.min.js',  
+            'icons.js',
+            'options-res-frames.js'
+            ], 'public/js/options.js')
+        .scripts([
+            'jquery-3.1.1.min.js',
+            'bootstrap.min.js', 
             'icons.js',
             ], 'public/js/form.js')
     	.copy(

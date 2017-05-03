@@ -8,6 +8,15 @@ use Illuminate\Support\Facades\Auth;
 
 class AddressController extends Controller
 {
+      /**
+     * Instantiate a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -25,7 +34,12 @@ class AddressController extends Controller
      */
     public function create()
     {
-        return view('/address.create')->with('item', session('item'));
+        if(count(Auth::user()->addresses) > 0){
+            $address = Auth::user()->addresses->last();
+        } else {
+            $address = null;
+        }
+        return view('/addresses.create')->with('address', $address);
     }
 
     /**
@@ -39,7 +53,7 @@ class AddressController extends Controller
         $address = new Address($request->all());
         $address -> user_id = Auth::user()->id;
         $address -> save();
-        return redirect('item')->with('item', session('item'));
+        return redirect('items/create');
     }
 
     /**

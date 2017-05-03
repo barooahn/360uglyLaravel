@@ -368,6 +368,13 @@ ul #login-dp .form-group {
     min-height: 100vh;
 }
 
+.full-height-orange {
+    min-height: 100vh;
+    background-color: #e25333;
+    color: white;
+    padding: 15px;
+}
+
 .how-work, .our-work, .pricing, .contact, .results, .uglyman {
     padding-top: 55px;
 }
@@ -707,11 +714,24 @@ color: #e25333;
 box-shadow: none;
 }
 
-
-
 /*end of fancy radio buttons*/
 
 /*bottom menu*/
+
+.itemthumb {
+    border: 1px;
+    border-style: solid;
+    border-color: #e25333;
+    border-radius: 5px;
+    margin: 15px 2px;
+}
+
+/*options*/
+
+.uglymanLowRes, .uglymanHiRes{
+    
+}
+
 
 footer {
     text-align: center;

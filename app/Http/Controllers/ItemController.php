@@ -3,9 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Item;
+use App\Order;
+use Session;
 
 class ItemController extends Controller
 {
+      /**
+     * Instantiate a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     /**
      * Display a listing of the resource.
      *
@@ -23,7 +36,9 @@ class ItemController extends Controller
      */
     public function create()
     {
-        return view('/item.create')->with('item', session('item'));
+
+        $items = count(Order::find(Session::get('order_id'))->items) > 0 ? Order::find(Session::get('order_id'))->items : null;
+        return view('/items.create')->with('items', $items);
     }
 
     /**
@@ -34,7 +49,10 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $item = new Item($request->all());
+        $item -> order_id = Session::get('order_id');
+        $item -> save();
+        return redirect('items/create');
     }
 
     /**
@@ -79,6 +97,8 @@ class ItemController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $item = Item::find($id);
+        $item->delete();
+        return redirect()->back();
     }
 }

@@ -57,13 +57,13 @@
                         <h5>
                             We can provide different sizes and options for the animation.
                         </h5>
-                        <button class="btn btn-primary btn-lg">
+                        <a class="btn btn-primary btn-lg" href="{{ url('options') }}">
                             More details
-                        </button>
+                        </a>
                         </div>
                         <div class="col-md-6">
                         <div class="pricing-button">
-                            <a class="btn btn-primary btn-lg" href="{{ url('order') }}">
+                            <a class="btn btn-primary btn-lg" href="{{ url('orders/create') }}">
                                 Order Now
                             </a>
                         </div>                

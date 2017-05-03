@@ -26,7 +26,7 @@
                                         </li>
                                     </ul>
                                     <div class="pricing-button">
-                                        <a class="btn btn-primary btn-lg" href="{{ url('order') }}">
+                                        <a class="btn btn-primary btn-lg" href="{{ url('orders/create') }}">
                                             Order Now
                                         </a>
                                     </div>
