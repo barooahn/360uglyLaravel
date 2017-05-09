@@ -38,13 +38,12 @@ class LoginController extends Controller
         $this->middleware('guest', ['except' => 'logout']);
     }
 
-
     public function showLoginForm()
     {
         if(!session()->has('url.intended'))
         {
             session(['url.intended' => url()->previous()]);
         }
-            return view('auth.loginregister');
+            return view('auth.loginRegister');
         }
 }

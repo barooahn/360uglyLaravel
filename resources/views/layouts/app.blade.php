@@ -64,7 +64,8 @@
                             <img class="img-responsive" alt="Brand" src="/images/favicon/ms-icon-310x310.png">
                         </a>
                     </div>
-                   
+                    <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                        <!-- Left Side Of Navbar -->
                         <ul class="nav navbar-nav navbar-right">
                             @if (Auth::guest())
                             <!-- Authentication Links -->
