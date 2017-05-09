@@ -737,7 +737,19 @@ footer {
     text-align: center;
 }
 
+/*login home page*/
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: #e25333;;
+}
+.nav-pills>li>a:hover{
+    background-color: #e25333;;
+    color:white;
+}
 
+.nav-pills>li>a{
+
+    color:#777;
+}
 
 @media screen and (max-width: 988px) {
     footer li a{

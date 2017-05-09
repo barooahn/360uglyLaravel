@@ -17,7 +17,7 @@ var x=data.zoomX,y=data.zoomY;(null==x||null==y)&&(x=data.zoomX=.5,y=data.zoomY=
 
 var is_touch_device = ("ontouchstart" in window) || window.DocumentTouch && document instanceof DocumentTouch;
 $(function () {
-  $('[data-toggle="popover"]').popover({ trigger: is_touch_device ? "hover focus" : "click focus" });
+  $('[data-toggle="popover"]').popover({ trigger: is_touch_device ? "hover focus" : "hover click focus" });
 })
 
 // $(".icons").mouseover(function() {

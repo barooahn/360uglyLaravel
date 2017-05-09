@@ -117,7 +117,7 @@ $(".rollover-modal").click(function(e) {
 
 var is_touch_device = ("ontouchstart" in window) || window.DocumentTouch && document instanceof DocumentTouch;
 $(function () {
-  $('[data-toggle="popover"]').popover({ trigger: is_touch_device ? "hover focus" : "click focus" });
+  $('[data-toggle="popover"]').popover({ trigger: is_touch_device ? "hover focus" : "hover click focus" });
 })
 
 // $(".icons").mouseover(function() {
@@ -128,8 +128,8 @@ $(function () {
 // });
 
 
-var frames = SpriteSpin.sourceArray('images/uglyman2_small/DSC_{frame}.jpg', {
-    frame: [329, 371],
+var frames = SpriteSpin.sourceArray('images/ugly_splash/JPEG/DSC_{frame}.jpg', {
+    frame: [1127, 1171],
     digits: 4
 });
 

@@ -1,5 +1,5 @@
-var frames = SpriteSpin.sourceArray('images/uglyman2_small/DSC_{frame}.jpg', {
-    frame: [329, 371],
+var frames = SpriteSpin.sourceArray('images/ugly_splash/JPEG/DSC_{frame}.jpg', {
+    frame: [1127, 1171],
     digits: 4
 });
 

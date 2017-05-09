@@ -13,7 +13,7 @@ this.activeTarget=b,this.clear();var c=this.selector+'[data-target="'+b+'"],'+th
 
 var is_touch_device = ("ontouchstart" in window) || window.DocumentTouch && document instanceof DocumentTouch;
 $(function () {
-  $('[data-toggle="popover"]').popover({ trigger: is_touch_device ? "hover focus" : "click focus" });
+  $('[data-toggle="popover"]').popover({ trigger: is_touch_device ? "hover focus" : "hover click focus" });
 })
 
 // $(".icons").mouseover(function() {
