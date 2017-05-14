@@ -97,6 +97,9 @@ header h1, header h4 {
 /*navbar {
     position: fixed;
 }*/
+.navbar-default {
+    background-color:white;
+}
 
 .navbar-brand>img {
   height: 100%;
@@ -161,6 +164,15 @@ ul #login-dp .form-group {
 .badge {
     background-color: #8ac926;
 }
+
+.navbar-right .button-menu>a {
+    color:white !important;
+}
+
+.navbar-right .button-menu>a:hover {
+    background: #33a6cc !important;
+}
+
 @media(max-width:768px){
     ul #login-dp{
         background-color: inherit;

@@ -94,7 +94,7 @@
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li>
+                            <li class="button-menu">
                                     <a class="btn btn-primary btn-sm" href="{{ url('orders/create') }}">
                                         Order Now
                                     </a>
