@@ -267,6 +267,10 @@ header h1, header h4 {
     color: #e25333;
 }
 
+.navbar-default .navbar-nav>li>a:hover {
+    color: #e25333;
+}
+
 .nav-active {
     background-color: #e25333 !important;
     color:white !important;
@@ -311,6 +315,10 @@ ul #login-dp .form-group {
 .btn-tw:hover{
     color: #fff;
     background-color:#59b5fa;
+}
+
+.badge {
+    background-color: #8ac926;
 }
 @media(max-width:768px){
     ul #login-dp{
@@ -377,6 +385,13 @@ ul #login-dp .form-group {
 
 .how-work, .our-work, .pricing, .contact, .results, .uglyman {
     padding-top: 55px;
+}
+
+.splash-container {
+    border: 1px;
+    border-style: solid;
+    border-color: #e25333;
+    border-radius: 5px;
 }
 
 
@@ -737,18 +752,33 @@ footer {
     text-align: center;
 }
 
-/*login home page*/
+/*user - home page*/
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    background-color: #e25333;;
+    background-color: #e25333;
+    color:white;
 }
 .nav-pills>li>a:hover{
-    background-color: #e25333;;
+    background-color: #e25333;
     color:white;
 }
 
 .nav-pills>li>a{
 
     color:#777;
+}
+
+.nav-pills a {
+    color: #ffffff;
+}
+
+.nav-pills a:hover {
+    color: white;
+    border-radius: 0px;
+}
+
+.nav-pills .active a:hover {
+    color: white;
+    border-radius: 0px;
 }
 
 @media screen and (max-width: 988px) {

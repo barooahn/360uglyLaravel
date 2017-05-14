@@ -1,8 +1,8 @@
 var framesArray = {
     elephant: {
-        path: 'images/elephant/DSC_{frame}.jpg',
-        start: 407,
-        end: 436,
+        path: 'images/clown/JPEG/DSC_{frame}.jpg',
+        start: 1701,
+        end: 1749,
         digits: 4
     },
     flower2: {

@@ -11,7 +11,7 @@
             </h4>
         </div>
     </header>
-    <div class="uglyman">
+    <div class="uglyman splash-container">
     </div>
     <div class="pricing-button">
         <a class="btn btn-primary btn-lg" href="{{ url('orders/create') }}">

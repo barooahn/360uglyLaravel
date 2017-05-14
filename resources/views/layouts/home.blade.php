@@ -94,6 +94,12 @@
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                    <a class="btn btn-primary btn-sm" href="{{ url('orders/create') }}">
+                                        Order Now
+                                    </a>
+
+                            </li>
                             @if (Auth::guest())
                             <!-- Authentication Links -->
                             <li>
@@ -187,14 +193,19 @@
                             @else
                             <li class="dropdown">
                                 <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-                                    {{ Auth::user()->name }}
+                                    {{ Auth::user()->name }} 
+                                    @if (Auth::user()->count_orders() >0 )
+
+                                        <span class="badge">{{ Auth::user()->count_orders() }}</span>
+
+                                    @endif
                                     <span class="caret">
                                     </span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a href="{{ url('/home') }}" >
-                                            My Orders
+                                        <a href="{{ url('user/home') }}" >
+                                            My Orders <span class="badge">{{ Auth::user()->count_orders() }}</span>
                                         </a>
                                     </li>
                                     <li>
