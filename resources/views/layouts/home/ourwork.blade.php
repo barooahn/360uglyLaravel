@@ -62,11 +62,7 @@
                         </a>
                         </div>
                         <div class="col-md-6">
-                        <div class="pricing-button">
-                            <a class="btn btn-primary btn-lg" href="{{ url('orders/create') }}">
-                                Order Now
-                            </a>
-                        </div>                
+                  
                         </div>
                         </div>    
 

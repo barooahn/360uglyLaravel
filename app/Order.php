@@ -12,7 +12,7 @@ class Order extends Model
      * @var array
      */
     protected $fillable = [
-        'paid', 'phone', 'message'
+        'phone', 'message'
     ];
 
      /**
@@ -26,5 +26,12 @@ class Order extends Model
     public function user()
     {
         return $this->belongsTo('App\User');
+    }
+
+    public static function updateStatus($user_id, $status)
+    {
+        $order = Order::where('user_id', $user_id)->orderBy('created_at', 'desc')->first();
+        $order->status = $status;
+        $order->save();
     }
 }

@@ -18,9 +18,11 @@ Route::get('/options', function () {
     return view('options');
 });
 
-
 Auth::routes();
 
+
+Route::get('clean', 'OrderController@clean');
+Route::get('home', 'UserController@home');
 Route::get('user/home', 'UserController@home');
 Route::get('user/process', 'UserController@process');
 Route::get('user/download', 'UserController@download');

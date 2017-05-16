@@ -13,11 +13,7 @@
     </header>
     <div class="uglyman splash-container">
     </div>
-    <div class="pricing-button">
-        <a class="btn btn-primary btn-lg" href="{{ url('orders/create') }}">
-            Order Now
-        </a>
-    </div>
+
     <div class="arrow bounce">
         <a class="fa fa-arrow-down fa-2x" href="#ourwork">
         </a>

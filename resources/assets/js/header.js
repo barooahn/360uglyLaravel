@@ -1,5 +1,5 @@
 var frames = SpriteSpin.sourceArray('images/ugly_splash/JPEG/DSC_{frame}.jpg', {
-    frame: [1127, 1171],
+    frame: [2314, 2354],
     digits: 4
 });
 

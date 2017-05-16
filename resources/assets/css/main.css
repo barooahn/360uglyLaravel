@@ -36,6 +36,7 @@ h1 {
     color: #e25333;
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 15px;
 }
 
 .center {
@@ -74,6 +75,12 @@ a:hover{
 .btn-primary:active, .btn-primary.active {
     background: #007299;
     box-shadow: none;
+}
+
+.panel-heading {
+    background-color: #f7cb15 !important;
+    color:white #777;
+
 }
 
 header {
@@ -240,21 +247,17 @@ ul #login-dp .form-group {
     padding-top: 55px;
 }
 
-.splash-container {
-    border: 1px;
+/*splash container*/
+.splash-container{
     border-style: solid;
-    border-color: #e25333;
-    border-radius: 5px;
+    border-color: #777;
+    border-width: 0.5px;
 }
 
 
 /*our-work container*/
 
 .thumbs-container a img {
-    border: 1px;
-    border-style: solid;
-    border-color: #e25333;
-    border-radius: 5px;
     margin: 15px 2px;
 }
 
@@ -455,10 +458,10 @@ ul #login-dp .form-group {
 /*pricing*/
 
 .pricing {
-    background-color: #e25333;
+    background-color: #76bed0;
     margin-left: -15px;
     margin-right: -15px;
-    color: #e25333;
+    color: #76bed0;
 }
 
 .pricing h4 {
@@ -468,6 +471,10 @@ ul #login-dp .form-group {
 .pricing-img {
     padding-left: 60px;
     padding-right: 60px;
+}
+
+.pricing .btn {
+    background-color: #76bed0;   
 }
 
 .one-product {

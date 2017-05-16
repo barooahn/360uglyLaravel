@@ -103,6 +103,21 @@ class OrderController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Order::destroy($id);
+    }
+
+    public static function clean()
+    {
+
+        $orders = Order::where('user_id', Auth::user()->id)->get();
+        
+        foreach ($orders as $order) 
+        {
+            if($order->items->count() < 1) 
+            {
+                Order::destroy($order->id);
+            }
+        }
+        return view('welcome');
     }
 }

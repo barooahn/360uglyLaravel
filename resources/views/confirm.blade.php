@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.general')
 
 @section('content')
 <div class="container-fluid">
@@ -25,8 +25,7 @@
 
 						<h2>Address</h2>
 
-						<p>{{$user->addresses->last()->house}}</p>
-						<p>{{$user->addresses->last()->address1}}</p>
+						<p>{{$user->addresses->last()->house}} {{$user->addresses->last()->address1}}</p>
 						<p>{{$user->addresses->last()->address2}}</p>
 						<p>{{$user->addresses->last()->area}}</p>
 						<p>{{$user->addresses->last()->county}}</p>

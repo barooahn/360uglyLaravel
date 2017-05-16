@@ -19,8 +19,7 @@ class CreateOrdersTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('phone')->nullable();
             $table->longText('message')->nullable();  
-            $table->tinyInteger('paid')->default(0);  
-            $table->tinyInteger('downloaded')->default(0);  
+            $table->string('status')->default('delivery');  
             $table->timestamps();
             $table->softDeletes();     
         });

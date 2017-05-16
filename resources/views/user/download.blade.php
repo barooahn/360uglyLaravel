@@ -6,8 +6,8 @@
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
               <li><a href="home">Your Profile</a></li>
-              <li><a href="process">Orders in Process <span class="badge">{{ Auth::user()->process() }}</span></a></li>
-              <li class="active"><a href="download">Awaiting download <span class="badge">{{ Auth::user()->download() }}</span></a></li>
+              <li><a href="process">Orders in Process <span class="badge">{{ Auth::user()->status('process')}}</span></a></li>
+              <li class="active"><a href="download">Awaiting download <span class="badge">{{ Auth::user()->status('download')}}</span></a></li>
             </ul>
         </div>
         <div class="col-md-9">
@@ -18,27 +18,45 @@
 
                     <h1>Orders ready for download</h1>
 
-                    @if($user->download() > 0)
+                    <div class="col-md-12">
+                        @if($user->status('download') > 0)
 
-                        @foreach ($user->getDownload() as $download)
+                            @foreach ($user->getDownload() as $order)
 
-                            <h4>Order number: 000{{$download->id }}</h4>
+                                <h4>Order number: 000{{$order->id }}</h4>
 
-                            @foreach ($download->items as $item)
+                                @foreach ($order->items as $item)
 
-                                <p>Name: {{$item->name}} </p>
-                                <p>Dimensions: {{$item->height}} x {{$item->width}} x {{$item->length}} cm</p>
-                                <p>Weight: {{$item->weight}} kg</p>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p>Name: {{$item->name}} </p>
+                                            <p>Dimensions: {{$item->height}} x {{$item->width}} x {{$item->length}} cm</p>
+                                            <p>Weight: {{$item->weight}} kg</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            Image here
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class = "pricing-button">
+                                                <a class="btn btn-primary btn-sm" href="{{ url('orders/create') }}">
+                                                    Download
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                @endforeach
 
                             @endforeach
 
-                        @endforeach
+                        @else
 
-                    @else
+                            <p>No orders to download</p>
 
-                        <p>No orders to download</p>
+                        @endif
+                    </div>
 
-                    @endif
                 </div>
             </div>
         </div>

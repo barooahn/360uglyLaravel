@@ -6,11 +6,22 @@
         <div class="col-md-6">
             <h1>Collection Address:</h1>
             <div class="panel panel-default">
-                <div class="panel-heading"><h4>Where shall we collect your products from?</h4></div>
+                <div class="panel-heading">
+                    <h4>Where shall we collect your products from?</h4>
+     
+
+                </div>
+
+
                 <div class="panel-body">
+
+                <p>Please note if we collect your product we will use a third party courier.  <b>The courier fee will need to be paid before collection will take place.  The price will depend on the items you wish to have photgraphed.  The fee will be deducted from your final bill.</b></p> 
+
                     @if($address!=null)
-                        <p>{{$address->house}}</p>
-                        <p>{{$address->address1}}</p>
+                    <div class="col-md-6">
+                        
+                    
+                        <p>{{$address->house}} {{$address->address1}}</p>
                         <p>{{$address->address2}}</p>
                         <p>{{$address->area}}</p>
                         <p>{{$address->county}}</p>
@@ -20,6 +31,8 @@
                                 Use this address
                             </a>
                         </div>
+                    </div>
+                    <div class="col-md-6">
                     {{ Form::open(array('route' => array('addresses.store'))) }}
 
                    
@@ -51,6 +64,7 @@
                             {{ Form::submit('Add Address', ['class' => 'btn btn-primary btn-lg']) }}
                         </div>
                     {{ Form::close() }}
+                </div>
                 </div>
             </div>
                     @else

@@ -48,50 +48,44 @@ class User extends Authenticatable
     }
 
 
-    public function process() 
+    public function status(string $type) 
     {
         $orders = $this->orders;
         $count = count($orders); 
         $process = 0;
-        if ($count > 0) 
-        {
-            foreach ($orders as $order)
-            {
-                if($order->paid === 0) 
-                {
-                    $process ++; 
-                }
-            } 
-        return $process;
-        }
-    }
-
-    public function download() 
-    {
-        $orders = $this->orders;
-        $count = count($orders); 
         $download = 0;
         if ($count > 0) 
         {
             foreach ($orders as $order)
             {
-                if($order->downloaded === 0 && $order->paid === 1) 
+                if($order->status !== 'await' && $order->status !== 'downloaded') 
                 {
-                    $download ++; 
-                }
+                    $process ++; 
+                } 
+                if ($order->status === 'await') 
+                {
+                    $download ++;
+                } 
             } 
-        return $download;
         }
+        if($type == 'process') {
+            return $process;    
+        }else {
+            return $download;
+        }
+        
     }
 
     public function getProcess()
     {
-        return $this->orders->where('downloaded', 0);
+        return $this->orders->where(
+            'status', '<>', 'await','status', '<>', 'downloaded'
+        );
     }
 
     public function getDownload()
     {
 
-        return $this->orders->where('paid', 1);
+        return $this->orders->where('status', 'await');
     }
 }

@@ -89,11 +89,7 @@
                         <!--end of row-->
                     </div>
                     <!--end of container-->
-                    <div class="pricing-button">
-                        <a class="btn btn-primary btn-lg" href="{{ url('orders/create') }}">
-                            Order Now
-                        </a>
-                    </div>
+
                 </div>
              
             </div>

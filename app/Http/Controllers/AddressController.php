@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Address;
 use Illuminate\Support\Facades\Auth;
+use App\Order;
 
 class AddressController extends Controller
 {
@@ -50,8 +51,12 @@ class AddressController extends Controller
      */
     public function store(Request $request)
     {
+        $user_id = Auth::user()->id;
+
+        Order::updateStatus($user_id, 'pay1');
+
         $address = new Address($request->all());
-        $address -> user_id = Auth::user()->id;
+        $address -> user_id = $user_id;
         $address -> save();
         return redirect('items/create');
     }

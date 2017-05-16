@@ -37,7 +37,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->redirectTo = url()->previous('user/home');
+        
         $this->middleware('guest');
     }
 
@@ -64,6 +64,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $this->redirectTo = url()->previous('user/home');
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
