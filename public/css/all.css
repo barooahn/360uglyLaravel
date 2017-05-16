@@ -827,7 +827,9 @@ footer {
 
     }
     .arrow {
-        bottom: -60px;
+        bottom: 30px;
+        margin: -15px;
+
     }
 }
 
@@ -849,7 +851,9 @@ footer {
         border-width: 0.5px;
     }
     .arrow {
-        bottom: -60px;
+        bottom: 30px;
+        margin: -15px;
+
     }
 }
 @media screen and (max-width: 988px) {
@@ -870,7 +874,9 @@ footer {
         width:90%  !important;
     }
     .arrow {
-        bottom: -60px;
+        bottom: 30px;
+        margin: -15px;
+
     }
     
 }
