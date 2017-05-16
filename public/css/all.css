@@ -388,7 +388,7 @@ ul #login-dp .form-group {
 
 .uglyman {
     margin: 0 auto;
-    max-width: 40%;
+    max-width: 47%;
 }
 
 .full-height {
@@ -409,7 +409,7 @@ ul #login-dp .form-group {
 /*splash container*/
 .splash-container{
     border-style: solid;
-    border-color: #777;
+    border-color: #ccc;
     border-width: 0.5px;
 }
 
@@ -812,6 +812,18 @@ footer {
         width: 100%;
         min-height: 235px !important;
     }
+
+    .uglyman {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .splash-container{
+        border-style: solid;
+        border-color: #ccc;
+        border-width: 0.5px;
+        max-width: 80%;
+    }
 }
 
 @media screen and (min-width: 988px) {
@@ -838,6 +850,18 @@ footer {
 
     .get-results-btn {
     padding-top: 20px;
+    }
+
+    .uglyman {
+    margin: 0 auto;
+    max-width: 90%;
+    }
+
+    .splash-container{
+        border-style: solid;
+        border-color: #ccc;
+        border-width: 0.5px;
+        max-width: 80%;
     }
 }
 /*# sourceMappingURL=all.css.map */
