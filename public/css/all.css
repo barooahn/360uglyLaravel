@@ -242,6 +242,12 @@ a:hover{
 
 }
 
+.logo img {
+    margin: 0 auto;
+    height: 125px !important;
+    padding-bottom: 20px;
+}
+
 header {
     padding-bottom: 40px !important;
     text-align: left !important;
@@ -250,6 +256,7 @@ header {
 header .logo {
     /*width:470px;*/
     padding-left: 30px;
+    max-width: 15% !important;
 }
 
 header h1, header h4 {
@@ -357,8 +364,8 @@ ul #login-dp .form-group {
     text-align: center;
     margin: 8% 0;
     position: absolute;
-    bottom: -20px;
-    right: 20px
+    bottom: -150px;
+    right: 50%
 }
 
 .arrow a {
@@ -411,6 +418,7 @@ ul #login-dp .form-group {
     border-style: solid;
     border-color: #ccc;
     border-width: 0.5px;
+    width:40%;
 }
 
 
@@ -800,12 +808,32 @@ footer {
     border-radius: 0px;
 }
 
+@media screen and (max-width: 768px) {
+    .thumbs {
+        width: 100%;
+        min-height: 235px !important;
+    }
+
+    .uglyman {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .splash-container{
+        border-style: solid;
+        border-color: #ccc;
+        border-width: 0.5px;
+        max-width: 100%;
+    }
+}
+
 @media screen and (max-width: 988px) {
     footer li a{
     font-size: 10px;
 }
 
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 988px) {
     .thumbs {
@@ -822,7 +850,7 @@ footer {
         border-style: solid;
         border-color: #ccc;
         border-width: 0.5px;
-        max-width: 80%;
+        max-width: 100%;
     }
 }
 
@@ -853,15 +881,15 @@ footer {
     }
 
     .uglyman {
-    margin: 0 auto;
-    max-width: 90%;
+        margin: 0 auto;
+        max-width: 90%;
     }
 
     .splash-container{
         border-style: solid;
         border-color: #ccc;
         border-width: 0.5px;
-        max-width: 80%;
+        max-width: 100%;
     }
 }
 /*# sourceMappingURL=all.css.map */

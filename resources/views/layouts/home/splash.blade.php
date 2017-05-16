@@ -1,17 +1,16 @@
 <div class="full-height">
-    <header class="clearfix">
-        <div class="logo">
-            <h1>
-                Uglymen Productions
-            </h1>
-            <h4>
-                <em>
-                    360 Product Photography
-                </em>
-            </h4>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="logo">
+                <img class="img-responsive" src="/images/logo.png">
+            </div>
         </div>
-    </header>
-    <div class="uglyman splash-container">
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="uglyman splash-container">
+            </div>
+        </div>
     </div>
 
     <div class="arrow bounce">
