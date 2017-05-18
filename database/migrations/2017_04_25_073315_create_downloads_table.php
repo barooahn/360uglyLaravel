@@ -15,9 +15,11 @@ class CreateDownloadsTable extends Migration
     {
         Schema::create('downloads', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->integer('item_id')->unsigned();
+            $table->foreign('item_id')->references('id')->on('items')->onDelete('cascade');
             $table->string('path');
-            $table->tinyInteger('start');
-            $table->tinyInteger('end');
+            $table->Integer('frames');
             $table->tinyInteger('digits');
             $table->timestamps();
         });

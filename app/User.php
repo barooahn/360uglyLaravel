@@ -85,7 +85,21 @@ class User extends Authenticatable
 
     public function getDownload()
     {
-
         return $this->orders->where('status', 'await');
+    }
+
+    public static function getFramesArray($user) {
+
+        $framesArray = [];
+        if($user->status('download') > 0) {
+            
+            foreach ($user->getDownload() as $order) {
+                foreach ($order->items as $item) {
+                    $download = $item->download;              
+                    array_push($framesArray,$download);
+                }
+            }
+        }
+        return $framesArray;
     }
 }

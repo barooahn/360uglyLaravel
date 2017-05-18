@@ -7,7 +7,7 @@
             <ul class="nav nav-pills nav-stacked">
               <li class="active"><a href="home">Your Profile</a></li>
               <li><a href="process">Orders in Process <span class="badge">{{ Auth::user()->status('process')}}</span></a></li>
-              <li><a href="download">Awaiting download <span class="badge">{{ Auth::user()->status('download')}}</span></a></li>
+              <li><a href="download">Ready for download <span class="badge">{{ Auth::user()->status('download')}}</span></a></li>
             </ul>
         </div>
         <div class="col-md-9">
