@@ -28,16 +28,4 @@ class Item extends Model
     {
         return $this->hasOne('App\Download');
     }
-
-    public static function makeDirectory ($item)
-    {
-        $user = $item->order->user;
-        $user_name = substr($user->email, 0, strrpos($user->email, '@'));
-        $path = './uploads/'.$user_name.'/'.$item->order->id.'/'.$item->name;
-        if(!File::exists($path)) {
-            File::makeDirectory($path, 0775, true);
-        }
-        
-    }
-
 }

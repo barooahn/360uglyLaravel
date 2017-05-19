@@ -54,8 +54,8 @@ class DownloadController extends Controller
         $order = $item->order;
         $user = $order->user;
         $user_name = substr($user->email, 0, strrpos($user->email, '@'));
-        $download->name = $item->name.'000'.$order->id.'000'.$item->id; 
-        $download->path = '/uploads/'.$user_name.'/'.$order->id.'/'.$item->name; 
+        $download->name = str_replace(' ', '_', $item->name).'000'.$order->id.'000'.$item->id; 
+        $download->path = $user_name.'/'.$order->id.'/'.$item->name; 
 
         $files = $request->file('files');
 
@@ -64,10 +64,11 @@ class DownloadController extends Controller
             $file_number = 0; 
             foreach ($files as $file) {
                 $filename = $download->name . sprintf('%02d', $file_number).'.jpg';
-                $file->move(base_path().'/public/'.$download->path, $filename);
+                $file->storeAs($download->path, $filename, 'public');
                 $file_number++;
             }
         }
+
 
         $download -> save();
 

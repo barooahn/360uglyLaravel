@@ -51,7 +51,6 @@ class ItemController extends Controller
     {
         $item = new Item($request->all());
         $item -> order_id = Session::get('order_id');
-        Item::makeDirectory($item);
         $item -> save();
         return redirect('items/create');
     }
