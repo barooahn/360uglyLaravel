@@ -24,43 +24,15 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('frames') ? ' has-error' : '' }}">
-                            <label for="frames" class="col-md-4 control-label">Frames</label>
-
-                            <div class="col-md-6">
-                                <input id="frames" type="text" class="form-control" name="frames" required>
-
-                                @if ($errors->has('frames'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('frames') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('digits') ? ' has-error' : '' }}">
-                            <label for="digits" class="col-md-4 control-label">Digits</label>
-
-                            <div class="col-md-6">
-                                <input id="digits" type="text" class="form-control" name="digits" required>
-
-                                @if ($errors->has('digits'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('digits') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('digits') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('files') ? ' has-error' : '' }}">
                             <label for="files" class="col-md-4 control-label">Upload Files</label>
 
                             <div class="col-md-6">
                                 <input type="file" name="files[]" multiple required/>
 
-                                @if ($errors->has('digits'))
+                                @if ($errors->has('files'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('digits') }}</strong>
+                                        <strong>{{ $errors->first('files') }}</strong>
                                     </span>
                                 @endif
                             </div>

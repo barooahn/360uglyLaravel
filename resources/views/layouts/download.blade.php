@@ -241,7 +241,7 @@ $( window ).on( "load", function() {
             //console.log('framesarray', download['name']);
             
             var frames = SpriteSpin.sourceArray( '/storage/'+ download['path'] + '/' + download['name']+'{frame}.jpg', {
-                frame: [0, download['frames']-1],
+                frame: [0, download['frames']],
                 digits: 2
             });
 

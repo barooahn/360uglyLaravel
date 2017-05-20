@@ -55,7 +55,7 @@ class DownloadController extends Controller
         $user = $order->user;
         $user_name = substr($user->email, 0, strrpos($user->email, '@'));
         $download->name = str_replace(' ', '_', $item->name).'000'.$order->id.'000'.$item->id; 
-        $download->path = $user_name.'/'.$order->id.'/'.$item->name; 
+        $download->path = $user_name.'/'.$order->id.'/'.$download->name; 
 
         $files = $request->file('files');
 
@@ -69,10 +69,17 @@ class DownloadController extends Controller
             }
         }
 
+        $download->frames = count($files) -1;
+        $download->digits = 2;
 
         $download -> save();
 
-        Order::updateStatus($user->id, 'await');
+        Download::writeToFile($download);
+
+        if(Download::checkAllItems($order)){
+            Order::updateStatus($user->id, 'await');
+        }
+
         return view('downloads/index');
     }
 
