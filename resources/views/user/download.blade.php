@@ -42,7 +42,7 @@
 
                                         <div class="col-md-4">
                                             <div class = "pricing-button">
-                                                <a class="btn btn-primary btn-sm" href="{{ url('orders/create') }}">
+                                                <a class="btn btn-primary btn-sm" href="{{ url('downloads/download', $item->download->id) }}">
                                                     Download
                                                 </a>
                                             </div>

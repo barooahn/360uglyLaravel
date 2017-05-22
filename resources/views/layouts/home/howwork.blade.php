@@ -26,7 +26,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 icons">
-                                <div class="rollover-how-work" data-content=" We will arrange for a courier to collect your product(s).  Just specify a day that is convienet for you and we will let you know the details when a courier has been arranged." data-placement="auto" data-toggle="popover" title="2. GIVE PRODUCT TO COURIER">
+                                <div class="rollover-how-work" data-content=" We will arrange for a courier to collect your product(s).  Just specify a day that is convenient for you and we will let you know the details when a courier has been arranged." data-placement="auto" data-toggle="popover" title="2. GIVE PRODUCT TO COURIER">
                                     <img class="img-responsive" src="images/hiw-delivery.png">
                                     </img>
                                     <h1>

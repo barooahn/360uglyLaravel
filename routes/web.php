@@ -42,5 +42,5 @@ Route::resource('orders', 'OrderController');
 Route::resource('addresses', 'AddressController');
 Route::resource('items', 'ItemController');
 
-
+Route::get('downloads/download/{id}', 'DownloadController@download');
 

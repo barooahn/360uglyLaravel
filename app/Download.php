@@ -99,5 +99,4 @@ spin.bind(\"onLoad\", function() {
         $zipper->close();
 
     }
-
 }

@@ -127,4 +127,18 @@ class DownloadController extends Controller
     {
         //
     }
+
+    public function download($id)
+    {
+        $download = Download::find($id);
+        $path = 'storage/'.$download->path;
+        $path = str_replace($download->name, '', $path);
+        if (File::exists($path.$download->name.'_with_jquery.zip'))
+        {
+            $path = $path.$download->name.'_with_jquery.zip';
+        }else {
+            $path = $path.$download->name.'_without_jquery.zip';
+        }
+        return view('downloads/download')->with('path', $path);
+    }
 }

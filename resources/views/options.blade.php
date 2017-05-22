@@ -10,9 +10,9 @@
 			Resolution
 		</h2>
 
-		<h5>
+		<p>
 			We use a 3:2 aspect ratio.  You can choose the size of either width or height and the other dimesion will automatically change.  
-		</h5>
+		</p>
 
 		<p>The higher the resolution the clearer the image but the larger the file size and longer to load
 		</p>
@@ -40,9 +40,9 @@
 <div class="resolution full-height-orange">
 	<h2>Frames</h2>
 
-	<h5>
+	<p>
 		More frames gives a smooter animation but comes at the cost of file size and slower load times.
-	</h5>
+	</p>
 	<div>
 		<h5>
 			Example frames
