@@ -1,9 +1,14 @@
 /node_modules
 /public/storage
 /storage/*.key
+!/storage
 /storage/*
-!/storage/app/public/randj/
-!/storage/app/public/ronly/
+!/storage/app
+/storage/app/*
+!/storage/app/public
+/storage/app/public/*
+!/storage/app/public/randj/*
+!/storage/app/public/ronly/*
 /vendor
 /.idea
 Homestead.json
