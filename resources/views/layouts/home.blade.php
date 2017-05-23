@@ -60,10 +60,15 @@
                             <span class="icon-bar">
                             </span>
                         </button>
+                        <a class="btn btn-primary button-menu btn-sm" href="{{ url('orders/create') }}">
+                            Order Now
+                        </a>
+                        
                         <a class="navbar-brand" href="{{ url('/') }}"><span>Ugly360</span>
                             <img class="img-responsive" alt="Brand" src="/images/favicon/ms-icon-310x310.png">
                         </a>
-                    </div>
+                    </div>      
+
                     <div class="collapse navbar-collapse" id="app-navbar-collapse">
                         <!-- Left Side Of Navbar -->
                         <ul class="nav navbar-nav links">
@@ -94,19 +99,8 @@
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="button-menu">
-                                    <a class="btn btn-primary btn-sm" href="{{ url('orders/create') }}">
-                                        Order Now
-                                    </a>
-
-                            </li>
                             @if (Auth::guest())
                             <!-- Authentication Links -->
-                            <li>
-                                <p class="navbar-text">
-                                    Already have an account?
-                                </p>
-                            </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                     <b>

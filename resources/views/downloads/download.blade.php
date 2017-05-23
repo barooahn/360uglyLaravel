@@ -24,7 +24,7 @@
 
 					<h3>UNZIP FILES TO SAME DIRECTORY AS WEBPAGE DISPLAYING 360 PRODUCT</h3>
 
-					<img src="/images/zip_download_files.png">
+					<img class="img-responsive" src="/images/zip_download_files.png">
 
 					<h3>COPY AND PASTE THIS CODE TO YOUR WEBSITE</h3> 
 												<pre><xmp><script src="randj.js"></script>
@@ -58,7 +58,7 @@
 						<p>Once you have downloaded your file you should have a Zip file, which should be something like Example00020002.zip.   
 						Note: The numbers will be different for your download. </p>
 
-						<img src="/images/zip.png">
+						<img class="img-responsive" src="/images/zip.png">
 
 
 						<h3>UNZIP TO YOUR WEBSITE </h3>
@@ -68,14 +68,14 @@
 
 						<p>Extract the files to the directory you wish to use your 360 Image.</p> 
 
-						<img src="/images/zip_download_files.png">
+						<img class="img-responsive" src="/images/zip_download_files.png">
 
 						<p>Here myWebsite.html is the site you wish to use the 360 download in.  The other 2 files and folder are your download.</p> 
 
 						<h3>SAMPLE WEBSITE WITH 360 PRODUCT CALLED: EXAMPLE00020002 </h3>
 						<p>If we look in the myWebsite.html file: </p>
 
-						<img src="/images/download_website_html.png">
+						<img class="img-responsive" src="/images/download_website_html.png">
 
 						<h3>WHAT DO I DO? </h3>
 						<p>There are 3 lines of code you will need to add: </p>

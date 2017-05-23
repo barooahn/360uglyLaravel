@@ -103,11 +103,6 @@
                         </li>
                         @if (Auth::guest())
                         <!-- Authentication Links -->
-                        <li>
-                            <p class="navbar-text">
-                                Already have an account?
-                            </p>
-                        </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                 <b>

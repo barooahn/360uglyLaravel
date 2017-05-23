@@ -49,6 +49,7 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <!-- Collapsed Hamburger -->
+
                         <button class="navbar-toggle collapsed" data-target="#app-navbar-collapse" data-toggle="collapse" type="button">
                             <span class="sr-only">
                                 Toggle Navigation
@@ -60,6 +61,9 @@
                             <span class="icon-bar">
                             </span>
                         </button>
+                        <a class="btn btn-primary button-menu btn-sm" href="{{ url('orders/create') }}">
+                            Order Now
+                        </a>
                         <a class="navbar-brand" href="{{ url('/') }}"><span>Ugly360</span>
                             <img class="img-responsive" alt="Brand" src="/images/favicon/ms-icon-310x310.png">
                         </a>
@@ -94,20 +98,8 @@
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="button-menu">
- 
-                                    <a class="btn btn-primary btn-sm" href="{{ url('orders/create') }}">
-                                        Order Now
-                                    </a>
- 
-                            </li>
                             @if (Auth::guest())
                             <!-- Authentication Links -->
-                            <li>
-                                <p class="navbar-text">
-                                    Already have an account?
-                                </p>
-                            </li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                     <b>

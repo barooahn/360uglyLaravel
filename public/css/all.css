@@ -241,10 +241,15 @@ a:hover{
     box-shadow: none;
 }
 
+.button-menu {
+    margin-top:2px;
+    float:right;
+    margin-right: 10px;
+}
+
 .panel-heading {
     background-color: #f7cb15 !important;
     color:white #777;
-
 }
 
 .logo img {
@@ -895,6 +900,18 @@ pre{
         bottom: 30px;
         margin: -15px;
 
+    }
+
+    .contact{
+        padding-top: 0;
+    }
+    .dropdown-menu{
+        display: block;
+        position: static;
+        background-color:transparent;
+        border:0 none;
+        box-shadow:none;
+        margin-top:0;
     }
     
 }

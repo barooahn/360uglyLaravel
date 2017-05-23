@@ -28,32 +28,37 @@ elixir((mix) => {
     		'icons.js',
     		'header.js',
             'jquery.scrollto.js',
-            'smooth-scroll.js' 
+            'smooth-scroll.js',
+            'general.js' 
     		], 'public/js/all.js')
         .scripts([
             'jquery-3.1.1.min.js',
             'bootstrap.min.js', 
             'rotate.min.js',  
-            'icons.js'
+            'icons.js',
+            'general.js' 
             ], 'public/js/general.js')
         .scripts([
             'jquery-3.1.1.min.js',
             'bootstrap.min.js', 
             'rotate.min.js',  
             'icons.js',
-            'options-res-frames.js'
+            'options-res-frames.js',
+            'general.js' 
             ], 'public/js/options.js')
         .scripts([
             'jquery-3.1.1.min.js',
             'bootstrap.min.js', 
             'rotate.min.js',  
             'icons.js',
-            'download.js'
+            'download.js',
+            'general.js' 
             ], 'public/js/download.js')
         .scripts([
             'jquery-3.1.1.min.js',
             'bootstrap.min.js', 
             'icons.js',
+            'general.js' 
             ], 'public/js/form.js')
     	.copy(
     		'resources/assets/images', 'public/images')

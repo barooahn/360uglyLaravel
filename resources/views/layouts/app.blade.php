@@ -49,17 +49,6 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <!-- Collapsed Hamburger -->
-                        <button class="navbar-toggle collapsed" data-target="#app-navbar-collapse" data-toggle="collapse" type="button">
-                            <span class="sr-only">
-                                Toggle Navigation
-                            </span>
-                            <span class="icon-bar">
-                            </span>
-                            <span class="icon-bar">
-                            </span>
-                            <span class="icon-bar">
-                            </span>
-                        </button>
                         <a class="navbar-brand" href="{{ url('clean') }}"><span>Ugly360</span>
                             <img class="img-responsive" alt="Brand" src="/images/favicon/ms-icon-310x310.png">
                         </a>
