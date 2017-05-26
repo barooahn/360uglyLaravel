@@ -22,6 +22,8 @@ class CreateItemsTable extends Migration
             $table->tinyInteger('length');
             $table->tinyInteger('width');
             $table->tinyInteger('weight');
+            $table->tinyInteger('price');
+            $table->boolean('return')->default(0);
             $table->timestamps();
             $table->softDeletes(); 
         });

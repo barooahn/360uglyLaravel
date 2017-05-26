@@ -13,7 +13,14 @@
                 <h4>{{$item->name}}</h4>
                 <p>Dimensions: {{$item->height}} x {{$item->width}} x {{$item->length}} cm</p>
                 <p>Weight: {{$item->weight}} kg</p>
-                <div class="center">
+                <p>Price: £{{sprintf("%01.2f", $item->price)}}</p>
+                @if($item->return == 0)
+                    <p>Return item: N</p>
+                @else
+                    <p>Return item: Y</p>
+                @endif
+
+                <div class="pricing-button">
                      {{ Form::open(array('url' => 'items/' . $item->id, 'class' => '')) }}
                     {{ Form::hidden('_method', 'DELETE') }}
                     {{ Form::submit('Delete', array('class' => 'btn btn-warning')) }}
@@ -69,7 +76,11 @@
 
                 <div class="form-group">
                     <input class="form-control" id="weight" name="weight" placeholder="How much does the product weigh? (kg)  *" type="text" required/>
-                </div>          
+                </div>    
+
+                <div class="form-group">
+                    <input type="checkbox" name="return" value="1"> I would like my item returned  <b>Note: A surcharge of £5 is added to your bill</b><br>
+                </div>        
 
                 <div class="pricing-button">
                     <button class="btn btn-primary btn-lg" type="submit" value="submit">Add Product</button>

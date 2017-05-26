@@ -41,6 +41,7 @@ Route::resource('downloads', 'DownloadController');
 Route::resource('orders', 'OrderController');
 Route::resource('addresses', 'AddressController');
 Route::resource('items', 'ItemController');
+Route::resource('payment', 'PaypalPaymentController');
+Route::get('payment/store', 'PaypalPaymentController@store');
 
 Route::get('downloads/download/{id}', 'DownloadController@download');
-

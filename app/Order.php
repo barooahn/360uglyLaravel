@@ -34,4 +34,15 @@ class Order extends Model
         $order->status = $status;
         $order->save();
     }
+
+    public static function orderPrice($orderId)
+    {
+        $order = Order::find($orderId);
+        $items = $order->items;
+        $price = 0;
+        foreach ($items as $item) {
+            $price += $item->price;
+        }
+        return $price;
+    }
 }

@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "11446685ece2b1253d13b14b3fa8669e",
+    "content-hash": "c39d9a9ace28f7d4e86d42e0da242ad8",
     "packages": [
+        {
+            "name": "anouar/paypalpayment",
+            "version": "2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anouarabdsslm/laravel-paypalpayment.git",
+                "reference": "732f911dcdfb1c1a43bf03a1cfb5e45ddc32fec5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anouarabdsslm/laravel-paypalpayment/zipball/732f911dcdfb1c1a43bf03a1cfb5e45ddc32fec5",
+                "reference": "732f911dcdfb1c1a43bf03a1cfb5e45ddc32fec5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "illuminate/support": "~5.0",
+                "paypal/rest-api-sdk-php": "1.11.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Anouar\\Paypalpayment": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Anouar Abdessalam",
+                    "email": "dtekind@gmail.com"
+                }
+            ],
+            "description": "laravel-paypalpayment is simple package help you process direct credit card payments, stored credit card payments and PayPal account payments with your L4 projects using paypal REST API SDK.",
+            "time": "2017-05-22T16:04:46+00:00"
+        },
         {
             "name": "barryvdh/laravel-debugbar",
             "version": "v2.3.2",
@@ -539,16 +582,16 @@
         },
         {
             "name": "laravelcollective/html",
-            "version": "v5.3.1",
+            "version": "v5.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LaravelCollective/html.git",
-                "reference": "2f7f2e127c6fed47f269ea29ab5efeb8f65e9d35"
+                "reference": "299f3dccd61c3f6d89ebb9b10f36fb2a9aee5206"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/2f7f2e127c6fed47f269ea29ab5efeb8f65e9d35",
-                "reference": "2f7f2e127c6fed47f269ea29ab5efeb8f65e9d35",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/299f3dccd61c3f6d89ebb9b10f36fb2a9aee5206",
+                "reference": "299f3dccd61c3f6d89ebb9b10f36fb2a9aee5206",
                 "shasum": ""
             },
             "require": {
@@ -589,7 +632,7 @@
             ],
             "description": "HTML and Form Builders for the Laravel Framework",
             "homepage": "http://laravelcollective.com",
-            "time": "2016-12-13T14:23:36+00:00"
+            "time": "2017-05-21T22:00:10+00:00"
         },
         {
             "name": "league/flysystem",
@@ -1008,6 +1051,55 @@
                 "random"
             ],
             "time": "2017-03-13T16:27:32+00:00"
+        },
+        {
+            "name": "paypal/rest-api-sdk-php",
+            "version": "1.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paypal/PayPal-PHP-SDK.git",
+                "reference": "7e664f12be32b975575371e8ad3bc17b6b318851"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paypal/PayPal-PHP-SDK/zipball/7e664f12be32b975575371e8ad3bc17b6b318851",
+                "reference": "7e664f12be32b975575371e8ad3bc17b6b318851",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.3.0",
+                "psr/log": "^1.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PayPal": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "PayPal",
+                    "homepage": "https://github.com/paypal/rest-api-sdk-php/contributors"
+                }
+            ],
+            "description": "PayPal's PHP SDK for REST APIs",
+            "homepage": "http://paypal.github.io/PayPal-PHP-SDK/",
+            "keywords": [
+                "payments",
+                "paypal",
+                "rest",
+                "sdk"
+            ],
+            "time": "2016-12-14T21:59:21+00:00"
         },
         {
             "name": "psr/log",
@@ -2811,16 +2903,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.7.19",
+            "version": "5.7.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "69c4f49ff376af2692bad9cebd883d17ebaa98a1"
+                "reference": "3cb94a5f8c07a03c8b7527ed7468a2926203f58b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/69c4f49ff376af2692bad9cebd883d17ebaa98a1",
-                "reference": "69c4f49ff376af2692bad9cebd883d17ebaa98a1",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3cb94a5f8c07a03c8b7527ed7468a2926203f58b",
+                "reference": "3cb94a5f8c07a03c8b7527ed7468a2926203f58b",
                 "shasum": ""
             },
             "require": {
@@ -2838,7 +2930,7 @@
                 "phpunit/php-timer": "^1.0.6",
                 "phpunit/phpunit-mock-objects": "^3.2",
                 "sebastian/comparator": "^1.2.4",
-                "sebastian/diff": "~1.2",
+                "sebastian/diff": "^1.4.3",
                 "sebastian/environment": "^1.3.4 || ^2.0",
                 "sebastian/exporter": "~2.0",
                 "sebastian/global-state": "^1.1",
@@ -2889,7 +2981,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-04-03T02:22:27+00:00"
+            "time": "2017-05-22T07:42:55+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -3061,16 +3153,16 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "3c7d21999e815cdfac70c6c7d79d3a9cb1bc7bc2"
+                "reference": "7f066a26a962dbe58ddea9f72a4e82874a3975a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/3c7d21999e815cdfac70c6c7d79d3a9cb1bc7bc2",
-                "reference": "3c7d21999e815cdfac70c6c7d79d3a9cb1bc7bc2",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/7f066a26a962dbe58ddea9f72a4e82874a3975a4",
+                "reference": "7f066a26a962dbe58ddea9f72a4e82874a3975a4",
                 "shasum": ""
             },
             "require": {
@@ -3109,7 +3201,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2017-05-18T13:44:30+00:00"
+            "time": "2017-05-22T07:24:03+00:00"
         },
         {
             "name": "sebastian/environment",

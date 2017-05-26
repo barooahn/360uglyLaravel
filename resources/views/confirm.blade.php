@@ -36,7 +36,9 @@
 						@foreach($order->items as $item)
 						<p>Item number: 000{{$item->id}}
 						<p>{{$item->name}}</p>
+						<p>£{{sprintf("%01.2f", $item->price)}}</p>
 						@endforeach
+						<p><b>Order total: £{{sprintf("%01.2f", App\Order::orderPrice($order->id))}}
 					</div>
 				</div>
 			</div>
