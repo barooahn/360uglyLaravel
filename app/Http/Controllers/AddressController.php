@@ -105,4 +105,10 @@ class AddressController extends Controller
     {
         //
     }
+
+    public function useExisting($user_id)
+    {
+        Order::updateStatus($user_id, 'pay1');
+        return redirect('items/create');
+    }
 }

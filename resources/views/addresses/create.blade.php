@@ -27,7 +27,7 @@
                         <p>{{$address->county}}</p>
                         <p>{{$address->postcode}}</p>
                         <div class="pricing-button">
-                            <a class="btn btn-primary btn-lg" href="{{ url('items/create') }}">
+                            <a class="btn btn-primary btn-lg" href="{{ url('address/existing', $address->user->id) }}">
                                 Use this address
                             </a>
                         </div>

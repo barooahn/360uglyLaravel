@@ -8,10 +8,10 @@ use App\Order;
 
 class Item extends Model
 {
-    public const ONE = 97;
-    protected const TWO = 77;
-    protected const FIVE = 57;
-    protected const DELIVERY = 5;
+    public static $ONE = 97;
+    protected static $TWO = 77;
+    protected static $FIVE = 57;
+    protected static $DELIVERY = 5;
         /**
      * The attributes that are mass assignable.
      *
@@ -41,16 +41,16 @@ class Item extends Model
         $count = count($order->items);
         switch ($count) {
             case ($count==1):
-                $pricePerItem = Item::ONE;
-                Item::updatePricing($order, Item::ONE);
+                $pricePerItem = Item::$ONE;
+                Item::updatePricing($order, Item::$ONE);
                 break;
             case ($count>1 && $count<5):
-                $pricePerItem = Item::TWO;
-                Item::updatePricing($order, Item::TWO);
+                $pricePerItem = Item::$TWO;
+                Item::updatePricing($order, Item::$TWO);
                 break;
             case ($count>=5):
-                $pricePerItem = Item::FIVE;
-                Item::updatePricing($order, Item::FIVE);
+                $pricePerItem = Item::$FIVE;
+                Item::updatePricing($order, Item::$FIVE);
                 break;
             default:
                 $pricePerItem = 0;
@@ -64,7 +64,7 @@ class Item extends Model
         foreach ($order->items as $item) {
             if($item->return == 1)
             {
-                $item->price = $price + Item::DELIVERY;
+                $item->price = $price + Item::$DELIVERY;
             }else {
                 $item->price = $price;
             }

@@ -39,7 +39,14 @@ class DownloadController extends Controller
      */
     public function create()
     {
-        return view('downloads/create');
+        $orders = Order::where('status', 'pay1')->get();
+        $items = [];
+        foreach ($orders as $order) {
+            foreach ($order->items as $item) {
+                array_push($items, $item->id);
+            }
+        }
+        return view('downloads/create')->with('items', $items);
     }
 
     /**
@@ -51,7 +58,7 @@ class DownloadController extends Controller
     public function store(Request $request)
     {
         $download = new Download($request->all());
-        $item = Item::find($download->item_id);
+        $item = Item::findorFail($download->item_id);
         $order = $item->order;
         $user = $order->user;
         $user_name = substr($user->email, 0, strrpos($user->email, '@'));

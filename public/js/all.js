@@ -129,7 +129,7 @@ $(function () {
 
 
 var frames = SpriteSpin.sourceArray('images/ugly_splash/JPEG/DSC_{frame}.jpg', {
-    frame: [2314, 2354],
+    frame: [0514, 0555],
     digits: 4
 });
 
@@ -249,8 +249,8 @@ $(document).ready(function(){
 });
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-$('.nav a').on('click', function(){
-    $('.navbar-toggle').click() //bootstrap 3.x by Richard
-});
+	$('.nav a').on('click', function(){
+	    $('.navbar-toggle').click() //bootstrap 3.x by Richard
+	});
 }
 //# sourceMappingURL=all.js.map

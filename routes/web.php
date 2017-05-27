@@ -40,6 +40,7 @@ Route::get('/confirm', 'ConfirmController@confirm')->middleware('auth');
 Route::resource('downloads', 'DownloadController');
 Route::resource('orders', 'OrderController');
 Route::resource('addresses', 'AddressController');
+Route::resource('address/existing', 'AddressController@useExisting');
 Route::resource('items', 'ItemController');
 Route::resource('payment', 'PaypalPaymentController');
 Route::get('payment/store', 'PaypalPaymentController@store');

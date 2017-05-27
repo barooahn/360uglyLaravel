@@ -14,8 +14,13 @@
                             <label for="item_id" class="col-md-4 control-label">Item_id</label>
 
                             <div class="col-md-6">
-                                <input id="item_id" type="text" class="form-control" name="item_id" value="{{ old('item_id') }}" required autofocus>
-
+                                <select id="item_id" type="select" class="form-control" name="item_id" value="{{ old('item_id') }}" required autofocus>
+                                    @foreach($items as $item)
+                                    <option value="{{$item}}">
+                                       {{$item}}
+                                    @endforeach
+                                    </option>
+                                   </select>
                                 @if ($errors->has('item_id'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('item_id') }}</strong>

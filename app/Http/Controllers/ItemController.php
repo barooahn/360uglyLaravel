@@ -51,7 +51,7 @@ class ItemController extends Controller
     {
         $item = new Item($request->all());
         $item->order_id = Session::get('order_id');
-        $item->price = Item::ONE;
+        $item->price = Item::$ONE;
         $item-> save();
         $item->price = Item::priceOrder(Session::get('order_id'));
         return redirect('items/create');
