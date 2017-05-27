@@ -425,9 +425,6 @@ ul #login-dp .form-group {
 
 /*splash container*/
 .splash-container{
-    border-style: solid;
-    border-color: #ccc;
-    border-width: 0.5px;
     width:40%;
 }
 
@@ -844,9 +841,7 @@ pre{
     }
 
     .splash-container{
-        border-style: solid;
-        border-color: #ccc;
-        border-width: 0.5px;
+
 
     }
     .arrow {
@@ -869,9 +864,7 @@ pre{
     }
 
     .splash-container{
-        border-style: solid;
-        border-color: #ccc;
-        border-width: 0.5px;
+
     }
     .arrow {
         bottom: 30px;
@@ -891,9 +884,7 @@ pre{
     }
 
     .splash-container{
-        border-style: solid;
-        border-color: #ccc;
-        border-width: 0.5px;
+
         width:90%  !important;
     }
     .arrow {
@@ -946,9 +937,7 @@ pre{
     }
 
     .splash-container{
-        border-style: solid;
-        border-color: #ccc;
-        border-width: 0.5px;
+
     }
 }
 /*# sourceMappingURL=all.css.map */

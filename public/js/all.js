@@ -16,9 +16,9 @@ var x=data.zoomX,y=data.zoomY;(null==x||null==y)&&(x=data.zoomX=.5,y=data.zoomY=
 
 var framesArray = {
     elephant: {
-        path: 'images/clown/JPEG/DSC_{frame}.jpg',
-        start: 1701,
-        end: 1749,
+        path: 'images/elephant/DSC_{frame}.jpg',
+        start: 407,
+        end: 437,
         digits: 4
     },
     flower2: {
@@ -130,7 +130,7 @@ $(function () {
 
 var frames;
 var frames = SpriteSpin.sourceArray('images/ugly_splash/JPEG/DSC_{frame}.jpg', {
-    frame: [514, 555],
+    frame: [667, 709],
     digits: 4
 });
 
