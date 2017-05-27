@@ -5,9 +5,9 @@
     <div class="row">
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
-              <li><a href="home">Your Profile</a></li>
-              <li class="active"><a href="process">Orders in Process <span class="badge">{{ Auth::user()->status('process')}}</span></a></li>
-              <li><a href="download">Ready for download <span class="badge">{{ Auth::user()->status('download')}}</span></a></li>
+              <li><a href="/user/home">Your Profile</a></li>
+              <li class="/user/active"><a href="process">Orders in Process <span class="badge">{{ Auth::user()->status('process')}}</span></a></li>
+              <li><a href="/user/download">Ready for download <span class="badge">{{ Auth::user()->status('download')}}</span></a></li>
           </ul>
       </div>
       <div class="col-md-9">

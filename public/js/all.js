@@ -128,8 +128,9 @@ $(function () {
 // });
 
 
+var frames;
 var frames = SpriteSpin.sourceArray('images/ugly_splash/JPEG/DSC_{frame}.jpg', {
-    frame: [0514, 0555],
+    frame: [514, 555],
     digits: 4
 });
 
