@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Auth;
 use Session;
 use App\Order;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\CollectProduct;
 
 class ConfirmController extends Controller
 {
@@ -27,6 +29,9 @@ class ConfirmController extends Controller
     {
         $user = Auth::user();
         $order = Order::find(Session::get('order_id'));
+        $items = $order->items;
+        $address = $user->addresses->last();
+        Mail::to($user)->queue(new CollectProduct($order, $user, $items, $address));
         return view('confirm')->with('user', $user)->with('order', $order);
     }
 }

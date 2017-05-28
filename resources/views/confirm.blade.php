@@ -18,7 +18,7 @@
 				</div>
 				<div class="panel-body">
 					<div class="col-xs-12">
-						<h5>Order number: 000{{$order->id}} 
+						<h5>Order number: {{sprintf('%04d', $order->id)}} 
 						<h2>User</h2>
 						<p>{{$user->name}}</p>
 						<p>{{$user->email}}</p>
@@ -36,9 +36,9 @@
 						@foreach($order->items as $item)
 						<p>Item number: 000{{$item->id}}
 						<p>{{$item->name}}</p>
-						<p>£{{sprintf("%01.2f", $item->price)}}</p>
+						<p>Price: £{{sprintf("%01.2f", $item->price)}}</p>
 						@endforeach
-						<p><b>Order total: £{{sprintf("%01.2f", App\Order::orderPrice($order->id))}}
+						<p><b>Order total: £{{sprintf("%01.2f", App\Order::orderPrice($order->id))}}</b></p>
 					</div>
 				</div>
 			</div>

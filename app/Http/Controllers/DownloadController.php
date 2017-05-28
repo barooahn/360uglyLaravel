@@ -62,7 +62,7 @@ class DownloadController extends Controller
         $order = $item->order;
         $user = $order->user;
         $user_name = substr($user->email, 0, strrpos($user->email, '@'));
-        $download->name = str_replace(' ', '_', $item->name).'000'.$order->id.'000'.$item->id; 
+        $download->name = str_replace(' ', '_', $item->name). sprintf('%04d', $order->id).sprintf('%04d', $item->id); 
         $download->path = $user_name.'/'.$order->id.'/'.$download->name; 
 
         $files = $request->file('files');

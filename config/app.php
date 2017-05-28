@@ -183,6 +183,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Chumper\Zipper\ZipperServiceProvider::class,
         Anouar\Paypalpayment\PaypalpaymentServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class,
 
     ],
 
