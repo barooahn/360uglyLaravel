@@ -36,9 +36,8 @@ class ItemController extends Controller
      */
     public function create()
     {
-
-        $items = count(Order::find(Session::get('order_id'))->items) > 0 ? Order::find(Session::get('order_id'))->items : null;
-        return view('/items.create')->with('items', $items);
+        $order = Order::find(Session::get('order_id'));
+        return view('/items.create')->with('order', $order);
     }
 
     /**
@@ -53,7 +52,12 @@ class ItemController extends Controller
         $item->order_id = Session::get('order_id');
         $item->price = Item::$ONE;
         $item-> save();
-        $item->price = Item::priceOrder(Session::get('order_id'));
+        $order = Order::find($item->order_id);
+        $item->price = Item::priceOrder($order);
+        if(!$order->post){
+            Item::costCollection($order);
+        }
+        Order::orderPrice($order->id);
         return redirect('items/create');
     }
 
@@ -100,8 +104,11 @@ class ItemController extends Controller
     public function destroy($id)
     {
         $item = Item::find($id);
+        $order = $item->order;
         $item->delete();
-        Item::priceOrder($item->order_id);
+        Item::costCollection($order);
+        Item::priceOrder($order);
+        Order::orderPrice($order->id);
         return redirect()->back();
     }
 }

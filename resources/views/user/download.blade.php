@@ -23,14 +23,14 @@
 
                             @foreach ($user->getDownload() as $order)
 
-                                <h4>Order number: 000{{$order->id }}</h4>
+                                <h4>Order number:{{sprintf('%04d', $order->id)}} </h4>
 
                                 @foreach ($order->items as $item)
 
                                     <div class="row">
                                         <div class="col-md-4">
                                             <p>Name: {{$item->name}} </p>
-                                            <p>Item number: 000{{$item->id}} </p>
+                                            <p>Item number: {{sprintf('%04d', $item->id)}}  </p>
                                             <p>Dimensions: {{$item->height}} x {{$item->width}} x {{$item->length}} cm</p>
                                             <p>Weight: {{$item->weight}} kg</p>
                                         </div>

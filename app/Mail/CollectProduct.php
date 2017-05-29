@@ -26,7 +26,9 @@ class CollectProduct extends Mailable
         $this->order = $order->toArray();
         $this->items = $items->toArray();
         $this->user = $user->toArray();
-        $this->address = $address->toArray();
+        if ($address != null){
+            $this->address = $address->toArray();
+        }
     }
 
     /**

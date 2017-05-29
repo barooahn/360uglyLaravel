@@ -116,6 +116,11 @@ header h1, header h4 {
     margin-bottom: 0;
 }
 
+.tablerow{
+    border-top: solid;
+    border-width: 1px;
+}
+
 /*nav*/
 
 /*navbar {

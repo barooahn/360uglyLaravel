@@ -114,7 +114,7 @@
                     <p>address here</p>
                 </div>
                 <div class="pricing-button">
-                    <a class="btn btn-primary btn-lg" href="{{ url('items/create') }}">
+                    <a class="btn btn-primary btn-lg" href="{{ url('/address/self', Session::get('order_id')) }}">
                         Continue
                     </a>
                 </div>

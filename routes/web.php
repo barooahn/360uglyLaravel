@@ -39,10 +39,12 @@ Route::get('/confirm', 'ConfirmController@confirm')->middleware('auth');
 
 Route::resource('downloads', 'DownloadController');
 Route::resource('orders', 'OrderController');
+Route::get('orders/arrived/{id}', 'OrderController@arrived');
 Route::resource('addresses', 'AddressController');
 Route::get('address/existing/{id}', 'AddressController@useExisting');
+Route::get('address/self/{id}', 'AddressController@postSelf');
 Route::resource('items', 'ItemController');
 Route::resource('payment', 'PaypalPaymentController');
-Route::get('payment/store', 'PaypalPaymentController@store');
+
 
 Route::get('downloads/download/{id}', 'DownloadController@download');

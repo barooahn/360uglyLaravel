@@ -120,4 +120,11 @@ class OrderController extends Controller
         }
         return view('welcome');
     }
+
+    public function arrived($order_id)
+    {
+        $order = Order::find($order_id);
+        $order->updateStatus('process');
+        return redirect()->back();
+    }
 }

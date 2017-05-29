@@ -40,6 +40,14 @@ class Download extends Model
         return $check = count($items) == $count ? true : false;
     }
 
+    public static function checkDelivery($order)
+    {
+        if($order->status == 'delivery_paid'){
+            return true;
+        }
+        return false;
+    }
+
     public static function writeToFile($download)
         {
 

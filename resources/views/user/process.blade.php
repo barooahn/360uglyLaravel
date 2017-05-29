@@ -24,14 +24,14 @@
 
                 @if($order->items->count() > 0)
 
-                <h4>Order number: 000{{$order->id }}</h4>
+                <h4>Order number: {{sprintf('%04d', $order->id)}} </h4>
 
                 <div class="row">
                     <div class="col-md-4">
                         @foreach ($order->items as $item)
 
                         <p>Name: {{$item->name}} </p>
-                        <p>Item number: 000{{$item->id}} </p>
+                        <p>Item number: {{sprintf('%04d', $item->id)}}  </p>
                         <p>Dimensions: {{$item->height}} x {{$item->width}} x {{$item->length}} cm</p>
                         <p>Weight: {{$item->weight}} kg</p>
                         @endforeach
@@ -59,24 +59,12 @@
                 </div>
 
                 <div class="col-md-4">
-
                     @if ($order->status == 'pay1')
                         <div class = "pricing-button">
-                            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
-                                <input type="hidden" name="cmd" value="_cart">
-                                <input type="hidden" name="upload" value="1">
-                                <input type="hidden" name="business" value="barooahn@gmail.com">
-                                <input type="hidden" name="currency_code" value="GBP">
-
-                                <?php $count=0;?>
-                                @foreach ($order->items as $item)
-                                <?php $count++; ?>
-                                <input type="hidden" name="item_name_{{$count}}" value="{{$item->name}}">
-                                <input type="hidden" name="amount_{{$count}}" value="{{$item->price}}">
-                                <input type="hidden" name="shipping_{{$count}}" value="0">
-
-                                @endforeach
-                                <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png" alt="PayPal Checkout"/>
+                            {{ Form::open(array('route' => array('payment.store', $order))) }}
+                                 <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png" alt="PayPal Checkout"/>
+                                  <input type="hidden" name="order_id" value="{{$order->id}}">
+                            {{ Form::close() }}
 
                         </div>
                     @elseif ($order->status == 'delivery') 
@@ -85,7 +73,7 @@
                         <p>Please wait and check back here soon.</p>
                     @elseif ($order->status == 'pay2') 
                         <div class = "pricing-button">
-                            <a class="btn btn-primary btn-sm" href="{{ url('payment/store') }}">
+                            <a class="btn btn-primary btn-sm" href="{{ url('payment') }}">
                                 Pay now
                             </a>
                         </div>

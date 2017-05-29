@@ -35,26 +35,28 @@ class Item extends Model
         return $this->hasOne('App\Download');
     }
 
-    public static function priceOrder($orderId)
+    public static function priceOrder($order)
     {
-        $order = Order::find($orderId);
-        $count = count($order->items);
-        switch ($count) {
-            case ($count==1):
-                $pricePerItem = Item::$ONE;
-                Item::updatePricing($order, Item::$ONE);
-                break;
-            case ($count>1 && $count<5):
-                $pricePerItem = Item::$TWO;
-                Item::updatePricing($order, Item::$TWO);
-                break;
-            case ($count>=5):
-                $pricePerItem = Item::$FIVE;
-                Item::updatePricing($order, Item::$FIVE);
-                break;
-            default:
-                $pricePerItem = 0;
-                break;
+        $pricePerItem = 0;
+        if(count($order->items) > 0){
+            $count = count($order->items);
+            switch ($count) {
+                case ($count==1):
+                    $pricePerItem = Item::$ONE;
+                    Item::updatePricing($order, Item::$ONE);
+                    break;
+                case ($count>1 && $count<5):
+                    $pricePerItem = Item::$TWO;
+                    Item::updatePricing($order, Item::$TWO);
+                    break;
+                case ($count>=5):
+                    $pricePerItem = Item::$FIVE;
+                    Item::updatePricing($order, Item::$FIVE);
+                    break;
+                default:
+                    $pricePerItem = 0;
+                    break;
+            }
         }
         return $pricePerItem;
     }
@@ -68,7 +70,73 @@ class Item extends Model
             }else {
                 $item->price = $price;
             }
-            $item->save();
+            $item->update();
         }
+    }
+
+    public static function costCollection($order)
+
+    {
+        $cost = 0;
+        $height = 0;
+        $width = 0;
+        $length = 0;
+        $weight = 0;
+        foreach ($order->items as $item) {
+            $height += $item->height;
+            $width += $item->width;
+            $length += $item->length;
+            $weight += $item->weight;
+        }
+
+        switch ($height) {
+            case $height > 40 && $height < 80:
+                $cost += 7;
+                break;    
+            case $height >= 80:
+                $cost += 9;
+                break;
+            default:
+                break;
+        }
+        switch ($width) {
+            case $width > 40 && $width < 80:
+                $cost += 7;
+                break;    
+            case $width >= 80:
+                $cost += 9;
+                break;
+            default:
+                break;
+        }
+        switch ($length) {
+            case $length > 40 && $length < 80:
+                $cost += 7;
+                break;    
+            case $length >= 80:
+                $cost += 9;
+                break;
+            default:
+                break;
+        } 
+        switch ($weight) {
+            case $weight > 2 && $weight < 5:
+                $cost += 7;
+                break; 
+            case $weight >= 5 && $weight < 10:
+                $cost += 9;
+                break;    
+            case $weight >= 10:
+                $cost += 12;
+                break;
+            default:
+                break;
+        }   
+
+             
+
+        $order->delivery_price = $cost;
+        $order->update();
+        return $cost;
     }
 }

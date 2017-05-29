@@ -28,11 +28,10 @@ class Order extends Model
         return $this->belongsTo('App\User');
     }
 
-    public static function updateStatus($user_id, $status)
+    public function updateStatus($status)
     {
-        $order = Order::where('user_id', $user_id)->orderBy('created_at', 'desc')->first();
-        $order->status = $status;
-        $order->save();
+        $this->status = $status;
+        $this->update();
     }
 
     public static function orderPrice($orderId)
@@ -43,6 +42,14 @@ class Order extends Model
         foreach ($items as $item) {
             $price += $item->price;
         }
+        $order->total_price = $price;
+        $order->update(); 
         return $price;
+    }
+
+    public static function postSelf($order)
+    {
+        $order->post = 1;
+        $order->update();
     }
 }

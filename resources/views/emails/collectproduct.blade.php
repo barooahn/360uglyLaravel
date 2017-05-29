@@ -9,6 +9,18 @@
 
 **Order number: 000{{$order['id']}}**
 
+@if($address == null)
+
+Please post the items to the following address
+
+<p>360Ugly</p> 
+<p>175 Redgate</p>
+<p>Ormskirk</p>
+<p>West Lancashire</p>
+<p>L39 3NW</p>
+
+@else
+
 We will collect the products from this address 
 Please contact us if this is incorrect
 
@@ -18,12 +30,12 @@ Please contact us if this is incorrect
 <p>{{$address['county']}}</p>
 <p>{{$address['postcode']}}</p>
 
-
+@endif
 
 **You have ordered the following products**
 @component('mail::table')
-| name          	| Number        	 | Price    							  |
-| :---------------: |:-----------------: | -------------------------------------: |
+| Item Name         | Item Number        | Item Price    						  |
+| :---------------- |:------------------ | -------------------------------------: |
 @foreach($items as $item)
 | {{$item['name']}} | 000{{$item['id']}} | £{{sprintf("%01.2f", $item['price'])}} |
 @endforeach
@@ -32,7 +44,7 @@ Please contact us if this is incorrect
 Order total: £{{sprintf("%01.2f", App\Order::orderPrice($order['id']))}}
 
 
-@component('mail::button', ['url' => 'http://ugly360.dev/user/process'])
+@component('mail::button', ['url' => 'http://ugly360.com/user/process'])
 Check Order Status
 @endcomponent
 

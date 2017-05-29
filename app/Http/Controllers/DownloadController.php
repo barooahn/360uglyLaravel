@@ -29,7 +29,8 @@ class DownloadController extends Controller
      */
     public function index()
     {
-        return view('downloads/index');
+        $orders = Order::where('status', '<>', 'await')->get();
+        return view('downloads/index')->with('orders', $orders);
     }
 
     /**
@@ -39,7 +40,7 @@ class DownloadController extends Controller
      */
     public function create()
     {
-        $orders = Order::where('status', 'pay1')->get();
+        $orders = Order::where('status', 'process')->get();
         $items = [];
         foreach ($orders as $order) {
             foreach ($order->items as $item) {
@@ -85,10 +86,10 @@ class DownloadController extends Controller
         Download::writeToFile($download);
 
         if(Download::checkAllItems($order)){
-            Order::updateStatus($user->id, 'await');
+           $order->updateStatus('await');
         }
 
-        return view('downloads/index');
+        return redirect()->action('DownloadController@index');
     }
 
     /**

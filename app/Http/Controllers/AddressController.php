@@ -51,12 +51,13 @@ class AddressController extends Controller
      */
     public function store(Request $request)
     {
-        $user_id = Auth::user()->id;
+        $user = Auth::user();
+        $order = $user->orders->last();
 
-        Order::updateStatus($user_id, 'pay1');
+        $order->updateStatus('pay1');
 
         $address = new Address($request->all());
-        $address -> user_id = $user_id;
+        $address -> user_id = $user->id;
         $address -> save();
         return redirect('items/create');
     }
@@ -109,6 +110,12 @@ class AddressController extends Controller
     public function useExisting($user_id)
     {
         Order::updateStatus($user_id, 'pay1');
+        return redirect('items/create');
+    }
+
+    public function postSelf($order_id)
+    {
+        Order::postSelf(Order::find($order_id));
         return redirect('items/create');
     }
 }

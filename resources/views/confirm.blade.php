@@ -23,6 +23,8 @@
 						<p>{{$user->name}}</p>
 						<p>{{$user->email}}</p>
 
+						@if($user->addresses->last() != null)
+
 						<h2>Address</h2>
 
 						<p>{{$user->addresses->last()->house}} {{$user->addresses->last()->address1}}</p>
@@ -31,6 +33,7 @@
 						<p>{{$user->addresses->last()->county}}</p>
 						<p>{{$user->addresses->last()->postcode}}</p>
 
+						@endif
 
 						<h2>Products</h2>
 						@foreach($order->items as $item)
