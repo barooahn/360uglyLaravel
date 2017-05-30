@@ -38,16 +38,9 @@ class DownloadController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($item_id)
     {
-        $orders = Order::where('status', 'process')->get();
-        $items = [];
-        foreach ($orders as $order) {
-            foreach ($order->items as $item) {
-                array_push($items, $item->id);
-            }
-        }
-        return view('downloads/create')->with('items', $items);
+        return view('downloads/create')->with('item_id', $item_id);
     }
 
     /**
@@ -86,7 +79,7 @@ class DownloadController extends Controller
         Download::writeToFile($download);
 
         if(Download::checkAllItems($order)){
-           $order->updateStatus('await');
+           $order->updateStatus('pay2');
         }
 
         return redirect()->action('DownloadController@index');

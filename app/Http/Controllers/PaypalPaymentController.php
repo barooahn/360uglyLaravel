@@ -7,6 +7,7 @@ use Paypalpayment;
 use Session;
 use App\Order;
 use Redirect;
+use App\PaypalIPN;
 
 class PaypalPaymentController extends Controller
 {
@@ -176,5 +177,22 @@ class PaypalPaymentController extends Controller
        $payment = Paypalpayment::getById($payment_id,$this->_apiContext);
                dd('show');
        dd($payment);
+    }
+
+    public function check()
+    {
+       $ipn = new PaypalIPN();
+        // Use the sandbox endpoint during testing.
+        $ipn->useSandbox();
+        $verified = $ipn->verifyIPN();
+        if ($verified) {
+            /*
+             * Process IPN
+             * A list of variables is available here:
+             * https://developer.paypal.com/webapps/developer/docs/classic/ipn/integration-guide/IPNandPDTVariables/
+             */
+            dd('verified');
+        }
+
     }
 }

@@ -11,23 +11,12 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('item_id') ? ' has-error' : '' }}">
-                            <label for="item_id" class="col-md-4 control-label">Item_id</label>
+                            <label for="item_id" class="col-md-4 control-label">Item_id: {{$item_id}}</label>
 
-                            <div class="col-md-6">
-                                <select id="item_id" type="select" class="form-control" name="item_id" value="{{ old('item_id') }}" required autofocus>
-                                    @foreach($items as $item)
-                                    <option value="{{$item}}">
-                                       {{$item}}
-                                    @endforeach
-                                    </option>
-                                   </select>
-                                @if ($errors->has('item_id'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('item_id') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
+                            <input type="hidden" name="item_id" value="{{$item_id}}">
                         </div>
+
+
 
                         <div class="form-group{{ $errors->has('files') ? ' has-error' : '' }}">
                             <label for="files" class="col-md-4 control-label">Upload Files</label>

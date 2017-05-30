@@ -31,6 +31,11 @@ class ConfirmController extends Controller
         $order = Order::find(Session::get('order_id'));
         $items = $order->items;
         $address = $user->addresses->last();
+
+        if($order->post == 1){
+            $order->updateStatus('delivery');
+        }
+
         Mail::to($user)->queue(new CollectProduct($order, $user, $items, $address));
         return view('confirm')->with('user', $user)->with('order', $order);
     }

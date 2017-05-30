@@ -42,6 +42,12 @@
 						<p>Price: £{{sprintf("%01.2f", $item->price)}}</p>
 						@endforeach
 						<p><b>Order total: £{{sprintf("%01.2f", App\Order::orderPrice($order->id))}}</b></p>
+
+                        <div class = "pricing-button">
+                            <a class="btn btn-primary btn-sm" href="{{ url('user/process') }}">
+                                Check Order
+                            </a>
+                        </div>
 					</div>
 				</div>
 			</div>

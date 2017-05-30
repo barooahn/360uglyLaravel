@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Address;
 use Illuminate\Support\Facades\Auth;
 use App\Order;
+use App\User;
 
 class AddressController extends Controller
 {
@@ -109,7 +110,9 @@ class AddressController extends Controller
 
     public function useExisting($user_id)
     {
-        Order::updateStatus($user_id, 'pay1');
+        $user = User::find($user_id);
+        $order = $user->orders->last();
+        $order->updateStatus('pay1');
         return redirect('items/create');
     }
 

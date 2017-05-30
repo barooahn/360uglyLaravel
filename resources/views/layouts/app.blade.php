@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta content="{{ csrf_token() }}" name="csrf-token">
     <title>
-        {{ config('app.name', 'Ugly360') }}
+        {{ config('app.name', '360Ugly') }}
     </title>
     <meta content="Blueprint: " name="description"/>
     <meta content="" name="keywords"/>
@@ -49,7 +49,7 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <!-- Collapsed Hamburger -->
-                        <a class="navbar-brand" href="{{ url('clean') }}"><span>Ugly360</span>
+                        <a class="navbar-brand" href="{{ url('clean') }}"><span>360Ugly</span>
                             <img class="img-responsive" alt="Brand" src="/images/favicon/ms-icon-310x310.png">
                         </a>
                     </div>

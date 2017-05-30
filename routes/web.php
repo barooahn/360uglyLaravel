@@ -27,13 +27,7 @@ Route::get('user/home', 'UserController@home');
 Route::get('user/process', 'UserController@process');
 Route::get('user/download', 'UserController@download');
 Route::post('/enquiry', 'EnquiryController@store')->middleware('auth');
-// Route::get('/order', 'OrderController@create')->middleware('auth');
-// Route::post('/order', 'OrderController@store')->middleware('auth');
-//Route::get('/address', 'AddressController@create')->middleware('auth');
-// Route::post('/address', 'AddressController@store')->middleware('auth');
-// Route::get('/item', 'ItemController@create')->middleware('auth');
-// Route::post('/item', 'ItemController@store')->middleware('auth');
-// Route::get('item/{id}/delete', ['as' => 'item.delete', 'uses' => 'ItemController@destroy'])->middleware('auth');
+
 Route::get('/confirm', 'ConfirmController@confirm')->middleware('auth');
 
 
@@ -48,3 +42,6 @@ Route::resource('payment', 'PaypalPaymentController');
 
 
 Route::get('downloads/download/{id}', 'DownloadController@download');
+Route::get('downloads/create/{id}', 'DownloadController@create');
+
+Route::get('payment/check', 'PaypalPaymentController@check');
