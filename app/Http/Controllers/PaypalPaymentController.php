@@ -191,7 +191,7 @@ class PaypalPaymentController extends Controller
              * A list of variables is available here:
              * https://developer.paypal.com/webapps/developer/docs/classic/ipn/integration-guide/IPNandPDTVariables/
              */
-            dd('verified');
+            DB::insert('insert into payments (id, pay1) values (?, ?)', [1, 1]);
         }
 
     }
