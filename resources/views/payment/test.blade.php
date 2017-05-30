@@ -1,4 +1,4 @@
-<form target="_new" action="http://ugly360.com/payment/check" method="POST">
+<form target="_new" action="http://360ugly.com/payment/check" method="POST">
   <input name="mc_gross" type="hidden" value="500.00" />
   <input name="custom" type="hidden" value="some custom data" />
   <input name="address_status" type="hidden" value="confirmed" />

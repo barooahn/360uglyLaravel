@@ -40,10 +40,10 @@
                         @php
                             switch ($order->status) {
                                 case 'pay1':
-                                    echo'Pay now for collection of product(s) only';
+                                    echo'Pay now for courier collection of product(s) only';
                                     break;
                                 case 'delivery':
-                                    echo'Collection is in process';
+                                    echo'We are awaiting products in our office';
                                     break;
                                 case 'process':
                                     echo'We are currently processing your order';
@@ -61,10 +61,10 @@
                 <div class="col-md-4">
                     @if ($order->status == 'pay1')
                         <div class = "pricing-button">
-                            {{ Form::open(array('route' => array('payment.store', $order))) }}
+                            <form action="{{ url('/payment') }}" class="form" id="order" method="get" role="form">
                                  <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png" alt="PayPal Checkout"/>
                                   <input type="hidden" name="order_id" value="{{$order->id}}">
-                            {{ Form::close() }}
+                            </form>
 
                         </div>
                     @elseif ($order->status == 'delivery') 

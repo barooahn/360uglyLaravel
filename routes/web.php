@@ -38,11 +38,10 @@ Route::resource('addresses', 'AddressController');
 Route::get('address/existing/{id}', 'AddressController@useExisting');
 Route::get('address/self/{id}', 'AddressController@postSelf');
 Route::resource('items', 'ItemController');
-Route::resource('payment', 'PaypalPaymentController');
 
-
+Route::get('payment', 'PayPalPaymentController@getCheckout');
+Route::get('payment/done', 'PaypalPaymentController@getDone');
+Route::post('payment/done', 'PaypalPaymentController@getDone');
 Route::get('downloads/download/{id}', 'DownloadController@download');
 Route::get('downloads/create/{id}', 'DownloadController@create');
 
-Route::post('payment/check', 'PaypalPaymentController@check');
-Route::get('payment/test', 'PaypalPaymentController@test');

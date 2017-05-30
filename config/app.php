@@ -182,8 +182,8 @@ return [
 
         Barryvdh\Debugbar\ServiceProvider::class,
         Chumper\Zipper\ZipperServiceProvider::class,
-        Anouar\Paypalpayment\PaypalpaymentServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
+        Netshell\Paypal\PaypalServiceProvider::class,
 
     ],
 
@@ -235,7 +235,8 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Zipper' => Chumper\Zipper\Zipper::class,
-        'Paypalpayment'   => Anouar\Paypalpayment\Facades\PaypalPayment::class,
+        'Paypal' => Netshell\Paypal\Facades\Paypal::class,
+
 
 
 
