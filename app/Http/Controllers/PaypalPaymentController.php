@@ -195,4 +195,10 @@ class PaypalPaymentController extends Controller
         }
 
     }
+
+    public function test()
+    {
+        return view('payment/test');
+
+    }
 }

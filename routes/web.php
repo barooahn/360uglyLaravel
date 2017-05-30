@@ -44,4 +44,5 @@ Route::resource('payment', 'PaypalPaymentController');
 Route::get('downloads/download/{id}', 'DownloadController@download');
 Route::get('downloads/create/{id}', 'DownloadController@create');
 
-Route::get('payment/check', 'PaypalPaymentController@check');
+Route::post('payment/check', 'PaypalPaymentController@check');
+Route::get('payment/test', 'PaypalPaymentController@test');
