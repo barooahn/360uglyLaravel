@@ -20,6 +20,8 @@ Route::get('/options', function () {
 
 Auth::routes();
 
+Route::get('register/verify/{token}', 'Auth\RegisterController@verify'); 
+
 
 Route::get('clean', 'OrderController@clean');
 Route::get('home', 'UserController@home');

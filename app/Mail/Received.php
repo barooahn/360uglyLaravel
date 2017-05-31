@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class Download extends Mailable
+class Received extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -34,7 +34,7 @@ class Download extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.download')
+        return $this->markdown('emails.received')
         ->with(
             ['order', $this->order],
             ['user', $this->user],

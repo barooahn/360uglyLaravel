@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Order;
 use Illuminate\Support\Facades\Auth;
 use Session;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\Received;
 
 class OrderController extends Controller
 {
@@ -125,6 +127,9 @@ class OrderController extends Controller
     {
         $order = Order::find($order_id);
         $order->updateStatus('process');
+        $user = $order->user;
+        $items = $order->items;
+        Mail::to($user)->queue(new Received($order, $user, $items));
         return redirect()->back();
     }
 }

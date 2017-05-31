@@ -74,7 +74,14 @@
                             </button>
                             <h4 class="modal-title" id="exampleModalLabel">
                                 Spin with mouse or touch
-                            </h4>
+
+                            <a class="icon-size" data-dismiss="modal">
+                                <img src="images/icons/close.png">
+                            </a>
+                            <a class="full-screen icon-size">
+                                <img src="images/icons/005-arrows.png">
+                            </a>
+                                                        </h4>
                         </div>
                         <div class="modal-body">
                             <div class="loader">
@@ -90,14 +97,6 @@
                             </div>
                             <div class="modal-spin">
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-default" data-dismiss="modal" type="button">
-                                Close
-                            </button>
-                            <button class="btn btn-primary full-screen" type="button">
-                                Full Screen
-                            </button>
                         </div>
                     </div>
                 </div>

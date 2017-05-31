@@ -5,34 +5,10 @@
 
 # Thank you for your order {{$user['name']}}
 
-## Please print this page and send with your products 
-
 **Order number: 000{{$order['id']}}**
 
-@if($address == null)
+**The following products have arrived at our studio.**
 
-Please post the items to the following address
-
-<p>360Ugly</p> 
-<p>175 Redgate</p>
-<p>Ormskirk</p>
-<p>West Lancashire</p>
-<p>L39 3NW</p>
-
-@else
-
-We will collect the products from this address 
-Please contact us if this is incorrect
-
-<p>{{$address['house']}} {{$address['address1']}}</p>
-<p>{{$address['address2']}}</p>
-<p>{{$address['area']}}</p>
-<p>{{$address['county']}}</p>
-<p>{{$address['postcode']}}</p>
-
-@endif
-
-**You have ordered the following products**
 @component('mail::table')
 | Item Name         | Item Number        | Item Price    						  |
 | :---------------- |:------------------ | -------------------------------------: |
@@ -41,8 +17,11 @@ Please contact us if this is incorrect
 @endforeach
 @endcomponent
 
-Order total: £{{sprintf("%01.2f", App\Order::orderPrice($order['id']))}}
+We will begin processing your 360 images straight away
 
+Click the button below to see the current status of your order.
+
+We will email you again when your product is ready for download.
 
 @component('mail::button', ['url' => 'http://360ugly.com/user/process'])
 Check Order Status

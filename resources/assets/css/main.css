@@ -202,6 +202,14 @@ ul #login-dp .form-group {
     background: #33a6cc !important;
 }
 
+.icon-size img{
+    width:25px;
+    margin: 0 15px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+}
+
 @media(max-width:768px){
     ul #login-dp{
         background-color: inherit;
