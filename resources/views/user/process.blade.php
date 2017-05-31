@@ -61,7 +61,7 @@
                 <div class="col-md-4">
                     @if ($order->status == 'pay1')
                         <div class = "pricing-button">
-                            <form action="{{ url('/payment') }}" class="form" id="order" method="get" role="form">
+                            <form action="{{ url('payment/collection', $order) }}" class="form" id="order" method="get" role="form">
                                  <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png" alt="PayPal Checkout"/>
                                   <input type="hidden" name="order_id" value="{{$order->id}}">
                             </form>
@@ -73,9 +73,10 @@
                         <p>Please wait and check back here soon.</p>
                     @elseif ($order->status == 'pay2') 
                         <div class = "pricing-button">
-                            <a class="btn btn-primary btn-sm" href="{{ url('payment') }}">
-                                Pay now
-                            </a>
+                            <form action="{{ url('/payment/download', $order) }}" class="form" id="order" method="get" role="form">
+                                 <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png" alt="PayPal Checkout"/>
+                                  <input type="hidden" name="order_id" value="{{$order->id}}">
+                            </form>
                         </div>
                     @elseif ($order->status == 'await') 
                     @else

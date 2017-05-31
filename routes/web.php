@@ -41,8 +41,9 @@ Route::get('address/existing/{id}', 'AddressController@useExisting');
 Route::get('address/self/{id}', 'AddressController@postSelf');
 Route::resource('items', 'ItemController');
 
-Route::get('payment', 'PayPalPaymentController@getCheckout');
-Route::get('payment/done', 'PaypalPaymentController@getDone');
+Route::get('payment/collection/{id}', 'PayPalPaymentController@getCheckout');
+Route::get('payment/download/{id}', 'PayPalPaymentController@getCheckoutDownload');
+//Route::get('payment/done', 'PaypalPaymentController@getDone');
 Route::post('payment/done', 'PaypalPaymentController@getDone');
 Route::get('downloads/download/{id}', 'DownloadController@download');
 Route::get('downloads/create/{id}', 'DownloadController@create');

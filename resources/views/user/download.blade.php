@@ -41,7 +41,13 @@
                                         </div>
 
                                         <div class="col-md-4">
-                                            @if($item->download)
+                                            @if ($order->status == 'pay2') 
+                                            <div class = "pricing-button">
+                                                <a class="btn btn-primary btn-sm" href="{{ url('payment') }}">
+                                                    Pay now
+                                                </a>
+                                            </div>
+                                            @elseif($item->download)
                                                 <div class = "pricing-button">
                                                     <a class="btn btn-primary btn-sm" href="{{ url('downloads/download', $item->download->id) }}">
                                                         Download
