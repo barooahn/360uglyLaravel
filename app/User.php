@@ -91,13 +91,13 @@ class User extends Authenticatable
     public function getProcess()
     {
         return $this->orders->where(
-            'status', '<>', 'await','status', '<>', 'downloaded'
+            'status', '<>', 'pay2','status', '<>', 'download'
         );
     }
 
     public function getDownload()
     {
-        return $this->orders->where('status', 'pay2')->where('status', 'download');
+        return $this->orders->whereIn('status', ['download','pay2']);
     }
 
     public static function getFramesArray($user) {

@@ -44,7 +44,7 @@
 
                                             @if ($order->status == 'pay2') 
                                                 <div class = "pricing-button">
-                                                    <form action="{{ url('/payment/download', $order) }}" class="form" id="order" method="get" role="form">
+                                                    <form action="{{ url('/payment/download', $item) }}" class="form" id="order" method="get" role="form">
                                                          <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png" alt="PayPal Checkout"/>
                                                           <input type="hidden" name="order_id" value="{{$order->id}}">
                                                     </form>

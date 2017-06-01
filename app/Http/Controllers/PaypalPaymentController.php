@@ -80,37 +80,30 @@ class PayPalPaymentController extends Controller
         return Redirect::to( $redirectUrl );
     }
 
-    public function getCheckoutDownload($order_id)
+    public function getCheckoutDownload($item_id)
     {
 
-        $order = Order::findorFail($order_id);
-        $invoice = str_random(10).$order_id; 
-        $price = $order->total_price;
+        $item = Item::findorFail($item_id);
+        $order = $item->order;
+        $invoice = str_random(10).$order->id; 
+        $price = $item->price;
 
         $payer = PayPal::Payer();
         $payer->setPaymentMethod('paypal');
 
-        $item  = array();
-        $items = array();
-        $count = 0;
-            foreach ($order->items as $product) {
-            $count++;    
-                $item[$count] = PayPal::item();
-                $item[$count]->setName($product->name)
-                    ->setDescription('Dimensions: '.$product->length.' x '.$product->width.' x '.$product->height.' cm Weight: '.$product->weight)
+                $item1 = PayPal::item();
+                $item1->setName($item->name)
+                    ->setDescription('Dimensions: '.$item->length.' x '.$item->width.' x '.$item->height.' cm Weight: '.$item->weight)
                     ->setCurrency('GBP')
                     ->setQuantity(1)
-                    ->setPrice($product->price);
-        
-            $items[] = $item[$count];
-            }
+                    ->setPrice($item->price);
 
         $itemList = PayPal::itemList();
-        $itemList->setItems($items);  
+        $itemList->setItems(array($item1));  
 
         $amount = PayPal:: Amount();
         $amount->setCurrency('GBP');
-        $amount->setTotal($price); // This is the simple way,
+        $amount->setTotal($item->price); // This is the simple way,
         // you can alternatively describe everything in the order separately;
         // Reference the PayPal PHP REST SDK for details.
 
