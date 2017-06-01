@@ -132,8 +132,11 @@ class Item extends Model
             default:
                 break;
         }   
-
-             
+     
+        if($cost == 0) 
+        {
+            $cost = 5;
+        }   
 
         $order->delivery_price = $cost;
         $order->update();

@@ -29,7 +29,7 @@ class DownloadController extends Controller
      */
     public function index()
     {
-        $orders = Order::where('status', '<>', 'await')->get();
+        $orders = Order::where('status', '<>', 'pay2')->get();
         return view('downloads/index')->with('orders', $orders);
     }
 

@@ -48,9 +48,6 @@
                                 case 'process':
                                     echo'We are currently processing your order';
                                     break;
-                                case 'pay2':
-                                    echo'Your order is ready.  Pay now to enable download';
-                                    break;
                                 default:
                                     echo'No data';
                             }
@@ -71,14 +68,6 @@
                         <p>delivery</p>
                     @elseif ($order->status == 'process') 
                         <p>Please wait and check back here soon.</p>
-                    @elseif ($order->status == 'pay2') 
-                        <div class = "pricing-button">
-                            <form action="{{ url('/payment/download', $order) }}" class="form" id="order" method="get" role="form">
-                                 <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png" alt="PayPal Checkout"/>
-                                  <input type="hidden" name="order_id" value="{{$order->id}}">
-                            </form>
-                        </div>
-                    @elseif ($order->status == 'await') 
                     @else
                     <p>'No action required'</p>      
                     @endif

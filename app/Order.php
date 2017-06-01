@@ -28,6 +28,11 @@ class Order extends Model
         return $this->belongsTo('App\User');
     }
 
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
     public function updateStatus($status)
     {
         $this->status = $status;
@@ -44,6 +49,7 @@ class Order extends Model
         }
         $order->total_price = $price;
         $order->update(); 
+        if($price == 0 )
         return $price;
     }
 

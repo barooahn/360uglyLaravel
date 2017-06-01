@@ -56,8 +56,8 @@ class OrderController extends Controller
             $user->save();
         }
         $order = new Order($request->all());
-        $order -> user_id = Auth::user()->id;
-        $order -> save();
+        $order ->user_id = Auth::user()->id;
+        $order ->save();
         Session::put('order_id', $order->id);
         return redirect('addresses/create');
         //return view('/address.create')->with('item', $order->item);

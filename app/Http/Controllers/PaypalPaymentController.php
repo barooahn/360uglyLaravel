@@ -36,13 +36,12 @@ class PayPalPaymentController extends Controller
     public function getCheckout($order_id)
     {
         $order = Order::findorFail($order_id);
+        $invoice = str_random(10).$order_id; 
+        $price = $order->delivery_price;
+        $name = 'Order Number: '.sprintf('%04d', $order->id);
 
         $payer = PayPal::Payer();
         $payer->setPaymentMethod('paypal');
-
-        $price = $order->delivery_price;
-
-        $name = 'Order Number: '.sprintf('%04d', $order->id);
 
         $item1 = PayPal::item();
         $item1->setName($name)
@@ -63,11 +62,11 @@ class PayPalPaymentController extends Controller
         $transaction = PayPal::Transaction();
         $transaction->setItemList($itemList);
         $transaction->setAmount($amount);
-        $transaction->setInvoiceNumber(uniqid());
+        $transaction->setInvoiceNumber($invoice);
 
         $redirectUrls = PayPal:: RedirectUrls();
         $redirectUrls->setReturnUrl('http://360ugly.com/payment/done');
-        $redirectUrls->setCancelUrl('http://360ugly.com/payment');
+        $redirectUrls->setCancelUrl('http://360ugly.com/user/process');
 
         $payment = PayPal::Payment();
         $payment->setIntent('sale');
@@ -81,27 +80,48 @@ class PayPalPaymentController extends Controller
         return Redirect::to( $redirectUrl );
     }
 
-    public function getCheckoutDownload()
+    public function getCheckoutDownload($order_id)
     {
+
+        $order = Order::findorFail($order_id);
+        $invoice = str_random(10).$order_id; 
+        $price = $order->total_price;
+
         $payer = PayPal::Payer();
         $payer->setPaymentMethod('paypal');
 
+        $item  = array();
+        $items = array();
+        $count = 0;
+            foreach ($order->items as $product) {
+            $count++;    
+                $item[$count] = PayPal::item();
+                $item[$count]->setName($product->name)
+                    ->setDescription('Dimensions: '.$product->length.' x '.$product->width.' x '.$product->height.' cm Weight: '.$product->weight)
+                    ->setCurrency('GBP')
+                    ->setQuantity(1)
+                    ->setPrice($product->price);
+        
+            $items[] = $item[$count];
+            }
+
+        $itemList = PayPal::itemList();
+        $itemList->setItems($items);  
+
         $amount = PayPal:: Amount();
-        $amount->setCurrency('EUR');
-        $amount->setTotal(42); // This is the simple way,
+        $amount->setCurrency('GBP');
+        $amount->setTotal($price); // This is the simple way,
         // you can alternatively describe everything in the order separately;
         // Reference the PayPal PHP REST SDK for details.
 
         $transaction = PayPal::Transaction();
         $transaction->setAmount($amount);
-        $transaction->setDescription('What are you selling?');
-
-
-
+        $transaction->setItemList($itemList);
+        $transaction->setInvoiceNumber($invoice);
 
         $redirectUrls = PayPal:: RedirectUrls();
         $redirectUrls->setReturnUrl('http://360ugly.com/payment/done');
-        $redirectUrls->setCancelUrl('http://360ugly.com/payment');
+        $redirectUrls->setCancelUrl('http://360ugly.com/user/process');
 
         $payment = PayPal::Payment();
         $payment->setIntent('sale');
@@ -130,18 +150,22 @@ class PayPalPaymentController extends Controller
 
         // Clear the shopping cart, write to database, send notifications, etc.
         $transactions = $executePayment->getTransactions();
-        $itemlist = $transactions[0]->getItemList();
-        $items = $itemlist->getItems();
-        $name = $items[0]->name;
-
-        $order_id = (int) ltrim(substr($name, 14), '0');
+        $transaction = $transactions[0]; 
+        
+        $order_id = substr($transaction->invoice_number, 10);
 
         $order = Order::findorFail($order_id);
 
-        $order->updateStatus('delivery');
+        if($order->getStatus() == 'pay1'){
+            $order->updateStatus('delivery');
+        }elseif($order->getStatus() == 'pay2'){
+            $order->updateStatus('download');
+        }
+
+        $user = $order->user;
 
         // Thank the user for the purchase
-        return view('user/process');
+        return view('user/process')->with('user', $user);
     }
 
     public function getCancel()

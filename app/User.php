@@ -70,11 +70,11 @@ class User extends Authenticatable
         {
             foreach ($orders as $order)
             {
-                if($order->status !== 'await' && $order->status !== 'downloaded') 
+                if($order->status !== 'pay2' && $order->status !== 'download') 
                 {
                     $process ++; 
                 } 
-                if ($order->status === 'await') 
+                if ($order->status === 'pay2'|| $order->status === 'download') 
                 {
                     $download ++;
                 } 
@@ -97,7 +97,7 @@ class User extends Authenticatable
 
     public function getDownload()
     {
-        return $this->orders->where('status', 'await');
+        return $this->orders->where('status', 'pay2');
     }
 
     public static function getFramesArray($user) {

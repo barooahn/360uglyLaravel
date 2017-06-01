@@ -19,7 +19,7 @@
                     <h1>Ready for download</h1>
 
                     <div class="col-md-12">
-                        @if($user->status('download') > 0)
+                        @if($user->status('download') > 0 )
 
                             @foreach ($user->getDownload() as $order)
 
@@ -41,12 +41,14 @@
                                         </div>
 
                                         <div class="col-md-4">
+
                                             @if ($order->status == 'pay2') 
-                                            <div class = "pricing-button">
-                                                <a class="btn btn-primary btn-sm" href="{{ url('payment') }}">
-                                                    Pay now
-                                                </a>
-                                            </div>
+                                                <div class = "pricing-button">
+                                                    <form action="{{ url('/payment/download', $order) }}" class="form" id="order" method="get" role="form">
+                                                         <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png" alt="PayPal Checkout"/>
+                                                          <input type="hidden" name="order_id" value="{{$order->id}}">
+                                                    </form>
+                                                </div>
                                             @elseif($item->download)
                                                 <div class = "pricing-button">
                                                     <a class="btn btn-primary btn-sm" href="{{ url('downloads/download', $item->download->id) }}">
