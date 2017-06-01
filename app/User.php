@@ -97,7 +97,7 @@ class User extends Authenticatable
 
     public function getDownload()
     {
-        return $this->orders->where('status', 'pay2');
+        return $this->orders->where('status', 'pay2')->where('status', 'download');
     }
 
     public static function getFramesArray($user) {
