@@ -5,7 +5,7 @@
                 <img class="img-responsive" src="/images/logo.png">
             @if ($errors->has('verified'))
                 <span class="help-block-splash">
-                    <strong>{{ $errors->first('verified')}}  {{link_to_action('LoginController@resendEmail', 'resend email', $parameters = array($user))}}</strong>
+                    <strong>{{ $errors->first('verified')}}</strong>
                 </span>
             @endif
             @if ($errors->has('email'))
