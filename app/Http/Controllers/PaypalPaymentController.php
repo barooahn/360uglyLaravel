@@ -7,6 +7,7 @@ use Session;
 use App\Order;
 use Paypal;
 use Redirect;
+use App\Item;
 
 class PayPalPaymentController extends Controller
 {

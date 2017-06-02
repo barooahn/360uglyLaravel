@@ -3,6 +3,21 @@
         <div class="col-md-12">
             <div class="logo">
                 <img class="img-responsive" src="/images/logo.png">
+            @if ($errors->has('verified'))
+                <span class="help-block-splash">
+                    <strong>{{ $errors->first('verified')}}  {{link_to_action('LoginController@resendEmail', 'resend email', $parameters = array($user))}}</strong>
+                </span>
+            @endif
+            @if ($errors->has('email'))
+                <span class="help-block-splash">
+                    <strong>{{ $errors->first('email') }}</strong>
+                </span>
+            @endif
+            @if ($errors->has('password'))
+                <span class="help-block-splash">
+                    <strong>{{ $errors->first('password') }}</strong>
+                </span>
+            @endif
             </div>
         </div>
     </div>

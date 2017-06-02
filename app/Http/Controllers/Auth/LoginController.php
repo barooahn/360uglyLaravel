@@ -66,7 +66,7 @@ class LoginController extends Controller
         // Check if user was successfully loaded, that the password matches
         // and active is not 1. If so, override the default error message.
         if ($user && \Hash::check($request->password, $user->password) && $user->verified != 1) {
-        $errors = ['verified' => 'Please verify your email address.  Check your email for our mail'];
+        $errors = ['verified' => 'Please verify your email address.  Check your email for our mail.'];
         }
 
         if ($request->expectsJson()) {
@@ -76,5 +76,12 @@ class LoginController extends Controller
         return redirect()->back()
         ->withInput($request->only($this->username(), 'remember'))
         ->withErrors($errors);
+    }
+
+    public function resendEmail($user)
+    {
+        $user->email_token = $user->email_token;
+        $email = new EmailVerification();
+            Mail::to($user->email)->send($email);
     }
 }

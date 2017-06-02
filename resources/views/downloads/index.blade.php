@@ -38,7 +38,7 @@
                                                 </div>
                                             @endif
                                             @if($order->status == 'process')
-                                                @if(($item->download))
+                                                @if((!$item->download))
                                             	 <div class = "pricing-button">
                                                     <a class="btn btn-primary btn-sm" href="{{ url('downloads/create', $item->id) }}">
                                                         Upload images

@@ -251,11 +251,16 @@ a:hover{
     background-color: #f7cb15 !important;
     color:white #777;
 }
+.logo {
+    margin: 0 auto;
+    width:450px;
+}
 
 .logo img {
     margin: 0 auto;
     height: 125px !important;
     padding-bottom: 20px;
+
 }
 
 header {
@@ -280,6 +285,11 @@ header h1, header h4 {
     border-width: 1px;
 }
 
+
+.help-block-splash{
+    margin: 0 auto;
+    color: #e25333;
+}
 /*nav*/
 
 /*navbar {
