@@ -7,21 +7,17 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #313131;
     padding-top: 70px;
+    overflow: hidden;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
     font-size: 14px;
+    max-width: 100%;
 }
-
-body {
-    overflow: hidden;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-
-}
-
 
 @include media-breakpoint-up(sm) {
     html {

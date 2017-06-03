@@ -20,7 +20,7 @@ class DownloadController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-        $this->middleware('admin');
+        $this->middleware('admin', ['except' => 'download']);
     }
     /**
      * Display a listing of the resource.
