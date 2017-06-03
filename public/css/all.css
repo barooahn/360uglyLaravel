@@ -166,16 +166,15 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #313131;
     padding-top: 70px;
-    overflow: hidden;
     max-width: 100%;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    overflow-x: hidden;
+
 }
 
 html {
     font-size: 14px;
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 @include media-breakpoint-up(sm) {
