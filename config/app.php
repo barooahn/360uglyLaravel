@@ -184,6 +184,7 @@ return [
         Chumper\Zipper\ZipperServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
         Netshell\Paypal\PaypalServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
     ],
 
@@ -236,9 +237,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Zipper' => Chumper\Zipper\Zipper::class,
         'Paypal' => Netshell\Paypal\Facades\Paypal::class,
-
-
-
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 

@@ -115,4 +115,5 @@ class RegisterController extends Controller
         User::where('email_token',$token)->firstOrFail()->verified();
         return redirect('user/home');
     }
+
 }

@@ -48,3 +48,6 @@ Route::get('payment/done', 'PaypalPaymentController@getDone');
 Route::get('downloads/download/{id}', 'DownloadController@download');
 Route::get('downloads/create/{id}', 'DownloadController@create');
 
+Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+

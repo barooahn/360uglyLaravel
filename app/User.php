@@ -39,6 +39,10 @@ class User extends Authenticatable
         return $this->admin; // this looks for an admin column in your users table
     }
 
+    public function socialProviders(){
+        return $this->hasMany(SocialProvider::class);
+    }
+
     /**
      * Get the addresses for the user.
      */

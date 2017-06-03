@@ -172,6 +172,15 @@ html {
     font-size: 14px;
 }
 
+body {
+    overflow: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+}
+
 
 @include media-breakpoint-up(sm) {
     html {
@@ -289,6 +298,7 @@ header h1, header h4 {
     margin: 0 auto;
     color: #e25333;
     text-align: center;
+    max-width: 80%;
 }
 /*nav*/
 
