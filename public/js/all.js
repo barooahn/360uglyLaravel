@@ -35,8 +35,8 @@ var framesArray = {
     },
     baji: {
         path: 'images/baji/DSC_{frame}.jpg',
-        start: 859,
-        end: 902,
+        start: 117,
+        end: 160,
         digits: 4
     },
     book: {
@@ -88,16 +88,29 @@ $(".rollover-modal").click(function(e) {
         spin.spritespin('api').requestFullscreen();
     });
 
+    $('.zoom').click(function(e){
+        spin.spritespin('api').toggleZoom();
+    });
+
     spin.spritespin({
         source: frames,
         width: width,
         height: 334,
         sense: 2,
         sizeMode: 'fit',
-        scrollThreshold: 3000,
-        frameTime: 100, // Time in ms between updates. 40 is exactly 25 FPS
+        scrollThreshold: 500,
+        frameTime: 80, // Time in ms between updates. 40 is exactly 25 FPS
         detectSubsampling: false,
         animate: true,
+        mods: [
+        // change frame on mouse move
+        'drag',
+        // enable zoom module
+        // toggle zoom with double click or use the API object
+        'zoom',
+        // display module
+        '360'
+      ]
     });
     spin.bind("onLoad", function() {
         $('.loader').css({
@@ -130,7 +143,7 @@ $(function () {
 
 var frames;
 var frames = SpriteSpin.sourceArray('images/ugly_splash/JPEG/DSC_{frame}.jpg', {
-    frame: [667, 709],
+    frame: [78, 122],
     digits: 4
 });
 
@@ -142,7 +155,7 @@ spin.spritespin({
       source: frames,
         width: width,
         height: height,
-        frameTime: 120
+        frameTime: 80
 });
 spin.bind("onLoad", function() {
     $('.loader').css({

@@ -1,6 +1,6 @@
 var frames;
 var frames = SpriteSpin.sourceArray('images/ugly_splash/JPEG/DSC_{frame}.jpg', {
-    frame: [667, 709],
+    frame: [78, 122],
     digits: 4
 });
 
@@ -12,7 +12,7 @@ spin.spritespin({
       source: frames,
         width: width,
         height: height,
-        frameTime: 120
+        frameTime: 80
 });
 spin.bind("onLoad", function() {
     $('.loader').css({

@@ -21,7 +21,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumbs-container">
                             <a class="rollover-modal" href="#" id="baji">
-                                <img class="img-responsive thumbs" src="images/baji/DSC_0859.jpg">
+                                <img class="img-responsive thumbs" src="images/baji/DSC_0150.jpg">
                                 </img>
                             </a>
                         </div>

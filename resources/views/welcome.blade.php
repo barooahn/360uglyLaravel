@@ -81,6 +81,9 @@
                             <a class="full-screen icon-size">
                                 <img src="images/icons/005-arrows.png">
                             </a>
+                            <a class="zoom icon-size">
+                                <img src="images/icons/003-magnifying-glass.png">
+                            </a>
                                                         </h4>
                         </div>
                         <div class="modal-body">
