@@ -53,14 +53,14 @@ var framesArray = {
     },
     flowers3: {
         path: 'images/flowers3/DSC_{frame}.jpg',
-        start: 968,
-        end: 1010,
+        start: 4,
+        end: 48,
         digits: 4
     },
     tmnt: {
         path: 'images/tmnt/DSC_{frame}.jpg',
-        start: 755,
-        end: 797,
+        start: 6,
+        end: 50,
         digits: 4
     },
 }
@@ -143,7 +143,7 @@ $(function () {
 
 var frames;
 var frames = SpriteSpin.sourceArray('images/ugly_splash/JPEG/DSC_{frame}.jpg', {
-    frame: [78, 122],
+    frame: [139, 183],
     digits: 4
 });
 

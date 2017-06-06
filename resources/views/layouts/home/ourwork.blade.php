@@ -39,13 +39,13 @@
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumbs-container">
                             <a class="rollover-modal" href="#" id="flowers3">
-                                <img class="img-responsive thumbs " src="images/flowers3/DSC_0967.jpg">
+                                <img class="img-responsive thumbs " src="images/flowers3/DSC_0039.jpg">
                                 </img>
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumbs-container">
                             <a class="rollover-modal" href="#" id="tmnt">
-                                <img class="img-responsive thumbs" src="images/tmnt/DSC_0755.jpg">
+                                <img class="img-responsive thumbs" src="images/tmnt/DSC_0050.jpg">
                                 </img>
                             </a>
                         </div>
