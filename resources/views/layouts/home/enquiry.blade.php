@@ -43,7 +43,7 @@
                     <div class="col-md-3">
                         <span class="name1 error_message">
                         </span>
-                        <select class="form-control" id="items" name="item" type="text">
+                        <select class="form-control myform2" id="items" name="item" type="text">
                             <option disabled selected hidden value="">
                                 Number of products
                             </option>
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group pricing-button">
                 <button class="btn btn-primary" type="submit" value="submit">SEND</button>
                 </div>
 

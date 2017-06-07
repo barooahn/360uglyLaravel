@@ -27,7 +27,7 @@
 
                                 @foreach ($order->items as $item)
 
-                                    <div class="row">
+                                    <div class="row process-items">
                                         <div class="col-md-4">
                                             <p>Name: {{$item->name}} </p>
                                             <p>Item number: {{sprintf('%04d', $item->id)}}  </p>

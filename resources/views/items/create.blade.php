@@ -23,7 +23,11 @@
                 <div class="pricing-button">
                     {{ Form::open(array('url' => 'items/' . $item->id, 'class' => '')) }}
                     {{ Form::hidden('_method', 'DELETE') }}
-                    {{ Form::submit('Delete', array('class' => 'btn btn-warning')) }}
+
+                    <button type="submit" class="icon-size btn">
+                        <img src="/images/icons/004-delete.png"> Delete
+                    </button>
+
                     {{ Form::close() }}
 
 
@@ -71,31 +75,33 @@
             <form action="{{ url('/items') }}" class="form" id="order" method="post" role="form">
                 {{ csrf_field() }}
                 <div class="form-group">
+                    <div class="myform2">
                     <input class="form-control" id="name" name="name" placeholder="What is the name of this product?  *" type="text" required/>
-                </div>
-                <div class="form-group">
-                    <input class="form-control" id="height" name="height" placeholder="How high is the product? (cm)  *" type="number" min="1" max="40" required/>
+                    </div>
+                    <div class="myform2">
+                        <input class="form-control" id="height" name="height" placeholder="How high is the product? (cm)  *" type="number" min="1" max="40" required/>
 
-                </div>   
+                    </div>   
 
-                <div class="form-group">
-                    <input class="form-control" id="length" name="length" placeholder="How long is the product? (cm)  *" type="number" min="1" max="40" required/>
-                </div> 
+                    <div class="myform2">
+                        <input class="form-control" id="length" name="length" placeholder="How long is the product? (cm)  *" type="number" min="1" max="40" required/>
+                    </div> 
 
-                <div class="form-group">
-                    <input class="form-control" id="width" name="width" placeholder="How wide is the product? (cm)" type="number" min="1" max="40" required/>
-                </div>               
+                    <div class="myform2">
+                        <input class="form-control" id="width" name="width" placeholder="How wide is the product? (cm)" type="number" min="1" max="40" required/>
+                    </div>               
 
-                <div class="form-group">
-                    <input class="form-control" id="weight" name="weight" placeholder="How much does the product weigh? (kg)  *" type="number"  max="5" required/>
-                </div>    
+                    <div class="myform2">
+                        <input class="form-control" id="weight" name="weight" placeholder="How much does the product weigh? (kg)  *" type="number"  max="5" required/>
+                    </div>    
 
-                <div class="form-group">
-                    <input type="checkbox" name="return" value="1"> I would like my item returned  <b>Note: A surcharge of £5 is added to your bill</b><br>
-                </div>        
+                    <div class="myform2">
+                        <input type="checkbox" name="return" value="1"> I would like my item returned  <b>Note: A surcharge of £5 is added to your bill</b><br>
+                    </div>        
 
-                <div class="pricing-button">
-                    <button class="btn btn-primary btn-lg" type="submit" value="submit">Add Product</button>
+                    <div class="pricing-button">
+                        <button class="btn btn-primary btn-lg" type="submit" value="submit">Add Product</button>
+                    </div>
                 </div>
             </form>
         </div>

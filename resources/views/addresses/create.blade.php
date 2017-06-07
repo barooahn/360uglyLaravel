@@ -38,31 +38,34 @@
                    
                         {{ csrf_field() }}
                         <div class="form-group">
+                            <div class="myform2">
                             {{ Form::text('house', null, ['class' => 'form-control', ' placeholder' => 'House number or name *', 'required']) }}
-                        </div>   
+                            </div>   
 
-                        <div class="form-group">
+                        <div class="myform2">
                             {{ Form::text('address1', null, ['class' => 'form-control', ' placeholder' => 'Address Line 1  *', 'required']) }}
                         </div> 
 
-                        <div class="form-group">
+                        <div class="myform2">
                             {{ Form::text('address2', null, ['class' => 'form-control', ' placeholder' => 'Address Line 2']) }}                        </div>               
 
-                        <div class="form-group">
+                        <div class="myform2">
                             {{ Form::text('area', null, ['class' => 'form-control', ' placeholder' => 'Area']) }}
                         </div>          
 
-                        <div class="form-group">
+                        <div class="myform2">
                             {{ Form::text('county', null, ['class' => 'form-control', ' placeholder' => 'County  *', 'required']) }}
                         </div>
 
-                        <div class="form-group">
+                        <div class="myform2">
                             {{ Form::text('postcode', null, ['class' => 'form-control', ' placeholder' => 'Postcode  *', 'required']) }}
                         </div>
 
                         <div class="pricing-button">
                             {{ Form::submit('Add Address', ['class' => 'btn btn-primary btn-lg']) }}
                         </div>
+
+                    </div>
                     {{ Form::close() }}
                 </div>
                 </div>

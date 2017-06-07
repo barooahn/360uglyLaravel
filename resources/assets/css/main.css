@@ -251,6 +251,10 @@ ul #login-dp .form-group {
     color: #e25333;
 }
 
+.fa-arrow-down{
+    background-color: white !important;
+}
+
 .bounce {
     -moz-animation: bounce 2s 3;
     -webkit-animation: bounce 2s 3;
@@ -684,6 +688,15 @@ footer {
     border-radius: 0px;
 }
 
+/*Process*/
+
+.process-items{
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #f2f2f2;
+}
+
+
 /*user downloads - help page*/
 pre{
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
@@ -698,6 +711,10 @@ pre{
 }
 
 @media screen and and (min-width: 320px) and (max-width: 768px) {
+    h4{
+        font-size: 16px;
+    }
+
     .thumbs {
         width: 100%;
         min-height: 235px !important;
@@ -709,10 +726,6 @@ pre{
         max-width:90% !important;
     }
 
-    .splash-container{
-
-
-    }
     .arrow {
         bottom: 30px;
         margin: -15px;
@@ -721,6 +734,9 @@ pre{
 }
 
 @media screen and (min-width: 768px) and (max-width: 988px) {
+    h4{
+        font-size: 16px;
+    }
     .thumbs {
         width: 100%;
         min-height: 235px !important;
@@ -742,6 +758,9 @@ pre{
     }
 }
 @media screen and (max-width: 988px) {
+    h4{
+        font-size: 16px;
+    }
     footer li a{
         font-size: 10px;
 
@@ -772,6 +791,14 @@ pre{
         border:0 none;
         box-shadow:none;
         margin-top:0;
+    }
+    .icon-size img{
+        width:20px;
+        margin: 0px 8px;
+    }
+
+    .myform2 {
+        margin-top: 3px; 
     }
     
 }
@@ -805,7 +832,7 @@ pre{
         margin: 0 auto;
     }
 
-    .splash-container{
-
+    .icon-size img{
+        width:20px;
     }
 }

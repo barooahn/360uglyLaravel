@@ -26,7 +26,7 @@
 
                 <h4>Order number: {{sprintf('%04d', $order->id)}} </h4>
 
-                <div class="row">
+                <div class="row process-items">
                     <div class="col-md-4">
                         @foreach ($order->items as $item)
 

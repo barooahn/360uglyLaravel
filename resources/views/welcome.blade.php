@@ -75,16 +75,13 @@
                             <h4 class="modal-title" id="exampleModalLabel">
                                 Spin with mouse or touch
 
-                            <a class="icon-size" data-dismiss="modal">
-                                <img src="images/icons/close.png">
-                            </a>
-                            <a class="full-screen icon-size">
-                                <img src="images/icons/005-arrows.png">
-                            </a>
-                            <a class="zoom icon-size">
-                                <img src="images/icons/003-magnifying-glass.png">
-                            </a>
-                                                        </h4>
+                                <a class="icon-size" data-dismiss="modal">
+                                    <img src="images/icons/close.png">
+                                </a>
+                                <a class="full-screen icon-size">
+                                    <img src="images/icons/005-arrows.png">
+                                </a>
+                            </h4>
                         </div>
                         <div class="modal-body">
                             <div class="loader">
