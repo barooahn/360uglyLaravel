@@ -18,6 +18,10 @@ html {
     overflow-x: hidden;
 }
 
+.main{
+    max-width: 90%;
+}
+
 @include media-breakpoint-up(sm) {
     html {
         font-size: 16px;
@@ -56,7 +60,7 @@ a:hover{
     text-decoration: none;
 }
 
- p{
+p{
     font-size: 16.5px;
     line-height: 1.7;
 }
@@ -278,7 +282,7 @@ ul #login-dp .form-group {
 
 .uglyman {
     margin: 0 auto;
-    max-width: 47%;
+    max-width: 90% !important;
 }
 
 .full-height {
@@ -298,14 +302,77 @@ ul #login-dp .form-group {
 
 /*splash container*/
 .splash-container{
-    width:40%;
+    width:100% !important;
 }
 
+.amazon-header {
+    max-width: 300px;
+    float:right;
+}
+
+.amazon-item {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DDD;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    max-width: 300px;
+    float:right;
+    padding: 25px;  
+}
+
+.left{
+    float:left !important;
+}
+
+.amazon-price {
+    margin-bottom: 6px!important;
+    line-height: 1!important;
+    font-size: 21px!important;
+    text-rendering: optimizeLegibility;
+}
+
+.amazon-description {
+
+    color: #0066c0!important;
+    margin-bottom: 6px!important;
+}
+.amazon-review {
+    cursor: pointer;
+    color: #c45500;
+}
+
+.gold {
+    color: gold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #c45500;
+    font-size: 18px;
+    margin-right: 2px;
+}
+.gold-empty {
+    color: #c45500;
+    font-size: 18px;
+    margin-right: 2px;
+}
+
+.spin{
+    max-width: 25%;
+    margin: 0 auto;
+    margin-bottom: -15px !important;
+    cursor: pointer;
+}
 
 /*our-work container*/
 
+.our-work{
+    background-color: #DDD;
+}
+
 .thumbs-container a img {
     margin: 15px 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .thumbs {
@@ -723,7 +790,6 @@ pre{
     .uglyman {
         margin: 0 auto;
         position: initial !important;
-        max-width:90% !important;
     }
 
     .arrow {
@@ -745,7 +811,6 @@ pre{
     .uglyman {
         margin: 0 auto;
         position: initial !important;
-        max-width:90%  !important;
     }
 
     .splash-container{
@@ -768,12 +833,10 @@ pre{
 
     .uglyman {
         margin: 0 auto;
-        max-width:90%  !important;
     }
 
     .splash-container{
 
-        width:90%  !important;
     }
     .arrow {
         bottom: 30px;

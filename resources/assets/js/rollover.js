@@ -1,8 +1,8 @@
 var framesArray = {
-    elephant: {
-        path: 'images/elephant/DSC_{frame}.jpg',
-        start: 407,
-        end: 437,
+    clown: {
+        path: 'images/clown/DSC_{frame}.jpg',
+        start: 14,
+        end: 58,
         digits: 4
     },
     flower2: {
@@ -13,8 +13,8 @@ var framesArray = {
     },
     fireTruck: {
         path: 'images/fireTruck/DSC_{frame}.jpg',
-        start: 507,
-        end: 536,
+        start: 2,
+        end: 45,
         digits: 4
     },
     baji: {
@@ -37,8 +37,8 @@ var framesArray = {
     },
     flowers3: {
         path: 'images/flowers3/DSC_{frame}.jpg',
-        start: 4,
-        end: 48,
+        start: 45,
+        end: 88,
         digits: 4
     },
     tmnt: {

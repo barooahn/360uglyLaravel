@@ -15,10 +15,10 @@ var x=data.zoomX,y=data.zoomY;(null==x||null==y)&&(x=data.zoomX=.5,y=data.zoomY=
 0
 
 var framesArray = {
-    elephant: {
-        path: 'images/elephant/DSC_{frame}.jpg',
-        start: 407,
-        end: 437,
+    clown: {
+        path: 'images/clown/DSC_{frame}.jpg',
+        start: 14,
+        end: 58,
         digits: 4
     },
     flower2: {
@@ -29,8 +29,8 @@ var framesArray = {
     },
     fireTruck: {
         path: 'images/fireTruck/DSC_{frame}.jpg',
-        start: 507,
-        end: 536,
+        start: 2,
+        end: 45,
         digits: 4
     },
     baji: {
@@ -53,8 +53,8 @@ var framesArray = {
     },
     flowers3: {
         path: 'images/flowers3/DSC_{frame}.jpg',
-        start: 4,
-        end: 48,
+        start: 45,
+        end: 88,
         digits: 4
     },
     tmnt: {
@@ -157,6 +157,39 @@ spin.spritespin({
         height: height,
         frameTime: 80
 });
+spin.bind("onLoad", function() {
+    $('.loader').css({
+        opacity: 1,
+        display: "none"
+    }).animate({
+        opacity: 0
+    }, 'slow');
+});
+
+// big-flowers
+var frames;
+var frames = SpriteSpin.sourceArray('images/big-flowers/DSC_{frame}.jpg', {
+    frame: [159, 203],
+    digits: 4
+});
+
+var width = $('.big-flowers').width() - 10;
+var height = width * 1.5;
+var spin = $('.big-flowers');
+// initialise spritespin
+spin.spritespin({
+      source: frames,
+        width: width,
+        height: height,
+        frameTime: 80,
+        animate:false,
+});
+
+    // initialise spritespin
+$('.spin').click(function(e){
+    spin.spritespin('api').toggleAnimation();
+});
+
 spin.bind("onLoad", function() {
     $('.loader').css({
         opacity: 1,
@@ -275,5 +308,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-100567586-1', 'auto');
 ga('send', 'pageview');
+
 
 //# sourceMappingURL=all.js.map

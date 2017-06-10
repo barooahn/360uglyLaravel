@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('content')
-    <div class="container-fluid">
+    <div class="container-fluid main">
             <section id="home">
              @include('layouts.home.splash')
             </section>
