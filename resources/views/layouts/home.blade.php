@@ -64,8 +64,8 @@
                             Order Now
                         </a>
                         
-                        <a class="navbar-brand" href="{{ url('/') }}"><span>360Ugly</span>
-                            <img class="img-responsive" alt="Brand" src="/images/favicon/ms-icon-310x310.png">
+                         <a class="navbar-brand" href="{{ url('/') }}"><span><img class="img-responsive header-logo" alt="Brand" src="/images/logo.png"></span>
+                            
                         </a>
                     </div>      
 

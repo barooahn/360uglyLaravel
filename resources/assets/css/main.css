@@ -167,6 +167,11 @@ header h1, header h4 {
     background-color: #e25333 !important;
     color:white !important;
 }
+
+.header-logo {
+    max-height: 45px;
+    margin-top: -10px;
+}
 ul #login-dp  {
     min-width: 350px;
     padding: 14px 14px 0;
@@ -229,6 +234,10 @@ ul #login-dp .form-group {
     float: right;
 }
 
+.icon-size-360 {
+    width:50px;
+}
+
 @media(max-width:768px){
     ul #login-dp{
         background-color: inherit;
@@ -244,10 +253,8 @@ ul #login-dp .form-group {
 /*down arrow*/
 
 .arrow {
-    text-align: center;
-    margin: 8% 0;
-    position: absolute;
-    bottom: -150px;
+    position: fixed;
+    bottom: 10px;
     right: 50%;
 }
 
@@ -305,6 +312,13 @@ ul #login-dp .form-group {
     width:100% !important;
 }
 
+.splash-fullscreen{
+    position: static;
+    top:10px
+    right 10px;
+    z-index: 1000;
+}
+
 .amazon-header {
     max-width: 300px;
     float:right;
@@ -317,7 +331,7 @@ ul #login-dp .form-group {
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 13px;
     line-height: 19px;
-    max-width: 300px;
+    width: 300px;
     float:right;
     padding: 25px;  
 }
@@ -357,10 +371,21 @@ ul #login-dp .form-group {
 }
 
 .spin{
-    max-width: 25%;
-    margin: 0 auto;
-    margin-bottom: -15px !important;
     cursor: pointer;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.spin-text{
+    max-width: 100%;
+    margin: 15px 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.spin-icon {
+    width:50px;
+    display: inline-block;
 }
 
 /*our-work container*/
@@ -831,17 +856,25 @@ pre{
 
     }
 
+    .logo img {
+        margin: 0 auto;
+        height: 70px !important;
+        padding-bottom: 20px;
+    }
+
     .uglyman {
         margin: 0 auto;
     }
 
     .splash-container{
-
+        max-width: 80%;
+        max-height: 80%;
+        margin: 0 auto;
     }
     .arrow {
-        bottom: 30px;
-        margin: -15px;
-
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
     }
 
     .contact{
@@ -860,8 +893,45 @@ pre{
         margin: 0px 8px;
     }
 
+    .spin {
+        margin-top: -15px;
+    }
+
+    .icon-size-360 {
+        width:50px;
+    }
+
+    .spin-logo{
+        max-width: 20%;
+        width:40px;
+    }
+
     .myform2 {
         margin-top: 3px; 
+    }
+
+    .amazon-header {
+        max-width: 300px;
+        margin: 0 auto;
+        float: none;
+        max-height: 70%;
+    }
+
+    .amazon-item {
+        width: auto;
+        float:none;
+    }
+
+    .amazon-price {
+        font-size: 15px !important;
+    }
+
+    .amazon-description{
+        font-size: 12.5px !important;
+    }
+
+    .left{
+        float:none !important;
     }
     
 }

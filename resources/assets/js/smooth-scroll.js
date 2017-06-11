@@ -38,7 +38,6 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         var windowPos = $(window).scrollTop()+300; // get the offset of the window from the top of page
-        console.log("windowPos " + windowPos);
         var windowHeight = $(window).height(); // get the height of the window
         var docHeight = $(document).height();
 

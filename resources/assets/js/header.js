@@ -34,16 +34,18 @@ var width = $('.big-flowers').width() - 10;
 var height = width * 1.5;
 var spin = $('.big-flowers');
 // initialise spritespin
-spin.spritespin({
-      source: frames,
-        width: width,
-        height: height,
-        frameTime: 80,
-        animate:false,
+$(document).ready(function() {
+    spin.spritespin({
+          source: frames,
+            width: width,
+            height: height,
+            frameTime: 80,
+            animate:false
+    })        
 });
 
     // initialise spritespin
-$('.spin').click(function(e){
+$('.spin').on('touchstart click', function() {
     spin.spritespin('api').toggleAnimation();
 });
 
@@ -54,4 +56,8 @@ spin.bind("onLoad", function() {
     }).animate({
         opacity: 0
     }, 'slow');
+});
+
+$('.full-screen').click(function(e){
+    spin.spritespin('api').requestFullscreen();
 });

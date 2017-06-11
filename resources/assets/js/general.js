@@ -1,4 +1,3 @@
-
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	$('.nav a').on('click', function(){
 	    $('.navbar-toggle').click() //bootstrap 3.x by Richard
@@ -12,4 +11,21 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-100567586-1', 'auto');
 ga('send', 'pageview');
+	
+$.scrollify({
+    easing: "easeOutExpo",
+    scrollSpeed: 1100,
+    offset : -50,
+    scrollbars: false,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:true
+});
 
+$(function() {
+  $.scrollify({
+    section : "section",
+  });
+});

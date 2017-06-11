@@ -1,9 +1,7 @@
 <div class="full-height">
     <div class="row">
         <div class="col-md-12">
-            <div class="logo">
-                <img class="img-responsive" src="/images/logo.png">
-                @if ($errors->has('verified'))
+                 @if ($errors->has('verified'))
                 <p class="help-block-splash">
                     <strong>{{ $errors->first('verified')}}</strong>
                 </p>
@@ -18,21 +16,22 @@
                     <strong>{{ $errors->first('password') }}</strong>
                 </p>
                 @endif
-            </div>
         </div>
     </div>
     <div class="row">
 
         <div class="col-md-4">
-                <div class="amazon-header">
-                    <div class="spin">
-                        <a>
-                            <img class="img-responsive" src="images/icons/002-360arrow.png">
+            <div class="amazon-header">
+                <div class="spin">
+                    <span>
+                        <a class="spin-icon">
+                            <img class="img-responsive icon-size-360" src="images/icons/002-360arrow.png">
                         </a>
-                    </div>
-                    <h4 class="center">
+                    </span>
+                    <span class="spin-text">
                         Spin with mouse or touch
-                    </h4>
+                    </span>
+                </div>
                 <div class="amazon-item">
                     <div class="big-flowers splash-container">
                         <div class="loader">
@@ -47,13 +46,16 @@
                             </p>
                         </div>
                     </div>
+                        <a class="full-screen icon-size splash-fullscreen">
+                            <img src="images/icons/005-arrows.png">
+                        </a>
                     <div>
                         <p class="amazon-price">£79.00</p>
                         <p class="amazon-description">Exquisite marble flower vase with beautiful rose arrangement</p>
                         <p><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i>  98</p>
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
         <div class="col-md-4">
             <div class="loader">
