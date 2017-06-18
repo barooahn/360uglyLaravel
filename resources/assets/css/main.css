@@ -1,7 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
-@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Sanchez);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto:100,400');
+
+
 body {
     background-color: white;
     font-family: 'Open Sans', sans-serif;
@@ -250,12 +249,26 @@ ul #login-dp .form-group {
 }
 /*end of nav*/
 
-/*down arrow*/
+/*home page - splash*/
+.home-top{
+    margin-top: 90px;
+}
+
+.slogan {
+    font-family: 'Roboto';
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 65px;
+    width: 80%;
+    display: inline-block;
+}
+
+    /*down arrow*/
 
 .arrow {
-    position: fixed;
     bottom: 10px;
     right: 50%;
+    position: fixed;
 }
 
 .arrow a {
@@ -309,7 +322,7 @@ ul #login-dp .form-group {
 
 /*splash container*/
 .splash-container{
-    width:100% !important;
+    width:60% !important;
 }
 
 .splash-fullscreen{
@@ -752,6 +765,7 @@ footer {
 }
 
 /*user - home page*/
+
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     background-color: #e25333;
     color:white;
@@ -802,7 +816,7 @@ pre{
   max-height: 600px;
 }
 
-@media screen and and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     h4{
         font-size: 16px;
     }
@@ -872,9 +886,7 @@ pre{
         margin: 0 auto;
     }
     .arrow {
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
+        display: none;
     }
 
     .contact{
@@ -932,6 +944,14 @@ pre{
 
     .left{
         float:none !important;
+    }
+
+    .slogan {
+        font-size: 25px;
+    }
+
+    .splash-container {
+        width:100% !important;
     }
     
 }

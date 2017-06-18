@@ -58,6 +58,35 @@ spin.bind("onLoad", function() {
     }, 'slow');
 });
 
-$('.full-screen').click(function(e){
+$('.splash-fullscreen').click(function(e){
     spin.spritespin('api').requestFullscreen();
+});
+
+$.scrollify({
+    easing: "easeOutExpo",
+    scrollSpeed: 1100,
+    offset : -50,
+    scrollbars: false,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:false
+});
+
+$(function() {
+  $.scrollify({
+    section : "section",
+  });
+});
+
+// kill arrow and kill advert 360
+$(window).scroll(function(){
+    if($.scrollify.current().attr('id') !== 'home'){
+        console.log('not home');
+        $('.arrow').css('display', 'none');
+        //spin.spritespin("destroy");
+    } else {
+        spin.spritespin('api').startAnimation();
+    }
 });

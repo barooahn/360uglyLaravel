@@ -28,7 +28,7 @@ Route::get('home', 'UserController@home');
 Route::get('user/home', 'UserController@home');
 Route::get('user/process', 'UserController@process');
 Route::get('user/download', 'UserController@download');
-Route::post('/enquiry', 'EnquiryController@store')->middleware('auth');
+Route::post('/enquiry', 'EnquiryController@store');
 
 Route::get('/confirm', 'ConfirmController@confirm')->middleware('auth');
 

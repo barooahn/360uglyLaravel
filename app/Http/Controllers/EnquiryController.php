@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Enquiry;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\EnquiryMail;
 
 class EnquiryController extends Controller
 {
@@ -38,6 +40,7 @@ class EnquiryController extends Controller
     {
         $enquiry = new Enquiry($request->all());
         $enquiry -> save();
+        Mail::to('postmaster@mail.360ugly.com')->queue(new EnquiryMail($enquiry));
         return view('/enquiry');
     }
 

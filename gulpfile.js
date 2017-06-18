@@ -23,13 +23,13 @@ elixir((mix) => {
     	.scripts([
     		'jquery-3.1.1.min.js',
     		'bootstrap.min.js', 
-    		'rotate.min.js', 
-    		'rollover.js', 
-    		'icons.js',
-    		'header.js',
+            'rotate.min.js', 
+            'jquery.scrollify.min.js',
+            'rollover.js', 
+            'icons.js',
+            'header.js',
             'jquery.scrollto.js',
             'smooth-scroll.js',
-            'jquery.scrollify.min.js',
             'general.js',
     		], 'public/js/all.js')
         .scripts([

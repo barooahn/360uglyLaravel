@@ -50,6 +50,42 @@
                             </a>
                         </div>
                     </div>
+                    <div class="row">
+                                    <div class="amazon-header">
+                <div class="spin">
+                    <span>
+                        <a class="spin-icon">
+                            <img class="img-responsive icon-size-360" src="images/icons/002-360arrow.png">
+                        </a>
+                    </span>
+                    <span class="spin-text">
+                        Spin with mouse or touch
+                    </span>
+                </div>
+                <div class="amazon-item">
+                    <div class="big-flowers splash-container">
+                        <div class="loader">
+                            <div class="spinner">
+                                <div class="dot1">
+                                </div>
+                                <div class="dot2">
+                                </div>
+                            </div>
+                            <p>
+                                Loading
+                            </p>
+                        </div>
+                    </div>
+                        <a class="full-screen icon-size splash-fullscreen">
+                            <img src="images/icons/005-arrows.png">
+                        </a>
+                    <div>
+                        <p class="amazon-price">£79.00</p>
+                        <p class="amazon-description">Exquisite marble flower vase with beautiful rose arrangement</p>
+                        <p><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i>  98</p>
+                    </div>
+                </div>
+            </div>
                 </div>
                 <!--end of container-->
             </div>
