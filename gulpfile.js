@@ -31,6 +31,7 @@ elixir((mix) => {
             'jquery.scrollto.js',
             'smooth-scroll.js',
             'general.js',
+            'ourwork.js',
     		], 'public/js/all.js')
         .scripts([
             'jquery-3.1.1.min.js',

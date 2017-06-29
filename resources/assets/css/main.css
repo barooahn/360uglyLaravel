@@ -255,7 +255,7 @@ ul #login-dp .form-group {
 }
 
 .slogan {
-    font-family: 'Roboto';
+    font-family: 'Roboto', "Open Sans", sans-serif;
     font-weight: 100;
     text-transform: uppercase;
     font-size: 65px;
@@ -325,6 +325,18 @@ ul #login-dp .form-group {
     width:60% !important;
 }
 
+.amazon-product{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 24%;
+    padding: 15px;
+    margin: 5px;
+}
+
+.amazon-container{
+    width:100% !important;
+}
+
 .splash-fullscreen{
     position: static;
     top:10px
@@ -333,8 +345,6 @@ ul #login-dp .form-group {
 }
 
 .amazon-header {
-    max-width: 300px;
-    float:right;
 }
 
 .amazon-item {
@@ -344,8 +354,6 @@ ul #login-dp .form-group {
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 13px;
     line-height: 19px;
-    width: 300px;
-    float:right;
     padding: 25px;  
 }
 
@@ -407,14 +415,18 @@ ul #login-dp .form-group {
     background-color: #DDD;
 }
 
-.thumbs-container a img {
-    margin: 15px 2px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.thumbs-container {
+    max-width: 24%;
+    padding: 0;
+    margin: 5px;
+}
 
+
+.thumbs-container a img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .thumbs {
-    width: 100%;
     min-height: 178px !important;
 }
 
@@ -506,7 +518,6 @@ ul #login-dp .form-group {
     left: 0;
     border-radius: 5px;
     /*margin: 15px;*/
-    padding 15px;
     background-image: url('../images/overlay.png');
     background-size: contain;
     background-position: center;
@@ -953,7 +964,14 @@ pre{
     .splash-container {
         width:100% !important;
     }
+
+    .thumbs-container {
+        max-width: 97%;
+    }
     
+    .amazon-product {
+        max-width: 97%;
+    }
 }
 @media screen and (min-width: 988px) {
     /*get-results container*/
