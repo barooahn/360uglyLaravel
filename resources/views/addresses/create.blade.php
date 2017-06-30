@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-md-6">
             <h1>Collection Address:</h1>
@@ -15,7 +15,7 @@
 
                 <div class="panel-body">
 
-                <p>Please note if we collect your product we will use a third party courier.  <b>The courier fee will need to be paid before collection will take place.  The price will depend on the items you wish to have photgraphed.  The fee will be deducted from your final bill.</b></p> 
+                <p class="collection-note">Please note if we collect your product we will use a third party courier.  <b>The courier fee will need to be paid before collection will take place.  The price will depend on the items you wish to have photgraphed.  The fee will be deducted from your final bill.</b></p> 
 
                     @if($address!=null)
                     <div class="col-md-6">
@@ -114,11 +114,14 @@
             <div class="panel panel-default">
                 <div class="panel-heading"><h4>You can post the products if you prefer</h4></div>
                 <div class="panel-body">
-                    <p>address here</p>
+                    <p>175 Redgate</p>
+                    <p>Ormskirk</p>
+                    <p>West Lancashire</p>
+                    <p>L39 3NW</p>
                 </div>
                 <div class="pricing-button">
                     <a class="btn btn-primary btn-lg" href="{{ url('/address/self', Session::get('order_id')) }}">
-                        Continue
+                        I will post
                     </a>
                 </div>
             </div>

@@ -49,7 +49,6 @@ class Order extends Model
         }
         $order->total_price = $price;
         $order->update(); 
-        if($price == 0 )
         return $price;
     }
 

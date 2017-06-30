@@ -254,12 +254,10 @@ p{
     margin-right: 8px;
 }
 
-.panel-heading {
-    background-color: #f7cb15 !important;
-    color:white #777;
-}
+
 .logo {
     margin: 0 auto;
+    width: 250px;
 }
 
 .logo img {
@@ -417,7 +415,7 @@ ul #login-dp .form-group {
     font-family: 'Roboto', "Open Sans", sans-serif;
     font-weight: 100;
     text-transform: uppercase;
-    font-size: 65px;
+    font-size: 45px;
     width: 80%;
     display: inline-block;
 }
@@ -434,9 +432,10 @@ ul #login-dp .form-group {
     color: #e25333;
 }
 
-.fa-arrow-down{
-    background-color: white !important;
+.fa-arrow-down {
+    background-color: rgba(255, 0, 0, 0); !important;
 }
+
 
 .bounce {
     -moz-animation: bounce 2s 3;
@@ -970,6 +969,49 @@ footer {
     border-width: 1px;
     border-color: #f2f2f2;
 }
+/*forms*/
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 1px rgba(197, 197, 197, 0.5);
+    box-shadow: 0 1px 1px rgba(197, 197, 197, 0.5);
+    border: 0;
+    border-radius: 0;
+    font-family: roboto;
+    font-weight: 200px;
+}
+
+.panel-heading {
+    background-color: white !important;
+    font-family: roboto;
+    font-weight: 200px;
+    border-radius: 0;
+    color: #e25333 !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 17px;
+}
+
+.form-group {
+    color: #777;
+    font-family: roboto;
+}
+
+.control-label {
+    font-weight: 400;
+}
+
+.form-control {
+    margin-top: 2px;
+}
+
+.collection-note {
+    font-size: 13px;
+    margin: 15px 15px 40px 15px;
+}
+
+
 
 
 /*user downloads - help page*/
@@ -1071,22 +1113,48 @@ pre{
         padding: 15px 5px;
     }
 
-    h4{
-        font-size: 16px;
-    }
 
     h1{
         font-size: 18px;
     }
 
+    h2{
+        font-size: 15px;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+
+    .splash-text {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .splash-text h2{
+        margin: 0;
+        padding:0;
+        font-size: 16px;
+        color: #777;
+        font-family: roboto;
+        font-weight: 200;
+    }
+
     .slogan {
-        font-size: 20px;
+        font-size: 22px;
+        width: 100%;
     }
 
     footer li a{
         font-size: 10px;
 
     }
+
+    .logo {
+        margin: 0px auto 20px auto;
+        width: 250px;
+    }
+
 
     .logo img {
         margin: 0 auto;
@@ -1145,9 +1213,6 @@ pre{
         max-width: 100%;
         padding: 0 3px 3px 3px;
         margin: 0px;
-
-    }
-    .rollover-modal {
 
     }
     .amazon-product {
@@ -1219,7 +1284,12 @@ pre{
     }
 
     .splash-container{
-        width: 60% !important;
+        width: 90% !important;
+    }
+
+    .splash-text{
+        width:30%;
+        padding-top: 10%;
     }
 }
 /*# sourceMappingURL=all.css.map */

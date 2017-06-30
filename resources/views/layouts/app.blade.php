@@ -49,8 +49,8 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <!-- Collapsed Hamburger -->
-                        <a class="navbar-brand" href="{{ url('clean') }}"><span>360Ugly</span>
-                            <img class="img-responsive" alt="Brand" src="/images/favicon/ms-icon-310x310.png">
+                         <a class="navbar-brand" href="{{ url('/') }}"><span><img class="img-responsive header-logo" alt="Brand" src="/images/logo.png"></span>
+                            
                         </a>
                     </div>
                 </div>
