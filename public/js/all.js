@@ -40,30 +40,6 @@ var framesArray = {
         end: 160,
         digits: 4
     },
-    book: {
-        path: 'images/book/DSC_{frame}.jpg',
-        start: 805,
-        end: 848,
-        digits: 4
-    },
-    braclet: {
-        path: 'images/braclet/DSC_{frame}.jpg',
-        start: 697,
-        end: 741,
-        digits: 4
-    },
-    flowers3: {
-        path: 'images/flowers3/DSC_{frame}.jpg',
-        start: 45,
-        end: 88,
-        digits: 4
-    },
-    tmnt: {
-        path: 'images/tmnt/DSC_{frame}.jpg',
-        start: 6,
-        end: 50,
-        digits: 4
-    },
 }
 
 $(".rollover-modal").click(function(e) {
@@ -142,60 +118,31 @@ $(function () {
 // });
 
 
-var frames;
-var frames = SpriteSpin.sourceArray('images/ugly_splash/JPEG/DSC_{frame}.jpg', {
+//uglyman
+
+var framesuglyman;
+var framesuglyman = SpriteSpin.sourceArray('images/ugly_splash/JPEG/DSC_{frame}.jpg', {
     frame: [139, 183],
     digits: 4
 });
 
-var width = $('.uglyman').width() - 10;
-var height = width / 1.5;
-var spin = $('.uglyman');
+var widthuglyman = $('.uglyman').width() - 10;
+var heightuglyman = widthuglyman / 1.5;
+var spinuglyman = $('.uglyman');
 // initialise spritespin
-spin.spritespin({
-      source: frames,
-        width: width,
-        height: height,
+spinuglyman.spritespin({
+      source: framesuglyman,
+        width: widthuglyman,
+        height: heightuglyman,
         frameTime: 80
 });
-spin.bind("onLoad", function() {
+spinuglyman.bind("onLoad", function() {
     $('.loader').css({
         opacity: 1,
         display: "none"
     }).animate({
         opacity: 0
     }, 'slow');
-});
-
-
-
-$.scrollify({
-    easing: "easeOutExpo",
-    scrollSpeed: 1100,
-    offset : -50,
-    scrollbars: false,
-    standardScrollElements: "",
-    setHeights: true,
-    overflowScroll: true,
-    updateHash: true,
-    touchScroll:false
-});
-
-$(function() {
-  $.scrollify({
-    section : "section",
-  });
-});
-
-// kill arrow and kill advert 360
-$(window).scroll(function(){
-    if($.scrollify.current().attr('id') !== 'home'){
-        console.log('not home');
-        $('.arrow').css('display', 'none');
-        //spin.spritespin("destroy");
-    } else {
-        spin.spritespin('api').startAnimation();
-    }
 });
 /*!
  * jquery.scrollto.js 0.0.1 - https://github.com/yckart/jquery.scrollto.js
@@ -306,7 +253,31 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-100567586-1', 'auto');
 ga('send', 'pageview');
 
+//fullpage scroll
 
+$.scrollify({
+    easing: "easeOutExpo",
+    scrollSpeed: 1100,
+    offset : -50,
+    scrollbars: false,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:false,
+    before:function() {
+        if($.scrollify.current().attr('id') !== 'home'){
+            console.log('not home');
+            $('.arrow').css('display', 'none');
+        }
+    }
+});
+
+$(function() {
+  $.scrollify({
+    section : "section",
+  });
+});
 // big-flowers
 var framesflowers;
 var framesflowers = SpriteSpin.sourceArray('/images/big-flowers/DSC_{frame}.jpg', {

@@ -23,30 +23,6 @@ var framesArray = {
         end: 160,
         digits: 4
     },
-    book: {
-        path: 'images/book/DSC_{frame}.jpg',
-        start: 805,
-        end: 848,
-        digits: 4
-    },
-    braclet: {
-        path: 'images/braclet/DSC_{frame}.jpg',
-        start: 697,
-        end: 741,
-        digits: 4
-    },
-    flowers3: {
-        path: 'images/flowers3/DSC_{frame}.jpg',
-        start: 45,
-        end: 88,
-        digits: 4
-    },
-    tmnt: {
-        path: 'images/tmnt/DSC_{frame}.jpg',
-        start: 6,
-        end: 50,
-        digits: 4
-    },
 }
 
 $(".rollover-modal").click(function(e) {
