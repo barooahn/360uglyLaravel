@@ -40,16 +40,16 @@
                         @php
                             switch ($order->status) {
                                 case 'pay1':
-                                    echo'Pay now for courier collection of product(s) only';
+                                    echo'<p>Pay now for courier collection of product(s) only</p>';
                                     break;
                                 case 'delivery':
-                                    echo'We are awaiting products in our office';
+                                    echo'<p>We are awaiting products in our office</p>';
                                     break;
                                 case 'process':
-                                    echo'We are currently processing your order';
+                                    echo'<p>We are currently processing your order</p>';
                                     break;
                                 default:
-                                    echo'No data';
+                                    echo'<p>No data</p>';
                             }
                         @endphp
 

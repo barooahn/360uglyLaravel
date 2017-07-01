@@ -28,11 +28,12 @@
                                 <p>{{$address->area}}</p>
                                 <p>{{$address->county}}</p>
                                 <p>{{$address->postcode}}</p>             
+                                <div class="col-md-9">
+                                    <a href="/addresses/{{$address->id}}/edit"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i> Edit </a>
+                                    
+                                </div>
                             @endforeach
 
-                        </div>
-                        <div class="col-md-9">
-                            <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
                         </div>
                     @else
 

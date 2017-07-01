@@ -12,6 +12,19 @@
                             <strong>{{ $errors->first('verified') }}</strong>
                         </span>
                     @endif
+
+                    <div class="social-buttons">
+                        <a class="btn btn-fb" href="login/facebook">
+                            <i class="fa fa-facebook">
+                            </i>
+                            Facebook
+                        </a>
+                        <a class="btn btn-tw" href="login/twitter">
+                            <i class="fa fa-twitter">
+                            </i>
+                            Twitter
+                        </a>
+                    </div>
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
                         {{ csrf_field() }}
 

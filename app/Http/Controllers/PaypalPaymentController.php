@@ -151,9 +151,13 @@ class PayPalPaymentController extends Controller
         $order = Order::findorFail($order_id);
 
         if($order->getStatus() == 'pay1'){
+            $order->amount_paid == $order->delivery_price;
+            $order->update();
             $order->updateStatus('delivery');
         }elseif($order->getStatus() == 'pay2'){
             $order->updateStatus('download');
+            $order->amount_paid == $order->total_price;
+            $order->update();
         }
 
         $user = $order->user;
@@ -165,7 +169,7 @@ class PayPalPaymentController extends Controller
     public function getCancel()
     {
         // Curse and humiliate the user for cancelling this most sacred payment (yours)
-        return view('checkout.cancel');
+        return view('user/process')->with('user', Auth::user());
     }
 
        public function index()

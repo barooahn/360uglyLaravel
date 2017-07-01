@@ -211,6 +211,12 @@ ul #login-dp .form-group {
     background-color:#59b5fa;
 }
 
+.social-buttons-login{
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px 0 20px 0;
+}
+
 .badge {
     background-color: #8ac926;
 }
@@ -806,7 +812,7 @@ footer {
 /*Process*/
 
 .process-items{
-    border-bottom-style: solid;
+    border-top-style: solid;
     border-width: 1px;
     border-color: #f2f2f2;
 }

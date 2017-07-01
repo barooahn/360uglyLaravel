@@ -82,7 +82,8 @@ class AddressController extends Controller
      */
     public function edit($id)
     {
-        //
+        $address = Address::findOrFail($id);
+        return view('addresses.edit')->with('address', $address);
     }
 
     /**
@@ -94,7 +95,10 @@ class AddressController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $address = Address::findOrFail($id);
+        $user = Auth::user();
+        $address -> update($request->all());
+        return view('user/home')->with('user', $user);
     }
 
     /**
@@ -105,7 +109,10 @@ class AddressController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $address = Address::find($id);
+        $user = Auth::user();
+        $address->delete();
+        return view('user/home')->with('user', $user);
     }
 
     public function useExisting($user_id)
