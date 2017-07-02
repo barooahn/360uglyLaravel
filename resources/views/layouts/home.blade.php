@@ -198,7 +198,7 @@
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a href="{{ url('user/home') }}" >
+                                        <a href="{{ url('user/process') }}" >
                                             My Orders <span class="badge">{{ Auth::user()->count_orders() }}</span>
                                         </a>
                                     </li>

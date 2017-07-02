@@ -38,6 +38,7 @@
                     @else
 
                         <p>No address saved</p>
+                        <p>You can add a new address when you order</p>
 
                     @endif
                 </div>

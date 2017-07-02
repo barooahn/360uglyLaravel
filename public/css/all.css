@@ -417,13 +417,23 @@ ul #login-dp .form-group {
     margin-top: 90px;
 }
 
+.splash-text {
+    width: 520px;
+    padding-top: 10%;
+}
+
 .slogan {
     font-family: 'Roboto', "Open Sans", sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     text-transform: uppercase;
     font-size: 45px;
-    width: 80%;
     display: inline-block;
+}
+
+.splash-text h2{
+    font-family: 'Roboto', "Open Sans", sans-serif;
+    color: #777;
+    font-weight: 200;
 }
 
     /*down arrow*/
@@ -714,8 +724,6 @@ ul #login-dp .form-group {
 
 .get-results-text {
     max-width: 315px;
-    margin: 20px auto;
-    text-align: center;
 }
 
 .get-results a {
@@ -784,19 +792,21 @@ ul #login-dp .form-group {
 /*pricing*/
 
 .pricing {
-    background-color: #76bed0;
-    margin-left: -15px;
-    margin-right: -15px;
-    color: #76bed0;
+
 }
 
-.pricing h4 {
-    padding-top: 20px;
+.pricing h2 {
+    font-family: 'Roboto', 'Open Sans';
+    font-weight: 400;
 }
 
 .pricing-img {
     padding-left: 60px;
     padding-right: 60px;
+}
+
+.one-product .pricing-img, .two-products .pricing-img {
+    margin-top: 40px;
 }
 
 .pricing .btn {
@@ -805,6 +815,15 @@ ul #login-dp .form-group {
 
 .one-product {
     background-color: white;
+    margin-top: 65px !important;
+}
+
+.one-product ul {
+    margin-top: 40px !important;
+}
+
+.two-products ul{
+    margin-top: 30px !important;
 }
 
 .one-product, .two-products {
@@ -816,18 +835,61 @@ ul #login-dp .form-group {
     margin-top: 15px;
     text-align: center;
     text-transform: uppercase;
+    padding: 15px 0;
 }
 
-.more-products {
+.more-products ul{
+    margin-left: 20px !important;
+}
+
+.more-products, .two-products {
     background-color: white;
     margin-bottom: 20px;
+}
+
+.more-products .full-width, .two-products .full-width{
+    width: 100%;
+    height: 50px;
+}
+
+.more-products h4{
+    background-color: #3C3A9D;
+    color: white;
+    padding: 10px;
+    text-align: right;
+    width: 160px;
+    float: right;
+}
+
+.two-products h4{
+    background-color: #B42F7A;
+    color: white;
+    padding: 10px;
+    text-align: right;
+    width: 160px;
+    float: right;
 }
 
 .pricing ul {
     margin-top: 12px;
     list-style-type: none;
-    padding: 0;
-    font-size: 14px;
+    font-size: 16px;
+    padding: 40px 0 0 50px;
+    text-align: left;
+}
+
+.pricing ul li {
+    margin: 5px 0;
+}
+
+.pricing ul li img {
+    width:25px;
+    display: inline-block;
+}
+
+.pricing ul li p {
+    display: inline-block;
+    padding-left: 10px;
 }
 
 .pricing-button {
@@ -1148,7 +1210,6 @@ pre{
 
     .slogan {
         font-size: 22px;
-        width: 100%;
     }
 
     footer li a{
@@ -1264,7 +1325,7 @@ pre{
         margin: 0 auto;
         float: left;
         text-align: left;
-        padding-top: 15px;
+        font-size: 24px;
     }
 
     .get-results-text h4{
@@ -1293,9 +1354,5 @@ pre{
         width: 90% !important;
     }
 
-    .splash-text{
-        width:30%;
-        padding-top: 10%;
-    }
 }
 /*# sourceMappingURL=all.css.map */

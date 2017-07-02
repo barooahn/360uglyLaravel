@@ -18,13 +18,5 @@
                         </h4>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12 get-results-btn">
-                        <a class="btn btn-primary btn-lg" href="#">
-                            Find Out How
-                        </a>
-
-                    </div>
-                </div>
             </div>
             <!--end container-->

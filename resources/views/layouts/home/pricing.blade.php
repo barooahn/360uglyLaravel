@@ -1,11 +1,11 @@
 <div class="pricing full-height">
-                <div class="container ">
+                <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
                             <div class="one-product">
-                                <h4>
+                                <h2>
                                     1 product
-                                </h4>
+                                </h2>
                                 <hr>
                                     <div class="pricing-img">
                                         <img class="img-responsive" src="images/pricing97.png">
@@ -13,16 +13,16 @@
                                     </div>
                                     <ul>
                                         <li>
-                                            Free collection
+                                            <img class="img-responsive icon-size-360" src="images/icons/002-truck.png"> <p>  Free collection</p>
                                         </li>
                                         <li>
-                                            Product Photographed
+                                            <img class="img-responsive icon-size-360" src="images/icons/002-technology.png"> <p>  Product Photographed</p>
                                         </li>
                                         <li>
-                                            Approve before buying
+                                            <img class="img-responsive icon-size-360" src="images/icons/003-checked.png"> <p>  Approve before buying</p>
                                         </li>
                                         <li>
-                                            Free download
+                                            <img class="img-responsive icon-size-360" src="images/icons/001-download.png"> <p>  Free download</p>
                                         </li>
                                     </ul>
 
@@ -31,9 +31,12 @@
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <div class="more-products">
-                                <h4>
+                                <div class="full-width">
+                                    <h4>Discount 31%</h4>
+                                </div>
+                                <h2>
                                     5+ Products
-                                </h4>
+                                </h2>
                                 <hr>
                                     <div class="pricing-img">
                                         <img class="img-responsive" src="images/pricing57.png">
@@ -41,32 +44,29 @@
                                     </div>
                                     <ul>
                                         <li>
-                                            <strong>
-                                                31% discount
-                                            </strong>
+                                            <img class="img-responsive icon-size-360" src="images/icons/002-truck.png"> <p>  Free collection</p>
                                         </li>
                                         <li>
-                                            Free collection
+                                            <img class="img-responsive icon-size-360" src="images/icons/002-technology.png"> <p>  Product Photographed</p>
                                         </li>
                                         <li>
-                                            Product Photographed
+                                            <img class="img-responsive icon-size-360" src="images/icons/003-checked.png"> <p>  Approve before buying</p>
                                         </li>
                                         <li>
-                                            Approve before buying
-                                        </li>
-                                        <li>
-                                            Free download
+                                            <img class="img-responsive icon-size-360" src="images/icons/001-download.png"> <p>  Free download</p>
                                         </li>
                                     </ul>
-
                                 </hr>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <div class="two-products">
-                                <h4>
+                                <div class="full-width">
+                                    <h4>Discount 21%</h4>
+                                </div>
+                                <h2>
                                     2 - 4 Products
-                                </h4>
+                                </h2>
                                 <hr>
                                     <div class="pricing-img">
                                         <img class="img-responsive" src="images/pricing77.png">
@@ -74,21 +74,16 @@
                                     </div>
                                     <ul>
                                         <li>
-                                            <strong>
-                                                21% discount
-                                            </strong>
+                                            <img class="img-responsive icon-size-360" src="images/icons/002-truck.png"> <p>  Free collection</p>
                                         </li>
                                         <li>
-                                            Free collection
+                                            <img class="img-responsive icon-size-360" src="images/icons/002-technology.png"> <p>  Product Photographed</p>
                                         </li>
                                         <li>
-                                            Product Photographed
+                                            <img class="img-responsive icon-size-360" src="images/icons/003-checked.png"> <p>  Approve before buying</p>
                                         </li>
                                         <li>
-                                            Approve before buying
-                                        </li>
-                                        <li>
-                                            Free download
+                                            <img class="img-responsive icon-size-360" src="images/icons/001-download.png"> <p>  Free download</p>
                                         </li>
                                     </ul>
 

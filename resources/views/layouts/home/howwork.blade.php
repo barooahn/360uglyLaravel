@@ -26,7 +26,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 icons">
-                                <div class="rollover-how-work" data-content=" We will arrange for a courier to collect your product(s).  Just specify a day that is convenient for you and we will let you know the details when a courier has been arranged." data-placement="auto" data-toggle="popover" title="2. GIVE PRODUCT TO COURIER">
+                                <div class="rollover-how-work" data-content=" We will arrange for a courier to collect your product(s).  We contact you will details of when the courier can collect your products." data-placement="auto" data-toggle="popover" title="2. GIVE PRODUCT TO COURIER">
                                     <img class="img-responsive" src="images/hiw-delivery.png">
                                     </img>
                                     <h1>
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 icons">
-                                <div class="rollover-how-work" data-content="100% Satisfaction! Preview your 360 image(s) download before making payment.  If you are not satisfied we will redo the shoot as many times as it takes to ensure the perfect 360 product." data-placement="auto" data-toggle="popover" title="3. PREVIEW YOUR PRODUCT">
+                                <div class="rollover-how-work" data-content="100% Satisfaction! Preview your 360 image(s) before you pay anything.  If you are not 100% satisfied we will redo the shoot as many times as it takes to ensure the perfect 360 product." data-placement="auto" data-toggle="popover" title="3. PREVIEW YOUR PRODUCT">
                                     <img class="img-responsive" src="images/hiw-360.png">
                                     </img>
                                     <h1>
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 icons">
-                                <div class="rollover-how-work" data-content="Use our simple, encrypted, 100% secure, online payment method to enable your download.  We accept all major debit and credit cards as well as PayPal" data-placement="auto" data-toggle="popover" title="4. MAKE PAYMENT">
+                                <div class="rollover-how-work" data-content="Use PayPal's simple, encrypted, 100% secure, online payment method to activate your download.  We accept all major debit and credit cards as well as PayPal accounts" data-placement="auto" data-toggle="popover" title="4. MAKE PAYMENT">
                                     <img class="img-responsive" src="images/hiw-pay.png">
                                     </img>
                                     <h1>
@@ -62,7 +62,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 icons">
-                                <div class="rollover-how-work" data-content="After we have confirmed payment we will send you the files via email.  The files will also be availble to download from our site." data-placement="auto" data-toggle="popover" title="4. DOWNLOAD">
+                                <div class="rollover-how-work" data-content="After we have confirmed payment your download will be unlocked in your My Orders page." data-placement="auto" data-toggle="popover" title="4. DOWNLOAD">
                                     <img class="img-responsive" src="images/hiw-download.png">
                                     </img>
                                     <h1>
@@ -74,7 +74,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 icons">
-                                <div class="rollover-how-work" data-content="Once you have your files upload them to the folder where you want to display your 360 image and add 2-3 lines of code to make the magic work!  Enjoy your 360 image and incresed sales." data-placement="auto" data-toggle="popover" title="6. ADD TO YOUR SITE">
+                                <div class="rollover-how-work" data-content="Once you have downloaded your files upload them to your website in the folder you want to display your 360 image and add three lines of code to make the magic work!  Enjoy your 360 image and incresed sales." data-placement="auto" data-toggle="popover" title="6. ADD TO YOUR SITE">
                                     <img class="img-responsive" src="images/hiw-code.png">
                                     </img>
                                     <h1>
@@ -85,6 +85,12 @@
                                     </h4>
                                 </div>
                             </div>
+
+                                               <div class="pricing-button">
+                        <a class="btn btn-primary btn-lg" href="{{ url('orders/create') }}">
+                            Start Now
+                        </a>
+                    </div>
                         </div>
                         <!--end of row-->
                     </div>
