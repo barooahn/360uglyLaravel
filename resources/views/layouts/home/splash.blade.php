@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="row"> 
-        <div class="col-md-6">
+        <div class="col-md-6 col-xs-12">
             <div class="uglyman splash-container">
             </div>
             <div class="loader">
@@ -38,23 +38,22 @@
             </div>
         </div>
 
-        <div class="col-md-6 splash-text">
-                <div class="col-lg-12 ">
+        <div class="col-md-6 col-xs-12">
+            <div class="splash-text">
+
                     <img class="img-responsive logo" alt="Brand" src="/images/logo.png">
-                </div>
-                <div>
+            
+                    <h1>360 images for the web</h1>
 
-                    <h1>Ugly360 provides a simple and cost effective way to use 360 images on your website</h1>
-                </div>
-
+            </div>
         </div>
     </div>
 
-    <div class="paypal-logo">
-        <img class ="img-reponsive" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal Logo"><!-- PayPal Logo -->
-    </div>
 </div>
 
+        <div class="paypal-logo">
+            <img class ="img-reponsive" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal Logo"><!-- PayPal Logo -->
+        </div>
 <div class="arrow bounce">
     <a class="fa fa-arrow-down fa-2x" href="#ourwork">
     </a>

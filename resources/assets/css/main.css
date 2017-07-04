@@ -244,8 +244,9 @@ ul #login-dp .form-group {
 
 
 .logo {
-    width: 375px;
-    margin-left: -30px;
+    width: 370px;
+    margin-left: -20px;
+    margin-top: 29%
 }
 
 .logo img {
@@ -257,7 +258,7 @@ ul #login-dp .form-group {
 }
 
 .splash-text {
-    padding-top: 10%;
+
 }
 
 .slogan {
@@ -266,15 +267,17 @@ ul #login-dp .form-group {
     font-weight: 200;
     text-transform: uppercase;
     font-size: 32px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .splash-text h1{
-    max-width: 350px;
+
     font-family: 'Roboto', "Open Sans", sans-serif;
     color: #777;
     font-weight: 200;
-    font-size: 25px;
+    font-size: 35px;
     text-align: left;
 }
 
@@ -301,6 +304,12 @@ ul #login-dp .form-group {
     animation: bounce 2s 3;
 }
 
+.paypal-logo {
+    position: absolute;
+    top: 150px;
+    right: 30px;
+}
+
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -316,9 +325,6 @@ ul #login-dp .form-group {
 
 /*end of down arrow*/
 
-.uglyman {
-    margin: 0 auto;
-}
 
 .full-height {
     min-height: 100vh;
@@ -332,15 +338,17 @@ ul #login-dp .form-group {
     padding: 15px;
 }
 
-.how-work, .our-work, .pricing, .contact, .results, .uglyman {
+.how-work, .our-work, .pricing, .contact, .results {
     padding-top: 5px;
 }
 
 /*splash container*/
-.splash-container{
-    max-width: 50%;
-}
 
+.uglyman {
+    margin-top: 80px; 
+    width: 50%;
+    float: right;
+}
 .amazon-product{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -462,7 +470,9 @@ ul #login-dp .form-group {
 }
 
 .loader {
-    position: relative;
+    position: absolute;
+    top:50%;
+    left:35%;
     z-index: 1000;
     margin: 0 auto;
     width: 100px;
@@ -688,12 +698,13 @@ ul #login-dp .form-group {
     max-width: 80%;
 }
 
-.one-product, .two-products, .more-products, .pricing-button {
+.one-product, .two-products, .more-products {
     text-align: center;
     text-transform: uppercase;
     padding: 15px 0;
     background-color: white;
     margin: 15px auto 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .more-products ul{
@@ -749,7 +760,8 @@ ul #login-dp .form-group {
 }
 
 .pricing-button {
-    padding-bottom: 22px;
+    padding-top: 15px;
+    text-align: center;
 }
 
 
@@ -952,6 +964,18 @@ pre{
         font-size: 16px;
     }
 
+    .uglyman {
+        float: none;
+        width: 100% !important;
+    }
+
+    .paypal-logo {
+        position: absolute;
+        top: 130px;
+        right: 15px;
+    }
+
+
     .thumbs {
         width: 100%;
         min-height: 235px !important;
@@ -965,11 +989,6 @@ pre{
 
     .logo {
         display: none;
-    }
-
-    .paypal-logo {
-        position: absolute;
-        bottom: 10px;
     }
 
     .splash-text {
@@ -1027,11 +1046,13 @@ pre{
         margin-top: 20px !important;
     }
 
+    .pricing ul {
+        padding: 0px 0 0 60px;
+    }
 
-
-
-
-
+    .more-products ul {
+        padding: 0px 0 0 75px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 988px) {
@@ -1057,6 +1078,13 @@ pre{
         padding-top: 20px;
         font-size: 22px;
     }
+
+    .uglyman {
+        float: none;
+        width: 100% !important;
+    }
+
+
 }
 @media screen and (max-width: 988px) {
 
@@ -1114,27 +1142,22 @@ pre{
 
     .splash-text {
         text-align: center;
-        padding-top: 10px;
+        padding-top: 0;
         width: 100%;
     }
 
     .splash-text h1{
         margin: 0;
         padding:0;
-        font-size: 16px;
-        color: #777;
+        font-size: 19px;
+        color: #e0543a;
         font-family: roboto;
-        font-weight: 200;
+        font-weight: 400;
+        text-align: center;
     }
 
     .slogan {
         font-size: 22px;
-    }
-
-    .paypal-logo {
-        width:100px;
-        margin: 0 auto;
-        padding-top: 20px;
     }
 
     footer li a{
@@ -1239,7 +1262,6 @@ pre{
         font-size: 11px
     }
 
-
     
 }
 @media screen and (min-width: 988px) {
@@ -1272,8 +1294,16 @@ pre{
         width:20px;
     }
 
-    .paypal-logo {
+
+
+}
+
+@media screen and (min-width: 988px) and (max-width: 1920px) {
+
+    .uglyman {
         float: right;
+        width: 65% !important;
     }
 
 }
+
