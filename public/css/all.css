@@ -480,7 +480,8 @@ ul #login-dp .form-group {
 }
 
 .full-height {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px 0;
 }
 
 .full-height-orange {
@@ -491,7 +492,7 @@ ul #login-dp .form-group {
 }
 
 .how-work, .our-work, .pricing, .contact, .results, .uglyman {
-    padding-top: 55px;
+    padding-top: 5px;
 }
 
 /*splash container*/
@@ -502,9 +503,8 @@ ul #login-dp .form-group {
 .amazon-product{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 23%;
     padding: 15px;
-    margin: 5px;
+    margin: 5px -12px 0 -12px;
 }
 
 .amazon-container{
@@ -590,9 +590,8 @@ ul #login-dp .form-group {
 }
 
 .thumbs-container {
-    max-width: 23%;
     padding: 0;
-    margin: 5px;
+    margin: 5px -12px 0 -12px;
 }
 
 
@@ -715,6 +714,14 @@ ul #login-dp .form-group {
     margin-bottom: 20px;
 }
 
+.big-flowers {
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+.amazon-product .no-top-margin {
+    padding-top: 0 !important;
+}
 
 /*get-results container*/
 
@@ -774,7 +781,7 @@ ul #login-dp .form-group {
 }
 
 .icons {
-    min-height: 315px !important;
+
     text-align: center;
     cursor: pointer;
 }
@@ -800,7 +807,7 @@ ul #login-dp .form-group {
 /*pricing*/
 
 .pricing {
-
+    background-color: #E0AC3A;
 }
 
 .pricing h2 {
@@ -813,7 +820,7 @@ ul #login-dp .form-group {
     padding-right: 60px;
 }
 
-.one-product .pricing-img, .two-products .pricing-img {
+.one-product .pricing-img, .two-products {
     margin-top: 40px;
 }
 
@@ -822,8 +829,9 @@ ul #login-dp .form-group {
 }
 
 .one-product {
-    background-color: white;
-    margin-top: 65px !important;
+    margin-top: 15px !important;
+    padding-top: 65px !important;
+
 }
 
 .one-product ul {
@@ -835,25 +843,23 @@ ul #login-dp .form-group {
 }
 
 .one-product, .two-products {
-    margin: 20px;
     background-color: white;
+    max-width: 80%;
 }
 
 .one-product, .two-products, .more-products, .pricing-button {
-    margin-top: 15px;
     text-align: center;
     text-transform: uppercase;
     padding: 15px 0;
+    background-color: white;
+    margin: 15px auto 0 auto;
 }
 
 .more-products ul{
     margin-left: 20px !important;
+    padding: 15px;
 }
 
-.more-products, .two-products {
-    background-color: white;
-    margin-bottom: 20px;
-}
 
 .more-products .full-width, .two-products .full-width{
     width: 100%;
@@ -882,7 +888,7 @@ ul #login-dp .form-group {
     margin-top: 12px;
     list-style-type: none;
     font-size: 16px;
-    padding: 40px 0 0 50px;
+    padding: 20px 0 0 30px;
     text-align: left;
 }
 
@@ -898,6 +904,7 @@ ul #login-dp .form-group {
 .pricing ul li p {
     display: inline-block;
     padding-left: 10px;
+    font-size: 14.5px;
 }
 
 .pricing-button {
@@ -1128,6 +1135,62 @@ pre{
         padding-top: 45px;
     }
 
+    .get-results-text {
+        margin: 0 auto;
+        padding-top: 20px;
+        font-size: 22px;
+    }
+
+    .get-results-padding h2{
+        font-size: 22px;
+        max-width: 315px;
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    .our-work {
+        padding-bottom: 15px;
+    }
+
+    .get-results-padding {
+        padding-top: 37%;
+    }
+
+    .one-product, .two-products, .more-products, .pricing-button {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 5px 0;
+        background-color: white;
+        margin: 10px auto 0 auto;
+    }
+
+    .how-work, .our-work, .pricing, .contact, .results, .uglyman {
+        padding-top: 5px;
+    }
+
+    .one-product {
+        margin-top: 15px !important;
+        padding-top: 15px !important;
+    }
+
+    .pricing-img {
+        margin-top: 0 !important;
+    }
+
+    .pricing ul {
+        padding: 0px 0 0 30px;
+        
+    }
+
+    .one-product ul {
+        margin-top: 20px !important;
+    }
+
+
+
+
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 988px) {
@@ -1146,6 +1209,12 @@ pre{
 
     .logo {
         display: none;
+    }
+
+    .get-results-text {
+        margin: 0 auto;
+        padding-top: 20px;
+        font-size: 22px;
     }
 }
 @media screen and (max-width: 988px) {
@@ -1288,13 +1357,11 @@ pre{
 
     /*our work*/
     .thumbs-container {
-        max-width: 100%;
         padding: 0 3px 3px 3px;
         margin: 0px;
 
     }
     .amazon-product {
-        max-width: 98%;
         margin: 0 4px 4px 4px;
     }
     
@@ -1328,7 +1395,7 @@ pre{
     .pricing ul li p {
         display: inline-block;
         padding-left: 5px;
-        font-size: 12px
+        font-size: 11px
     }
 
 

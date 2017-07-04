@@ -11,7 +11,7 @@
                     Spin with mouse or touch
                 </span>
             </div>
-            <div class="amazon-item">
+            <div class="amazon-item no-top-margin">
                 <div class="big-flowers amazon-container">
                     <div class="loader">
                         <div class="spinner">

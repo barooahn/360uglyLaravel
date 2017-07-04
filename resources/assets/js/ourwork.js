@@ -5,7 +5,7 @@ var framesflowers = SpriteSpin.sourceArray('/images/big-flowers/DSC_{frame}.jpg'
     digits: 4
 });
 
-var widthflowers = $('.big-flowers').width() - 10;
+var widthflowers = $('.big-flowers').width();
 var heightflowers = widthflowers * 1.5;
 var spinflowers = $('.big-flowers');
 // initialise spritespin

@@ -1,39 +1,47 @@
 <div class="our-work full-height">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumbs-container">
-                <a class="rollover-modal" href="#" id="clown">
-                    <img class="img-responsive thumbs" src="images/clown/DSC_0015.jpg">
-                </img>
-                </a>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbs-container">
+                    <a class="rollover-modal" href="#" id="clown">
+                        <img class="img-responsive thumbs" src="images/clown/DSC_0015.jpg">
+                        </img>
+                    </a>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumbs-container">
-                <a class="rollover-modal" href="#" id="flower2">
-                    <img class="img-responsive thumbs" src="images/flower2/DSC_0913.jpg">
-                    </img>
-                </a>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbs-container">
+                    <a class="rollover-modal" href="#" id="flower2">
+                        <img class="img-responsive thumbs" src="images/flower2/DSC_0913.jpg">
+                        </img>
+                    </a>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumbs-container">
-                <a class="rollover-modal" href="#" id="fireTruck">
-                    <img class="img-responsive thumbs" src="images/fireTruck/DSC_0507.jpg">
-                </img>
-                </a>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbs-container">
+                    <a class="rollover-modal" href="#" id="fireTruck">
+                        <img class="img-responsive thumbs" src="images/fireTruck/DSC_0507.jpg">
+                        </img>
+                    </a>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 thumbs-container">
-                <a class="rollover-modal" href="#" id="baji">
-                    <img class="img-responsive thumbs" src="images/baji/DSC_0150.jpg">
-                </img>
-            </a>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbs-container">
+                    <a class="rollover-modal" href="#" id="baji">
+                        <img class="img-responsive thumbs" src="images/baji/DSC_0150.jpg">
+                        </img>
+                    </a>
+                </div>
             </div>
-           
+
         </div>
         <div class="row">
-           @include('layouts.home.amazon_products.big_flowers')
-           @include('layouts.home.amazon_products.book')
-           @include('layouts.home.amazon_products.flowers3')
-           @include('layouts.home.amazon_products.uglyman2')
+         @include('layouts.home.amazon_products.big_flowers')
+         @include('layouts.home.amazon_products.book')
+         @include('layouts.home.amazon_products.flowers3')
+         @include('layouts.home.amazon_products.uglyman2')
 
         </div>
     </div>
-<!--end of container-->
+    <!--end of container-->
 </div>

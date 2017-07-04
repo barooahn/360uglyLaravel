@@ -1,7 +1,7 @@
 <div class="pricing full-height">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-4">
+                        <div class="col-sm-4">
                             <div class="one-product">
                                 <h2>
                                     1 product
@@ -29,7 +29,7 @@
                                 </hr>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4">
+                        <div class="col-sm-4">
                             <div class="more-products">
                                 <div class="full-width">
                                     <h4>Discount 31%</h4>
@@ -59,7 +59,7 @@
                                 </hr>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4">
+                        <div class="col-sm-4">
                             <div class="two-products">
                                 <div class="full-width">
                                     <h4>Discount 21%</h4>

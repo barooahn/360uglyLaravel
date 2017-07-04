@@ -107,7 +107,7 @@ $.scrollify({
     offset : -50,
     scrollbars: false,
     standardScrollElements: "",
-    setHeights: true,
+    setHeights: false,
     overflowScroll: true,
     updateHash: true,
     touchScroll:false,
