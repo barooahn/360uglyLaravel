@@ -1,4 +1,5 @@
- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 amazon-product">
+ <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="amazon-product">
     <div class="amazon-header">
         <div class="spinuglyman2">
             <span>
@@ -33,5 +34,6 @@
                 <p><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i>  98</p>
             </div>
         </div>
+    </div>
     </div>
 </div>

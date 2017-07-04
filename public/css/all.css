@@ -254,19 +254,6 @@ p{
     margin-right: 8px;
 }
 
-
-.logo {
-    margin: 0 auto;
-    width: 250px;
-}
-
-.logo img {
-    margin: 0 auto;
-    height: 125px !important;
-    padding-bottom: 20px;
-
-}
-
 header {
     padding-bottom: 40px !important;
     text-align: left !important;
@@ -413,27 +400,41 @@ ul #login-dp .form-group {
 /*end of nav*/
 
 /*home page - splash*/
-.home-top{
-    margin-top: 90px;
+
+
+.logo {
+    width: 375px;
+    margin-left: -30px;
+}
+
+.logo img {
+    height: 125px !important;
+    padding-bottom: 20px;
+}
+#home{
+    padding-top: 50px;
 }
 
 .splash-text {
-    width: 520px;
     padding-top: 10%;
 }
 
 .slogan {
+    max-width: 350px;
     font-family: 'Roboto', "Open Sans", sans-serif;
     font-weight: 200;
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 32px;
     display: inline-block;
 }
 
-.splash-text h2{
+.splash-text h1{
+    max-width: 350px;
     font-family: 'Roboto', "Open Sans", sans-serif;
     color: #777;
     font-weight: 200;
+    font-size: 25px;
+    text-align: left;
 }
 
     /*down arrow*/
@@ -479,7 +480,7 @@ ul #login-dp .form-group {
 }
 
 .full-height {
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .full-height-orange {
@@ -495,13 +496,13 @@ ul #login-dp .form-group {
 
 /*splash container*/
 .splash-container{
-
+    max-width: 50%;
 }
 
 .amazon-product{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 24%;
+    max-width: 23%;
     padding: 15px;
     margin: 5px;
 }
@@ -589,7 +590,7 @@ ul #login-dp .form-group {
 }
 
 .thumbs-container {
-    max-width: 24%;
+    max-width: 23%;
     padding: 0;
     margin: 5px;
 }
@@ -618,6 +619,13 @@ ul #login-dp .form-group {
     left: 0 !important;
     right: 0 !important;
     margin: 0 auto;
+}
+
+.loader {
+    position: relative;
+    z-index: 1000;
+    margin: 0 auto;
+    width: 100px;
 }
 
 .spinner {
@@ -991,10 +999,6 @@ ul #login-dp .form-group {
 
 /*options*/
 
-.uglymanLowRes, .uglymanHiRes{
-
-}
-
 
 footer {
     text-align: center;
@@ -1105,16 +1109,25 @@ pre{
         min-height: 235px !important;
     }
 
-    .uglyman {
-        margin: 0 auto;
-        position: initial !important;
-    }
-
     .arrow {
         bottom: 30px;
         margin: -15px;
 
     }
+
+    .logo {
+        display: none;
+    }
+
+    .paypal-logo {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .splash-text {
+        padding-top: 45px;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 988px) {
@@ -1126,18 +1139,13 @@ pre{
         min-height: 235px !important;
     }
 
-    .uglyman {
-        margin: 0 auto;
-        position: initial !important;
-    }
-
-    .splash-container{
-
-    }
     .arrow {
         bottom: 30px;
         margin: -15px;
+    }
 
+    .logo {
+        display: none;
     }
 }
 @media screen and (max-width: 988px) {
@@ -1197,9 +1205,10 @@ pre{
     .splash-text {
         text-align: center;
         padding-top: 10px;
+        width: 100%;
     }
 
-    .splash-text h2{
+    .splash-text h1{
         margin: 0;
         padding:0;
         font-size: 16px;
@@ -1212,6 +1221,12 @@ pre{
         font-size: 22px;
     }
 
+    .paypal-logo {
+        width:100px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
     footer li a{
         font-size: 10px;
 
@@ -1219,7 +1234,7 @@ pre{
 
     .logo {
         margin: 0px auto 20px auto;
-        width: 250px;
+        width: 125px;
     }
 
 
@@ -1227,10 +1242,6 @@ pre{
         margin: 0 auto;
         height: 70px !important;
         padding-bottom: 20px;
-    }
-
-    .uglyman {
-        margin: 0 auto;
     }
 
     .splash-container{
@@ -1313,6 +1324,13 @@ pre{
         float:none !important;
     }
 
+    /*pricing*/
+    .pricing ul li p {
+        display: inline-block;
+        padding-left: 5px;
+        font-size: 12px
+    }
+
 
     
 }
@@ -1342,16 +1360,12 @@ pre{
         padding-top: 20px;
     }
 
-    .uglyman {
-        margin: 0 auto;
-    }
-
     .icon-size img{
         width:20px;
     }
 
-    .splash-container{
-        width: 90% !important;
+    .paypal-logo {
+        float: right;
     }
 
 }
