@@ -16,7 +16,7 @@ spinuglyman.spritespin({
       source: framesuglyman,
         width: widthuglyman,
         height: heightuglyman,
-        frameTime: 120
+        frameTime: 80
 });
 spinuglyman.bind("onLoad", function() {
     $('.loader').css({

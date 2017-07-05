@@ -84,7 +84,6 @@ $(".rollover-modal").click(function(e) {
         'drag',
         // enable zoom module
         // toggle zoom with double click or use the API object
-        'zoom',
         // display module
         '360'
       ]
@@ -136,7 +135,7 @@ spinuglyman.spritespin({
       source: framesuglyman,
         width: widthuglyman,
         height: heightuglyman,
-        frameTime: 120
+        frameTime: 80
 });
 spinuglyman.bind("onLoad", function() {
     $('.loader').css({
@@ -160,7 +159,7 @@ $.scrollTo = $.fn.scrollTo = function(x, y, options){
     options = $.extend({}, {
         gap: {
             x: 0,
-            y: 0
+            y: -50
         },
         animation: {
             easing: 'swing',
@@ -185,7 +184,7 @@ $(document).ready(function(){
      * page is scrolled/
      */
     $(window).scroll(function(){
-        var window_top = $(window).scrollTop() + 12; // the "12" should equal the margin-top value for nav.stick
+        var window_top = $(window).scrollTop()+50; // the "12" should equal the margin-top value for nav.stick
         var div_top = $('.navbar').offset().top;
             if (window_top > div_top) {
                 $('nav').addClass('stick');
@@ -287,8 +286,8 @@ var framesflowers = SpriteSpin.sourceArray('/images/big-flowers/DSC_{frame}.jpg'
     digits: 4
 });
 
-var widthflowers = $('.big-flowers').width();
-var heightflowers = widthflowers * 1.5;
+var widthflowers = 120;
+var heightflowers = 180;
 var spinflowers = $('.big-flowers');
 // initialise spritespin
 $(document).ready(function() {
@@ -297,7 +296,8 @@ $(document).ready(function() {
             width: widthflowers,
             height: heightflowers,
             frameTime: 80,
-            animate:false
+            animate:false,
+            scrollThreshold:150
     })        
 });
 
@@ -336,7 +336,8 @@ $(document).ready(function() {
             width: widthbook,
             height: heightbook,
             frameTime: 80,
-            animate:false
+            animate:false,
+            scrollThreshold:150
     })        
 });
 
@@ -375,7 +376,8 @@ $(document).ready(function() {
             width: widthflowers3,
             height: heightflowers3,
             frameTime: 80,
-            animate:false
+            animate:false,
+            scrollThreshold:150
     })        
 });
 
@@ -414,7 +416,8 @@ $(document).ready(function() {
             width: widthuglyman2,
             height: heightuglyman2,
             frameTime: 80,
-            animate:false
+            animate:false,
+            scrollThreshold:150
     })        
 });
 

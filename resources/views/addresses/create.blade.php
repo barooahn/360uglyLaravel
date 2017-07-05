@@ -116,11 +116,11 @@
                         <p>Ormskirk</p>
                         <p>West Lancashire</p>
                         <p>L39 3NW</p>
-                    </div>
-                    <div class="pricing-button">
-                        <a class="btn btn-primary" href="{{ url('/address/self', Session::get('order_id')) }}">
-                            I will post
-                        </a>
+                        <div class="pricing-button">
+                            <a class="btn btn-primary" href="{{ url('/address/self', Session::get('order_id')) }}">
+                                I will post
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

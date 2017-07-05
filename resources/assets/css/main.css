@@ -147,6 +147,10 @@ header h1, header h4 {
     color: #e25333;
 }
 
+.navbar-default .navbar-nav > li > a:focus {
+    color: #777;
+}
+
 .nav-active {
     background-color: #e25333 !important;
     color:white !important;
@@ -356,18 +360,11 @@ ul #login-dp .form-group {
     margin: 5px -12px 0 -12px;
 }
 
-.amazon-container{
-    width:100% !important;
-}
-
 .splash-fullscreen{
     position: static;
     top:10px
     right 10px;
     z-index: 1000;
-}
-
-.amazon-header {
 }
 
 .amazon-item {
@@ -566,7 +563,6 @@ ul #login-dp .form-group {
 }
 
 .big-flowers {
-    max-width: 120px;
     margin: 0 auto;
 }
 
@@ -854,7 +850,12 @@ ul #login-dp .form-group {
     border-style: solid;
     border-color: #e25333;
     border-radius: 5px;
-    margin: 15px 2px;
+    margin: 25px 2px;
+    padding: 10px;
+}
+
+.itemthumb p{
+    font-size: 12px;
 }
 
 /*options*/

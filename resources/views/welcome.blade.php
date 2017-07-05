@@ -28,7 +28,7 @@
                     <div class="col-lg-12">
                         <ul class="list-inline">
                             <li>
-                                <a href="/#our-work">
+                                <a href="/#ourwork">
                                     Our Work
                                 </a>
                             </li>
@@ -40,7 +40,7 @@
                             </li>
                             
                             <li>
-                                <a href="/#how-works">
+                                <a href="/#howwork">
                                     How It Works
                                 </a>
                             </li>

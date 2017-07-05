@@ -5,8 +5,8 @@ var framesflowers = SpriteSpin.sourceArray('/images/big-flowers/DSC_{frame}.jpg'
     digits: 4
 });
 
-var widthflowers = $('.big-flowers').width();
-var heightflowers = widthflowers * 1.5;
+var widthflowers = 120;
+var heightflowers = 180;
 var spinflowers = $('.big-flowers');
 // initialise spritespin
 $(document).ready(function() {
@@ -15,7 +15,8 @@ $(document).ready(function() {
             width: widthflowers,
             height: heightflowers,
             frameTime: 80,
-            animate:false
+            animate:false,
+            scrollThreshold:150
     })        
 });
 
@@ -54,7 +55,8 @@ $(document).ready(function() {
             width: widthbook,
             height: heightbook,
             frameTime: 80,
-            animate:false
+            animate:false,
+            scrollThreshold:150
     })        
 });
 
@@ -93,7 +95,8 @@ $(document).ready(function() {
             width: widthflowers3,
             height: heightflowers3,
             frameTime: 80,
-            animate:false
+            animate:false,
+            scrollThreshold:150
     })        
 });
 
@@ -132,7 +135,8 @@ $(document).ready(function() {
             width: widthuglyman2,
             height: heightuglyman2,
             frameTime: 80,
-            animate:false
+            animate:false,
+            scrollThreshold:150
     })        
 });
 

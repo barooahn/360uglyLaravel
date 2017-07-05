@@ -67,7 +67,6 @@ $(".rollover-modal").click(function(e) {
         'drag',
         // enable zoom module
         // toggle zoom with double click or use the API object
-        'zoom',
         // display module
         '360'
       ]

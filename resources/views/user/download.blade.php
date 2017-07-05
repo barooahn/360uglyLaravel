@@ -12,11 +12,13 @@
         </div>
         <div class="col-md-9">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">
+                    
+                    <h1>Ready for download</h1>
+                </div>
 
                 <div class="panel-body">
 
-                    <h1>Ready for download</h1>
 
                     <div class="col-md-12">
                         @if($user->status('download') > 0 )
@@ -49,6 +51,7 @@
                                                           <input type="hidden" name="order_id" value="{{$order->id}}">
                                                     </form>
                                                 </div>
+                                                <p>To Pay: £{{sprintf("%01.2f", $order->total_price)}}</p>
                                             @elseif($item->download)
                                                 <div class = "pricing-button">
                                                     <a class="btn btn-primary btn-sm" href="{{ url('downloads/download', $item->download->id) }}">

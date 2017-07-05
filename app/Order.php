@@ -52,6 +52,15 @@ class Order extends Model
         return $price;
     }
 
+    public static function deliveryPrice($orderId)
+    {
+        $order = Order::find($orderId);
+        $delivery = $order->delivery_price;
+        return $delivery;
+    }
+
+
+
     public static function postSelf($order)
     {
         $order->post = 1;

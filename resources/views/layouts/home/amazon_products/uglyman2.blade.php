@@ -29,9 +29,9 @@
                 <img src="images/icons/005-arrows.png">
             </a>
             <div>
-                <p class="amazon-price">£79.00</p>
-                <p class="amazon-description">Exquisite marble flower vase with beautiful rose arrangement</p>
-                <p><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i>  98</p>
+                <p class="amazon-price">£479.00</p>
+                <p class="amazon-description">A second uglyman tabletop ornament part of the Uglymen collection </p>
+                <p><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i>  598</p>
             </div>
         </div>
     </div>

@@ -12,11 +12,13 @@
       </div>
       <div class="col-md-9">
         <div class="panel panel-default">
-            <div class="panel-heading">Dashboard</div>
+            <div class="panel-heading">
+                
+                <h1>Orders being processed</h1>
+            </div>
 
             <div class="panel-body">
 
-                <h1>Orders being processed</h1>
 
                 @if($user->status('process') > 0)
 
@@ -62,6 +64,9 @@
                                  <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png" alt="PayPal Checkout"/>
                                   <input type="hidden" name="order_id" value="{{$order->id}}">
                             </form>
+
+                        <p>Delivery cost: £{{sprintf("%01.2f", $order->delivery_price)}}</p>
+
 
                         </div>
                     @elseif ($order->status == 'delivery') 
