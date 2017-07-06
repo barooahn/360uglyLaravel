@@ -12,19 +12,10 @@
             </span>
         </div>
         <div class="amazon-item">
-            <div class="flowers3 amazon-container">
-                <div class="loader">
-                    <div class="spinner">
-                        <div class="dot1">
-                        </div>
-                        <div class="dot2">
-                        </div>
-                    </div>
-                    <p>
-                        Loading
-                    </p>
+            <a href="#" class="flowers3-img"><img src="images/flowers3/DSC_0045.jpg" class="img-responsive"></a>
+                <div class="flowers3-container">
+                    
                 </div>
-            </div>
             <a class="full-screen icon-size splash-fullscreen-flowers3">
                 <img src="images/icons/005-arrows.png">
             </a>

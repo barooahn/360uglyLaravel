@@ -16,13 +16,10 @@ spinuglyman.spritespin({
       source: framesuglyman,
         width: widthuglyman,
         height: heightuglyman,
+        onInit : function(p){$('.loader-splash').css({opacity: 0, display: "block"}).animate({opacity: 1}, 'slow')},
+        onLoad : function(p){$('.loader-splash').css({opacity: 1, display: "none"}).animate({opacity: 0}, 'slow')},
         frameTime: 80
 });
-spinuglyman.bind("onLoad", function() {
-    $('.loader').css({
-        opacity: 1,
-        display: "none"
-    }).animate({
-        opacity: 0
-    }, 'slow');
-});
+
+
+

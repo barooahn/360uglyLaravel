@@ -26,14 +26,14 @@
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 icons">
-                    <div class="rollover-how-work" data-content=" We will arrange for a courier to collect your product(s).  We contact you will details of when the courier can collect your products." data-placement="auto" data-toggle="popover" title="2. GIVE PRODUCT TO COURIER">
+                    <div class="rollover-how-work" data-content=" We will arrange for a courier to collect your product(s).  We contact you will details of when the courier can collect your products. If you prefer you can simply post the product(s) to our office" data-placement="auto" data-toggle="popover" title="2. GIVE PRODUCT TO COURIER">
                         <img class="img-responsive" src="images/hiw-delivery.png">
                     </img>
                     <h1>
                         2
                     </h1>
                     <h4>
-                        COURIER
+                        COURIER/POST
                     </h4>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 icons">
-                    <div class="rollover-how-work" data-content="Once you have downloaded your files upload them to your website in the folder you want to display your 360 image and add three lines of code to make the magic work!  Enjoy your 360 image and incresed sales." data-placement="auto" data-toggle="popover" title="6. ADD TO YOUR SITE">
+                    <div class="rollover-how-work" data-content="Once you have downloaded your files upload them to your website in the folder you want to display your 360 image.  Add three lines of code to make the magic work!  Enjoy your 360 image and incresed sales." data-placement="auto" data-toggle="popover" title="6. ADD TO YOUR SITE">
                         <img class="img-responsive" src="images/hiw-code.png">
                     </img>
                     <h1>

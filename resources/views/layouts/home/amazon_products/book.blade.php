@@ -12,19 +12,11 @@
             </span>
         </div>
         <div class="amazon-item">
-            <div class="book amazon-container">
-                <div class="loader">
-                    <div class="spinner">
-                        <div class="dot1">
-                        </div>
-                        <div class="dot2">
-                        </div>
-                    </div>
-                    <p>
-                        Loading
-                    </p>
+            <a href="#" class="book-img"><img src="images/book/DSC_0805.jpg" class="img-responsive"></a>
+                <div class="book-container">
+                    
                 </div>
-            </div>
+
             <a class="full-screen icon-size splash-fullscreen-book">
                 <img src="images/icons/005-arrows.png">
             </a>

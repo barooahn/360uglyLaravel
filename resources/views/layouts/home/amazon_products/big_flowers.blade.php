@@ -12,18 +12,9 @@
                 </span>
             </div>
             <div class="amazon-item no-top-margin">
-                <div class="big-flowers amazon-container">
-                    <div class="loader">
-                        <div class="spinner">
-                            <div class="dot1">
-                            </div>
-                            <div class="dot2">
-                            </div>
-                        </div>
-                        <p>
-                            Loading
-                        </p>
-                    </div>
+                <a href="#" class="big-flowers-img"><img src="images/big-flowers/DSC_0159.jpg" class="img-responsive"></a>
+                <div class="big-flowers-container">
+                    
                 </div>
                 <a class="full-screen icon-size splash-fullscreen-bigflowers">
                     <img src="images/icons/005-arrows.png">

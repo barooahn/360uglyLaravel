@@ -23,19 +23,18 @@
     </div>
     <div class="row"> 
         <div class="col-md-6 col-xs-12">
-            <div class="uglyman splash-container">
-            </div>
-            <div class="loader">
+            <div class="splash-container">
+            <div class="uglyman">   
+            <div id="loader">
                 <div class="spinner">
                     <div class="dot1">
                     </div>
                     <div class="dot2">
                     </div>
                 </div>
-                <p>
-                    Loading
-                </p>
             </div>
+            </div>
+        </div>
         </div>
 
         <div class="col-md-6 col-xs-12">

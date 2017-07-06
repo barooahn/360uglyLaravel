@@ -61,7 +61,7 @@ a:hover{
 
 p{
     font-size: 16.5px;
-    line-height: 1.7;
+    line-height: 1.2;
 }
 
 .btn {
@@ -261,10 +261,6 @@ ul #login-dp .form-group {
     padding-top: 50px;
 }
 
-.splash-text {
-
-}
-
 .slogan {
     max-width: 350px;
     font-family: 'Roboto', "Open Sans", sans-serif;
@@ -352,6 +348,10 @@ ul #login-dp .form-group {
     margin-top: 80px; 
     width: 50%;
     float: right;
+}
+
+.amazon-continer{
+    min-height: 150px;
 }
 .amazon-product{
     background-color: white;
@@ -454,10 +454,10 @@ ul #login-dp .form-group {
     /*max-height: 50%;*/
 }
 
-.loader p {
+.loader p, .loader-splash p{
     text-align: center;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .spritespin-canvas {
@@ -467,12 +467,24 @@ ul #login-dp .form-group {
 }
 
 .loader {
-    position: absolute;
-    top:50%;
-    left:35%;
     z-index: 1000;
-    margin: 0 auto;
     width: 100px;
+    position: absolute;
+    top: 25%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.loader-splash{
+    z-index: 1000;
+    width: 100px;
+    position: relative;
+    margin-top: 48%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .spinner {
@@ -563,6 +575,12 @@ ul #login-dp .form-group {
 }
 
 .big-flowers {
+    margin: 0 auto;
+}
+
+.big-flowers-img img{
+    height:180px;
+    width: 120px;
     margin: 0 auto;
 }
 
@@ -1180,10 +1198,10 @@ pre{
 
     .splash-container{
         margin: 0 auto;
-
     }
+
     .arrow {
-        display: none;
+
     }
 
 

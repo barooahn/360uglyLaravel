@@ -13,18 +13,9 @@
         </div>
         <div class="amazon-item">
             <div class="uglyman2 amazon-container">
-                <div class="loader">
-                    <div class="spinner">
-                        <div class="dot1">
-                        </div>
-                        <div class="dot2">
-                        </div>
-                    </div>
-                    <p>
-                        Loading
-                    </p>
+            <a href="#" class="uglyman2-img"><img src="images/uglyman2/DSC_0013.jpg" class="img-responsive"></a>
+                <div class="uglyman2-container">
                 </div>
-            </div>
             <a class="full-screen icon-size splash-fullscreen-uglyman2">
                 <img src="images/icons/005-arrows.png">
             </a>
