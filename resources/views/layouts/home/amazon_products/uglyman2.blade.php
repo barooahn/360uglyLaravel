@@ -12,9 +12,9 @@
             </span>
         </div>
         <div class="amazon-item">
-            <div class="uglyman2 amazon-container">
             <a href="#" class="uglyman2-img"><img src="images/uglyman2/DSC_0013.jpg" class="img-responsive"></a>
                 <div class="uglyman2-container">
+                    
                 </div>
             <a class="full-screen icon-size splash-fullscreen-uglyman2">
                 <img src="images/icons/005-arrows.png">

@@ -37,12 +37,22 @@
         </div>
         </div>
 
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-4 col-xs-12">
             <div class="splash-text">
 
                     <img class="img-responsive logo" alt="Brand" src="/images/logo.png">
-            
+
                     <h1>360 images for the web</h1>
+
+                    <div class="security">
+                        <img class="encrypt" src="images/icons/padlock.png">
+
+                        <div class="paypal-logo">
+
+                            <img class ="img-reponsive" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal Logo"><!-- PayPal Logo -->
+                        </div>
+                    </div>
+            
 
             </div>
         </div>
@@ -50,9 +60,7 @@
 
 </div>
 
-        <div class="paypal-logo">
-            <img class ="img-reponsive" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal Logo"><!-- PayPal Logo -->
-        </div>
+
 <div class="arrow bounce">
     <a class="fa fa-arrow-down fa-2x" href="#ourwork">
     </a>

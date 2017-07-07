@@ -67,7 +67,7 @@ $('.book-img').click(function(event) {
                 width: widthbook,
                 height: heightbook,
                 frameTime: 80,
-                animate:false,
+                animate:true,
                 onInit : function(p){$('.loader').css({opacity: 0, display: "block"}).animate({opacity: 1}, 'slow')},
                 onLoad : function(p){$('.loader').css({opacity: 1, display: "none"}).animate({opacity: 0}, 'slow')},
                 scrollThreshold:150
@@ -110,7 +110,7 @@ $('.flowers3-img').click(function(event) {
                 width: widthflowers3,
                 height: heightflowers3,
                 frameTime: 80,
-                animate:false,
+                animate:true,
                 onInit : function(p){$('.loader').css({opacity: 0, display: "block"}).animate({opacity: 1}, 'slow')},
                 onLoad : function(p){$('.loader').css({opacity: 1, display: "none"}).animate({opacity: 0}, 'slow')},
                 scrollThreshold:150
@@ -133,7 +133,7 @@ var uglyman2 = '<div class="loader"><div class="spinner"><div class="dot1"></div
 $('.uglyman2-img').click(function(event) {
     event.preventDefault();
 
-        $('.uglyman2-container').append(flowers3);
+        $('.uglyman2-container').append(uglyman2);
         $('.uglyman2-img').animate({opacity: 0}, 'slow');
         $('.uglyman2-img').remove();
 
@@ -153,7 +153,7 @@ $('.uglyman2-img').click(function(event) {
                 width: widthuglyman2,
                 height: heightuglyman2,
                 frameTime: 80,
-                animate:false,
+                animate:true,
                 onInit : function(p){$('.loader').css({opacity: 0, display: "block"}).animate({opacity: 1}, 'slow')},
                 onLoad : function(p){$('.loader').css({opacity: 1, display: "none"}).animate({opacity: 0}, 'slow')},
                 scrollThreshold:150
