@@ -38,7 +38,16 @@
                                         </div>
                                         <div class="col-md-4">
                                             @if($item->download)
-                                                <div class="{{$item->download->name}}"></div>
+                                                <div class="{{$item->download->name}}">                                    
+                                                    <div id="loader">
+                                                        <div class="spinner">
+                                                            <div class="dot1">
+                                                            </div>
+                                                            <div class="dot2">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             @endif
                                         </div>
 
@@ -51,7 +60,7 @@
                                                           <input type="hidden" name="order_id" value="{{$order->id}}">
                                                     </form>
                                                 </div>
-                                                <p>To Pay: £{{sprintf("%01.2f", $order->total_price)}}</p>
+                                                <p class="price-center">To Pay: £{{sprintf("%01.2f", $order->total_price)}}</p>
                                             @elseif($item->download)
                                                 <div class = "pricing-button">
                                                     <a class="btn btn-primary btn-sm" href="{{ url('downloads/download', $item->download->id) }}">

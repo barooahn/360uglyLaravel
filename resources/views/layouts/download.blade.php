@@ -246,17 +246,11 @@ $( window ).on( "load", function() {
               source: frames,
               width: width,
               height: height,
-              frameTime: 120
+              onInit : function(p){$('.loader').css({opacity: 0, display: "block"}).animate({opacity: 1}, 'slow')},
+              onLoad : function(p){$('.loader').css({opacity: 1, display: "none"}).animate({opacity: 0}, 'slow')},
+              frameTime: 120,
+              scrollThreshold:0
           });
-            spin.bind("onLoad", function() {
-                $('.loader').css({
-                    opacity: 1,
-                    display: "none"
-                }).animate({
-                    opacity: 0
-                }, 'slow');
-            });
-
         });
     }
 });
