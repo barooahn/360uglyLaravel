@@ -72,20 +72,31 @@ spin.spritespin({
         width: width,
         height: height,
         frameTime: 120
-});
-spin.bind(\"onLoad\", function() {
-    $('.loader').css({
-        opacity: 1,
-        display: \"none\"
-    }).animate({
-        opacity: 0
-    }, 'slow');
 });";
 
         $file = str_replace ('[name]', $name, $file);
         $file = str_replace ('[frames]', $frames, $file);
 
         Storage::put('/public/'.$path .'/'. $filename, $file, 'public');
+
+
+                $webpage = "<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=\"UTF-8\">
+    <title>title</title>
+    <script src=\"randj.js\"></script>
+  </head>
+  <body>
+    <div style=\"height:400px; width:600px;\" class=\"[name]\"></div>
+    <script src=\"[name].js\"></script>
+  </body>
+
+</html>";
+
+        $webpage = str_replace ('[name]', $name, $file);
+
+        Storage::put('/public/'.$path .'/'. 'exampleWebpage.html', $webpage, 'public');
 
         Download::makeZip($download);
     }
@@ -97,12 +108,14 @@ spin.bind(\"onLoad\", function() {
 
         $path = 'storage/'.$download->path;
         $path = str_replace($download->name, '', $path);
-        if($jq == true){
+        if($jq){
             $zipper->make($path.$download->name.'_with_jquery.zip')->add($path);
             $zipper->make($path.$download->name.'_with_jquery.zip')->add('storage/randj');
+            $zipper->make($path.$download->name.'_with_jquery.zip')->add('exampleWebpage.html');
         } else {
             $zipper->make($path.$download->name.'_without_jquery.zip')->add($path);
             $zipper->make($path.$download->name.'_without_jquery.zip')->add('storage/ronly');
+            $zipper->make($path.$download->name.'_without_jquery.zip')->add('exampleWebpage.html');
         }
         $zipper->close();
 
