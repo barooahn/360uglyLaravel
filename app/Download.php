@@ -111,11 +111,9 @@ spin.spritespin({
         if($jq){
             $zipper->make($path.$download->name.'_with_jquery.zip')->add($path);
             $zipper->make($path.$download->name.'_with_jquery.zip')->add('storage/randj');
-            $zipper->make($path.$download->name.'_with_jquery.zip')->add('exampleWebpage.html');
         } else {
             $zipper->make($path.$download->name.'_without_jquery.zip')->add($path);
             $zipper->make($path.$download->name.'_without_jquery.zip')->add('storage/ronly');
-            $zipper->make($path.$download->name.'_without_jquery.zip')->add('exampleWebpage.html');
         }
         $zipper->close();
 
