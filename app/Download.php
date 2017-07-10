@@ -64,7 +64,7 @@ class Download extends Model
 });
 
 var width = $('.[name]').width() - 10;
-var height = width / 1.5;
+var height = width * 1.5;
 var spin = $('.[name]');
 // initialise spritespin
 spin.spritespin({

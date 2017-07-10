@@ -21,6 +21,7 @@ class CreateDownloadsTable extends Migration
             $table->string('path');
             $table->Integer('frames');
             $table->tinyInteger('digits');
+            $table->boolean('portrait')->default(0);
             $table->timestamps();
         });
     }
