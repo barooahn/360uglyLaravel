@@ -236,8 +236,10 @@ $( window ).on( "load", function() {
                 digits: 2
             });
 
+        var portrait = download['portrait'];
+
             var width = $('.' + download['name']).width() - 10;
-            var height = width / 1.5;
+            var height = portrait ? width * 1.5 : width / 1.5;
             var spin = $('.' + download['name']);
             // initialise spritespin
             spin.spritespin({

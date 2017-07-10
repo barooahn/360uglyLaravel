@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\File;
 
 class Download extends Model
 {
-	 /**
+     /**
      * The attributes that are mass assignable.
      *
      * @var array
@@ -57,6 +57,8 @@ class Download extends Model
         $order = $download->item->order;
         $path = $download->path;
         $path = str_replace($download->name, '', $path);
+        $orientation = $download->portrait;
+        $orientationModifier = $orientation === 1 ? '*' : '/';
 
         $file = "var frames = SpriteSpin.sourceArray('[name]/[name]{frame}.jpg', {
     frame: [0, [frames]],
@@ -64,7 +66,7 @@ class Download extends Model
 });
 
 var width = $('.[name]').width() - 10;
-var height = width * 1.5;
+var height = width {$orientationModifier} 1.5;
 var spin = $('.[name]');
 // initialise spritespin
 spin.spritespin({
@@ -77,9 +79,10 @@ spin.spritespin({
         $file = str_replace ('[name]', $name, $file);
         $file = str_replace ('[frames]', $frames, $file);
 
+
         Storage::put('/public/'.$path .'/'. $filename, $file, 'public');
 
-
+        $orientationStyle = $orientation === 1? 'height:600px; width:400px;' : 'height:400px; width:600px;';
         $webpage = "<!DOCTYPE html>
 <html>
   <head>
@@ -88,7 +91,7 @@ spin.spritespin({
     <script src=\"randj.js\"></script>
   </head>
   <body>
-    <div style=\"height:400px; width:600px;\" class=\"[name]\"></div>
+    <div style=\"{$orientationStyle}\" class=\"[name]\"></div>
     <script src=\"[name].js\"></script>
   </body>
 

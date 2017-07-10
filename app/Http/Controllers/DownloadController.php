@@ -71,6 +71,18 @@ class DownloadController extends Controller
             }
         }
 
+        // set orientation
+        $file = $request->file('files')[0];
+
+        list($width, $height) = getimagesize($file);
+
+        if( $width > $height) {
+             $download->portrait = 0;
+        } else {
+            $download->portrait = 1;
+        }
+        // end orientaion
+
         $download->frames = count($files) -1;
         $download->digits = 2;
 
