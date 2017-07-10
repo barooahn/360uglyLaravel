@@ -80,7 +80,7 @@ spin.spritespin({
         Storage::put('/public/'.$path .'/'. $filename, $file, 'public');
 
 
-                $webpage = "<!DOCTYPE html>
+        $webpage = "<!DOCTYPE html>
 <html>
   <head>
     <meta charset=\"UTF-8\">
@@ -94,7 +94,7 @@ spin.spritespin({
 
 </html>";
 
-        $webpage = str_replace ('[name]', $name, $file);
+        $webpage = str_replace ('[name]', $name, $webpage);
 
         Storage::put('/public/'.$path .'/'. 'exampleWebpage.html', $webpage, 'public');
 
