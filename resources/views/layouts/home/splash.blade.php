@@ -1,6 +1,8 @@
 <div class="full-height">
     <div class="row home-top" >
-
+        <div class="privacy">
+            <a href="//www.iubenda.com/privacy-policy/8144288" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+        </div>
     </div>
     <div class="row"> 
         <div class="col-md-12">
@@ -40,7 +42,7 @@
         <div class="col-md-4 col-xs-12">
             <div class="splash-text">
 
-                    <img class="img-responsive logo" alt="Brand" src="/images/logo.png">
+                    <img class="img-responsive logo" alt="Brand" src="/images/logo-main.png">
 
                     <h1>360 images for the web</h1>
 

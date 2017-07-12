@@ -256,6 +256,11 @@ ul #login-dp .form-group {
 
 /*home page - splash*/
 
+.privacy {
+    width:75px;
+    float: right;
+}
+
 #home{
     padding-top: 50px;
 }
@@ -1015,9 +1020,7 @@ pre{
     }
 
     .arrow {
-        bottom: 30px;
-        margin: -15px;
-
+        display: none;
     }
 
     .logo {

@@ -48,18 +48,7 @@ var x=data.zoomX,y=data.zoomY;(null==x||null==y)&&(x=data.zoomX=.5,y=data.zoomY=
 var is_touch_device = ("ontouchstart" in window) || window.DocumentTouch && document instanceof DocumentTouch;
 $(function () {
   $('[data-toggle="popover"]').popover({ trigger: is_touch_device ? "hover focus" : "hover click focus" });
-})
-
-// $(".icons").mouseover(function() {
-// 	console.log('ére ' + this);
-//     $(this +" a").popover('show');
-// }).mouseout(function() {
-//     $(this+" a").popover('hide');
-// });
-
-
-//# sourceMappingURL=download.js.map
-
+});
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	$('.nav a').on('click', function(){
 	    $('.navbar-toggle').click() //bootstrap 3.x by Richard

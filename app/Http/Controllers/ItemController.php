@@ -48,6 +48,14 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'name' => 'required|max:255|min:6',
+            'height' => 'required|digits_between:1,40',
+            'length' => 'required|digits_between:1,40',
+            'width' => 'required|digits_between:1,40',
+            'weight' => 'required|digits_between:1,5'
+        ]);
+
         $item = new Item($request->all());
         $item->order_id = Session::get('order_id');
         $item->price = Item::$ONE;

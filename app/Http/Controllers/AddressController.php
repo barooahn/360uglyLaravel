@@ -52,6 +52,13 @@ class AddressController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'house' => 'required|max:255',
+            'address1' => 'required',
+            'county' => 'required',
+            'postcode' => 'required'
+        ]);
+
         $user = Auth::user();
         $order = $user->orders->last();
 
@@ -95,6 +102,13 @@ class AddressController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $this->validate($request, [
+            'house' => 'required|max:255',
+            'address1' => 'required',
+            'county' => 'required',
+            'postcode' => 'required'
+        ]);
+
         $address = Address::findOrFail($id);
         $user = Auth::user();
         $address -> update($request->all());

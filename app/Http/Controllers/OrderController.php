@@ -49,6 +49,11 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'name' => 'required|max:255',
+            'email' => 'required|email'
+        ]);
+
         $user = Auth::user();
         if($user->name != $request->name  || $user->email != $request->email ){
             $user->name = $request->name;
