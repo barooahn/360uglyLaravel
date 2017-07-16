@@ -150,20 +150,28 @@ class PayPalPaymentController extends Controller
 
         $order = Order::findorFail($order_id);
 
+        $user = $order->user;
+        $items = $order->items;
+
         if($order->getStatus() == 'pay1'){
             $order->amount_paid = $order->delivery_price;
             $order->update();
             $order->updateStatus('delivery');
+            
+            $address = $user->addresses->last();
+            Mail::to($user)->queue(new CollectProduct($order, $user, $items, $address));
+            return view('user/process')->with('user', $user);
         }elseif($order->getStatus() == 'pay2'){
             $order->updateStatus('download');
             $order->amount_paid = $order->total_price;
             $order->update();
+
+            Mail::to($user)->queue(new Download($order, $user, $items));
+            return view('user/download')->with('user', $user);
         }
 
-        $user = $order->user;
 
         // Thank the user for the purchase
-        return view('user/process')->with('user', $user);
     }
 
     public function getCancel()

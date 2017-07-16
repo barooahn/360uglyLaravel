@@ -22,8 +22,8 @@ Please click the 'Check Order Status' button below to approve your 360 products,
 @endcomponent
 
 
-@component('mail::button', ['url' => 'http://360ugly.com/user/process'])
-Check Order Status
+@component('mail::button', ['url' => 'http://360ugly.com/user/download'])
+Download your product
 @endcomponent
 
 Thanks,<br>
