@@ -59,8 +59,8 @@
                                                          <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png" alt="PayPal Checkout"/>
                                                           <input type="hidden" name="order_id" value="{{$order->id}}">
                                                     </form>
+                                                    <p class="price-center">To Pay: £{{sprintf("%01.2f", $order->total_price)}}</p>
                                                 </div>
-                                                <p class="price-center">To Pay: £{{sprintf("%01.2f", $order->total_price)}}</p>
                                             @elseif($item->download)
                                                 <div class = "pricing-button">
                                                     <a class="btn btn-primary btn-sm" href="{{ url('downloads/download', $item->download->id) }}">

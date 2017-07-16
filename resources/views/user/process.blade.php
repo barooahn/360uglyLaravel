@@ -65,7 +65,7 @@
                                   <input type="hidden" name="order_id" value="{{$order->id}}">
                             </form>
 
-                        <p>Delivery cost: £{{sprintf("%01.2f", $order->delivery_price)}}</p>
+                        <p class="price-center">Delivery cost: £{{sprintf("%01.2f", $order->delivery_price)}}</p>
 
 
                         </div>

@@ -222,7 +222,7 @@
             @yield('content')
         </div>
         <!-- Scripts -->
-        <script src="/js/general.js">
+        <script async src="/js/general.js">
         </script>
     </body>
 </html>

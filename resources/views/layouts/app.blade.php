@@ -58,7 +58,7 @@
     @yield('content')
 </div>
 <!-- Scripts -->
-<script src="/js/form.js">
+<script async src="/js/form.js">
 </script>
 </body>
 </html>
