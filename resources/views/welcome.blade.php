@@ -1,5 +1,7 @@
 @extends('layouts.home')
 
+@section('pageTitle', 'Web 360 3D Photography')
+
 @section('content')
     <div class="container-fluid main">
             <section id="home">

@@ -1,5 +1,7 @@
 @extends('layouts.general')
 
+@section('pageTitle', 'User Home')
+
 @section('content')
 <div class="container">
     <div class="row">

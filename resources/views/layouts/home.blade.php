@@ -7,10 +7,10 @@
                     <!-- CSRF Token -->
                     <meta content="{{ csrf_token() }}" name="csrf-token">
                         <title>
-                            {{ config('app.name', '360Ugly') }}
+                            @yield('pageTitle') - {{ config('app.name', '360Ugly') }
                         </title>
-                        <meta content="Blueprint: " name="description"/>
-                        <meta content="" name="keywords"/>
+                        <meta content="360 Images for your website.  3D Product photography for the web" name="description"/>
+                        <meta content="360 Images, 3D web photos, Revolving products, Product photography, 3D Web pictures, 360 Products" name="keywords"/>
                         <meta content="Codrops" name="author"/>
                         <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
                         <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
@@ -64,7 +64,7 @@
                             Order Now
                         </a>
                         
-                         <a class="navbar-brand" href="{{ url('/') }}"><span><img class="img-responsive header-logo" alt="Brand" src="/images/logo.png"></span>
+                         <a class="navbar-brand" href="{{ url('/') }}"><span><img class="img-responsive header-logo" alt="360 Ugly Logo" src="/images/logo.png"></span>
                             
                         </a>
                     </div>      
@@ -116,12 +116,12 @@
                                             <div class="col-md-12">
                                                 Login via
                                                 <div class="social-buttons">
-                                                    <a class="btn btn-fb" href="login/facebook">
+                                                    <a class="btn btn-fb" href="login/facebook" target="_blank">
                                                         <i class="fa fa-facebook">
                                                         </i>
                                                         Facebook
                                                     </a>
-                                                    <a class="btn btn-tw" href="login/twitter">
+                                                    <a class="btn btn-tw" href="login/twitter" target="_blank">
                                                         <i class="fa fa-twitter">
                                                         </i>
                                                         Twitter

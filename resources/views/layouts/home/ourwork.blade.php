@@ -4,7 +4,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="thumbs-container">
                     <a class="rollover-modal" href="#" id="clown">
-                        <img class="img-responsive thumbs" src="images/clown/DSC_0015.jpg">
+                        <img class="img-responsive thumbs" src="images/clown/DSC_0015.jpg" alt="Our work - Scarecrow">
                         </img>
                     </a>
                 </div>
@@ -12,7 +12,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="thumbs-container">
                     <a class="rollover-modal" href="#" id="flower2">
-                        <img class="img-responsive thumbs" src="images/flower2/DSC_0913.jpg">
+                        <img class="img-responsive thumbs" src="images/flower2/DSC_0913.jpg" alt="Our work - flower">
                         </img>
                     </a>
                 </div>
@@ -20,7 +20,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="thumbs-container">
                     <a class="rollover-modal" href="#" id="fireTruck">
-                        <img class="img-responsive thumbs" src="images/fireTruck/DSC_0507.jpg">
+                        <img class="img-responsive thumbs" src="images/fireTruck/DSC_0507.jpg" alt="Our work - Fire truck">
                         </img>
                     </a>
                 </div>
@@ -28,7 +28,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="thumbs-container">
                     <a class="rollover-modal" href="#" id="baji">
-                        <img class="img-responsive thumbs" src="images/baji/DSC_0150.jpg">
+                        <img class="img-responsive thumbs" src="images/baji/DSC_0150.jpg" alt="Our work - Baji">
                         </img>
                     </a>
                 </div>

@@ -12,7 +12,7 @@
             </span>
         </div>
         <div class="amazon-item">
-            <a href="#" class="flowers3-img"><img src="images/flowers3/DSC_0045.jpg" class="img-responsive"></a>
+            <a href="#" class="flowers3-img"><img src="images/flowers3/DSC_0045.jpg" class="img-responsive" alt="Our work - flowers ornament"></a>
                 <div class="flowers3-container">
                     
                 </div>

@@ -8,21 +8,21 @@
                                 </h2>
                                 <hr>
                                     <div class="pricing-img">
-                                        <img class="img-responsive" src="images/pricing97.png">
+                                        <img class="img-responsive" src="images/pricing97.png" alt="Pricing for 1 product">
                                         </img>
                                     </div>
                                     <ul>
                                         <li>
-                                            <img class="img-responsive icon-size-360" src="images/icons/002-truck.png"> <p>  Free collection</p>
+                                            <img class="img-responsive icon-size-360" src="images/icons/002-truck.png" alt="Free Collection"> <p>  Free collection</p>
                                         </li>
                                         <li>
-                                            <img class="img-responsive icon-size-360" src="images/icons/002-technology.png"> <p>  Product Photographed</p>
+                                            <img class="img-responsive icon-size-360" src="images/icons/002-technology.png" alt="Product Photographed"> <p>  Product Photographed</p>
                                         </li>
                                         <li>
-                                            <img class="img-responsive icon-size-360" src="images/icons/003-checked.png"> <p>  Approve before buying</p>
+                                            <img class="img-responsive icon-size-360" src="images/icons/003-checked.png" alt="Approve before buying"> <p>  Approve before buying</p>
                                         </li>
                                         <li>
-                                            <img class="img-responsive icon-size-360" src="images/icons/001-download.png"> <p>  Free download</p>
+                                            <img class="img-responsive icon-size-360" src="images/icons/001-download.png" alt="Free download"> <p>  Free download</p>
                                         </li>
                                     </ul>
 
@@ -39,21 +39,21 @@
                                 </h2>
                                 <hr>
                                     <div class="pricing-img">
-                                        <img class="img-responsive" src="images/pricing57.png">
+                                        <img class="img-responsive" src="images/pricing57.png" alt="Pricing for 5+ products">
                                         </img>
                                     </div>
                                     <ul>
                                         <li>
-                                            <img class="img-responsive icon-size-360" src="images/icons/002-truck.png"> <p>  Free collection</p>
+                                            <img class="img-responsive icon-size-360" src="images/icons/002-truck.png" alt="Free Collection"> <p>  Free collection</p>
                                         </li>
                                         <li>
-                                            <img class="img-responsive icon-size-360" src="images/icons/002-technology.png"> <p>  Product Photographed</p>
+                                            <img class="img-responsive icon-size-360" src="images/icons/002-technology.png" alt="Product Photographed"> <p>  Product Photographed</p>
                                         </li>
                                         <li>
-                                            <img class="img-responsive icon-size-360" src="images/icons/003-checked.png"> <p>  Approve before buying</p>
+                                            <img class="img-responsive icon-size-360" src="images/icons/003-checked.png" alt="Approve before buying"> <p>  Approve before buying</p>
                                         </li>
                                         <li>
-                                            <img class="img-responsive icon-size-360" src="images/icons/001-download.png"> <p>  Free download</p>
+                                            <img class="img-responsive icon-size-360" src="images/icons/001-download.png" alt="Free download"> <p>  Free download</p>
                                         </li>
                                     </ul>
                                 </hr>
@@ -69,21 +69,21 @@
                                 </h2>
                                 <hr>
                                     <div class="pricing-img">
-                                        <img class="img-responsive" src="images/pricing77.png">
+                                        <img class="img-responsive" src="images/pricing77.png" alt="Pricing for 2 - 4 products">
                                         </img>
                                     </div>
                                     <ul>
                                         <li>
-                                            <img class="img-responsive icon-size-360" src="images/icons/002-truck.png"> <p>  Free collection</p>
+                                            <img class="img-responsive icon-size-360" src="images/icons/002-truck.png" alt="Free Collection"> <p>  Free collection</p>
                                         </li>
                                         <li>
-                                            <img class="img-responsive icon-size-360" src="images/icons/002-technology.png"> <p>  Product Photographed</p>
+                                            <img class="img-responsive icon-size-360" src="images/icons/002-technology.png" alt="Product Photographed"> <p>  Product Photographed</p>
                                         </li>
                                         <li>
-                                            <img class="img-responsive icon-size-360" src="images/icons/003-checked.png"> <p>  Approve before buying</p>
+                                            <img class="img-responsive icon-size-360" src="images/icons/003-checked.png" alt="Approve before buying"> <p>  Approve before buying</p>
                                         </li>
                                         <li>
-                                            <img class="img-responsive icon-size-360" src="images/icons/001-download.png"> <p>  Free download</p>
+                                            <img class="img-responsive icon-size-360" src="images/icons/001-download.png" alt="Free download"> <p>  Free download</p>
                                         </li>
                                     </ul>
 

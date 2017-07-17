@@ -1,5 +1,7 @@
 @extends('layouts.options-template')
 
+@section('pageTitle', 'Options')
+
 @section('content')
 <div class="container-fluid">
 	<h1>

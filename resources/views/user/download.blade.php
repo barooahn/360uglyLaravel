@@ -1,5 +1,7 @@
 @extends('layouts.download')
 
+@section('pageTitle', 'User Downloads')
+
 @section('content')
 <div class="container">
     <div class="row">

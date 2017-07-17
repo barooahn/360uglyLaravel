@@ -42,12 +42,12 @@
         <div class="col-md-4 col-xs-12">
             <div class="splash-text">
 
-                    <img class="img-responsive logo" alt="Brand" src="/images/logo-main.png">
+                    <img class="img-responsive logo" alt="360 Web Photography" src="/images/logo-main.png">
 
                     <h1>360 images for the web</h1>
 
                     <div class="security">
-                        <img class="encrypt" src="images/icons/padlock.png">
+                        <img class="encrypt" src="images/icons/padlock.png" alt="Secure site">
 
                         <div class="paypal-logo">
 

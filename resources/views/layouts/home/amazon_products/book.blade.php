@@ -12,7 +12,7 @@
             </span>
         </div>
         <div class="amazon-item">
-            <a href="#" class="book-img"><img src="images/book/DSC_0805.jpg" class="img-responsive"></a>
+            <a href="#" class="book-img"><img src="images/book/DSC_0805.jpg" class="img-responsive" alt="Our work - book"></a>
                 <div class="book-container">
                     
                 </div>

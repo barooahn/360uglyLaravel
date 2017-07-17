@@ -1,5 +1,7 @@
 @extends('layouts.general')
 
+@section('pageTitle', 'Order Confirmation')
+
 @section('content')
 <div class="container-fluid">
 	<div class="row">

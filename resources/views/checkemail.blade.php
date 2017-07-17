@@ -1,5 +1,8 @@
 @extends('layouts.general')
 
+@section('pageTitle', 'Check email')
+
+
 @section('content')
 <div class="container-fluid">
 	<h1>

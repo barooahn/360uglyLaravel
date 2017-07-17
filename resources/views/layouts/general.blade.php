@@ -4,10 +4,11 @@
         <meta charset="utf-8">
             <meta content="IE=edge" http-equiv="X-UA-Compatible">
                 <meta content="width=device-width, initial-scale=1" name="viewport">
+                <meta name="robots" content="noindex">
                     <!-- CSRF Token -->
                     <meta content="{{ csrf_token() }}" name="csrf-token">
                         <title>
-                            {{ config('app.name', '360Ugly') }}
+                            @yield('pageTitle') - {{ config('app.name', '360Ugly') }
                         </title>
                         <meta content="Blueprint: " name="description"/>
                         <meta content="" name="keywords"/>
@@ -115,12 +116,12 @@
                                             <div class="col-md-12">
                                                 Login via
                                                 <div class="social-buttons">
-                                                    <a class="btn btn-fb" href="#">
+                                                    <a class="btn btn-fb" href="login/facebook" target="_blank">
                                                         <i class="fa fa-facebook">
                                                         </i>
                                                         Facebook
                                                     </a>
-                                                    <a class="btn btn-tw" href="#">
+                                                    <a class="btn btn-tw" href="login/twitter" target="_blank">
                                                         <i class="fa fa-twitter">
                                                         </i>
                                                         Twitter

@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Add Address')
+
+
 @section('content')
     <div class="container">
         @if ($errors->any())

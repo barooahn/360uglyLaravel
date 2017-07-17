@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Add Order')
+
 @section('content')
 <div class="contact full-height">
     <div class="container-fluid">

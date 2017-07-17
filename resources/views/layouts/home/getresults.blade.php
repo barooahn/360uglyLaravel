@@ -10,7 +10,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-sm-12 get-results-left">
-                        <img alt="" class="img-responsive" src="images/200up.png"/>
+                        <img alt="" class="img-responsive" src="images/200up.png" alt="200 percent increase in sales"/>
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <h4 class="get-results-text">
