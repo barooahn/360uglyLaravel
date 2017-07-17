@@ -170,7 +170,8 @@ class PayPalPaymentController extends Controller
             $order->update();
 
             Mail::to($user)->queue(new Download($order, $user, $items));
-            return view('user/download')->with('user', $user);
+            $framesArray = User::getFramesArray($user);
+            return view('user/download',compact('user', 'framesArray')); 
         }
 
 
