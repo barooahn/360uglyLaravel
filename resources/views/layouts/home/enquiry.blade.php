@@ -92,7 +92,7 @@
                     </div>
 
                     <div class="pricing-button">
-                        <a class="btn btn-primary btn-lg" href="{{ url('orders/create') }}">
+                        <a class="btn btn-primary btn-lg" href="{{ url('orders/create') }}" title="Order 360 Image">
                             Order Now
                         </a>
                     </div>

@@ -60,7 +60,7 @@
                             <span class="icon-bar">
                             </span>
                         </button>
-                        <a class="btn btn-primary button-menu btn-sm" href="{{ url('orders/create') }}">
+                        <a class="btn btn-primary button-menu btn-sm" href="{{ url('orders/create') }}" title="Order 360 Photo">
                             Order Now
                         </a>
                         
@@ -73,27 +73,27 @@
                         <!-- Left Side Of Navbar -->
                         <ul class="nav navbar-nav links">
                             <li>
-                                <a href="#ourwork">
+                                <a href="#ourwork" title="Our Work - 360 Photos">
                                     Our Work
                                 </a>
                             </li>
                             <li>
-                                <a href="#results">
+                                <a href="#results" title="Get results with 360 Product Photography">
                                     Get Results
                                 </a>
                             </li>
                             <li>
-                                <a href="#howwork">
+                                <a href="#howwork" title="Procedure to get 360 Photos">
                                     How It Works
                                 </a>
                             </li>
                             <li>
-                                <a href="#pricing">
+                                <a href="#pricing" title="Pricing for 360 Web photos">
                                     Pricing
                                 </a>
                             </li>
                             <li>
-                                <a href="#contact">
+                                <a href="#contact" title="Contact us for your 360 photos">
                                     Contact Us
                                 </a>
                             </li>
@@ -102,7 +102,7 @@
                             @if (Auth::guest())
                             <!-- Authentication Links -->
                             <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="My Orders">
                                     <b>
                                         Login
                                     </b>
@@ -116,12 +116,12 @@
                                             <div class="col-md-12">
                                                 Login via
                                                 <div class="social-buttons">
-                                                    <a class="btn btn-fb" href="login/facebook" target="_blank">
+                                                    <a class="btn btn-fb" href="login/facebook" target="_blank" title="Facebook Login">
                                                         <i class="fa fa-facebook">
                                                         </i>
                                                         Facebook
                                                     </a>
-                                                    <a class="btn btn-tw" href="login/twitter" target="_blank">
+                                                    <a class="btn btn-tw" href="login/twitter" target="_blank" title="Twitter Login">
                                                         <i class="fa fa-twitter">
                                                         </i>
                                                         Twitter
@@ -156,7 +156,7 @@
                                                             @endif
 
                                                             <div class="help-block text-right">
-                                                                <a href="{{ url('/password/reset') }}">Forget the password ?</a>
+                                                                <a href="{{ url('/password/reset') }}" title="Password Reset">Forget the password ?</a>
                                                             </div>
                                                         </input>
                                                     </div>
@@ -174,7 +174,7 @@
                                             </div>
                                             <div class="bottom text-center">
                                                 New here ?
-                                                <a href="{{ url('/register') }}">
+                                                <a href="{{ url('/register') }}" title="Register with for 360 Photos">
                                                     <b>
                                                         Join Us
                                                     </b>
@@ -186,7 +186,7 @@
                             </li>
                             @else
                             <li class="dropdown">
-                                <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                                <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" title="Orders">
                                     {{ Auth::user()->name }} 
                                     @if (Auth::user()->count_orders() >0 )
 
@@ -198,12 +198,12 @@
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a href="{{ url('user/process') }}" >
+                                        <a href="{{ url('user/process') }}" title="360 Orders in progress">
                                             My Orders <span class="badge">{{ Auth::user()->count_orders() }}</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('/logout') }}" onclick="event.preventDefault();
+                                        <a href="{{ url('/logout') }}" title="Logout" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             Logout
                                         </a>
@@ -229,7 +229,7 @@
         //privicy
         </script>
 
-        <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-596ca85e2a8a55b9"></script> 
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-596ca85e2a8a55b9"></script> 
         
     </body>
 </html>
