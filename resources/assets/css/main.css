@@ -262,7 +262,7 @@ ul #login-dp .form-group {
 }
 
 #home{
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 
 .splash-text {
@@ -1101,8 +1101,7 @@ pre{
     }
 
     .arrow {
-        bottom: 30px;
-        margin: -15px;
+        display: none;
     }
 
     .logo {
