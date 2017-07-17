@@ -8,7 +8,7 @@
                     <meta content="{{ csrf_token() }}" name="csrf-token">
                     <meta name="robots" content="noindex">
                         <title>
-                            @yield('pageTitle') - {{ config('app.name', '360Ugly') }
+                            @yield('pageTitle') - 360Ugly
                         </title>
                         <meta content="Blueprint: " name="description"/>
                         <meta content="" name="keywords"/>

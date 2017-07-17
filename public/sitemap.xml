@@ -11,19 +11,4 @@
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
-<url>
-  <loc>http://360ugly.com/login</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://360ugly.com/password/reset</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://360ugly.com/register</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
 </urlset>

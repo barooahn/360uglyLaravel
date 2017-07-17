@@ -7,7 +7,7 @@
                     <!-- CSRF Token -->
                     <meta content="{{ csrf_token() }}" name="csrf-token">
                         <title>
-                            @yield('pageTitle') - {{ config('app.name', '360Ugly') }
+                            @yield('pageTitle') - 360Ugly
                         </title>
                         <meta content="306Ugly.com provides the beautiful 360 revolving images to use on your website. 360 Images for your website.  3D Product photography for the web" name="description"/>
                         <meta content="360 Images, 3D web photos, Revolving products, Product photography, 3D Web pictures, 360 Products" name="keywords"/>
