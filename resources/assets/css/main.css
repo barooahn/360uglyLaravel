@@ -254,7 +254,6 @@ ul #login-dp .form-group {
 .privacy {
     width:75px;
     float: right;
-    margin-top: 50px;
 }
 
 #home{
@@ -277,7 +276,6 @@ ul #login-dp .form-group {
 
 .security {
     width: 130px;
-    margin-top: 50px;
 }
 
 .paypal-logo {
@@ -293,7 +291,7 @@ ul #login-dp .form-group {
     font-family: 'Calligraffitti', cursive;
     color: #484848;
     font-weight: 200;
-    font-size: 37px;
+    font-size: 33px;
     text-align: left;
     text-align: center;
     text-transform: capitalize;
@@ -341,7 +339,7 @@ ul #login-dp .form-group {
 
 .full-height {
     min-height: 100vh;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .full-height-orange {
