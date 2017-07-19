@@ -8,6 +8,7 @@ use App\Order;
 use Paypal;
 use Redirect;
 use App\Item;
+use App\User;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\Download;
 use App\Mail\CollectProduct;

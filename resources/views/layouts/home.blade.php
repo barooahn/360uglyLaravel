@@ -9,7 +9,7 @@
                         <title>
                             @yield('pageTitle') - 360Ugly
                         </title>
-                        <meta content="306Ugly.com provides the beautiful 360 revolving images to use on your website. 360 Images for your website.  3D Product photography for the web" name="description"/>
+                        <meta content="306Ugly.com provides beautiful 360 revolving images for use on your website. 360 Images for your website.  3D Product photography for the web" name="description"/>
                         <meta content="360 Images, 3D web photos, Revolving products, Product photography, 3D Web pictures, 360 Products" name="keywords"/>
                         <meta content="Codrops" name="author"/>
                         <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
