@@ -222,7 +222,7 @@
 @yield('content')
 </div>
 <!-- Scripts -->
-<script async src="/js/download.js">
+<script src="/js/download.js">
 </script>
 <script>
 $( window ).on( "load", function() {

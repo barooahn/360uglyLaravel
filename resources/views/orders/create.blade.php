@@ -60,7 +60,7 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <textarea class="form-control myform2" id="message1" name="message" placeholder="Your message" rows="3" style="margin-top:0 !important; height:80px;padding-top: 11px;"></textarea>
+                                            <textarea class="form-control enquiry-textarea" id="message1" name="message" placeholder="Your message" rows="3"></textarea>
                                             <span class="message1 error_message2">
                                             </span>
                                         </div>

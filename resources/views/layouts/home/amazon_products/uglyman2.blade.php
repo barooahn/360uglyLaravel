@@ -4,7 +4,7 @@
         <div class="spinuglyman2">
             <span>
                 <a class="spin-icon">
-                    <img class="img-responsive icon-size-360" src="images/icons/002-360arrow.png">
+                    <img class="img-responsive icon-size-360" src="images/icons/002-360arrow.png" alt="360 spin">
                 </a>
             </span>
             <span class="spin-text">
@@ -17,7 +17,7 @@
                     
                 </div>
             <a class="full-screen icon-size splash-fullscreen-uglyman2">
-                <img src="images/icons/005-arrows.png">
+                <img src="images/icons/005-arrows.png" alt="full-screen">
             </a>
             <div>
                 <p class="amazon-price">£479.00</p>

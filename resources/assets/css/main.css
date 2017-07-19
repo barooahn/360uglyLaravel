@@ -2,13 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 @font-face {
-    font-family: PermanentMarker;
-    src: url('/fonts/PermanentMarker.ttf');
-}
-
-@font-face {
-    font-family: KaushanScript-Regular;
-    src: url('/fonts/KaushanScript-Regular.ttf');
+    font-family: Calligraffitti;
+    src: url('/fonts/Calligraffitti-Regular.ttf');
 }
 
 body {
@@ -259,6 +254,7 @@ ul #login-dp .form-group {
 .privacy {
     width:75px;
     float: right;
+    margin-top: 50px;
 }
 
 #home{
@@ -281,9 +277,9 @@ ul #login-dp .form-group {
 
 .security {
     width: 130px;
-    margin: 0 auto;
-    text-align: center;
+    margin-top: 50px;
 }
+
 .paypal-logo {
     display: inline-block;
 }
@@ -294,12 +290,13 @@ ul #login-dp .form-group {
  }
 
 .splash-text h1{
-    font-family: 'PermanentMarker', cursive;
+    font-family: 'Calligraffitti', cursive;
     color: #484848;
     font-weight: 200;
-    font-size: 25px;
+    font-size: 37px;
     text-align: left;
     text-align: center;
+    text-transform: capitalize;
 }
 
     /*down arrow*/
@@ -795,7 +792,7 @@ ul #login-dp .form-group {
 }
 
 
-/*contact*/
+/*enquiry*/
 
 .contact {
     padding-top: 80px;
@@ -815,6 +812,12 @@ ul #login-dp .form-group {
 
 .contact option {
   color: #555;
+}
+
+.enquiry-textarea{
+    margin-top:0 !important; 
+    height:80px;
+    padding-top: 11px;
 }
 
 /*fancy radio buttons*/
@@ -1184,8 +1187,8 @@ pre{
     .splash-text h1{
         margin: 0;
         padding:0;
-        font-size: 30px;
-        font-family: 'PermanentMarker', cursive;
+        font-size: 23px;
+        font-family: 'Calligraffitti', cursive;
         text-align: center;
         padding-bottom: 20px;
     }

@@ -7,7 +7,7 @@
 
 **Order number: 000{{$order['id']}}**
 
-The following products have are ready for download.
+The following products are ready for download.
 
 Please click the 'Check Order Status' button below to approve your 360 products, if you like our work press the paynow button to securely pay with PayPal and unlock your download.
 

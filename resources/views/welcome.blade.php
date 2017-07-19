@@ -78,10 +78,10 @@
                                 Spin with mouse or touch
 
                                 <a class="icon-size" data-dismiss="modal">
-                                    <img src="images/icons/close.png">
+                                    <img src="images/icons/close.png" alt="close">
                                 </a>
                                 <a class="full-screen icon-size">
-                                    <img src="images/icons/005-arrows.png">
+                                    <img src="images/icons/005-arrows.png" alt="full-screen">
                                 </a>
                             </h4>
                         </div>
