@@ -34,17 +34,17 @@
     <div class="row"> 
         <div class="col-md-6 col-xs-12">
             <div class="splash-container">
-            <div class="uglyman">   
-            <div id="loader">
-                <div class="spinner">
-                    <div class="dot1">
-                    </div>
-                    <div class="dot2">
+                <div class="uglyman">   
+                    <div id="loader">
+                        <div class="spinner">
+                            <div class="dot1">
+                            </div>
+                            <div class="dot2">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
-        </div>
         </div>
 
         <div class="col-md-4 col-xs-12">

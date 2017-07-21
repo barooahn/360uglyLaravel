@@ -60,7 +60,7 @@
                             </li>
                         </ul>
                         <p class="copyright text-muted small">
-                            Copyright © Zaberweb {{ date("Y") }}. All Rights Reserved
+                            Copyright © 360Ugly {{ date("Y") }}. All Rights Reserved
                         </p>
                     </div>
                 </div>

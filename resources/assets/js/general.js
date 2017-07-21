@@ -2,6 +2,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 	$('.nav a').on('click', function(){
 	    $('.navbar-toggle').click() //bootstrap 3.x by Richard
 	});
+    $('.arrow').css('display', 'none');
 }
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

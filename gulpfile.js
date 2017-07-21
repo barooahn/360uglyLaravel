@@ -15,16 +15,16 @@ require('laravel-elixir-vue-2');
 
 elixir((mix) => {
     mix.styles([
-	    	'bootstrap.min.css', 
+	    	'bootstrap.css', 
 	    	'default.css', 
-	    	'font-awesome.min.css', 
+	    	'font-awesome.css', 
 	    	'main.css'
 	    	])
     	.scripts([
-    		'jquery-3.1.1.min.js',
-    		'bootstrap.min.js', 
-            'rotate.min.js', 
-            'jquery.scrollify.min.js',
+    		'jquery-3.2.1.js',
+    		'bootstrap.js', 
+            'rotate.js', 
+            'jquery.scrollify.js',
             'rollover.js', 
             'icons.js',
             'header.js',
@@ -34,31 +34,31 @@ elixir((mix) => {
             'ourwork.js',
     		], 'public/js/all.js')
         .scripts([
-            'jquery-3.1.1.min.js',
-            'bootstrap.min.js', 
-            'rotate.min.js',  
+            'jquery-3.2.1.js',
+            'bootstrap.js', 
+            'rotate.js',  
             'icons.js',
             'general.js' 
             ], 'public/js/general.js')
         .scripts([
-            'jquery-3.1.1.min.js',
-            'bootstrap.min.js', 
-            'rotate.min.js',  
+            'jquery-3.2.1.js',
+            'bootstrap.js', 
+            'rotate.js',  
             'icons.js',
             'options-res-frames.js',
             'general.js' 
             ], 'public/js/options.js')
         .scripts([
-            'jquery-3.1.1.min.js',
-            'bootstrap.min.js', 
-            'rotate.min.js',  
+            'jquery-3.2.1.js',
+            'bootstrap.js', 
+            'rotate.js',  
             'icons.js',
             'download.js',
             'general.js' 
             ], 'public/js/download.js')
         .scripts([
-            'jquery-3.1.1.min.js',
-            'bootstrap.min.js', 
+            'jquery-3.2.1.js',
+            'bootstrap.js', 
             'icons.js',
             'general.js' 
             ], 'public/js/form.js')

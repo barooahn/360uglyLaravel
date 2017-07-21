@@ -116,12 +116,12 @@
                                             <div class="col-md-12">
                                                 Login via
                                                 <div class="social-buttons">
-                                                    <a class="btn btn-fb" href="login/facebook" target="_blank" title="Facebook Login">
+                                                    <a class="btn btn-fb" href="login/facebook" title="Facebook Login">
                                                         <i class="fa fa-facebook">
                                                         </i>
                                                         Facebook
                                                     </a>
-                                                    <a class="btn btn-tw" href="login/twitter" target="_blank" title="Twitter Login">
+                                                    <a class="btn btn-tw" href="login/twitter" title="Twitter Login">
                                                         <i class="fa fa-twitter">
                                                         </i>
                                                         Twitter
@@ -229,7 +229,7 @@
         //privicy
         </script>
 
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-596ca85e2a8a55b9"></script> 
+        <script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-596ca85e2a8a55b9"></script> 
         
     </body>
 </html>

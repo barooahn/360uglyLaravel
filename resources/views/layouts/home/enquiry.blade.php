@@ -12,9 +12,9 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <h1>
+                <h2>
                     Enquiry
-                </h1>
+                </h2>
                 <h3>
                     <span>
                         Fill in the details below,
