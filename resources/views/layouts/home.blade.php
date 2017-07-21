@@ -9,9 +9,8 @@
                         <title>
                             @yield('pageTitle') - 360Ugly
                         </title>
-                        <meta content="306Ugly.com provides beautiful 360 revolving images for use on your website. 360 Images for your website.  3D Product photography for the web" name="description"/>
-                        <meta content="360 Images, 3D web photos, Revolving products, Product photography, 3D Web pictures, 360 Products" name="keywords"/>
-                        <meta content="Codrops" name="author"/>
+                        <meta content="360Ugly.com provides beautiful 360 revolving images for use on your website. 360 Images for your website.  3D Product photography for the web" name="description"/>
+                        <meta content="360 product photography, 3D product photography, 3D images, 3D image, 360 Images, 360 Image, 360 web photos, 360 web photo, 3D web photos, 3D web photo, revolving products, product photography, 360 web pictures, 360 web picture, 3D web pictures, 3D web picture, 360 products, 360 product, 3D products, 3D product" name="keywords"/>
                         <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
                         <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
                         <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
@@ -21,6 +20,7 @@
                         <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
                         <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
                         <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+                        <link rel="icon" type="image/x-icon" sizes="96x96" href="/images/favicon/favicon-96x96.png" />
                         <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
                         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
                         <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">

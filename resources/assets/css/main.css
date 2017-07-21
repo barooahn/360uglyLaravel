@@ -51,6 +51,13 @@ h1 {
     padding-bottom: 15px;
 }
 
+h2 {
+    color: #e25333;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
 .center {
     text-align: center;
 }
@@ -636,15 +643,20 @@ ul #login-dp .form-group {
     margin-top: 20px;
 }
 
+.get-results h2 {
+    font-size: 40px;
+}
+
 .get-results-padding {
-    padding-top: 12%;
-    max-width: 420px;
+    padding-top: 20px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
-.get-results-padding h3 {
+.get-results-body h3 {
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: left;
 }
 
 .form-padding {
@@ -653,6 +665,12 @@ ul #login-dp .form-group {
 
 .get-results-btn {
     text-align: center;
+}
+.get-results-body {
+    text-align: justify;
+    padding: 40px;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 
@@ -1062,7 +1080,7 @@ pre{
     }
 
     .get-results-padding h2{
-        font-size: 22px;
+        font-size: 28px;
         max-width: 315px;
         margin: 0 auto;
         padding-bottom: 15px;
@@ -1073,7 +1091,7 @@ pre{
     }
 
     .get-results-padding {
-        padding-top: 37%;
+        padding-top: 20px;
     }
 
     .one-product, .two-products, .more-products, .pricing-button {
@@ -1338,7 +1356,7 @@ pre{
     }
 
     .get-results-padding {
-        padding-bottom: 40px;
+        padding-bottom: 0;
     }
 
     .get-results-btn {
@@ -1368,7 +1386,22 @@ pre{
 @media screen and (min-width: 988px) and (max-width: 1920px) {
     .uglyman {
         float: right;
-        width: 65% !important;
+        width: 50% !important;
+    }
+    .get-results h2 {
+        padding-bottom: 0;
+    }
+
+    .get-results-body {
+        text-align: justify;
+        padding: 40px;
+        max-width: 735px;
+        margin: 0 auto;
+    }
+
+    .get-results-body h3 {
+        padding-top: 0; 
+        padding-bottom: 0;
     }
 
 }

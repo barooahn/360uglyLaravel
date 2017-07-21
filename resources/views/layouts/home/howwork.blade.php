@@ -1,17 +1,17 @@
 <div class="how-work full-height">
-    <h3>
-        How It works
-    </h3>
-    <h5>
-        Six Simple Steps
-    </h5>
-    <p>
-        <span>
-            Click/hover over images for details on each step
-        </span>
-    </p>
     <div class="icons-how-work">
         <div class="container">
+            <h2>
+                How It works
+            </h2>
+            <h5>
+                Six Simple Steps
+            </h5>
+            <p>
+                <span>
+                    Click/hover over images for details on each step
+                </span>
+            </p>
             <div class="row">
                 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 icons">
                     <div class="rollover-how-work" data-content="Give us details of the product(s) you want to make 360 and the address for collection and we will do the rest." data-placement="auto" data-toggle="popover" title="1. FILL OUT FORM">
