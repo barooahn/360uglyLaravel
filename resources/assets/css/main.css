@@ -262,7 +262,7 @@ ul #login-dp .form-group {
     background: url("/images/galaxy-s8_top.png") no-repeat top right;
     position: absolute;
     top:100px;
-    right: 100px;
+    right: 0;
     width:100%;
 }
 
@@ -297,11 +297,11 @@ ul #login-dp .form-group {
 .privacy {
     width:75px;
     float: right;
-    margin-top: 1px;
+    margin-top: 50px;
 }
 .security {
     width: 130px;
-    margin-top: 1px;
+    margin-top: 50px;
 
 }
 
@@ -648,8 +648,8 @@ ul #login-dp .form-group {
 }
 
 .get-results-padding {
-    padding-top: 20px;
-    max-width: 650px;
+    padding-top: 0;
+    max-width: 715px;
     margin: 0 auto;
 }
 
@@ -668,8 +668,8 @@ ul #login-dp .form-group {
 }
 .get-results-body {
     text-align: justify;
-    padding: 40px;
-    max-width: 650px;
+    padding: 10px 25px;
+    max-width: 715px;
     margin: 0 auto;
 }
 
@@ -1360,33 +1360,71 @@ pre{
     }
 
     .get-results-btn {
-        padding-top: 20px;
+        padding-top: 0;
     }
 
     .icon-size img{
         width:20px;
     }
 
-
-
 }
+
 @media screen and (min-width: 988px) and (max-width: 1024px) {
     .uglyman {
         float: right;
-        width: 65% !important;
+        width: 35% !important;
     }
 
     .arrow {
         display: none;
     }
 
+    .splash-container {
+        background: url(/images/galaxy-s8_top.png) no-repeat;
+        position: absolute;
+        top: 100px;
+        right: 6px;
+        width: 135%;
+        background-position-x: 160px;
+        background-size: 445px;
+    }
+
+    .splash-text h1 {
+        font-size: 26px;
+    }
+
+
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
 
-@media screen and (min-width: 988px) and (max-width: 1920px) {
+    .splash-container {
+        background: url("/images/galaxy-s8_top.png") no-repeat;
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        width: 109%;
+    }
+
     .uglyman {
         float: right;
-        width: 50% !important;
+        width: 60% !important;
+        margin-right: 140px;
+    }
+
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+
+    .splash-container {
+        background: url("/images/galaxy-s8_top.png") no-repeat;
+        width: 107%;
+    }
+
+    .uglyman {
+        float: right;
+        width: 61% !important;
+        margin-right: 175px;
     }
     .get-results h2 {
         padding-bottom: 0;
@@ -1394,8 +1432,8 @@ pre{
 
     .get-results-body {
         text-align: justify;
-        padding: 40px;
-        max-width: 735px;
+        padding: 10px 30px;
+        max-width: 715px;
         margin: 0 auto;
     }
 
@@ -1405,4 +1443,3 @@ pre{
     }
 
 }
-

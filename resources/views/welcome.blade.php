@@ -1,6 +1,6 @@
 @extends('layouts.home')
 
-@section('pageTitle', 'Web 360 3D Photography')
+@section('pageTitle', '360 Product Photography')
 
 @section('content')
     <div class="container-fluid main">

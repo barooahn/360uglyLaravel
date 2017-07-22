@@ -2,7 +2,7 @@
     <div class="icons-how-work">
         <div class="container">
             <h2>
-                How It works
+                How to get 360 Product Photos
             </h2>
             <h5>
                 Six Simple Steps

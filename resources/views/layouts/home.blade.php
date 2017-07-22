@@ -10,7 +10,7 @@
                             @yield('pageTitle') - 360Ugly
                         </title>
                         <meta content="360Ugly.com provides beautiful 360 revolving images for use on your website. 360 Images for your website.  3D Product photography for the web" name="description"/>
-                        <meta content="360 product photography, 3D product photography, 3D images, 3D image, 360 Images, 360 Image, 360 web photos, 360 web photo, 3D web photos, 3D web photo, revolving products, product photography, 360 web pictures, 360 web picture, 3D web pictures, 3D web picture, 360 products, 360 product, 3D products, 3D product" name="keywords"/>
+                        <meta content="360 photography, 360 photographer, 360 product photography, 360 photo, 360 degree photography, 360 product photography, 3D product photography, 360 degree product photography, 360 web photos, 360 web photo" name="keywords"/>
                         <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
                         <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
                         <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
@@ -223,7 +223,7 @@
             @yield('content')
         </div>
         <!-- Scripts -->
-        <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+        <script async type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
         <script async src="/js/all.js">
 
         //privicy
