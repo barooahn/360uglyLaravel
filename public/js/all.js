@@ -15596,21 +15596,15 @@ var framesArray = {
     },
     baji: {
         path: 'images/baji/DSC_{frame}.jpg',
-        start: 117,
-        end: 160,
+        start: 41,
+        end: 79,
         digits: 4
     },
 }
 
 $(".rollover-modal").click(function(e) {
-    $('.loader').css({
-            opacity: 0,
-            display: "block"
-        }).animate({
-            opacity: 1
-        }, 'slow');
     e.preventDefault();
-    var width = $("#360Modal").width() - 20;
+    var width = $("#360Modal").width();
     var id360 = $(this).attr("id");
     console.log("ID of rollover = " + id360);
     $(".modal-spin").addClass(id360);
@@ -15639,6 +15633,7 @@ $(".rollover-modal").click(function(e) {
         frameTime: 80, // Time in ms between updates. 40 is exactly 25 FPS
         detectSubsampling: false,
         animate: true,
+        onInit : function(p){$('.loader-splash').css({opacity: 0, display: "block"}).animate({opacity: 1}, 'slow')},
         mods: [
         // change frame on mouse move
         'drag',

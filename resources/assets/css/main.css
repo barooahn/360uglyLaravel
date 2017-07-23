@@ -1396,7 +1396,7 @@ pre{
 
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1366px) {
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
 
     .splash-container {
         background: url("/images/galaxy-s8_top.png") no-repeat;
@@ -1406,26 +1406,26 @@ pre{
         width: 109%;
     }
 
+
     .uglyman {
         float: right;
-        width: 73% !important;
-        margin-right: 135px;
+        width: 61% !important;
+        margin-right: 105px;
     }
-
 }
 
-@media screen and (min-width: 1367px) and (max-width: 1920px) {
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
 
     .splash-container {
         background: url("/images/galaxy-s8_top.png") no-repeat;
         width: 107%;
     }
-
     .uglyman {
         float: right;
-        width: 61% !important;
-        margin-right: 175px;
+        width: 63% !important;
+        margin-right: 145px;
     }
+
     .get-results h2 {
         padding-bottom: 0;
     }
