@@ -11,10 +11,10 @@ var framesArray = {
         end: 956,
         digits: 4
     },
-    fireTruck: {
-        path: 'images/fireTruck/DSC_{frame}.jpg',
-        start: 2,
-        end: 45,
+    pebble: {
+        path: 'images/pebble/DSC_{frame}.jpg',
+        start: 37,
+        end: 77,
         digits: 4
     },
     baji: {

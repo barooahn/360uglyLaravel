@@ -19,8 +19,8 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3">
                 <div class="thumbs-container">
-                    <a class="rollover-modal" href="#" id="fireTruck">
-                        <img class="img-responsive thumbs" src="images/fireTruck/DSC_0507.jpg" alt="Our work - Fire truck">
+                    <a class="rollover-modal" href="#" id="pebble">
+                        <img class="img-responsive thumbs" src="images/pebble/DSC_0037.jpg" alt="Our work - Pebble watch">
                         </img>
                     </a>
                 </div>

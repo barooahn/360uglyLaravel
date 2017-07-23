@@ -1250,7 +1250,7 @@ pre{
     }
 
     .splash-container{
-        margin: 0 auto;
+        margin: 20px auto;
         width: 85%;
     }
 
@@ -1408,8 +1408,8 @@ pre{
 
     .uglyman {
         float: right;
-        width: 60% !important;
-        margin-right: 140px;
+        width: 73% !important;
+        margin-right: 135px;
     }
 
 }

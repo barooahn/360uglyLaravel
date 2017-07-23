@@ -30,9 +30,9 @@
 
                             <p>The 360 Images can be uploaded to your website and incorporated with three simple lines of code.  Simply cut and paste the code supplied with your download to your site and you will have 360/3D product displayed.  In this case the 360 product photos are called 360ProductPhoto.  It is as simple as uploading the files and copying / pasting three lines of code similar to the ones below.</p>  
 
-                            <pre><xmp><script src="randj.js"></script>
-<div style="height:400px; width:600px;" class="360ProductPhoto00020002"></div>
-<script src="360ProductPhoto00020002.js"></script></xmp></pre>
+                            <pre><code>&lt;script src="randj.js"&gt;&lt;/script&gt;
+&lt;div class="360ProductPhoto00020002">&lt;/div&gt;
+&lt;script src=\"360ProductPhoto00020002.js\">&lt;/script&gt;</code></pre>
                         </div>
                     </div>
                 </div>

@@ -2,12 +2,12 @@
 
 var framesuglyman;
 var framesuglyman = SpriteSpin.sourceArray('images/ugly_splash/JPEG/DSC_{frame}.jpg', {
-    frame: [66, 108],
+    frame: [37, 77],
     digits: 4
 });
 
-var widthuglyman = $('.uglyman').width() - 10;
-var heightuglyman = widthuglyman * 1.5;
+var widthuglyman = $('.uglyman').width();
+var heightuglyman = widthuglyman * 1.2;
 
 
 var spinuglyman = $('.uglyman');
