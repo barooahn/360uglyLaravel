@@ -1,14 +1,14 @@
 var framesArray = {
     clown: {
         path: 'images/clown/DSC_{frame}.jpg',
-        start: 14,
-        end: 58,
+        start: 2926,
+        end: 2970,
         digits: 4
     },
-    flower2: {
-        path: 'images/flower2/DSC_{frame}.jpg',
-        start: 913,
-        end: 956,
+    gamepad: {
+        path: 'images/gamepad/DSC_{frame}.jpg',
+        start: 37,
+        end: 78,
         digits: 4
     },
     pebble: {

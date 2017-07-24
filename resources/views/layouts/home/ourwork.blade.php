@@ -4,15 +4,15 @@
             <div class="col-xs-12 col-sm-6 col-lg-3">
                 <div class="thumbs-container">
                     <a class="rollover-modal" href="#" id="clown">
-                        <img class="img-responsive thumbs" src="images/clown/DSC_0015.jpg" alt="Our work - Scarecrow">
+                        <img class="img-responsive thumbs" src="images/clown/DSC_2926.jpg" alt="Our work - Scarecrow">
                         </img>
                     </a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3">
                 <div class="thumbs-container">
-                    <a class="rollover-modal" href="#" id="flower2">
-                        <img class="img-responsive thumbs" src="images/flower2/DSC_0913.jpg" alt="Our work - flower">
+                    <a class="rollover-modal" href="#" id="gamepad">
+                        <img class="img-responsive thumbs" src="images/gamepad/DSC_0037.jpg" alt="Our work - gamepad">
                         </img>
                     </a>
                 </div>
@@ -28,7 +28,7 @@
             <div class="col-xs-12 col-sm-6 col-lg-3">
                 <div class="thumbs-container">
                     <a class="rollover-modal" href="#" id="baji">
-                        <img class="img-responsive thumbs" src="images/baji/DSC_0150.jpg" alt="Our work - Baji">
+                        <img class="img-responsive thumbs" src="images/baji/DSC_0041.jpg" alt="Our work - Baji">
                         </img>
                     </a>
                 </div>
@@ -36,7 +36,7 @@
 
         </div>
         <div class="row">
-         @include('layouts.home.amazon_products.book')
+         @include('layouts.home.amazon_products.sunglasses')
          @include('layouts.home.amazon_products.uglyman2')
          @include('layouts.home.amazon_products.flowers3')
          @include('layouts.home.amazon_products.big_flowers')

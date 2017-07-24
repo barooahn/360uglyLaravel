@@ -10,7 +10,7 @@ $('.big-flowers-img').click(function(event) {
 
     var framesflowers;
     var framesflowers = SpriteSpin.sourceArray('/images/big-flowers/DSC_{frame}.jpg', {
-        frame: [159, 203],
+        frame: [81, 110],
         digits: 4
     });
 
@@ -41,31 +41,31 @@ $('.big-flowers-img').click(function(event) {
 });
 
 
-// book
+// sunglasses
 
-var book = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="book amazon-container"></div>';
-$('.book-img').click(function(event) {
+var sunglasses = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="sunglasses amazon-container"></div>';
+$('.sunglasses-img').click(function(event) {
     event.preventDefault();
 
-    $('.book-container').append(book);
-    $('.book-img').animate({opacity: 0}, 'slow');
-    $('.book-img').remove();
+    $('.sunglasses-container').append(sunglasses);
+    $('.sunglasses-img').animate({opacity: 0}, 'slow');
+    $('.sunglasses-img').remove();
 
-    var framesbook;
-    var framesbook = SpriteSpin.sourceArray('/images/book/DSC_{frame}.jpg', {
-        frame: [805, 849],
+    var framessunglasses;
+    var framessunglasses = SpriteSpin.sourceArray('/images/sunglasses/DSC_{frame}.jpg', {
+        frame: [39, 78],
         digits: 4
     });
 
-    var widthbook = $('.book').width() - 10;
-    var heightbook = widthbook / 1.5;
-    var spinbook = $('.book');
+    var widthsunglasses = $('.sunglasses').width() - 10;
+    var heightsunglasses = widthsunglasses / 1.1;
+    var spinsunglasses = $('.sunglasses');
     // initialise spritespin
     $(document).ready(function() {
-        spinbook.spritespin({
-              source: framesbook,
-                width: widthbook,
-                height: heightbook,
+        spinsunglasses.spritespin({
+              source: framessunglasses,
+                width: widthsunglasses,
+                height: heightsunglasses,
                 frameTime: 80,
                 animate:true,
                 onInit : function(p){$('.loader').css({opacity: 0, display: "block"}).animate({opacity: 1}, 'slow')},
@@ -75,12 +75,12 @@ $('.book-img').click(function(event) {
     });
 
         // initialise spritespin
-    $('.spinbook').on('touchstart click', function() {
-        spinbook.spritespin('api').toggleAnimation();
+    $('.spinsunglasses').on('touchstart click', function() {
+        spinsunglasses.spritespin('api').toggleAnimation();
     });
 
-    $('.splash-fullscreen-book').click(function(e){
-        spinbook.spritespin('api').requestFullscreen();
+    $('.splash-fullscreen-sunglasses').click(function(e){
+        spinsunglasses.spritespin('api').requestFullscreen();
     });
 });
 
@@ -101,7 +101,7 @@ $('.flowers3-img').click(function(event) {
     });
 
     var widthflowers3 = $('.flowers3').width() - 10;
-    var heightflowers3 = widthflowers3 / 1.5;
+    var heightflowers3 = widthflowers3 * 0.8;
     var spinflowers3 = $('.flowers3');
     // initialise spritespin
     $(document).ready(function() {
@@ -144,7 +144,7 @@ $('.uglyman2-img').click(function(event) {
     });
 
     var widthuglyman2 = $('.uglyman2').width() - 10;
-    var heightuglyman2 = widthuglyman2 / 1.5;
+    var heightuglyman2 = widthuglyman2 ;
     var spinuglyman2 = $('.uglyman2');
     // initialise spritespin
     $(document).ready(function() {
