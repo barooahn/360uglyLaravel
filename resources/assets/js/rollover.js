@@ -27,11 +27,10 @@ var framesArray = {
 
 $(".rollover-modal").click(function(e) {
     e.preventDefault();
-    var width = $("#360Modal").width();
+    var width = $(window).width()-50;
     var id360 = $(this).attr("id");
-    console.log("ID of rollover = " + id360);
+    console.log("width = " + width);
     $(".modal-spin").addClass(id360);
-    // use helper method to generate an array of image urls. We have 34 frames in total
     var frames = SpriteSpin.sourceArray(framesArray[id360]['path'], {
         frame: [framesArray[id360]['start'], framesArray[id360]['end']],
         digits: framesArray[id360]['digits']
