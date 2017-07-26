@@ -21,6 +21,3 @@ spinuglyman.spritespin({
         frameTime: 80,
         scrollThreshold:0
 });
-
-
-

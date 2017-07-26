@@ -545,13 +545,15 @@ ul #login-dp .form-group {
     background-image: url('../images/overlay.png');
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e25333;
     opacity: 0;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
 
 .thumbs-container a:hover:after {
-    opacity: 1;
+    opacity: 0.7;
 }
 
 .our-work button {

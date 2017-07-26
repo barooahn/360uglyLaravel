@@ -18,6 +18,10 @@ Route::get('/options', function () {
     return view('options');
 });
 
+Route::get('gallery', function () {
+    return view('gallery');
+});
+
 Auth::routes();
 
 Route::get('register/verify/{token}', 'Auth\RegisterController@verify'); 
@@ -29,6 +33,7 @@ Route::get('user/home', 'UserController@home');
 Route::get('user/process', 'UserController@process');
 Route::get('user/download', 'UserController@download');
 Route::post('/enquiry', 'EnquiryController@store');
+
 
 Route::get('/confirm', 'ConfirmController@confirm')->middleware('auth');
 
