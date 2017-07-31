@@ -9513,9 +9513,8 @@ ul #login-dp .form-group {
 
 .uglyman {
     margin-top: 80px; 
-    width: 35%;
     float: right;
-    margin-right: 110px;
+    margin-right: 90px;
 }
 
 
@@ -9893,6 +9892,7 @@ ul #login-dp .form-group {
 
 .get-results-text {
     max-width: 315px;
+    text-align: justify !important;
 }
 
 .get-results a {
@@ -10639,7 +10639,6 @@ pre{
     .get-results-text {
         margin: 0 auto;
         float: left;
-        text-align: left;
         font-size: 24px;
     }
 
@@ -10695,17 +10694,22 @@ pre{
     .splash-container {
         background: url("/images/galaxy-s8_top.png") no-repeat;
         position: absolute;
-        top: 100px;
+        top: 50px;
         right: 0px;
-        width: 109%;
+        width: 110%;
     }
 
 
     .uglyman {
         float: right;
-        width: 61% !important;
-        margin-right: 105px;
+        width: 50% !important;
+        margin-right: 150px;
     }
+
+    .splash-text {
+        padding-top: 65%;
+    }
+
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
@@ -10716,8 +10720,8 @@ pre{
     }
     .uglyman {
         float: right;
-        width: 63% !important;
-        margin-right: 145px;
+        width: 50% !important;
+        margin-right: 175px;
     }
 
     .get-results h2 {
@@ -10734,6 +10738,10 @@ pre{
     .get-results-body h3 {
         padding-top: 0; 
         padding-bottom: 0;
+    }
+
+    .splash-text {
+        padding-top: 65%;
     }
 
 }
