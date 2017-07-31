@@ -9,7 +9,7 @@
 
         </div>
         <div class="row">
-         @include('layouts.home.amazon_products.sunglasses')
+         @include('layouts.home.amazon_products.glasses')
         </div>
     </div>
     <!--end of container-->

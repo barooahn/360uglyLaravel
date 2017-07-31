@@ -94,7 +94,7 @@ class User extends Authenticatable
 
     public function getProcess()
     {
-        return $this->orders->wherewhereIn('status', ['pay1', 'delivery', 'process']);
+        return $this->orders->whereIn('status', ['pay1', 'delivery', 'process']);
     }
 
     public function getDownload()

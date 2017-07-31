@@ -297,12 +297,9 @@ ul #login-dp .form-group {
 .privacy {
     width:75px;
     float: right;
-    margin-top: 50px;
 }
 .security {
     width: 130px;
-    margin-top: 50px;
-
 }
 
 .paypal-logo {
@@ -314,12 +311,11 @@ ul #login-dp .form-group {
     display: inline-block;
  }
 
-.splash-text h1{
+.home-top h1{
     font-family: 'Calligraffitti', cursive;
     color: #484848;
     font-weight: 200;
     font-size: 33px;
-    text-align: left;
     text-align: center;
     text-transform: capitalize;
 }
@@ -430,6 +426,7 @@ ul #login-dp .form-group {
 
 .thumbs {
     min-height: 178px !important;
+    padding: 10px;
 }
 
 .modal-spin {

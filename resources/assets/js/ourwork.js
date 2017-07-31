@@ -84,6 +84,49 @@ $('.sunglasses-img').click(function(event) {
     });
 });
 
+// glasses
+
+var glasses = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="glasses amazon-container"></div>';
+$('.glasses-img').click(function(event) {
+    event.preventDefault();
+
+    $('.glasses-container').append(glasses);
+    $('.glasses-img').animate({opacity: 0}, 'slow');
+    $('.glasses-img').remove();
+
+    var framesglasses;
+    var framesglasses = SpriteSpin.sourceArray('/images/glasses/DSC_{frame}.jpg', {
+        frame: [117, 155],
+        digits: 4
+    });
+
+    var widthglasses = $('.glasses').width() - 10;
+    var heightglasses = widthglasses / 1.3;
+    var spinglasses = $('.glasses');
+    // initialise spritespin
+    $(document).ready(function() {
+        spinglasses.spritespin({
+              source: framesglasses,
+                width: widthglasses,
+                height: heightglasses,
+                frameTime: 80,
+                animate:true,
+                onInit : function(p){$('.loader').css({opacity: 0, display: "block"}).animate({opacity: 1}, 'slow')},
+                onLoad : function(p){$('.loader').css({opacity: 1, display: "none"}).animate({opacity: 0}, 'slow')},
+                scrollThreshold:150
+        })        
+    });
+
+        // initialise spritespin
+    $('.spinglasses').on('touchstart click', function() {
+        spinglasses.spritespin('api').toggleAnimation();
+    });
+
+    $('.splash-fullscreen-glasses').click(function(e){
+        spinglasses.spritespin('api').requestFullscreen();
+    });
+});
+
 // flowers3
 
 var flowers3 = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="flowers3 amazon-container"></div>';

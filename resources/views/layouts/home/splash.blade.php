@@ -1,16 +1,25 @@
 <div class="full-height">
     <div class="row home-top" >
-        <div class="privacy">
-            <a href="//www.iubenda.com/privacy-policy/8144288" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a>
-        </div>
-        <div class="security">
-            <img class="encrypt" src="images/icons/padlock.png" alt="Secure site">
+        <div class="col-md-2">
+            <div class="security">
+                <img class="encrypt" src="images/icons/padlock.png" alt="Secure site">
 
-            <div class="paypal-logo">
+                <div class="paypal-logo">
 
-                <img class ="img-reponsive" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal Logo"><!-- PayPal Logo -->
+                    <img class ="img-reponsive" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal Logo"><!-- PayPal Logo -->
+                </div>
             </div>
         </div>
+        <div class="col-md-8">
+            <span><h1>360 images for the web</h1></span>
+        </div>
+        <div class="col-md-2">   
+            <div class="privacy">
+                <a href="//www.iubenda.com/privacy-policy/8144288" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+            </div>
+        </div>
+
+
     </div>
     <div class="row"> 
         <div class="col-md-12">
@@ -50,9 +59,7 @@
         <div class="col-md-4 col-xs-12">
             <div class="splash-text">
 
-                    <img class="img-responsive logo" alt="360 Web Photography" src="/images/logo-main.png">
-
-                    <h1>360 images for the web</h1>           
+                    <img class="img-responsive logo" alt="360 Web Photography" src="/images/logo-main.png">        
 
             </div>
         </div>

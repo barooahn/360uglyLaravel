@@ -8,7 +8,7 @@
                 </a>
             </span>
             <span class="spin-text">
-                Spin with mouse or touch
+                Click/Tap Image to start 
             </span>
         </div>
         <div class="amazon-item">
