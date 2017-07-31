@@ -46,9 +46,35 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#contact" title="Contact us for your 360 photos">
-                        Contact Us
+                    <a href="#contact" title="Make an enquiry about 360 product photos">
+                        Enquiry
                     </a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="About Us">
+                            About Us
+                        <b><span class="caret">
+                        </span></b>
+                    </a>
+                    
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/gallery" title="Our 360 product photography">
+                                Gallery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/article" title="What is 360 Product photography?">
+                                360 Photography
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact" title="Contact us">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

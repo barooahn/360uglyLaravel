@@ -9288,14 +9288,14 @@ html {
     }
 }
 
-h1 {
+h2 {
     color: #e25333;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 15px;
 }
 
-h2 {
+h3 {
     color: #e25333;
     text-align: center;
     text-transform: uppercase;
@@ -9525,7 +9525,7 @@ ul #login-dp .form-group {
 }
 
 .splash-text {
-    padding-top: 50%;
+    padding-top: 45%;
 }
 
 .logo {
@@ -9541,27 +9541,40 @@ ul #login-dp .form-group {
 .privacy {
     width:75px;
     float: right;
-}
-.security {
-    width: 130px;
+    margin-right: -15px;
 }
 
-.paypal-logo {
-    display: inline-block;
-}
-
-.encrypt{
-    width:24px;
-    display: inline-block;
+ .home-top {
+    margin-top: 50px;
  }
 
-.home-top h1{
+ .header-text{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+ }
+
+.home-top .header-text h1{
     font-family: 'Calligraffitti', cursive;
     color: #484848;
     font-weight: 200;
-    font-size: 33px;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+.home-top .header-text h2{
+    font-family: 'Calligraffitti', cursive;
+    color: #484848;
+    font-weight: 200;
+    font-size: 30px;
     text-align: center;
     text-transform: capitalize;
+    display: inline-block;
+    margin-top: 0px;
+    padding-bottom: 0px;
 }
 
     /*down arrow*/
@@ -10280,6 +10293,24 @@ pre{
         font-size: 16px;
     }
 
+    .home-top .header-text h1 {
+        font-weight: 200;
+        font-size: 23px;
+        margin-top: 20px;
+    }
+
+    .home-top .header-text h2 {
+        font-weight: 200;
+        font-size: 23px;
+    }
+
+    .security {
+        display: none;
+    }
+
+    .privicy {
+        margin: -15px;
+    }
     .splash-container {
     background-image: none;
     position: relative;
@@ -10380,6 +10411,25 @@ pre{
 @media screen and (min-width: 768px) and (max-width: 988px) {
     h4{
         font-size: 16px;
+    }
+
+    .home-top {
+        margin-top: 50px;
+    }
+
+    .home-top .header-text h1 {
+        font-weight: 200;
+        font-size: 23px;
+        margin-top: 20px;
+    }
+
+    .home-top .header-text h2 {
+        font-weight: 200;
+        font-size: 23px;
+    }
+
+    .security {
+        display: none;
     }
     .thumbs {
         width: 100%;
