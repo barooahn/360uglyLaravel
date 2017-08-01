@@ -1,11 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto:100,400');
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
-
-@font-face {
-    font-family: Calligraffitti;
-    src: url('/fonts/Calligraffitti-Regular.ttf');
-}
-
 body {
     background-color: white;
     font-family: 'Open Sans', sans-serif;
@@ -49,6 +41,7 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 15px;
+    font-size: 55px;
 }
 
 h3 {
@@ -171,6 +164,7 @@ header h1, header h4 {
 .header-logo {
     max-height: 42px;
     margin-top: -10px;
+    max-width: 90px;
 }
 ul #login-dp  {
     min-width: 350px;
@@ -271,6 +265,7 @@ ul #login-dp .form-group {
     margin-top: 80px; 
     float: right;
     margin-right: 90px;
+    width: 36% !important;
 }
 
 
@@ -300,7 +295,7 @@ ul #login-dp .form-group {
 }
 
  .home-top {
-    margin-top: 50px;
+    /*margin-top: 50px;*/
  }
 
  .header-text{
@@ -731,22 +726,59 @@ ul #login-dp .form-group {
     background-color: #E0AC3A;
 }
 
-.pricing h2 {
+.pricing span {
     font-family: 'Roboto', 'Open Sans';
     font-weight: 400;
 }
 
 .pricing-img {
-    padding-left: 60px;
-    padding-right: 60px;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
-.one-product .pricing-img, .two-products {
-    margin-top: 40px;
+.pricing-circle, .pricing-circle-two {
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    background-color: #E0AC3A;
+    margin: 0 auto;
 }
 
-.pricing .btn {
-    background-color: #76bed0;   
+.pricing-circle-five {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 50%;
+    background-color: #E0AC3A;
+    margin: 0 auto;
+}
+
+.pricing-circle-two {
+    background-color: #B42F7A;
+}
+
+.pricing-circle-five {
+    background-color: #3C3A9D;
+}
+
+.pricing-amount {
+    font-size: 65px;
+    color: white;
+    display: block;
+    padding-top: 25%;
+}
+
+.pricing-amount-five {
+    font-size: 90px;
+    color: white;
+    display: block;
+    padding-top: 28%;
+}
+
+.pricing-per {
+    font-size: 10px;
+    color: white;
+    display: block;
+    padding-bottom: 25%;
 }
 
 .one-product {
@@ -755,85 +787,57 @@ ul #login-dp .form-group {
 
 }
 
-.one-product ul {
-    margin-top: 40px !important;
-}
-
-.two-products ul{
-    margin-top: 30px !important;
-}
-
-.one-product, .two-products {
-    background-color: white;
-    max-width: 80%;
-}
-
 .one-product, .two-products, .more-products {
     text-align: center;
     text-transform: uppercase;
-    padding: 15px 0;
     background-color: white;
     margin: 15px auto 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.more-products ul{
-    margin-left: 20px !important;
-    padding: 15px;
+.one-product, .two-products {
+    margin: 15px auto 0 auto;
 }
-
 
 .more-products .full-width, .two-products .full-width{
     width: 100%;
     height: 50px;
 }
 
-.more-products h4{
+.more-products h4, .two-products h4{
     background-color: #3C3A9D;
     color: white;
     padding: 10px;
     text-align: right;
     width: 160px;
     float: right;
+    margin-right: -10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .two-products h4{
     background-color: #B42F7A;
+}
+
+.benefits {
+    font-size: 25px;
+    text-decoration: none;
     color: white;
-    padding: 10px;
-    text-align: right;
-    width: 160px;
-    float: right;
 }
 
-.pricing ul {
-    margin-top: 12px;
-    list-style-type: none;
-    font-size: 16px;
-    padding: 20px 0 0 30px;
-    text-align: left;
-}
-
-.pricing ul li {
-    margin: 5px 0;
-}
-
-.pricing ul li img {
-    width:25px;
+.benefits li{
     display: inline-block;
 }
 
-.pricing ul li p {
-    display: inline-block;
-    padding-left: 10px;
-    font-size: 14.5px;
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+
+font-size: 30px;
+
 }
 
-.pricing-button {
-    padding-top: 15px;
-    text-align: center;
+.benefits-heading {
+    padding-top: 60px;
 }
-
 
 /*enquiry*/
 
@@ -1044,7 +1048,17 @@ pre{
     text-align: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 19px;
+        padding-bottom: 0;
+    }
+
     h4{
         font-size: 16px;
     }
@@ -1142,26 +1156,37 @@ pre{
         padding-top: 15px !important;
     }
 
-    .pricing-img {
-        margin-top: 0 !important;
+    .pricing-circle, .pricing-circle-two {
+        width: 70vw;
+        height: 70vw;
     }
 
-    .pricing ul {
-        padding: 0px 0 0 30px;
-        
+    .pricing-circle-five {
+        width: 85vw;
+        height: 85vw;
+    }
+    .more-products h4, .two-products h4 {
+        margin-right: 0px;
     }
 
-    .one-product ul {
-        margin-top: 20px !important;
+    .benefits li{
+        display: block;
     }
 
-    .pricing ul {
-        padding: 0px 0 0 60px;
+    .benefits {
+        font-size: 16px;
     }
 
-    .more-products ul {
-        padding: 0px 0 0 75px;
+    .benefits-heading {
+        padding-top:0;
     }
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+
+        font-size: 25px;
+
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 988px) {
@@ -1210,10 +1235,6 @@ pre{
         float: none;
         width: 100% !important;
     }
-
-
-}
-@media screen and (max-width: 988px) {
 
     .navbar-header {
       float: none;
@@ -1379,11 +1400,29 @@ pre{
     }
 
     /*pricing*/
-    .pricing ul li p {
-        display: inline-block;
-        padding-left: 5px;
-        font-size: 11px
+
+    .pricing-circle, .pricing-circle-two {
+        width: 18vw;
+        height: 18vw;
     }
+
+    .pricing-circle-five {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .pricing-amount {
+        font-size: 45px;
+    }
+
+    .pricing-amount-five {
+        font-size: 60px;
+    }
+
+    .benefits {
+        font-size: 16px;
+    }
+
 
     
 }
@@ -1415,7 +1454,6 @@ pre{
     .icon-size img{
         width:20px;
     }
-
 }
 
 @media screen and (min-width: 988px) and (max-width: 1024px) {
@@ -1442,6 +1480,20 @@ pre{
         font-size: 26px;
     }
 
+    .pricing-circle, .pricing-circle-two {
+        width: 17vw;
+        height: 17vw;
+    }
+
+    .pricing-circle-five {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .benefits {
+        font-size: 23px;
+    }
+
 
 }
 
@@ -1464,6 +1516,20 @@ pre{
 
     .splash-text {
         padding-top: 65%;
+    }
+
+    .pricing-circle, .pricing-circle-two {
+        width: 17vw;
+        height: 17vw;
+    }
+
+    .pricing-circle-five {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .benefits {
+        font-size: 29px;
     }
 
 }
@@ -1498,6 +1564,16 @@ pre{
 
     .splash-text {
         padding-top: 65%;
+    }
+
+    .pricing-circle, .pricing-circle-two {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .pricing-circle-five {
+        width: 20vw;
+        height: 20vw;
     }
 
 }

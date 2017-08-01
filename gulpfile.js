@@ -18,6 +18,7 @@ elixir((mix) => {
 	    	'bootstrap.css', 
 	    	'default.css', 
 	    	'font-awesome.css', 
+            'flaticon.css',
 	    	'main.css'
 	    	])
     	.scripts([
@@ -29,8 +30,7 @@ elixir((mix) => {
             'header.js',
             'jquery.scrollto.js',
             'smooth-scroll.js',
-            'general.js',
-            'scrollify.js'
+            'general.js'
             ], 'public/js/all.js')
         .scripts([
             'jquery-3.2.1.js',

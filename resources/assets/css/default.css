@@ -1,5 +1,6 @@
 /* General Demo Style */
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto:100,400');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 @font-face {
 	font-family: 'fontawesome';
@@ -10,6 +11,9 @@
 		url('fonts/fontawesome.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+
+	font-family: Calligraffitti;
+    src: url('/fonts/Calligraffitti-Regular.ttf');
 }
 
 body, html { font-size: 100%; 	padding: 0; margin: 0;}

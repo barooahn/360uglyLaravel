@@ -15680,13 +15680,14 @@ $(document).ready(function(){
         var docHeight = $(document).height();
 
         for (var i=0; i < aArray.length; i++) {
-            var theID = aArray[i];
+            var temp = aArray[i];
+            var theID = temp.replace('/', '');
             var divPos = $(theID).offset().top; // get the offset of the div from the top of page
             var divHeight = $(theID).height(); // get the height of the div in question
             if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-                $("a[href='" + theID + "']").addClass("nav-active");
+                $("a[href='/" + theID + "']").addClass("nav-active");
             } else {
-                $("a[href='" + theID + "']").removeClass("nav-active");
+                $("a[href='/" + theID + "']").removeClass("nav-active");
             }
         }
 
@@ -15713,29 +15714,4 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-100567586-1', 'auto');
 ga('send', 'pageview');
-//fullpage scroll
-
-$.scrollify({
-    easing: "easeOutExpo",
-    scrollSpeed: 1100,
-    offset : -50,
-    scrollbars: false,
-    standardScrollElements: "",
-    setHeights: false,
-    overflowScroll: true,
-    updateHash: true,
-    touchScroll:false,
-    before:function() {
-        if($.scrollify.current().attr('id') !== 'home'){
-            console.log('not home');
-            $('.arrow').css('display', 'none');
-        }
-    }
-});
-
-$(function() {
-  $.scrollify({
-    section : "section",
-  });
-});
 //# sourceMappingURL=all.js.map

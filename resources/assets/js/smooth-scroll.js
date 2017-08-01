@@ -42,13 +42,14 @@ $(document).ready(function(){
         var docHeight = $(document).height();
 
         for (var i=0; i < aArray.length; i++) {
-            var theID = aArray[i];
+            var temp = aArray[i];
+            var theID = temp.replace('/', '');
             var divPos = $(theID).offset().top; // get the offset of the div from the top of page
             var divHeight = $(theID).height(); // get the height of the div in question
             if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-                $("a[href='" + theID + "']").addClass("nav-active");
+                $("a[href='/" + theID + "']").addClass("nav-active");
             } else {
-                $("a[href='" + theID + "']").removeClass("nav-active");
+                $("a[href='/" + theID + "']").removeClass("nav-active");
             }
         }
 

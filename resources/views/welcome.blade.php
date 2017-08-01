@@ -7,11 +7,11 @@
             <section id="home">
              @include('layouts.home.splash')
             </section>
-            <section id="ourwork">
-            @include('layouts.home.ourwork')
-            </section>
             <section id="results">
             @include('layouts.home.getresults')
+            </section>
+            <section id="ourwork">
+            @include('layouts.home.ourwork')
             </section>
             <section id="howwork">
             @include('layouts.home.howwork')
@@ -30,16 +30,16 @@
                     <div class="col-lg-12">
                         <ul class="list-inline">
                             <li>
+                                <a href="/#results">
+                                    Get Results
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/#ourwork">
                                     Our Work
                                 </a>
                             </li>
                             
-                            <li>
-                                <a href="/#results">
-                                    Get Results
-                                </a>
-                            </li>
                             
                             <li>
                                 <a href="/#howwork">

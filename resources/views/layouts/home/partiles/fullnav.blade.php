@@ -26,30 +26,32 @@
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav links">
                 <li>
-                    <a href="#ourwork" title="Our Work - 360 Photos">
-                        Our Work
-                    </a>
-                </li>
-                <li>
-                    <a href="#results" title="Get results with 360 Product Photography">
+                    <a href="/#results" title="Get results with 360 Product Photography">
                         Get Results
                     </a>
                 </li>
                 <li>
-                    <a href="#howwork" title="Procedure to get 360 Photos">
+                    <a href="/#ourwork" title="Our Work - 360 Photos">
+                        Our Work
+                    </a>
+                </li>
+                <li>
+                    <a href="/#howwork" title="Procedure to get 360 Photos">
                         How It Works
                     </a>
                 </li>
                 <li>
-                    <a href="#pricing" title="Pricing for 360 Web photos">
+                    <a href="/#pricing" title="Pricing for 360 Web photos">
                         Pricing
                     </a>
                 </li>
                 <li>
-                    <a href="#contact" title="Make an enquiry about 360 product photos">
+                    <a href="/#contact" title="Make an enquiry about 360 product photos">
                         Enquiry
                     </a>
                 </li>
+            </ul>
+            <ul class="nav navbar-nav">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="About Us">
                             About Us
