@@ -1,7 +1,18 @@
 <div class="pricing full-height">
     <div class="container">
         <div class="row">
+            <div class="col-md-12">
+                <h2>Concerned about the cost of 360 images on your site?</h2>
+
+                <h3>With higher conversion rates and fewer returns can you afford not to?</h3>
+
+                <h3>360 photography is more affordable than you think.  </h3>  
+
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-3 col-sm-offset-1">
+
                 <div class="one-product">
                     <h3>
                         1 product
@@ -66,7 +77,7 @@
             <div class="col-sm-10 col-sm-offset-1">
                 <ul class="benefits">
                     <li>
-                        <i class="flaticon-transport">  Free collection</i>
+                        <i class="flaticon-delivery-truck">  Free collection</i>
                     </li>
                     <li>
                         <i class="flaticon-check">  Approve before buying</i>

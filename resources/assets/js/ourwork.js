@@ -1,9 +1,9 @@
 
 // big-flowers
-var bigflowers = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="big-flowers amazon-container"></div>';
 $('.big-flowers-img').click(function(event) {
+    var bigflowers = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="big-flowers amazon-container"></div>';
     event.preventDefault();
-
+    $('.splash-fullscreen-bigflowers').css({opacity: 0, display: "block"}).animate({opacity: 1}, 'slow');
     $('.big-flowers-container').append(bigflowers);
     $('.big-flowers-img').animate({opacity: 0}, 'slow');
     $('.big-flowers-img').remove();
@@ -14,8 +14,8 @@ $('.big-flowers-img').click(function(event) {
         digits: 4
     });
 
-    var widthflowers = 120;
-    var heightflowers = 180;
+    var widthflowers = $('.big-flowers').width() - 10
+    var heightflowers = widthflowers * 1.33;
     var spinflowers = $('.big-flowers');
     // initialise spritespin
     spinflowers.spritespin({
@@ -43,10 +43,11 @@ $('.big-flowers-img').click(function(event) {
 
 // sunglasses
 
-var sunglasses = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="sunglasses amazon-container"></div>';
 $('.sunglasses-img').click(function(event) {
     event.preventDefault();
+    var sunglasses = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="sunglasses amazon-container"></div>';
 
+    $('.splash-fullscreen-sunglasses').css({opacity: 0, display: "block"}).animate({opacity: 1}, 'slow');
     $('.sunglasses-container').append(sunglasses);
     $('.sunglasses-img').animate({opacity: 0}, 'slow');
     $('.sunglasses-img').remove();
@@ -86,10 +87,11 @@ $('.sunglasses-img').click(function(event) {
 
 // glasses
 
-var glasses = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="glasses amazon-container"></div>';
 $('.glasses-img').click(function(event) {
     event.preventDefault();
+    var glasses = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="glasses amazon-container"></div>';
 
+    $('.splash-fullscreen-glasses').css({opacity: 0, display: "block"}).animate({opacity: 1}, 'slow');
     $('.glasses-container').append(glasses);
     $('.glasses-img').animate({opacity: 0}, 'slow');
     $('.glasses-img').remove();
@@ -129,10 +131,11 @@ $('.glasses-img').click(function(event) {
 
 // flowers3
 
-var flowers3 = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="flowers3 amazon-container"></div>';
 $('.flowers3-img').click(function(event) {
     event.preventDefault();
+    var flowers3 = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="flowers3 amazon-container"></div>';
 
+        $('.splash-fullscreen-flowers3').css({opacity: 0, display: "block"}).animate({opacity: 1}, 'slow');
         $('.flowers3-container').append(flowers3);
         $('.flowers3-img').animate({opacity: 0}, 'slow');
         $('.flowers3-img').remove();
@@ -172,10 +175,11 @@ $('.flowers3-img').click(function(event) {
 
 // uglyman2
 
-var uglyman2 = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="uglyman2 amazon-container"></div>';
 $('.uglyman2-img').click(function(event) {
     event.preventDefault();
+    var uglyman2 = '<div class="loader"><div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><p>Loading</p></div><div class="uglyman2 amazon-container"></div>';
 
+        $('.splash-fullscreen-uglyman2').css({opacity: 0, display: "block"}).animate({opacity: 1}, 'slow');
         $('.uglyman2-container').append(uglyman2);
         $('.uglyman2-img').animate({opacity: 0}, 'slow');
         $('.uglyman2-img').remove();

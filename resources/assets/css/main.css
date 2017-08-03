@@ -5,7 +5,6 @@ body {
     padding-top: 70px;
     max-width: 100%;
     overflow-x: hidden;
-
 }
 
 html {
@@ -36,23 +35,16 @@ html {
     }
 }
 
-h2 {
-    color: #e25333;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 15px;
-    font-size: 55px;
-}
-
-h3 {
-    color: #e25333;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 15px;
-}
-
 .center {
     text-align: center;
+}
+
+h1 {
+    font-size: 33px;
+}
+
+h2 {
+    font-size: 25px;
 }
 
 a{
@@ -65,8 +57,8 @@ a:hover{
 }
 
 p{
-    font-size: 16.5px;
-    line-height: 1.2;
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 .btn {
@@ -268,25 +260,10 @@ ul #login-dp .form-group {
     width: 36% !important;
 }
 
-
-
-#home{
-    /*padding-top: 50px;*/
-}
-
 .splash-text {
-    padding-top: 45%;
+    padding-top: 35%;
 }
 
-.logo {
-    width: 390px;
-    margin: 0 auto 0 auto;
-}
-
-.logo img {
-    height: 125px !important;
-    padding-bottom: 20px;
-}
 
 .privacy {
     width:75px;
@@ -294,40 +271,23 @@ ul #login-dp .form-group {
     margin-right: -15px;
 }
 
- .home-top {
-    /*margin-top: 50px;*/
- }
-
- .header-text{
+.header-text{
     text-align: center;
     display: inline-block;
     width: 100%;
  }
 
-.home-top .header-text h1{
-    font-family: 'Calligraffitti', cursive;
-    color: #484848;
-    font-weight: 200;
-    font-size: 50px;
+.home-top .header-two h1{
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 32px;
     text-transform: capitalize;
-    margin-top: 0px;
-    padding-bottom: 0px;
-}
-
-
-.home-top .header-text h2{
-    font-family: 'Calligraffitti', cursive;
-    color: #484848;
-    font-weight: 200;
-    font-size: 30px;
     text-align: center;
-    text-transform: capitalize;
-    display: inline-block;
-    margin-top: 0px;
-    padding-bottom: 0px;
+    padding: 5px;
+    clear: right;
+    padding: 20px 0;
 }
 
-    /*down arrow*/
+/*down arrow*/
 
 .arrow {
     bottom: 10px;
@@ -379,12 +339,18 @@ ul #login-dp .form-group {
     padding: 15px;
 }
 
-.how-work, .our-work, .pricing, .contact, .results {
+#howwork, #ourwork, #pricing, #contact, #results, #free, #gallery  {
     padding-top: 5px;
+    min-height: 100vh;
 }
 
 
 /*our-work container*/
+
+#ourwork {
+    background-color: #28738C;
+    color: white;
+}
 
 .splash-fullscreen{
     position: static;
@@ -414,11 +380,6 @@ ul #login-dp .form-group {
 .spin-icon {
     width:50px;
     display: inline-block;
-}
-
-
-.our-work{
-    background-color: #DDD;
 }
 
 .thumbs-container {
@@ -564,16 +525,6 @@ ul #login-dp .form-group {
     margin-bottom: 20px;
 }
 
-.big-flowers {
-    margin: 0 auto;
-}
-
-.big-flowers-img img{
-    height:180px;
-    width: 120px;
-    margin: 0 auto;
-}
-
 .amazon-price {
     margin-bottom: 6px!important;
     line-height: 1!important;
@@ -627,77 +578,34 @@ ul #login-dp .form-group {
     padding: 25px;  
 }
 
+.amazon-header .full-screen {
+    display: none;
+}
+
 /*get-results container*/
 
-.get-results {
+#results {
     background-color: #f4f0ef;
-    padding-bottom: 85px;
-    margin-left: -15px;
-    margin-right: -15px;
+    background-image: url('../images/lights_background.jpg');
+    background-size:     cover;              
+    background-repeat:   no-repeat;  
+    background-position: center center; 
+    color: #1c1a23;
 }
 
-.get-results-left img {
-    display: block;
-    margin: 0 auto;
-}
 
-.get-results-text {
-    max-width: 315px;
-    text-align: justify !important;
-}
-
-.get-results a {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.get-results h2 {
-    font-size: 40px;
-}
-
-.get-results-padding {
-    padding-top: 0;
-    max-width: 715px;
-    margin: 0 auto;
-}
-
-.get-results-body h3 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: left;
-}
-
-.form-padding {
-    margin-top: 15px;
-}
-
-.get-results-btn {
-    text-align: center;
-}
-.get-results-body {
-    text-align: justify;
-    padding: 10px 25px;
-    max-width: 715px;
-    margin: 0 auto;
+.results-text p{
+    margin-top: 32px;
 }
 
 
 /*how it works*/
 
-.how-work h1 {}
-
 .how-work h5 {
     text-align: center;
 
 }
-
-.how-work p {
-    text-align: center;
-    padding-bottom: 10px;
-}
-
 .icons {
-
     text-align: center;
     cursor: pointer;
 }
@@ -705,6 +613,11 @@ ul #login-dp .form-group {
 .icons a {
     color: #313131;
     text-decoration: none;
+}
+
+.icon-size {
+    float:right;
+    color: black;
 }
 
 .popover {
@@ -722,7 +635,7 @@ ul #login-dp .form-group {
 
 /*pricing*/
 
-.pricing {
+#pricing {
     background-color: #E0AC3A;
 }
 
@@ -737,16 +650,16 @@ ul #login-dp .form-group {
 }
 
 .pricing-circle, .pricing-circle-two {
-    width: 12vw;
-    height: 12vw;
+    width: 10vw;
+    height: 10vw;
     border-radius: 50%;
     background-color: #E0AC3A;
     margin: 0 auto;
 }
 
 .pricing-circle-five {
-    width: 17vw;
-    height: 17vw;
+    width: 13vw;
+    height: 13vw;
     border-radius: 50%;
     background-color: #E0AC3A;
     margin: 0 auto;
@@ -820,7 +733,7 @@ ul #login-dp .form-group {
 }
 
 .benefits {
-    font-size: 25px;
+    font-size: 29px;
     text-decoration: none;
     color: white;
 }
@@ -841,17 +754,10 @@ font-size: 30px;
 
 /*enquiry*/
 
-.contact {
-    padding-top: 80px;
-}
-
 .contact .form-control{
     color: #999 !important;
 }
 
-.contact h3 {
-    text-align: center;
-}
 
 .contact select:invalid {
     color: #999 !important;
@@ -942,11 +848,21 @@ font-size: 30px;
     font-size: 12px;
 }
 
+
+/*free*/
+
+#free {
+    background-color: #e25333;
+    color: white;
+}
+
 /*options*/
 
 
 footer {
     text-align: center;
+    min-height: 400px;
+    background-color: #111E22;
 }
 
 /*user - home page*/
@@ -1051,16 +967,24 @@ pre{
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
     h2 {
-        font-size: 35px;
+        font-size: 20px;
     }
 
     h3 {
-        font-size: 19px;
+        font-size: 18px;
         padding-bottom: 0;
     }
 
     h4{
         font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    #results {
+    background-image: none;
     }
 
     .home-top .header-text h1 {
@@ -1096,8 +1020,8 @@ pre{
         margin-right: 0;
     }
 
-    .paypal-logo {
-        display: inline-block;
+    .home-top .header-two h1 {
+        font-size: 20px;
     }
 
 
@@ -1115,7 +1039,7 @@ pre{
     }
 
     .splash-text {
-        padding-top: 45px;
+        padding-top: 15px;
     }
 
     .get-results-text {
@@ -1128,10 +1052,6 @@ pre{
         font-size: 28px;
         max-width: 315px;
         margin: 0 auto;
-        padding-bottom: 15px;
-    }
-
-    .our-work {
         padding-bottom: 15px;
     }
 
@@ -1324,12 +1244,6 @@ pre{
         margin: 20px auto;
         width: 85%;
     }
-
-    .arrow {
-
-    }
-
-
     .contact{
         padding-top: 0;
     }
@@ -1515,7 +1429,7 @@ pre{
     }
 
     .splash-text {
-        padding-top: 65%;
+        padding-top: 45%;
     }
 
     .pricing-circle, .pricing-circle-two {
@@ -1560,10 +1474,6 @@ pre{
     .get-results-body h3 {
         padding-top: 0; 
         padding-bottom: 0;
-    }
-
-    .splash-text {
-        padding-top: 65%;
     }
 
     .pricing-circle, .pricing-circle-two {

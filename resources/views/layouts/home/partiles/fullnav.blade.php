@@ -50,33 +50,15 @@
                         Enquiry
                     </a>
                 </li>
-            </ul>
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="About Us">
-                            About Us
-                        <b><span class="caret">
-                        </span></b>
+                <li>
+                    <a href="/#free" title="Limited time free 360 Product image">
+                        Free 360
                     </a>
-                    
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="/gallery" title="Our 360 product photography">
-                                Gallery
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/article" title="What is 360 Product photography?">
-                                360 Photography
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/contact" title="Contact us">
-                                Contact Us
-                            </a>
-                        </li>
-                    </ul>
+                </li>
+                <li>
+                    <a href="/#gallery" title="Our 360 product photography">
+                        Gallery
+                    </a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

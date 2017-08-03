@@ -1,28 +1,28 @@
  <div class="col-xs-12 col-sm-6 col-lg-3">
         <div class="amazon-product">
     <div class="amazon-header">
-        <div class="spinglasses">
+        <div class="spinsunglasses">
             <span>
                 <a class="spin-icon">
-                    <img class="img-responsive icon-size-360" src="images/icons/002-360arrow.png" alt="360 spin">
+                    <i class="flaticon-360-degrees"></i>
                 </a>
             </span>
             <span class="spin-text">
                 Click/Tap Image to start 
             </span>
+            <a class="full-screen icon-size splash-fullscreen-sunglasses">
+                <i class="flaticon-full-screen"></i>
+            </a>
         </div>
         <div class="amazon-item">
-            <a href="#" class="glasses-img"><img src="images/glasses/DSC_0117.jpg" class="img-responsive" alt="Our work - glasses"></a>
-                <div class="glasses-container">
+            <a href="#" class="sunglasses-img"><img src="images/sunglasses/DSC_0039.jpg" class="img-responsive" alt="Our work - sunglasses"></a>
+                <div class="sunglasses-container">
                     
                 </div>
 
-            <a class="full-screen icon-size splash-fullscreen-glasses">
-                <img src="images/icons/005-arrows.png" alt="full-screen">
-            </a>
             <div>
                 <p class="amazon-price">£7.99</p>
-                <p class="amazon-description">A beautifly hand stiched minuture note glasses</p>
+                <p class="amazon-description">A beautifly hand stiched minuture note sunglasses</p>
                 <p><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i><i class="fa fa-star gold" aria-hidden="true"></i>  67</p>
             </div>
         </div>

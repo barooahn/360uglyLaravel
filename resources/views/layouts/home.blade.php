@@ -9,7 +9,7 @@
                         <title>
                             @yield('pageTitle') - 360Ugly
                         </title>
-                        <meta content="360Ugly.com provides beautiful 360 revolving images for use on your website. 360 Images for your website.  3D Product photography for the web" name="description"/>
+                        <meta content="Reduce product returns and increase sales with 360 product photography" name="description"/>
                         <meta content="360 photography, 360 photographer, 360 product photography, 360 photo, 360 degree photography, 360 product photography, 3D product photography, 360 degree product photography, 360 web photos, 360 web photo" name="keywords"/>
                         <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
                         <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
@@ -42,11 +42,15 @@
                 </meta>
             </meta>
         </meta>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:700|PT+Sans+Narrow:700');
+        </style>
     </head>
     <body>
         <div id="app">
             @include('layouts.home.partiles.fullnav')
             @yield('content')
+            @include('layouts.home.partiles.footer')
         </div>
         <!-- Scripts -->
         <script async type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>

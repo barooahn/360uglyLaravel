@@ -30,7 +30,9 @@ elixir((mix) => {
             'header.js',
             'jquery.scrollto.js',
             'smooth-scroll.js',
-            'general.js'
+            'general.js',
+            'rollover.js', 
+            'ourwork.js'
             ], 'public/js/all.js')
         .scripts([
             'jquery-3.2.1.js',
@@ -42,8 +44,6 @@ elixir((mix) => {
             'jquery-3.2.1.js',
             'bootstrap.js', 
             'rotate.js',  
-            'rollover.js', 
-            'ourwork.js',
             'general.js' 
             ], 'public/js/options.js')
         .scripts([

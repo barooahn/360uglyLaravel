@@ -1,9 +1,4 @@
-@extends('layouts.options-template')
-
-@section('pageTitle', 'Options')
-
-@section('content')
-<div class="container-fluid">
+<div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-lg-3">
                 <div class="thumbs-container">
@@ -62,10 +57,10 @@
                     Spin with mouse or touch
 
                     <a class="icon-size" data-dismiss="modal">
-                        <img src="images/icons/close.png" alt="close">
+                        <i class="flaticon-cancel"></i>
                     </a>
                     <a class="full-screen icon-size">
-                        <img src="images/icons/005-arrows.png" alt="full-screen">
+                        <i class="flaticon-full-screen"></i>
                     </a>
                 </h4>
             </div>
@@ -87,5 +82,3 @@
         </div>
     </div>
 </div>
-
-@endsection

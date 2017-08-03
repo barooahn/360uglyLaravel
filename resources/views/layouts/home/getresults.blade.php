@@ -1,40 +1,26 @@
-<div class="container-fluid get-results full-height">
-    <div class="text-center get-results-padding">
-        <h2>
-            USE 360 PRODUCT PHOTOGRAPHY TO
-            <b>
-                GET improved RESULTS
-            </b>
-            from your product sales
-        </h2>
-    </div>
-    <div class="row">
-        <div class="col-md-6 col-sm-12 get-results-left">
-            <img class="img-responsive" src="images/200up.png" alt="200 percent increase in sales"/>
-        </div>
-        <div class="col-md-6 col-sm-12">
-            <h4 class="get-results-text">
-                Our clients typically get a 200% increase in the number of sales through their new 360 degree product.
-            </h4>
-        </div>
-    </div>
+<div class="container get-results full-height">
 
     <div class="row">
-        <div class="col-md-8 col-sm-12 col-md-offset-2">
-            <div class=" get-results-body">
-                <h3>Why use 360 web photos?</h3>
+        <div class="col-md-6 col-md-offset-3 col-sm-12 ">
 
-                <p>360 Ugly LTD is a premium web service used to increase your product sales by utilising 360 product photography on your website.  360 Images, sometimes called 3D images, can be used to show all angles of your product in a smooth, beautiful, rotation.  Not only does the buyer have more views of the product but they can choose angles they want to see.  Revolving products lead to less product returns and more product sales</p>
+            <div class="results-text">
 
-                <h3>Using 360 revolving products on my website</h3>
+                <h2>
+                    Spending more on marketing than making profit?  
+                </h2>
+                <h2>
+                    Customers returning your products?
+                </h2>
 
-                <p>The 360 Images can be uploaded to your website and incorporated with three simple lines of code.  Simply cut and paste the code supplied with your download to your site and you will have 360/3D product displayed.  In this case the 360 product photos are called 360ProductPhoto.  It is as simple as uploading the files and copying / pasting three lines of code similar to the ones below.</p>  
+                <p>If your clients remotely purchase your product they already have built up an idea of what the product will be like from your description and images.  If the product differs, even in a small way, than they imagined there is a possibility that they will return it.</p>  
 
-                <pre><code>&lt;script src="randj.js"&gt;&lt;/script&gt;
-&lt;div class="360ProductPhoto00020002">&lt;/div&gt;
-&lt;script src=\"360ProductPhoto00020002.js\">&lt;/script&gt;</code></pre>
+                <p>Giving the customer the maximum amount of information possible helps them to build an accurate mental image of what they have purchased.  As the old adage goes a picture is worth a thousand words.  A 360 product rotation can be up to 72, Ultra High-Definition pictures.  How many words is that worth?</p> 
+
+                <p> With 360 product photography customers can see up to 72 different angles, zoom in on details and spin the product to complete the mental image your client needs to purchase and be satisfied with your product.   With 360 pictures clients are far more informed of the product, more likely to buy and less likely to return purchases.</p>
             </div>
+
         </div>
     </div>
+
 </div>
 <!--end container-->

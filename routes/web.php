@@ -14,13 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/options', function () {
-    return view('options');
-});
-
-Route::get('gallery', function () {
-    return view('gallery');
-});
 
 Auth::routes();
 

@@ -6,8 +6,8 @@
             </div>
         </div>
 
-        <div class="col-md-12">
-            <span class="header-text"><h1>360 Product Photography </h1><h2> for your website</h2></span>
+        <div class="col-md-12 header-two">
+            <h1 class="">Reduce product returns and increase sales with 360 product photography </h1>
         </div>
 
     </div>
@@ -46,10 +46,10 @@
             </div>
         </div>
 
-        <div class="col-md-4 col-xs-12">
+        <div class="col-md-6 col-xs-12">
             <div class="splash-text">
 
-                    <img class="img-responsive logo" alt="360 Web Photography" src="/images/logo-main.png">        
+                <img class="img-responsive logo" alt="360 Web Photography" src="/images/logo-main.png">        
 
             </div>
         </div>

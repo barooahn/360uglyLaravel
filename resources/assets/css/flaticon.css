@@ -28,8 +28,12 @@
 font-style: normal;
 margin-left: 20px;
 }
-
-.flaticon-download:before { content: "\f100"; }
-.flaticon-check:before { content: "\f101"; }
-.flaticon-photo-camera:before { content: "\f102"; }
-.flaticon-transport:before { content: "\f103"; }
+.flaticon-cancel:before { content: "\f100"; }
+.flaticon-zoom-in:before { content: "\f101"; }
+.flaticon-delivery-truck:before { content: "\f102"; }
+.flaticon-full-screen:before { content: "\f103"; }
+.flaticon-360-degrees:before { content: "\f104"; }
+.flaticon-download:before { content: "\f105"; }
+.flaticon-check:before { content: "\f106"; }
+.flaticon-photo-camera:before { content: "\f107"; }
+.flaticon-transport:before { content: "\f108"; }
