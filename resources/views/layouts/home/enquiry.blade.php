@@ -53,7 +53,7 @@
                     </span>
                     and we will contact you right away
                 </h3>
-                <form action="{{ url('/enquiry') }}" class="form" id="order" method="post" role="form">
+                <form action="{{ url('/enquiry') }}" class="form" id="order" method="post">
                     {{ csrf_field() }}
 
                     <div class="form-group">

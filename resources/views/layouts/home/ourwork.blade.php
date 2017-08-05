@@ -34,9 +34,9 @@
 
 </ul>
 
-</h5>Store front display</h5>
+<h4>Store front display</h4>
 <p>If you are using your 360 Image in a shop window display load times will not be as important as quality and 90 frames will give a buttery smooth rotation.</p>   
-<h5>Web store / site</h5>
+<h4>Web store / site</h4>
 <p>As a website owner I’m sure you know how important speed is to how how well you rank on Google search.  Light 360 rotations are what you want here.  Cutting down the number of frames reduces the file size of the 360 product and also the load time of the page, whilst still giving your customers all the advantages of 360 degree photography.  </p>
 
  
