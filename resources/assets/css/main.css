@@ -246,7 +246,7 @@ ul #login-dp .form-group {
 .splash-container{
     background: url("/images/galaxy-s8_top.png") no-repeat top right;
     position: absolute;
-    top:100px;
+    top:20px;
     right: 0;
     width:100%;
 }
@@ -255,12 +255,12 @@ ul #login-dp .form-group {
 .uglyman {
     margin-top: 80px; 
     float: right;
-    margin-right: 90px;
+    margin-right: 70px;
     width: 36% !important;
 }
 
 .splash-text {
-    padding-top: 35%;
+    padding-top: 24%;
 }
 
 
@@ -1374,13 +1374,13 @@ pre{
     }
 
     .splash-container {
-        background: url(/images/galaxy-s8_top.png) no-repeat;
+/*        background: url(/images/galaxy-s8_top.png) no-repeat;
         position: absolute;
         top: 100px;
         right: 6px;
         width: 135%;
         background-position-x: 160px;
-        background-size: 445px;
+        background-size: 445px;*/
     }
 
     .splash-text h1 {
@@ -1406,14 +1406,6 @@ pre{
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
 
-    .splash-container {
-        background: url("/images/galaxy-s8_top.png") no-repeat;
-        position: absolute;
-        top: 50px;
-        right: 0px;
-        width: 110%;
-    }
-
 
     .uglyman {
         float: right;
@@ -1422,7 +1414,7 @@ pre{
     }
 
     .splash-text {
-        padding-top: 45%;
+/*        padding-top: 45%;*/
     }
 
     .pricing-circle, .pricing-circle-two {
@@ -1443,14 +1435,10 @@ pre{
 
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
 
-    .splash-container {
-        background: url("/images/galaxy-s8_top.png") no-repeat;
-        width: 107%;
-    }
     .uglyman {
         float: right;
         width: 50% !important;
-        margin-right: 175px;
+        margin-right: 120px;
     }
 
     .get-results h2 {

@@ -12,7 +12,6 @@
         </div>
         <div class="row">
             <div class="col-sm-3 col-sm-offset-1">
-
                 <div class="one-product">
                     <h3>
                         1 product
@@ -63,29 +62,30 @@
                         </div>
                     </div>
 
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-                <div class="benefits-heading">
-                    <h3>All our 360 product photography comes with:</h3>
+                    <hr>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-                <ul class="benefits">
-                    <li>
-                        <i class="flaticon-delivery-truck">  Free collection</i>
-                    </li>
-                    <li>
-                        <i class="flaticon-check">  Approve before buying</i>
-                    </li>   
-                    <li>
-                        <i class="flaticon-download">  Free download</i>
-                    </li>                            
-                </ul>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="benefits-heading">
+                        <h3>All our 360 product photography comes with:</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <ul class="benefits">
+                        <li>
+                            <i class="flaticon-delivery-truck">  Free collection</i>
+                        </li>
+                        <li>
+                            <i class="flaticon-check">  Approve before buying</i>
+                        </li>   
+                        <li>
+                            <i class="flaticon-download">  Free download</i>
+                        </li>                            
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

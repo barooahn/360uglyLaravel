@@ -95,17 +95,12 @@
                                         {{ csrf_field() }}
                                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                             <label for="email" class="sr-only">E-Mail Address</label>
-
-                                            <div>
-                                                <input id="email" type="email" class="form-control" name="email" placeholder="Email address" value="{{ old('email') }}" required autofocus>
-
+                                            <input id="email" type="email" class="form-control" name="email" placeholder="Email address" value="{{ old('email') }}" required autofocus>
                                                 @if ($errors->has('email'))
                                                     <span class="help-block">
                                                         <strong>{{ $errors->first('email') }}</strong>
                                                     </span>
                                                 @endif
-                                                </input>
-                                            </div>
                                         </div>
 
                                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
@@ -122,7 +117,6 @@
                                                 <div class="help-block text-right">
                                                     <a href="{{ url('/password/reset') }}" title="Password Reset">Forget the password ?</a>
                                                 </div>
-                                            </input>
                                         </div>
                                         <div class="form-group">
                                             <button class="btn btn-primary btn-block" type="submit">
