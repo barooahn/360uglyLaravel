@@ -14,7 +14,6 @@ html {
 }
 
 .main{
-    max-width: 90%;
 }
 
 @include media-breakpoint-up(sm) {
@@ -267,8 +266,6 @@ ul #login-dp .form-group {
 
 .privacy {
     width:75px;
-    float: right;
-    margin-right: -15px;
 }
 
 .header-text{
@@ -282,9 +279,7 @@ ul #login-dp .form-group {
     font-size: 32px;
     text-transform: capitalize;
     text-align: center;
-    padding: 5px;
-    clear: right;
-    padding: 20px 0;
+
 }
 
 /*down arrow*/
@@ -329,14 +324,12 @@ ul #login-dp .form-group {
 
 .full-height {
     min-height: 100vh;
-    padding: 10px 0;
 }
 
 .full-height-orange {
     min-height: 100vh;
     background-color: #e25333;
     color: white;
-    padding: 15px;
 }
 
 #howwork, #ourwork, #pricing, #contact, #results, #free, #gallery  {
@@ -1016,8 +1009,8 @@ pre{
     .uglyman {
         float: none;
         margin-top: 0;
-        width: 100% !important;
-        margin-right: 0;
+        width: 85% !important;
+        margin: 0 auto;
     }
 
     .home-top .header-two h1 {

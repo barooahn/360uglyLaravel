@@ -1,4 +1,5 @@
-<div class="container">
+<div class="gallery full-height">
+    <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-lg-3">
                 <div class="thumbs-container">
@@ -35,14 +36,14 @@
 
         </div>
         <div class="row">
-         @include('layouts.home.amazon_products.sunglasses')
-         @include('layouts.home.amazon_products.uglyman2')
-         @include('layouts.home.amazon_products.flowers3')
-         @include('layouts.home.amazon_products.big_flowers')
+           @include('layouts.home.amazon_products.sunglasses')
+           @include('layouts.home.amazon_products.uglyman2')
+           @include('layouts.home.amazon_products.flowers3')
+           @include('layouts.home.amazon_products.big_flowers')
 
-        </div>
-    </div>
-    <!--end of container-->
+       </div>
+   </div>
+   <!--end of container-->
 </div>
 
 <div aria-labelledby="exampleModalLabel" class="modal fade" id="360Modal" role="dialog" tabindex="-1">
@@ -82,3 +83,4 @@
         </div>
     </div>
 </div>
+

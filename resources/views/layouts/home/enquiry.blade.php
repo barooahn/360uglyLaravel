@@ -78,7 +78,7 @@
 
                             <span class="name1 error_message">
                             </span>
-                            <select class="form-control myform2" id="items" name="item" type="text">
+                            <select class="form-control myform2" id="items" name="item">
                                 <option disabled selected hidden value="">
                                     Number of products
                                 </option>
@@ -117,6 +117,4 @@
 
     </div>
     <!--end container-->
-</div>
-
 </div>

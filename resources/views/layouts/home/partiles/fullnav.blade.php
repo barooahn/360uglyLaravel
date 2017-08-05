@@ -91,7 +91,7 @@
                                         </a>
                                     </div>
                                     or
-                                    <form accept-charset="UTF-8" action="{{ url('/login') }}" class="form" id="login-nav" method="POST" role="form">
+                                    <form accept-charset="UTF-8" action="{{ url('/login') }}" class="form" id="login-nav" method="POST">
                                         {{ csrf_field() }}
                                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                             <label for="email" class="sr-only">E-Mail Address</label>
@@ -104,6 +104,7 @@
                                                         <strong>{{ $errors->first('email') }}</strong>
                                                     </span>
                                                 @endif
+                                                </input>
                                             </div>
                                         </div>
 
