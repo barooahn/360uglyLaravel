@@ -12,7 +12,5 @@
     <section id="contact">@include('layouts.home.enquiry')</section>
     <section id="free">@include('layouts.home.free')</section>
     <section id="gallery">@include('layouts.home.gallery')</section>
-
-
-
+    
 @endsection

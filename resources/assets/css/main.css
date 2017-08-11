@@ -244,7 +244,7 @@ ul #login-dp .form-group {
 /*home page - splash*/
 
 .splash-container{
-    background: url("/images/galaxy-s8_top.png") no-repeat top right;
+    background: url("../images/galaxy-s8_top.png") no-repeat top right;
     position: absolute;
     top:20px;
     right: 0;
@@ -347,8 +347,8 @@ ul #login-dp .form-group {
 
 .splash-fullscreen{
     position: static;
-    top:10px
-    right 10px;
+    top: 10px;
+    right: 10px;
     z-index: 1000;
 }
 
@@ -500,11 +500,8 @@ ul #login-dp .form-group {
     left: 0;
     border-radius: 5px;
     /*margin: 15px;*/
-    background-image: url('../images/overlay.png');
     background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #e25333;
+    background: #e25333 url('../images/overlay.png') no-repeat center;
     opacity: 0;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -562,9 +559,7 @@ ul #login-dp .form-group {
     margin: 5px -12px 0 -12px;
 }
 .amazon-item {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #DDD;
+    border: 1px solid #DDD;
     font-family: "Amazon Ember",Arial,sans-serif;
     font-size: 13px;
     line-height: 19px;
@@ -578,11 +573,8 @@ ul #login-dp .form-group {
 /*get-results container*/
 
 #results {
-    background-color: #f4f0ef;
-    background-image: url('../images/lights_background.jpg');
-    background-size:     cover;              
-    background-repeat:   no-repeat;  
-    background-position: center center; 
+    background-size: cover;
+    background: #f4f0ef url('../images/lights_background.jpg') no-repeat center center;
     color: #1c1a23;
 }
 
@@ -633,7 +625,7 @@ ul #login-dp .form-group {
 }
 
 .pricing span {
-    font-family: 'Roboto', 'Open Sans';
+    font-family: 'Roboto', 'Open Sans', serif;
     font-weight: 400;
 }
 
@@ -803,9 +795,7 @@ font-size: 30px;
     white-space: nowrap;
     vertical-align: top;
     cursor: pointer;
-    background-color: none;
-    border: 0px solid 
-    #999;
+    border: 0 solid #999;
     border-radius: 3px;
     color: #999;
     -webkit-user-select: none;
@@ -829,9 +819,7 @@ font-size: 30px;
 /*bottom menu*/
 
 .itemthumb {
-    border: 1px;
-    border-style: solid;
-    border-color: #e25333;
+    border: 1px solid #e25333;
     border-radius: 5px;
     margin: 25px 2px;
     padding: 10px;
@@ -880,20 +868,19 @@ footer {
 
 .nav-pills a:hover {
     color: white;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .nav-pills .active a:hover {
     color: white;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 /*Process*/
 
 .process-items{
+    border: 1px #f2f2f2;
     border-top-style: solid;
-    border-width: 1px;
-    border-color: #f2f2f2;
 }
 /*forms*/
 
@@ -904,14 +891,14 @@ footer {
     box-shadow: 0 1px 1px rgba(197, 197, 197, 0.5);
     border: 0;
     border-radius: 0;
-    font-family: roboto;
-    font-weight: 200px;
+    font-family: roboto, serif;
+    font-weight: 200;
 }
 
 .panel-heading {
     background-color: white !important;
-    font-family: roboto;
-    font-weight: 200px;
+    font-family: roboto, serif;
+    font-weight: 200;
     border-radius: 0;
     color: #e25333 !important;
     text-transform: uppercase;
@@ -921,7 +908,7 @@ footer {
 
 .form-group {
     color: #777;
-    font-family: roboto;
+    font-family: roboto, serif;
 }
 
 .control-label {
@@ -948,8 +935,6 @@ pre{
   width: auto;
   padding: 5px;
   background-color: #eee;
-  width: 650px!ie7;
-  padding-bottom: 20px!ie7;
   max-height: 600px;
 }
 
@@ -1008,13 +993,13 @@ pre{
 
     .uglyman {
         float: none;
-        margin-top: 0;
-        width: 85% !important;
-        margin: 0 auto;
+        margin: 10% auto;
+        width: 60% !important;
     }
 
     .home-top .header-two h1 {
         font-size: 20px;
+        margin: 0;
     }
 
 
@@ -1079,7 +1064,7 @@ pre{
         height: 85vw;
     }
     .more-products h4, .two-products h4 {
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     .benefits li{
@@ -1171,7 +1156,7 @@ pre{
     }
     .navbar-nav {
       float: none!important;
-      margin-top: 7.5px;
+        margin-top: 8px;
     }
     .navbar-nav>li {
       float: none;
@@ -1209,11 +1194,10 @@ pre{
 
     .splash-text h1{
         margin: 0;
-        padding:0;
         font-size: 23px;
         font-family: 'Calligraffitti', cursive;
         text-align: center;
-        padding-bottom: 20px;
+        padding: 0 0 20px;
     }
 
     footer li a{
@@ -1222,7 +1206,7 @@ pre{
     }
 
     .logo {
-        margin: 0px auto 20px auto;
+        margin: 0 auto 20px auto;
         width: 125px;
     }
 
@@ -1250,7 +1234,7 @@ pre{
     }
     .icon-size img{
         width:20px;
-        margin: 0px 8px;
+        margin: 0 8px;
     }
 
     .spin {
@@ -1273,7 +1257,7 @@ pre{
     /*our work*/
     .thumbs-container {
         padding: 0 3px 3px 3px;
-        margin: 0px;
+        margin: 0;
 
     }
     .amazon-product {
@@ -1297,7 +1281,7 @@ pre{
     }
 
     .amazon-description{
-        font-size: 12.5px !important;
+        font-size: 13px !important;
     }
 
     /*end of our work*/
