@@ -510,12 +510,13 @@ ul #login-dp .form-group {
     top: 0;
     left: 0;
     border-radius: 5px;
-    /*margin: 15px;*/
-    background-size: contain;
-    background: #e25333 url('../images/overlay.png') no-repeat center;
     opacity: 0;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    background-image:    url('../images/overlay.png');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;  
 }
 
 .thumbs-container a:hover:after {
@@ -637,6 +638,8 @@ ul #login-dp .form-group {
 
 #pricing h2, #pricing h3 {
     color: white;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 #pricing {
@@ -704,6 +707,18 @@ ul #login-dp .form-group {
 
 }
 
+#pricing .one-product h3 {
+    color: #E0AC3A;
+}
+
+#pricing .two-products h3 {
+    color: #B42F7A;
+}
+
+#pricing .more-products h3 {
+    color: #3C3A9D;
+}
+
 .one-product, .two-products, .more-products {
     text-align: center;
     text-transform: uppercase;
@@ -740,6 +755,8 @@ ul #login-dp .form-group {
     font-size: 29px;
     text-decoration: none;
     color: white;
+    width: 61%;
+    margin: 0 auto;
 }
 
 .benefits li{

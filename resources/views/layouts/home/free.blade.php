@@ -1,7 +1,7 @@
 <div class="free full-height">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-sm-12 ">
+			<div class="col-md-6 col-md-offset-3 col-sm-12 ">
 				<h2>
 					How do I get my free 360 Image?    
 				</h2>

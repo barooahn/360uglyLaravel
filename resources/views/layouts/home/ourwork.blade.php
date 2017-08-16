@@ -5,9 +5,11 @@
                 <h2>Why choose us for your 360 product photography?</h2>
             </div>
             <div class="col-md-4">
-                <a href="#" class="glasses-img"><img src="images/glasses/DSC_0117.jpg" class="img-responsive" alt="Our work - glasses"></a>
-                <div class="glasses-container">
-                    
+                <div class="thumbs-container">
+                    <a href="#" class="glasses-img"><img src="images/glasses/DSC_0117.jpg" class="img-responsive" alt="Our work - glasses"></a>
+                    <div class="glasses-container">
+                        
+                    </div>
                 </div>
             </div>
 
