@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <ul class="list-inline">
+                <ul class="list-inline footer-links">
                     <li>
                         <a href="/#results">
                             Get Results

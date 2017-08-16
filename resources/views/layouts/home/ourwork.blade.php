@@ -1,6 +1,9 @@
 <div class="our-work full-height">
     <div class="container">
         <div class="row">
+            <div class="col-md-12">
+                <h2>Why choose us for your 360 product photography?</h2>
+            </div>
             <div class="col-md-4">
                 <a href="#" class="glasses-img"><img src="images/glasses/DSC_0117.jpg" class="img-responsive" alt="Our work - glasses"></a>
                 <div class="glasses-container">
@@ -9,7 +12,6 @@
             </div>
 
             <div class="col-md-8">
-                <h2>Why choose us for your 360 product photography?</h2>
 
                 <p>We ensure the best combination of optimal image quality and file size for your 360 degree product.  This is most suitable for web applications where load times are as important as image quality.</p>  
 

@@ -62,6 +62,10 @@ p{
     line-height: 1.7;
 }
 
+li {
+    font-size: 15px;
+}
+
 .btn {
     padding: 14px 24px;
     border: 0 none;
@@ -373,8 +377,13 @@ ul #login-dp .form-group {
 }
 
 .spin-icon {
-    width:50px;
     display: inline-block;
+}
+
+.spin-icon [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+
+    font-size: 40px;
+
 }
 
 .thumbs-container {
@@ -572,6 +581,10 @@ ul #login-dp .form-group {
     display: none;
 }
 
+.glasses-container, .glasses-img img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /*get-results container*/
 
 #results {
@@ -621,6 +634,10 @@ ul #login-dp .form-group {
 
 
 /*pricing*/
+
+#pricing h2, #pricing h3 {
+    color: white;
+}
 
 #pricing {
     background-color: #E0AC3A;
@@ -841,11 +858,16 @@ font-size: 30px;
 
 /*options*/
 
+/*footer*/
 
 footer {
     text-align: center;
     min-height: 400px;
     background-color: #111E22;
+}
+
+.footer-links {
+    margin-top: 15px;
 }
 
 /*user - home page*/
@@ -894,13 +916,13 @@ footer {
     border: 0;
     border-radius: 0;
     font-family: roboto, serif;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .panel-heading {
     background-color: white !important;
     font-family: roboto, serif;
-    font-weight: 200;
+    font-weight: 400;
     border-radius: 0;
     color: #e25333 !important;
     text-transform: uppercase;
@@ -911,6 +933,7 @@ footer {
 .form-group {
     color: #777;
     font-family: roboto, serif;
+    font-weight: 400;
 }
 
 .control-label {
@@ -960,7 +983,7 @@ pre{
     }
 
     p {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     #results {
