@@ -18,34 +18,23 @@ html {
 .main{
 }
 
-@include media-breakpoint-up(sm) {
-    html {
-        font-size: 16px;
-    }
-}
-
-@include media-breakpoint-up(md) {
-    html {
-        font-size: 20px;
-    }
-}
-
-@include media-breakpoint-up(lg) {
-    html {
-        font-size: 28px;
-    }
-}
-
 .center {
     text-align: center;
 }
 
 h1 {
-    font-size: 33px;
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 33px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -58,7 +47,7 @@ a:hover{
 }
 
 p{
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.7;
 }
 
@@ -250,13 +239,12 @@ ul #login-dp .form-group {
 /*home page - splash*/
 
 .splash-container{
-    background: url("../images/galaxy-s8_top.png") no-repeat top right;
+    background: url("../images/galaxy-s8_white.png") no-repeat top right;
     position: absolute;
     top:20px;
     right: 0;
     width:100%;
 }
-
 
 .uglyman {
     margin-top: 80px; 
@@ -281,8 +269,6 @@ ul #login-dp .form-group {
  }
 
 .home-top .header-two h1{
-    font-family: 'Zilla Slab Highlight', cursive;
-    font-size: 32px;
     text-transform: capitalize;
     text-align: center;
 
@@ -346,9 +332,51 @@ ul #login-dp .form-group {
 
 /*our-work container*/
 
+
 #ourwork {
-    background-color: #28738C;
-    color: white;
+    width: 100wh;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 .splash-fullscreen{
@@ -589,17 +617,63 @@ ul #login-dp .form-group {
 /*get-results container*/
 
 #results {
-    background-size: cover;
-    background: #f4f0ef url('../images/lights_background.jpg') no-repeat center center;
     color: #1c1a23;
+    background-image:    url('../images/getResults_background.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.results_header {
+    text-align: center;
+}
+
+.header-divider {
+    width: 100px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-left: auto;
+}
+.get-results h2 {
+    margin-top: 40px;
+}
+
+.get-results h3 {
+    color: #e25333;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.get-results p {
+    padding: 17px 0;
 }
 
 
-.results-text p{
-    margin-top: 32px;
+.results-left{
+    float: right;
+    width: 60%;
+    padding: 20px;
 }
 
+.results-right{
+    float: left;
+    width: 60%;
+    padding: 20px;
+}
 
+.spin-border{
+    background-image: url("../images/spin_background.png");
+    background-size:   contain  ;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    padding: 20%;
+    max-width: 600px;
+}
+
+.pebble-img{
+    margin: 0 auto;
+}
 /*how it works*/
 
 .how-work h5 {
@@ -868,9 +942,12 @@ font-size: 30px;
 
 /*free*/
 
+
 #free {
-    background-color: #e25333;
-    color: white;
+    background-image:
+            linear-gradient(
+                    #e25333, white
+            );
 }
 
 /*options*/
@@ -986,6 +1063,10 @@ pre{
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
+    h1 {
+        font-size: 25px;
+    }
+
     h2 {
         font-size: 20px;
     }
@@ -1000,22 +1081,7 @@ pre{
     }
 
     p {
-        font-size: 16px;
-    }
-
-    #results {
-    background-image: none;
-    }
-
-    .home-top .header-text h1 {
-        font-weight: 200;
-        font-size: 23px;
-        margin-top: 20px;
-    }
-
-    .home-top .header-text h2 {
-        font-weight: 200;
-        font-size: 23px;
+        font-size: 14px;
     }
 
     .security {
@@ -1039,12 +1105,6 @@ pre{
         width: 60% !important;
     }
 
-    .home-top .header-two h1 {
-        font-size: 20px;
-        margin: 0;
-    }
-
-
     .thumbs {
         width: 100%;
         min-height: 235px !important;
@@ -1062,22 +1122,18 @@ pre{
         padding-top: 15px;
     }
 
-    .get-results-text {
-        margin: 0 auto;
-        padding-top: 20px;
-        font-size: 22px;
+    /*get-results*/
+
+    .results-right, .results-left {
+        float: none;
+        width: 100%;
+        padding: 0;
     }
 
-    .get-results-padding h2{
-        font-size: 28px;
-        max-width: 315px;
-        margin: 0 auto;
-        padding-bottom: 15px;
+    .header-divider {
+        margin-bottom: 40px;
     }
 
-    .get-results-padding {
-        padding-top: 20px;
-    }
 
     .one-product, .two-products, .more-products, .pricing-button {
         text-align: center;
@@ -1228,18 +1284,11 @@ pre{
         font-size: 14px;
     }
 
-    .splash-text {
-        text-align: center;
-        padding-top: 0;
-        width: 100%;
-    }
 
-    .splash-text h1{
+
+    .home-top .header-two h1 {
+        font-size: 22px;
         margin: 0;
-        font-size: 23px;
-        font-family: 'Calligraffitti', cursive;
-        text-align: center;
-        padding: 0 0 20px;
     }
 
     footer li a{
@@ -1360,29 +1409,6 @@ pre{
     
 }
 @media screen and (min-width: 988px) {
-    /*get-results container*/
-    .get-results-left img {
-        float: right;
-    }
-    .get-results-text {
-        margin: 0 auto;
-        float: left;
-        font-size: 24px;
-    }
-
-    .get-results-text h4{
-        margin: 0 auto;
-        float: left;
-        text-align: left;
-    }
-
-    .get-results-padding {
-        padding-bottom: 0;
-    }
-
-    .get-results-btn {
-        padding-top: 0;
-    }
 
     .icon-size img{
         width:20px;
@@ -1457,6 +1483,46 @@ pre{
         font-size: 29px;
     }
 
+    /*get-results container*/
+
+    .header-divider {
+        margin-bottom: 30px;
+    }
+
+    .spin-border {
+        padding: 18%;
+        max-width: 450px;
+    }
+
+    .results-left{
+        float: right;
+        width: 80%;
+        padding: 0;
+    }
+
+    .results-right{
+        float: left;
+        width: 80%;
+        padding: 0;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .get-results p {
+        padding: 10px 0;
+    }
+
+    results-right img {
+        padding: 15px;
+    }
+
+    .get-results h2 {
+        margin-top: 25px;
+    }
+
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
@@ -1482,6 +1548,7 @@ pre{
         padding-top: 0; 
         padding-bottom: 0;
     }
+
 
     .pricing-circle, .pricing-circle-two {
         width: 15vw;

@@ -102,8 +102,8 @@ $('.glasses-img').click(function(event) {
         digits: 4
     });
 
-    var widthglasses = 382;
-    var heightglasses = 224;
+    var widthglasses = $('.glasses').width() - 10;
+    var heightglasses = widthglasses / 1.7;
     var spinglasses = $('.glasses');
     // initialise spritespin
     $(document).ready(function() {

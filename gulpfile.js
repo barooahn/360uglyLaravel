@@ -32,7 +32,8 @@ elixir((mix) => {
             'smooth-scroll.js',
             'general.js',
             'rollover.js', 
-            'ourwork.js'
+            'ourwork.js',
+            'results.js',
             ], 'public/js/all.js')
         .scripts([
             'jquery-3.2.1.js',
