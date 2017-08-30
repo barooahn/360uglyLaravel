@@ -245,7 +245,7 @@ ul #login-dp .form-group {
     background-position: top center;
     margin: 10% auto;
     height: 100%;
-    width:50%;
+    padding-bottom: 30%;
 }
 
 .uglyman {
@@ -253,7 +253,9 @@ ul #login-dp .form-group {
     top: 120px !important;
 }
 .splash-text {
-    padding-top: 24%;
+    padding-top: 35%;
+    margin: 0 auto;
+    width: 50%;
 }
 
 
@@ -1591,9 +1593,7 @@ pre{
 
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
 
-    .uglyman {
 
-    }
 
     /*get-results container*/
 
@@ -1644,6 +1644,14 @@ pre{
     .pricing-circle-five {
         width: 20vw;
         height: 20vw;
+    }
+
+}
+
+@media screen and (min-width: 1921px) {
+    .splash-container-uglyman {
+        width: 70%;
+        padding-bottom: 0;
     }
 
 }
