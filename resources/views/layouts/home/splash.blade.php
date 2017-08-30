@@ -33,7 +33,7 @@
         </div>
         <div class="row"> 
             <div class="col-md-6 col-xs-12">
-                <div class="splash-container">
+                <div class="splash-container-uglyman">
                     <div class="uglyman">   
                         <div id="loader">
                             <div class="spinner">

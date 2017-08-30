@@ -6,7 +6,9 @@ var framesuglyman = SpriteSpin.sourceArray('images/ugly_splash/JPEG/DSC_{frame}.
     digits: 4
 });
 
-var widthuglyman = $('.uglyman').width();
+var widthuglyman = $('.splash-container-uglyman').width()/2;
+
+console.log('widthuglyman = ' + widthuglyman);
 var heightuglyman = widthuglyman * 1.2;
 
 
