@@ -32,12 +32,20 @@ h2 {
     font-size: 33px;
     font-family: 'Roboto', sans-serif;
     color: rgb(28, 26, 35);
+    text-align: center;
 }
 
 h3 {
-    font-size: 28px;
+     font-size: 28px;
+     font-family: 'Roboto', sans-serif;
+     color: #e25333;
+     text-align: center;
+}
+
+h4 {
     font-family: 'Roboto', sans-serif;
-    color: rgb(28, 26, 35);
+    color: #e25333;
+    text-align: center;
 }
 
 a {
@@ -52,17 +60,23 @@ a:hover {
 p {
     font-size: 16px;
     line-height: 1.7;
+    padding: 10px 0;
 }
 
 li {
     font-size: 15px;
 }
 
+
 .btn {
     padding: 14px 24px;
     border: 0 none;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.flaticon-cancel{
+    cursor: pointer;
 }
 
 .btn:focus, .btn:active:focus, .btn.active:focus {
@@ -347,7 +361,7 @@ ul #login-dp .form-group {
 #ourwork {
     width: 100vw;
     color: #fff;
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background: linear-gradient(-90deg, #ff994a, #f0492d);
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
@@ -403,6 +417,11 @@ ul #login-dp .form-group {
     color: white;
 }
 
+#ourwork h3{
+    color: white;
+    text-align: left;
+}
+
 #ourwork-modal h3{
     color: rgb(28, 26, 35);
     text-align: center;
@@ -412,13 +431,26 @@ ul #login-dp .form-group {
 #ourwork .modal-body {
     background-color: #f1f1f1;
     padding: 20px;
-    margin: 50px;
+    margin: 30px;
+}
+
+#ourwork-modal li{
+    padding-bottom: 30px;
 }
 
 
 #ourwork-modal .modal-dialog {
     width: 50%;
     margin: 30px auto;
+}
+
+#ourwork .btn-primary{
+    background-color: white;
+    color: #f0492d;
+}
+
+.additional-features {
+    margin-top: 20px;
 }
 
 .splash-fullscreen {
@@ -691,9 +723,6 @@ ul #login-dp .form-group {
     padding-top: 0;
 }
 
-.get-results p {
-    padding: 17px 0;
-}
 
 .results-left {
     float: right;
@@ -720,9 +749,29 @@ ul #login-dp .form-group {
 
 /*how it works*/
 
+.howwork-header, .howwork-header2 {
+    text-align: center;
+}
+
+.howwork-header2 {
+    margin-top: 60px;
+
+}
+
+.howwork-button{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .how-work h5 {
     text-align: center;
 
+}
+
+.how-work h3 {
+    color: #e25333;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .icons {
@@ -754,19 +803,17 @@ ul #login-dp .form-group {
 
 /*pricing*/
 
-#pricing h2, #pricing h3 {
-    color: white;
-    text-transform: capitalize;
-    text-align: center;
-}
-
 #pricing {
-    background-color: #E0AC3A;
+    background-image: url("/images/pricing-background.jpg");
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.pricing span {
+.benefits span {
     font-family: 'Roboto', 'Open Sans', serif;
     font-weight: 400;
+    color: #e0543a;
 }
 
 .pricing-img {
@@ -870,26 +917,16 @@ ul #login-dp .form-group {
 }
 
 .benefits {
-    font-size: 29px;
-    text-decoration: none;
-    color: white;
-    width: 61%;
-    margin: 0 auto;
+text-align: center;
 }
 
 .benefits li {
     display: inline-block;
+    margin: 15px;
+    font-size: 16px;
 }
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
 
-    font-size: 30px;
-
-}
-
-.benefits-heading {
-    padding-top: 60px;
-}
 
 /*enquiry*/
 
@@ -1166,8 +1203,35 @@ pre {
     /*get-results*/
     .results-right, .results-left {
         float: none;
-        width: 80%;
         padding: 0;
+    }
+
+
+    /*our work*/
+
+    #ourwork .our-work-left, #ourwork .our-work-right {
+
+        float: none;
+        padding: 0;
+
+    }
+
+    #ourwork-modal .modal-dialog {
+
+        width: auto;
+        margin: 10px 10px;
+
+    }
+
+    #ourwork .modal-body {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    /*how it works*/
+
+    .howwork-button{
+        margin-bottom: 10px;
     }
 
     .header-divider {
@@ -1211,16 +1275,7 @@ pre {
 
     .benefits {
         font-size: 16px;
-    }
-
-    .benefits-heading {
-        padding-top: 0;
-    }
-
-    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-
-        font-size: 25px;
-
+        text-align: left;
     }
 
 }
@@ -1351,7 +1406,7 @@ pre {
         padding: 10px 0;
     }
 
-    results-right img {
+    .results-right img {
         padding: 15px;
     }
 
@@ -1468,6 +1523,13 @@ pre {
         float: none !important;
     }
 
+    /*how it works*/
+
+    .howwork-header2 {
+        margin-top: 10px;
+
+    }
+
     /*pricing*/
     .pricing-circle, .pricing-circle-two {
         width: 18vw;
@@ -1563,7 +1625,7 @@ pre {
         padding: 10px 0;
     }
 
-    results-right img {
+    .results-right img {
         padding: 15px;
     }
 
@@ -1624,7 +1686,7 @@ pre {
         padding: 10px 0;
     }
 
-    results-right img {
+    .results-right img {
         padding: 15px;
     }
 
@@ -1662,7 +1724,7 @@ pre {
         padding: 10px 0;
     }
 
-    results-right img {
+    .results-right img {
         padding: 15px;
     }
 
@@ -1683,9 +1745,5 @@ pre {
 }
 
 @media screen and (min-width: 1921px) {
-    .splash-container-uglyman {
-        width: 70%;
-        padding-bottom: 0;
-    }
 
 }

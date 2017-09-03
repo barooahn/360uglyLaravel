@@ -30,11 +30,11 @@
                         availble.</p>
 
                     <h3>If you require more features just ask</h3>
-                    <p>The default order is optimised for all web devices but if you have special requirements just drop
-                        us a message in an enquiry or with your order.</p>
+                    <p>The orders are optimised for all web devices but if you have special requirements just drop
+                        us a message in an enquiry or with your order.  To see what additional features you can request just click below.</p>
 
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ourwork-modal">
-                        More details
+                    <button type="button" class="btn btn-primary additional-features" data-toggle="modal" data-target="#ourwork-modal">
+                        Available Features
                     </button>
 
                 </div>
@@ -56,7 +56,12 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>We can offer the following extra features:</h3>
+                <h3>Extra features available:
+
+                <a class="icon-size" data-dismiss="modal">
+                    <i class="flaticon-cancel"></i>
+                </a>
+                </h3>
             </div>
             <div class="modal-body">
                 <ul>

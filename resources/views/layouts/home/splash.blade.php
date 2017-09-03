@@ -1,5 +1,5 @@
 <div class="full-height splash">
-    <div class="container-fulid">
+    <div class="container">
         <div class="row home-top" >
             <div class="col-md-12">   
                 <div class="privacy">

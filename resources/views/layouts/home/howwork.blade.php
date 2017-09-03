@@ -1,17 +1,26 @@
 <div class="how-work full-height">
     <div class="container">
-        <div class="icons-how-work">
-            <h2>
-                How to get 360 Product Photos
-            </h2>
-            <h3>
-                Six Simple Steps
-            </h3>
-            <p>
-                <span>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="howwork-header">
+                    <h2>
+                        How to get 360 Product Photos
+                    </h2>
+                    <h3>
+                        Six Simple Steps
+                    </h3>
+                    <span>
                     Click/hover over images for details on each step
                 </span>
-            </p>
+
+                    <img src="/images/divider.png" class="img-responsive header-divider" alt="divider- 360 Images">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="icons-how-work">
             <div class="row">
                 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 icons">
                     <div class="rollover-how-work" data-content="Give us details of the product(s) you want to make 360 and the address for collection and we will do the rest." data-placement="auto" data-toggle="popover" title="1. FILL OUT FORM">
@@ -90,10 +99,12 @@
             <!--end of row-->
             <div class="row">
                 <div class="col-md-12">
+                    <div class="howwork-header2">
 
-                    <h2>Is it easy to install 360 products on my website?</h2>
+                        <h3>Is it easy to install 360 products on my website?</h3>
+                    </div>
+                        <p>The 360 Images can be uploaded to your website and incorporated with three simple lines of code we provide.  Simply cut and paste the files and the code supplied with your download to your site and you will have a 360 product and better sales conversions.  We will provide guidance to help you get up and running in no time.   </p>
 
-                    <p>The 360 Images can be uploaded to your website and incorporated with three simple lines of code we provide.  Simply cut and paste the files and the code supplied with your download to your site and you will have a 360 product and better sales conversions.  We will provide guidance to help you get up and running in no time.   </p> 
 
                     <pre><code>&lt;script src="randj.js"&gt;&lt;/script&gt;
 &lt;div class="360ProductPhoto00020002">&lt;/div&gt;
@@ -104,7 +115,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <div class="pricing-button">
+                    <div class="howwork-button">
                         <a class="btn btn-primary btn-lg" href="{{ url('orders/create') }}" title="Order 360 Product Now">
                             Start Now
                         </a>

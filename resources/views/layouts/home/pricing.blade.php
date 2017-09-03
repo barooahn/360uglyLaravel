@@ -2,10 +2,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Concerned about the cost of 360 images on your site?</h2>
-                <h3>360 photography is more affordable than you think.  </h3>  
+                <div class="results_header">
+                    <h2>Concerned about the cost of 360 images on your site?</h2>
+                    <h3>360 photography is more affordable than you think.  </h3>
+
+                    <img src="/images/divider.png" class="img-responsive header-divider" alt="divider- 360 Images">
+                </div>
             </div>
+
         </div>
+
         <div class="row">
             <div class="col-sm-3 col-sm-offset-1">
                 <div class="one-product">
@@ -65,23 +71,23 @@
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
                 <div class="benefits-heading">
-                    <h3>All our 360 product photography comes with:</h3>
+                    <h4>All our 360 product photography comes with:</h4>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
-                <ul class="benefits">
+                <ol class="benefits">
                     <li>
-                        <i class="flaticon-delivery-truck">  Free collection</i>
+                        <span class="pricing-span"> 1. </span> Free collection
                     </li>
                     <li>
-                        <i class="flaticon-check">  Approve before buying</i>
+                        <span class="pricing-span"> 2. </span>Approve before buying
                     </li>   
                     <li>
-                        <i class="flaticon-download">  Free download</i>
+                        <span class="pricing-span"> 3. </span>Free download
                     </li>                            
-                </ul>
+                </ol>
                 <h3>With higher conversion rates and fewer returns can you afford not to?</h3>
             </div>
         </div>
