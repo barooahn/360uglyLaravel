@@ -816,84 +816,52 @@ ul #login-dp .form-group {
     color: #e0543a;
 }
 
-.pricing-img {
-    margin: 0 auto;
-    padding-bottom: 20px;
+.pricing-header{
+    background-color: #e25333;
 }
 
-.pricing-circle, .pricing-circle-two {
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
-    background-color: #E0AC3A;
-    margin: 0 auto;
+#pricing .header-divider {
+    margin-bottom: 10px;
 }
 
-.pricing-circle-five {
-    width: 13vw;
-    height: 13vw;
-    border-radius: 50%;
-    background-color: #E0AC3A;
-    margin: 0 auto;
+.pricing-circle img, .pricing-circle-five img {
+    margin: 50px auto 20px auto;
 }
 
-.pricing-circle-two {
-    background-color: #B42F7A;
-}
-
-.pricing-circle-five {
-    background-color: #3C3A9D;
+.pricing-circle-two img {
+    margin: 20px auto 10px auto;
 }
 
 .pricing-amount {
-    font-size: 65px;
-    color: white;
-    display: block;
-    padding-top: 25%;
+    font-size: 45px;
+    color: #e25333;
 }
 
 .pricing-amount-five {
-    font-size: 90px;
-    color: white;
-    display: block;
-    padding-top: 28%;
+    font-size: 70px;
+    color: #e25333;
 }
 
 .pricing-per {
     font-size: 10px;
+}
+
+
+#pricing .one-product h3, #pricing .two-products h3, #pricing .more-products h3 {
     color: white;
-    display: block;
-    padding-bottom: 25%;
+    padding:20px;
 }
 
-.one-product {
-    margin-top: 15px !important;
-    padding-top: 65px !important;
-
-}
-
-#pricing .one-product h3 {
-    color: #E0AC3A;
-}
-
-#pricing .two-products h3 {
-    color: #B42F7A;
-}
-
-#pricing .more-products h3 {
-    color: #3C3A9D;
-}
 
 .one-product, .two-products, .more-products {
     text-align: center;
-    text-transform: uppercase;
     background-color: white;
     margin: 15px auto 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .one-product, .two-products {
-    margin: 15px auto 0 auto;
+    margin: 80px auto 0 auto;
 }
 
 .more-products .full-width, .two-products .full-width {
@@ -1238,31 +1206,18 @@ pre {
         margin-bottom: 40px;
     }
 
+    /*pricing*/
     .one-product, .two-products, .more-products, .pricing-button {
         text-align: center;
-        text-transform: uppercase;
-        padding: 5px 0;
         background-color: white;
+
+    }
+    .one-product, .two-products {
         margin: 10px auto 0 auto;
     }
 
     .how-work, .our-work, .pricing, .contact, .results {
         padding-top: 5px;
-    }
-
-    .one-product {
-        margin-top: 15px !important;
-        padding-top: 15px !important;
-    }
-
-    .pricing-circle, .pricing-circle-two {
-        width: 70vw;
-        height: 70vw;
-    }
-
-    .pricing-circle-five {
-        width: 85vw;
-        height: 85vw;
     }
 
     .more-products h4, .two-products h4 {
@@ -1531,15 +1486,6 @@ pre {
     }
 
     /*pricing*/
-    .pricing-circle, .pricing-circle-two {
-        width: 18vw;
-        height: 18vw;
-    }
-
-    .pricing-circle-five {
-        width: 25vw;
-        height: 25vw;
-    }
 
     .pricing-amount {
         font-size: 45px;
@@ -1548,6 +1494,8 @@ pre {
     .pricing-amount-five {
         font-size: 60px;
     }
+
+
 
     .benefits {
         font-size: 16px;
@@ -1582,15 +1530,6 @@ pre {
         font-size: 26px;
     }
 
-    .pricing-circle, .pricing-circle-two {
-        width: 17vw;
-        height: 17vw;
-    }
-
-    .pricing-circle-five {
-        width: 25vw;
-        height: 25vw;
-    }
 
     .benefits {
         font-size: 23px;
@@ -1645,15 +1584,7 @@ pre {
         /*        padding-top: 45%;*/
     }
 
-    .pricing-circle, .pricing-circle-two {
-        width: 17vw;
-        height: 17vw;
-    }
 
-    .pricing-circle-five {
-        width: 25vw;
-        height: 25vw;
-    }
 
     .benefits {
         font-size: 29px;
@@ -1732,15 +1663,6 @@ pre {
         margin-top: 25px;
     }
 
-    .pricing-circle, .pricing-circle-two {
-        width: 15vw;
-        height: 15vw;
-    }
-
-    .pricing-circle-five {
-        width: 20vw;
-        height: 20vw;
-    }
 
 }
 
