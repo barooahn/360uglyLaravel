@@ -941,9 +941,56 @@ text-align: center;
 }
 
 .enquiry-text{
-    margin: 20px 0;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+#enquiry .free-steps {
+    margin-bottom: 45px;
 }
 
+
+/*enquiry2*/
+#enquiry2 {
+    background-image: url("/images/enquiry2-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.enquiry2-box{
+    background-image: url("/images/enquiry2-box-background.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    background-color: white;
+    margin-top: 30%;
+    padding: 30px;
+}
+
+.enquiry2-header{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #fb9148, #f0492d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #fb9148, #f0492d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #fb9148, #f0492d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #fb9148, #f0492d); /* Standard syntax */
+    padding: 30px;
+    margin-top: 30%;
+}
+
+.enquiry2-header h2{
+    color: white;
+    text-align: left;
+}
+
+#enquiry2 .no-border-left {
+    margin-left: 0!important;
+    padding-left: 0!important;
+}
+
+#enquiry2 .no-border-right {
+    margin-right: 0!important;
+    padding-right: 0!important;
+}
 /*fancy radio buttons*/
 
 .contact label.btn span {

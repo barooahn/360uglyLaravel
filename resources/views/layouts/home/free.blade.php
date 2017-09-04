@@ -112,7 +112,7 @@
                         display on our site as payment for our time and effort.</p>
                 <div class="note">
                     <img src="/images/note-exclamation.png" width="44px" height="44px" class="img-responsive" alt="360 product images Note">
-                    <p>Note: If you require a courrier postage and packaging is not included in the the free offer.</p>
+                    <p>Note: If you require courrier postage and packaging the free offer does not include these costs.</p>
 
                 </div>
 

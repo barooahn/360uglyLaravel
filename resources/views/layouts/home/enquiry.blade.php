@@ -149,13 +149,6 @@
 
 
                 </div>
-                <div class="note">
-                    <img src="/images/note-exclamation.png" width="44px" height="44px" class="img-responsive"
-                         alt="360 product images Note">
-                    <p>Note: If you require a courrier postage and packaging is not included in the the free offer.</p>
-
-                </div>
-
             </div>
 
         </div>
