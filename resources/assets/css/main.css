@@ -898,22 +898,50 @@ text-align: center;
 
 /*enquiry*/
 
-.contact .form-control {
-    color: #999 !important;
+#enquiry {
+    background-image: url("/images/enquiry-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.contact select:invalid {
-    color: #999 !important;
+.getintouch-form{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #fb9148, #f0492d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #fb9148, #f0492d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #fb9148, #f0492d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #fb9148, #f0492d); /* Standard syntax */
 }
 
-.contact option {
-    color: #555;
+.getintouch-form, .getintouch-form h3  {
+    text-align: left;
+    color: white;
 }
 
+.getintouch-form  {
+    padding: 15px;
+}
+
+.enquiry-field {
+    margin: 20px auto;
+}
+
+.enquiry-button {
+    text-align: right;
+}
+
+#enquiry .btn-primary {
+    background-color: white;
+    color: #f0492d;
+}
 .enquiry-textarea {
     margin-top: 0 !important;
     height: 80px;
     padding-top: 11px;
+}
+
+.enquiry-text{
+    margin: 20px 0;
 }
 
 /*fancy radio buttons*/
@@ -996,11 +1024,62 @@ text-align: center;
 /*free*/
 
 #free {
-    background-image: linear-gradient(
-            #e25333, white
-    );
+    background-image: url("/images/free-background.jpg");
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
+#free h2{
+    text-align: left;
+}
+
+#free h3{
+    text-align: left;
+}
+
+#free .header-divider {
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+
+.free-steps {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.free-text {
+    width: 80%;
+}
+
+.free-img {
+    width: 20%;
+}
+
+.free-numbers{
+    display: block;
+    font-size: 20px;
+    color:  #e25333;
+}
+
+.free-bullets {
+    display: block;
+}
+
+.note {
+    display: flex;
+}
+
+.note img {
+    width: 44px;
+    height: 44px;
+    margin-top: 15px;
+}
+
+.note p {
+    width: 90%;
+    padding-left: 10px;
+}
 /*options*/
 
 /*footer*/
@@ -1231,6 +1310,11 @@ pre {
     .benefits {
         font-size: 16px;
         text-align: left;
+    }
+
+    /*free*/
+    #free {
+        background-image:none;
     }
 
 }

@@ -9,7 +9,8 @@
     <section id="ourwork">@include('layouts.home.ourwork')</section>
     <section id="howwork">@include('layouts.home.howwork')</section>
     <section id="pricing">@include('layouts.home.pricing')</section>
-    <section id="contact">@include('layouts.home.enquiry')</section>
+    <section id="enquiry">@include('layouts.home.enquiry')</section>
+    <section id="enquiry">@include('layouts.home.enquiry2')</section>
     <section id="free">@include('layouts.home.free')</section>
     <section id="gallery">@include('layouts.home.gallery')</section>
     

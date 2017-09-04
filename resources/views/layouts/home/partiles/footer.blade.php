@@ -29,8 +29,8 @@
                     </li>
                     
                     <li>
-                        <a href="/#contact">
-                            Contact
+                        <a href="/#enquiry">
+                            Enquiry
                         </a>
                     </li>
                 </ul>

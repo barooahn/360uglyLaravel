@@ -46,7 +46,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/#contact" title="Make an enquiry about 360 product photos">
+                    <a href="/#enquiry" title="Make an enquiry about 360 product photos">
                         Enquiry
                     </a>
                 </li>
