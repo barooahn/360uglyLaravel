@@ -126,12 +126,12 @@ class LoginController extends Controller
             $user = $socialProvider->user;   
 
             auth()->login($user);
-            if(!session()->has('url.intended'))
+            if(!session()->has('url_intended'))
             {
-                session(['url.intended' => url()->previous()]);
+                session(['url_intended' => url()->previous()]);
             }
-//            return redirect(session('url.intended'));
-                return redirect('/');
+            return redirect(session('url.intended'));
+//                return redirect('/');
         }
     }
 }
