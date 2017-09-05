@@ -43,13 +43,13 @@ return [
     'twitter' => [
     'client_id' => env('TWITTER_API_KEY', ''),
     'client_secret' => env('TWITTER_API_SECRET', ''),
-    'redirect' => 'http://360ugly.com/login/twitter/callback/',
+    'redirect' => 'https://360ugly.com/login/twitter/callback/',
     ],
 
     'facebook' => [
     'client_id' => env('FACEBOOK_API_KEY', ''),
     'client_secret' => env('FACEBOOK_API_SECRET', ''),
-    'redirect' => 'http://360ugly.com/login/facebook/callback/',
+    'redirect' => 'https://360ugly.com/login/facebook/callback/',
 ],
 
 

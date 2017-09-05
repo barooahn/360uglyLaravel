@@ -9293,9 +9293,6 @@ html {
     overflow-x: hidden;
 }
 
-.main {
-}
-
 .center {
     text-align: center;
 }
@@ -9447,6 +9444,10 @@ header h1, header h4 {
     max-height: 42px;
     margin-top: -10px;
     max-width: 90px;
+}
+
+.user-icon, .badge-mobile{
+    display: none;
 }
 
 .modal-backdrop {
@@ -10533,6 +10534,32 @@ pre {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .user-icon {
+        display: inline;
+        position: relative;
+        float: right;
+        margin-top: 8px;
+        margin-right: 10px;
+        height: 35px;
+        width: 35px;
+    }
+
+    .badge-mobile {
+        display: inline;
+        position: relative;
+        float: right;
+        margin-top: 8px;
+         margin-right: 2px;
+        background-color: #8ac926;
+        border-radius: 10px;
+        padding: 0px 4px;
+        color: white;
+    }
+
+    .button-menu {
+        display: none;
+    }
 
     h1 {
         font-size: 25px;
