@@ -1,5 +1,6 @@
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	$('.nav a').on('click', function(){
+	$('.nav .links').on('click', function(){
+	    console.log('here');
 	    $('.navbar-toggle').click() //bootstrap 3.x by Richard
 	});
     $('.arrow').css('display', 'none');

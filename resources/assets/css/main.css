@@ -171,6 +171,10 @@ header h1, header h4 {
     max-width: 90px;
 }
 
+.modal-backdrop {
+    z-index: 1020;
+}
+
 ul #login-dp {
     min-width: 350px;
     padding: 14px 14px 0;
@@ -204,6 +208,7 @@ ul #login-dp .form-group {
 .btn-fb {
     color: #fff;
     background-color: #3b5998;
+    margin: 10px 0;
 }
 
 .btn-fb:hover {
@@ -214,6 +219,7 @@ ul #login-dp .form-group {
 .btn-tw {
     color: #fff;
     background-color: #55acee;
+    margin: 10px 0;
 }
 
 .btn-tw:hover {
@@ -308,8 +314,9 @@ ul #login-dp .form-group {
 
 .arrow {
     bottom: 10px;
-    right: 50%;
-    position: fixed;
+    position: relative;
+    margin: 0 auto;
+    width: 50px;
 }
 
 .arrow a {
@@ -361,7 +368,7 @@ ul #login-dp .form-group {
 #ourwork {
     width: 100vw;
     color: #fff;
-    background: linear-gradient(-90deg, #ff994a, #f0492d);
+    background: linear-gradient(-180deg, #ff994a, #f0492d);
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
@@ -445,8 +452,13 @@ ul #login-dp .form-group {
 }
 
 #ourwork .btn-primary{
-    background-color: white;
+    background: white;
     color: #f0492d;
+}
+
+#ourwork .btn-primary:hover{
+    background: #33a6cc;
+    color: #FFFFFF;
 }
 
 .additional-features {
@@ -933,6 +945,11 @@ text-align: center;
 #enquiry .btn-primary {
     background-color: white;
     color: #f0492d;
+}
+
+#enquiry .btn-primary:hover{
+    background: #33a6cc;
+    color: #FFFFFF;
 }
 .enquiry-textarea {
     margin-top: 0 !important;

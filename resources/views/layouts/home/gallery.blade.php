@@ -12,7 +12,7 @@
             <div class="col-xs-12 col-sm-6 col-lg-3">
                 <div class="thumbs-container">
                     <a class="rollover-modal" href="#" id="gamepad">
-                        <img class="img-responsive thumbs" src="images/gamepad/DSC_0037.jpg" alt="Our work - gamepad">
+                        <img class="img-responsive thumbs" src="images/gamepad/DSC_0197.jpg" alt="Our work - gamepad">
                         
                     </a>
                 </div>

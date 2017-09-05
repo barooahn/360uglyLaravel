@@ -7,8 +7,8 @@ var framesArray = {
     },
     gamepad: {
         path: 'images/gamepad/DSC_{frame}.jpg',
-        start: 37,
-        end: 78,
+        start: 197,
+        end: 240,
         digits: 4
     },
     pebble: {

@@ -60,7 +60,7 @@
 
 
     <div class="arrow bounce">
-        <a class="fa fa-arrow-down fa-2x" title="Our work - 360 Images" href="#ourwork">
+        <a class="fa fa-arrow-down fa-2x" title="Our work - 360 Images" href="#results">
         </a>
     </div>
 </div>
