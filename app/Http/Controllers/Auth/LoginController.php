@@ -130,7 +130,8 @@ class LoginController extends Controller
             {
                 session(['url.intended' => url()->previous()]);
             }
-            return redirect(session('url.intended')); 
+//            return redirect(session('url.intended'));
+                return redirect('/');
         }
     }
 }
