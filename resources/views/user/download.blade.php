@@ -34,30 +34,31 @@
                     <div class="panel-body">
 
 
-                        <div class="col-md-12">
+
                             @if($user->status('download') > 0 )
 
                                 @foreach ($user->getDownload() as $order)
                                     <div class="row process-header">
                                         <div class="col-md-12 col-lg-8">
-
-                                    <h4>Order number:{{sprintf('%04d', $order->id)}} </h4>
+                                            <div class="order-number">
+                                                <h4>Order number:{{sprintf('%04d', $order->id)}} </h4>
+                                            </div>
                                         </div>
                                         <div class="col-md-12 col-lg-4">
 
-                                    @if ($order->status == 'pay2')
-                                        <div class="paypal-button">
-                                            <form action="{{ url('/payment/download', $item) }}"
-                                                  class="form" id="order" method="get" role="form">
-                                                <input type="image"
-                                                       src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png"
-                                                       alt="PayPal Checkout"/>
-                                                <input type="hidden" name="order_id" value="{{$order->id}}">
-                                            </form>
-                                            <p class="price-center">To Pay:
-                                                £{{sprintf("%01.2f", $order->total_price)}}</p>
-                                        </div>
-                                    @endif
+                                            @if ($order->status == 'pay2')
+                                                <div class="paypal-button">
+                                                    <form action="{{ url('/payment/download', $item) }}"
+                                                          class="form" id="order" method="get" role="form">
+                                                        <input type="image"
+                                                               src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png"
+                                                               alt="PayPal Checkout"/>
+                                                        <input type="hidden" name="order_id" value="{{$order->id}}">
+                                                    </form>
+                                                    <p class="price-center">To Pay:
+                                                        £{{sprintf("%01.2f", $order->total_price)}}</p>
+                                                </div>
+                                            @endif
                                         </div>
                                     </div>
 
@@ -113,7 +114,6 @@
                                 <p>No orders to download</p>
 
                             @endif
-                        </div>
 
                     </div>
                 </div>
