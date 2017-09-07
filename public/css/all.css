@@ -10535,6 +10535,9 @@ pre {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
+    .navbar-nav.navbar-right li.dropdown {
+        display: none !important;
+    }
     .user-icon {
         display: inline;
         position: relative;
@@ -10580,6 +10583,7 @@ pre {
 
     p {
         font-size: 14px;
+        padding: 0;
     }
 
     .security {

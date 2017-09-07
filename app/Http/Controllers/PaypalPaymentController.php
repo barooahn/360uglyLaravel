@@ -91,7 +91,7 @@ class PayPalPaymentController extends Controller
         $item = Item::findorFail($item_id);
         $order = $item->order;
         $invoice = str_random(10).$order->id; 
-        $price = $item->price;
+        $price = ($order->price)- ($order->delivery_price);
 
         $payer = PayPal::Payer();
         $payer->setPaymentMethod('paypal');
@@ -108,7 +108,7 @@ class PayPalPaymentController extends Controller
 
         $amount = PayPal:: Amount();
         $amount->setCurrency('GBP');
-        $amount->setTotal($item->price); // This is the simple way,
+        $amount->setTotal($price); // This is the simple way,
         // you can alternatively describe everything in the order separately;
         // Reference the PayPal PHP REST SDK for details.
 

@@ -66,4 +66,28 @@ class Order extends Model
         $order->post = 1;
         $order->update();
     }
+
+    public function deliveryDiscount($orderId)
+    {
+        $order = Order::find($orderId);
+        $items = $order->items;
+
+        $count = $items->count();
+
+        if ($count == 1)
+        {
+            $item = $items->first();
+            $item->price = $item->price - $order->delivery_price;
+            $item->update();
+        }
+
+        if ($count>1) {
+            $item = $items->last();
+            $item->price = $item->price - $order->delivery_price;
+            $item->update();
+        }
+
+        return $item->price;
+
+    }
 }
