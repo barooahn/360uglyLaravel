@@ -20,7 +20,10 @@ elixir((mix) => {
 	    	'font-awesome.css', 
             'flaticon.css',
 	    	'main.css'
-	    	])
+	    	], 'public/css/all.css')
+        .styles([
+            'user.css'
+        ], 'public/css/user.css')
     	.scripts([
     		'jquery-3.2.1.js',
     		'bootstrap.js', 

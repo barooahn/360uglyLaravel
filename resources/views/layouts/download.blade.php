@@ -31,6 +31,7 @@
     <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Styles -->
+    <link href="/css/user.css" rel="stylesheet">
     <link href="/css/all.css" rel="stylesheet">
     <!-- Scripts -->
     <script>

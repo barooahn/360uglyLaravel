@@ -29,6 +29,7 @@
                     <div class="panel-heading">
 
                         <h1>Orders being processed</h1>
+
                     </div>
 
                     <div class="panel-body">
@@ -39,8 +40,36 @@
                             @foreach ($user->getProcess() as $order)
 
                                 @if($order->items->count() > 0)
+                                    <div class="row process-header">
+                                        <div class="col-md-12 col-lg-8">
 
-                                    <h4>Order number: {{sprintf('%04d', $order->id)}} </h4>
+                                                <div class="order-number">
+                                                    <h4>Order number: {{sprintf('%04d', $order->id)}}</h4>
+                                                </div>
+
+                                        </div>
+                                        <div class="col-md-12 col-lg-4">
+                                            @if ($order->status == 'pay1')
+                                                <div class="paypal-button">
+                                                    <form action="{{ url('payment/collection', $order) }}"
+                                                          class="form"
+                                                          id="order" method="get" role="form">
+                                                        <input type="image"
+                                                               src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png"
+                                                               alt="PayPal Checkout"/>
+                                                        <input type="hidden" name="order_id" value="{{$order->id}}">
+                                                    </form>
+
+                                                    <p class="price-right">Delivery cost:
+                                                        £{{sprintf("%01.2f", $order->delivery_price)}}</p>
+
+
+                                                </div>
+
+
+                                            @endif
+                                        </div>
+                                    </div>
 
                                     <div class="row process-items">
                                         <div class="col-md-4">
@@ -73,22 +102,8 @@
                                         </div>
 
                                         <div class="col-md-4">
-                                            @if ($order->status == 'pay1')
-                                                <div class="pricing-button">
-                                                    <form action="{{ url('payment/collection', $order) }}" class="form"
-                                                          id="order" method="get" role="form">
-                                                        <input type="image"
-                                                               src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png"
-                                                               alt="PayPal Checkout"/>
-                                                        <input type="hidden" name="order_id" value="{{$order->id}}">
-                                                    </form>
 
-                                                    <p class="price-center">Delivery cost:
-                                                        £{{sprintf("%01.2f", $order->delivery_price)}}</p>
-
-
-                                                </div>
-                                            @elseif ($order->status == 'delivery')
+                                            @if ($order->status == 'delivery')
                                                 <p>delivery</p>
                                             @elseif ($order->status == 'process')
                                                 <p>Please wait and check back here soon.</p>

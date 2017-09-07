@@ -38,11 +38,15 @@
                             @if($user->status('download') > 0 )
 
                                 @foreach ($user->getDownload() as $order)
+                                    <div class="row process-header">
+                                        <div class="col-md-12 col-lg-8">
 
                                     <h4>Order number:{{sprintf('%04d', $order->id)}} </h4>
+                                        </div>
+                                        <div class="col-md-12 col-lg-4">
 
                                     @if ($order->status == 'pay2')
-                                        <div class="pricing-button">
+                                        <div class="paypal-button">
                                             <form action="{{ url('/payment/download', $item) }}"
                                                   class="form" id="order" method="get" role="form">
                                                 <input type="image"
@@ -54,6 +58,8 @@
                                                 £{{sprintf("%01.2f", $order->total_price)}}</p>
                                         </div>
                                     @endif
+                                        </div>
+                                    </div>
 
                                     @foreach ($order->items as $item)
 
@@ -83,7 +89,7 @@
                                             <div class="col-md-4">
 
 
-                                                @if($item->download)
+                                                @if($order->status == 'download')
                                                     <div class="pricing-button">
                                                         <a class="btn btn-primary btn-sm"
                                                            href="{{ url('downloads/download', $item->download->id) }}">

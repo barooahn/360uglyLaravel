@@ -90,15 +90,17 @@ class PayPalPaymentController extends Controller
 
         $item = Item::findorFail($item_id);
         $order = $item->order;
-        $invoice = str_random(10).$order->id; 
+        $count = $order->items->count();
+        $invoice = str_random(10).$order->id;
+        $discount = $order->delivery_cost;
         $price = ($order->price)- ($order->delivery_price);
 
         $payer = PayPal::Payer();
         $payer->setPaymentMethod('paypal');
 
                 $item1 = PayPal::item();
-                $item1->setName($item->name)
-                    ->setDescription('Dimensions: '.$item->length.' x '.$item->width.' x '.$item->height.' cm Weight: '.$item->weight)
+                $item1->setName('360 Ugly - 360 Photographs'. $order->id)
+                    ->setDescription('Payement for : '.$count.' images.  Price includes '.$discount.' discount for dilery already paid')
                     ->setCurrency('GBP')
                     ->setQuantity(1)
                     ->setPrice($item->price);

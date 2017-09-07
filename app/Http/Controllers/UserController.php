@@ -33,6 +33,4 @@ class UserController extends Controller
         $framesArray = User::getFramesArray($user);
     	return view('user/download',compact('user', 'framesArray'));  
     }
-
-
 }

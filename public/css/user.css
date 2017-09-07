@@ -1,0 +1,36 @@
+/*general user*/
+.paypal-button{
+    margin-top: 15px;
+    float: right;
+}
+
+.pricing-button {
+    margin-top: 15px;
+}
+
+.order-number {
+}
+
+.order-number h4 {
+    text-align: left;
+    color: white;
+}
+
+.price-right {
+    float: right;
+}
+/*address*/
+
+
+
+/*process*/
+.process-header {
+    background-color: #e25333;
+    color: white;
+}
+
+
+/*download*/
+
+
+/*# sourceMappingURL=user.css.map */
