@@ -10433,7 +10433,19 @@ footer {
 }
 
 .footer-links {
-    margin-top: 15px;
+    margin: 15px auto;
+}
+.footer-details {
+    text-align: left;
+    margin-top: 40px;
+}
+
+footer .address {
+    text-align: right;
+}
+
+footer p {
+    line-height: 1;
 }
 
 /*user - home page*/

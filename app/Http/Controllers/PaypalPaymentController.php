@@ -119,8 +119,8 @@ class PayPalPaymentController extends Controller
         $transaction->setInvoiceNumber($invoice);
 
         $redirectUrls = PayPal:: RedirectUrls();
-        $redirectUrls->setReturnUrl('http://360ugly.com/payment/done');
-        $redirectUrls->setCancelUrl('http://360ugly.com/user/process');
+        $redirectUrls->setReturnUrl('https://360ugly.com/payment/done');
+        $redirectUrls->setCancelUrl('https://360ugly.com/user/process');
 
         $payment = PayPal::Payment();
         $payment->setIntent('sale');
