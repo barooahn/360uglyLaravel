@@ -103,7 +103,7 @@ class PayPalPaymentController extends Controller
                     ->setDescription('Payement for : '.$count.' images.  Price includes '.$discount.' discount for dilery already paid')
                     ->setCurrency('GBP')
                     ->setQuantity(1)
-                    ->setPrice($item->price);
+                    ->setPrice($price);
 
         $itemList = PayPal::itemList();
         $itemList->setItems(array($item1));  
