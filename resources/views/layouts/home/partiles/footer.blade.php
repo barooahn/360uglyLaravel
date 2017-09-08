@@ -5,43 +5,43 @@
             <div class="col-lg-12">
                 <ul class="list-inline footer-links">
                     <li>
-                        <a href="/#results">
+                        <a href="#results">
                             Get Results
                         </a>
                     </li>
                     <li>
-                        <a href="/#ourwork">
+                        <a href="#ourwork">
                             Our Work
                         </a>
                     </li>
 
 
                     <li>
-                        <a href="/#howwork">
+                        <a href="#howwork">
                             How It Works
                         </a>
                     </li>
 
                     <li>
-                        <a href="/#pricing">
+                        <a href="#pricing">
                             Pricing
                         </a>
                     </li>
 
                     <li>
-                        <a href="/#enquiry">
+                        <a href="#enquiry">
                             Enquiry
                         </a>
                     </li>
 
                     <li>
-                        <a href="/#free">
+                        <a href="#free">
                             Free
                         </a>
                     </li>
 
                     <li>
-                        <a href="/#gallery">
+                        <a href="#gallery">
                             Gallery
                         </a>
                     </li>
