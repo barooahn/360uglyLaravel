@@ -48,15 +48,21 @@
 
                                             @if ($order->status == 'pay2')
                                                 <div class="paypal-button">
-                                                    <form action="{{ url('/payment/download', $item) }}"
+                                                    <form action="{{ url('/payment/download', $order->id) }}"
                                                           class="form" id="order" method="get" role="form">
                                                         <input type="image"
                                                                src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypalcheckout-34px.png"
                                                                alt="PayPal Checkout"/>
                                                         <input type="hidden" name="order_id" value="{{$order->id}}">
                                                     </form>
-                                                    <p class="price-center">To Pay:
+                                                    <p class="price-right">To Pay:
                                                         £{{sprintf("%01.2f", $order->total_price)}}</p>
+                                                    @if($order->delivery_price > 0)
+                                                    <p class="price-right">Less delivery:
+                                                        £{{sprintf("%01.2f", $order->delivery_price)}}</p>
+                                                    <p class="price-right">Total:
+                                                        £{{sprintf("%01.2f", ($order->total_price - $order->delivery_price))}}</p>
+                                                        @endif
                                                 </div>
                                             @endif
                                         </div>

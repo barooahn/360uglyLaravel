@@ -85,22 +85,21 @@ class PayPalPaymentController extends Controller
         return Redirect::to( $redirectUrl );
     }
 
-    public function getCheckoutDownload($item_id)
+    public function getCheckoutDownload($order_id)
     {
 
-        $item = Item::findorFail($item_id);
-        $order = $item->order;
+        $order = Order::findorFail($order_id);
         $count = $order->items->count();
         $invoice = str_random(10).$order->id;
         $discount = $order->delivery_cost;
-        $price = ($order->price)- ($order->delivery_price);
+        $price = ($order->total_price)- ($order->delivery_price);
 
         $payer = PayPal::Payer();
         $payer->setPaymentMethod('paypal');
 
                 $item1 = PayPal::item();
                 $item1->setName('360 Ugly - 360 Photographs'. $order->id)
-                    ->setDescription('Payement for : '.$count.' images.  Price includes '.$discount.' discount for dilery already paid')
+                    ->setDescription('Payement for : '.$count.' images.  Price includes '.$discount.' discount for delivery already paid')
                     ->setCurrency('GBP')
                     ->setQuantity(1)
                     ->setPrice($price);
