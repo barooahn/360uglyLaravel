@@ -44,8 +44,7 @@ class LoginController extends Controller
 
     public function showLoginForm()
     {
-        if(!session()->has('url.intended'))
-        {
+        if (!session()->has('url.intended')) {
             session(['url.intended' => url()->previous()]);
         }
         return view('auth.loginRegister');
@@ -69,27 +68,28 @@ class LoginController extends Controller
         // Check if user was successfully loaded, that the password matches
         // and active is not 1. If so, override the default error message.
         if ($user && \Hash::check($request->password, $user->password) && $user->verified != 1) {
-        $errors = ['verified' => 'Please verify your email address.  Check your email for our mail.'];
+            $errors = ['verified' => 'Please verify your email address.  Check your email for our mail.'];
         }
 
         if ($request->expectsJson()) {
-        return response()->json($errors, 422);
+            return response()->json($errors, 422);
         }
 
         return redirect()->back()
-        ->withInput($request->only($this->username(), 'remember'))
-        ->withErrors($errors);
+            ->withInput($request->only($this->username(), 'remember'))
+            ->withErrors($errors);
     }
 
     public function resendEmail($user)
     {
         $user->email_token = $user->email_token;
         $email = new EmailVerification();
-            Mail::to($user->email)->send($email);
+        Mail::to($user->email)->send($email);
     }
 
     public function redirectToProvider($provider)
     {
+        session(['previous' => url()->previous()]);
         return Socialite::driver($provider)->redirect();
     }
 
@@ -101,18 +101,15 @@ class LoginController extends Controller
     public function handleProviderCallback($provider)
     {
 
-        try
-        {
+        try {
             $socialUser = Socialite::driver($provider)->user();
-        }
-
-        catch(\Exception $e ){
+        } catch (\Exception $e) {
             return redirect('/');
         }
 
-        $socialProvider = socialProvider::Where('provider_id',$socialUser->getId())->first();
+        $socialProvider = socialProvider::Where('provider_id', $socialUser->getId())->first();
 
-        if(!$socialProvider){
+        if (!$socialProvider) {
             $user = User::firstOrCreate(
                 ['email' => $socialUser->getEmail()],
                 ['name' => $socialUser->getName()]
@@ -122,16 +119,16 @@ class LoginController extends Controller
                 ['provider_id' => $socialUser->getId(), 'provider' => $provider]
             );
 
-        }else {
-            $user = $socialProvider->user;   
+        } else {
+            $user = $socialProvider->user;
 
             auth()->login($user);
-            if(!session()->has('url.intended'))
-            {
-                session(['url_intended' => url()->previous()]);
+
+            if (session('previous') == "https://360ugly.com/login") {
+                return redirect('orders/create');
+            } else {
+                return redirect('/');
             }
-            return redirect(session('url_intended'));
-//                return redirect('/');
         }
     }
 }

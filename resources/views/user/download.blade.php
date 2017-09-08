@@ -95,13 +95,16 @@
 
                                             <div class="col-md-4">
 
-
                                                 @if($order->status == 'download')
                                                     <div class="pricing-button">
-                                                        <a class="btn btn-primary btn-sm"
-                                                           href="{{ url('downloads/download', $item->download->id) }}">
-                                                            Download
-                                                        </a>
+                                                    <a class="btn btn-primary btn-sm"
+                                                       href="{{ url('downloads/download', $item->download->id) }}">
+                                                        Download
+                                                    </a>
+                                                    </div>
+                                                @elseif($order->status == 'pay2')
+                                                    <div>
+                                                        <p>Please pay with the PayPal button above to unlock your download</p>
                                                     </div>
                                                 @else
                                                     <div>

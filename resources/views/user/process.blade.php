@@ -107,6 +107,8 @@
                                                 <p>delivery</p>
                                             @elseif ($order->status == 'process')
                                                 <p>Please wait and check back here soon.</p>
+                                            @elseif ($order->status == 'pay1')
+                                                <p>Use the PayPal button above to pay for the courier</p>
                                             @else
                                                 <p>'No action required'</p>
                                             @endif
