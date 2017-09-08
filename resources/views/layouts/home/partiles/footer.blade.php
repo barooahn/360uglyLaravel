@@ -77,70 +77,70 @@
 <span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
 <span itemprop="name">Monday</span> </span>
                                     <span itemprop="opens"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">10am</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">10:00</span>
                                     -
                                     <span itemprop="closes"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">7pm</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">19:00</span>
                                 </p>
                                 <p itemprop="openingHoursSpecification" itemscope
                                    itemtype="http://schema.org/OpeningHoursSpecification">
 <span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
 <span itemprop="name">Tuesday</span> </span>
                                     <span itemprop="opens"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">10am</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">10:00</span>
                                     -
                                     <span itemprop="closes"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">7pm</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">19:00</span>
                                 </p>
                                 <p itemprop="openingHoursSpecification" itemscope
                                    itemtype="http://schema.org/OpeningHoursSpecification">
 <span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
 <span itemprop="name">Wednesday</span> </span>
                                     <span itemprop="opens"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">10am</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">10:00</span>
                                     -
                                     <span itemprop="closes"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">7pm</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">19:00</span>
                                 </p>
                                 <p itemprop="openingHoursSpecification" itemscope
                                    itemtype="http://schema.org/OpeningHoursSpecification">
 <span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
 <span itemprop="name">Thursday</span> </span>
                                     <span itemprop="opens"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">10am</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">10:00</span>
                                     -
                                     <span itemprop="closes"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">7pm</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">19:00</span>
                                 </p>
                                 <p itemprop="openingHoursSpecification" itemscope
                                    itemtype="http://schema.org/OpeningHoursSpecification">
 <span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
 <span itemprop="name">Friday</span> </span>
                                     <span itemprop="opens"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">10am</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">10:00</span>
                                     -
                                     <span itemprop="closes"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">7pm</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">19:00</span>
                                 </p>
                                 <p itemprop="openingHoursSpecification" itemscope
                                    itemtype="http://schema.org/OpeningHoursSpecification">
 <span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
 <span itemprop="name">Saturday</span> </span>
                                     <span itemprop="opens"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">2pm</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">14:00</span>
                                     -
                                     <span itemprop="closes"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">5pm</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">17:00</span>
                                 </p>
                                 <p itemprop="openingHoursSpecification" itemscope
                                    itemtype="http://schema.org/OpeningHoursSpecification">
 <span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
 <span itemprop="name">Sunday</span> </span>
                                     <span itemprop="opens"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">2pm</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">14:00</span>
                                     -
                                     <span itemprop="closes"
-                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">5pm</span>
+                                          content="Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30">17:00</span>
                                 </p>
 
                             </div>
