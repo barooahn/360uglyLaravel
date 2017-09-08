@@ -16032,7 +16032,7 @@ $('.pebble-img').click(function(event) {
         digits: 4
     });
 
-    var widthpebble = $('.pebble-img').width() - 10;
+    var widthpebble = $('.pebble-img').width();
     var heightpebble = widthpebble * 0.8;
     var spinpebble = $('.pebble-img');
     // initialise spritespin
