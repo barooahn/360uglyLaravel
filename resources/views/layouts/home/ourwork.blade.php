@@ -42,9 +42,9 @@
             </div>
 
             <div class="col-md-6">
-
-                <img src="/images/graph.png" class="img-responsive" alt="360 web photography - Graph increased sales">
-
+                <div class="graph">
+                    <img src="/images/graph.png" class="img-responsive" alt="360 web photography - Graph increased sales">
+                </div>
             </div>
         </div>
     </div>

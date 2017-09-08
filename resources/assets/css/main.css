@@ -296,6 +296,9 @@ ul #login-dp .form-group {
 
 .privacy {
     width: 75px;
+    position: absolute;
+    top: 53px;
+    right: 40px;
 }
 
 .header-text {
@@ -1328,10 +1331,6 @@ pre {
         display: none;
     }
 
-    .privicy {
-        margin: -15px;
-    }
-
     .splash-container-uglyman {
         width: 100%;
         margin: 30px auto;
@@ -1771,28 +1770,42 @@ pre {
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
 
+
+    h1 {
+        font-size: 38px !important;
+    }
+
+    h2 {
+        margin-top: 10px !important;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 13px;
+    }
+
+    .splash-container-uglyman {
+        margin: 0 auto;
+        padding-bottom: 8%;
+    }
+
     .uglyman {
-
+        margin: 10px auto;
+        top: 70px !important;
     }
 
-    .splash-text {
-        /*        padding-top: 45%;*/
-    }
-
-
-
-    .benefits {
-        font-size: 29px;
-    }
 
     /*get-results container*/
     .header-divider {
-        margin-bottom: 30px;
+        margin: 20px auto;
     }
 
     .spin-border {
-        padding: 18%;
-        max-width: 450px;
+        margin-top: -12%;
+        max-width: 500px;
     }
 
     .results-left {
@@ -1803,9 +1816,13 @@ pre {
         padding: 0;
     }
 
+    .results-right img {
+        max-width: 350px;
+    }
+
     p {
         font-size: 13px;
-        line-height: 1.7;
+        line-height: 1.6;
     }
 
     .get-results p {
@@ -1818,6 +1835,19 @@ pre {
 
     .get-results h2 {
         margin-top: 25px;
+    }
+
+    .graph {
+        max-width: 450px;
+    }
+
+    .getintouch-form {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        margin-top: 15px;
     }
 }
 

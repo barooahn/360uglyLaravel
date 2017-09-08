@@ -1,12 +1,9 @@
 <div class="full-height splash">
     <div class="container">
-        <div class="row home-top" >
-            <div class="col-md-12">   
                 <div class="privacy">
                     <a href="//www.iubenda.com/privacy-policy/8144288" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a>
                 </div>
-            </div>
-
+        <div class="row home-top" >
             <div class="col-md-12 header-two">
                 <h1 class="">Reduce product returns and increase sales with 360 product photography </h1>
             </div>
