@@ -50,7 +50,7 @@
             <div class="col-md-6 col-xs-12">
                 <div class="splash-text">
 
-                    <img class="img-responsive logo" alt="360 Web Photography" src="/images/logo-main.png">        
+                    <img itemprop="image" class="img-responsive logo" alt="360 Web Photography" src="/images/logo-main.png"/>
 
                 </div>
             </div>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -43,7 +44,7 @@
 </style>
 </head>
 <body>
-    <div id="app">
+    <div itemscope itemtype="http://schema.org/LocalBusiness" id="app">
         @include('layouts.home.partiles.fullnav')
         @yield('content')
         @include('layouts.home.partiles.footer')
