@@ -1,4 +1,5 @@
 /node_modules
+/public/360travel
 /public/storage
 !/storage
 /storage/*
