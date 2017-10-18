@@ -10,7 +10,7 @@
     <title>
         @yield('pageTitle') - 360Ugly
     </title>
-    <meta content="Reduce product returns and increase sales with 360 product photography" name="description"/>
+    <meta content="Reduce product returns and increase sales with 360 product photography.  Collection, photography, return of your product and provide a 360 image " name="description"/>
     <meta content="360 photography, 360 photographer, 360 product photography, 360 photo, 360 degree photography, 360 product photography, 3D product photography, 360 degree product photography, 360 web photos, 360 web photo" name="keywords"/>
     <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png"/>
     <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png"/>
@@ -38,6 +38,24 @@
         'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1940682529538769');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1940682529538769&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Facebook Pixel Code -->
+
 
     <style>
     @import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:700|PT+Sans+Narrow:700');

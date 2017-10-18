@@ -16,12 +16,12 @@
                     @endif
 
                     <div class="social-buttons">
-                        <a class="btn btn-fb" href="login/facebook">
+                        <a class="btn btn-fb" href="/login/facebook">
                             <i class="fa fa-facebook">
                             </i>
                             Facebook
                         </a>
-                        <a class="btn btn-tw" href="login/twitter">
+                        <a class="btn btn-tw" href="/login/twitter">
                             <i class="fa fa-twitter">
                             </i>
                             Twitter
